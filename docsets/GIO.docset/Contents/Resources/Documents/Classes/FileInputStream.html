@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          GIO 2.64.4 Docs
+          GIO 2.66.4 Docs
         </a>
-         (88% documented)
+         (89% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx%2Egithub%2Eio%2FSwiftGIO%2Fdocsets%2FGIO%2Exml">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx.github.io%2FSwiftGIO%2Fdocsets%2FGIO.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -2205,6 +2205,12 @@
                 <a class="nav-group-task-link" href="../Extensions/TLSCertificateRequestFlags.html">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingError.html">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingType.html">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/TLSDatabaseLookupFlags.html">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -2648,6 +2654,9 @@
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO20tlsBackendGetDefaultAA13TLSBackendRefVSgyF">tlsBackendGetDefault()</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27tlsChannelBindingErrorQuarks6UInt32VyF">tlsChannelBindingErrorQuark()</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO22tlsClientConnectionNew12baseIoStream14serverIdentityAA09TLSClientD3RefVSgx_AA017SocketConnectableL0VSgtKAA16IOStreamProtocolRzlF">tlsClientConnectionNew(baseIoStream:serverIdentity:)</a>
               </li>
               <li class="nav-group-task">
@@ -2724,6 +2733,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO25unixMountIsSystemInternal10mountEntrySbx_tAA04UnixcH8ProtocolRzlF">unixMountIsSystemInternal(mountEntry:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO16unixMountPointAt9mountPath8timeReadAA04UnixcD3RefVSgSPys4Int8VGSg_Spys6UInt64VGSgtF">unixMountPointAt(mountPath:timeRead:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27unixMountPointsChangedSince4timeSbs6UInt64V_tF">unixMountPointsChangedSince(time:)</a>
@@ -5243,6 +5255,12 @@
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO26TLSCertificateRequestFlagsa">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSChannelBindingErrora">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO21TLSChannelBindingTypea">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSDatabaseLookupFlagsa">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -7578,6 +7596,7 @@
             <h1>FileInputStream</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">FileInputStream</span> <span class="p">:</span> <span class="kt"><a href="../Classes/InputStream.html">InputStream</a></span><span class="p">,</span> <span class="kt"><a href="../Protocols/FileInputStreamProtocol.html">FileInputStreamProtocol</a></span></code></pre>
 
                 </div>
@@ -7596,6 +7615,9 @@ input stream, use <code>g_seekable_tell()</code>. To find out if a file input
 stream supports seeking, use <code>g_seekable_can_seek()</code>.
 To position a file input stream, use <code>g_seekable_seek()</code>.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-FileIOStream-IOModule.swift#L2100-L2227">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -7608,7 +7630,7 @@ To position a file input stream, use <code>g_seekable_seek()</code>.</p>
                     <code>
                     <a name="/s:3GIO15FileInputStreamCyACSpySo06_GFilecD0VGcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO15FileInputStreamCyACSpySo06_GFilecD0VGcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO15FileInputStreamCyACSpySo06_GFilecD0VGcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7662,7 +7684,7 @@ i.e., ownership is transferred to the <code>FileInputStream</code> instance.</p>
                     <code>
                     <a name="/s:3GIO15FileInputStreamCyACSPySo06_GFilecD0VGcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO15FileInputStreamCyACSPySo06_GFilecD0VGcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO15FileInputStreamCyACSPySo06_GFilecD0VGcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7714,7 +7736,7 @@ i.e., ownership is transferred to the <code>FileInputStream</code> instance.</p>
                     <code>
                     <a name="/s:3GIO15FileInputStreamC8gpointerACSgSvSg_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(gpointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO15FileInputStreamC8gpointerACSgSvSg_tcfc">init(gpointer:)</a>
+                    <a class="token" href="#/s:3GIO15FileInputStreamC8gpointerACSgSvSg_tcfc">init(gpointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7767,7 +7789,7 @@ i.e., ownership is transferred to the <code>FileInputStream</code> instance.</p>
                     <code>
                     <a name="/s:3GIO15FileInputStreamC13gconstpointerACSgSVSg_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(gconstpointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO15FileInputStreamC13gconstpointerACSgSVSg_tcfc">init(gconstpointer:)</a>
+                    <a class="token" href="#/s:3GIO15FileInputStreamC13gconstpointerACSgSVSg_tcfc">init(gconstpointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7820,7 +7842,7 @@ i.e., ownership is transferred to the <code>FileInputStream</code> instance.</p>
                     <code>
                     <a name="/s:3GIO15FileInputStreamCyACSgSPySo06_GFilecD0VGSgcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO15FileInputStreamCyACSgSPySo06_GFilecD0VGSgcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO15FileInputStreamCyACSgSPySo06_GFilecD0VGSgcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7872,7 +7894,7 @@ i.e., ownership is transferred to the <code>FileInputStream</code> instance.</p>
                     <code>
                     <a name="/s:3GIO15FileInputStreamCyACSgSpySo06_GFilecD0VGSgcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO15FileInputStreamCyACSgSpySo06_GFilecD0VGSgcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO15FileInputStreamCyACSgSpySo06_GFilecD0VGSgcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7924,7 +7946,7 @@ i.e., ownership is transferred to the <code>FileInputStream</code> instance.</p>
                     <code>
                     <a name="/s:3GIO15FileInputStreamC9retainingACSpySo06_GFilecD0VG_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retaining:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO15FileInputStreamC9retainingACSpySo06_GFilecD0VG_tcfc">init(retaining:)</a>
+                    <a class="token" href="#/s:3GIO15FileInputStreamC9retainingACSpySo06_GFilecD0VG_tcfc">init(retaining:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7976,7 +7998,7 @@ i.e., ownership is transferred to the <code>FileInputStream</code> instance.</p>
                     <code>
                     <a name="/s:3GIO15FileInputStreamC04filecD0ACx_tcAA0bcD8ProtocolRzlufc"></a>
                     <a name="//apple_ref/swift/Method/init(fileInputStream:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO15FileInputStreamC04filecD0ACx_tcAA0bcD8ProtocolRzlufc">init(fileInputStream:)</a>
+                    <a class="token" href="#/s:3GIO15FileInputStreamC04filecD0ACx_tcAA0bcD8ProtocolRzlufc">init(fileInputStream:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8027,7 +8049,7 @@ Will retain <code>GFileInputStream</code>.</p>
                     <code>
                     <a name="/s:3GIO15FileInputStreamC8cPointerACSpyxG_tclufc"></a>
                     <a name="//apple_ref/swift/Method/init(cPointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO15FileInputStreamC8cPointerACSpyxG_tclufc">init(cPointer:)</a>
+                    <a class="token" href="#/s:3GIO15FileInputStreamC8cPointerACSpyxG_tclufc">init(cPointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8078,7 +8100,7 @@ Will retain <code>GFileInputStream</code>.</p>
                     <code>
                     <a name="/s:3GIO15FileInputStreamC17retainingCPointerACSpyxG_tclufc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingCPointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO15FileInputStreamC17retainingCPointerACSpyxG_tclufc">init(retainingCPointer:)</a>
+                    <a class="token" href="#/s:3GIO15FileInputStreamC17retainingCPointerACSpyxG_tclufc">init(retainingCPointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8129,7 +8151,7 @@ Will retain <code>GFileInputStream</code>.</p>
                     <code>
                     <a name="/s:3GIO15FileInputStreamC3rawACSV_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO15FileInputStreamC3rawACSV_tcfc">init(raw:)</a>
+                    <a class="token" href="#/s:3GIO15FileInputStreamC3rawACSV_tcfc">init(raw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8180,7 +8202,7 @@ Will retain <code>GFileInputStream</code>.</p>
                     <code>
                     <a name="/s:3GIO15FileInputStreamC12retainingRawACSV_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingRaw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO15FileInputStreamC12retainingRawACSV_tcfc">init(retainingRaw:)</a>
+                    <a class="token" href="#/s:3GIO15FileInputStreamC12retainingRawACSV_tcfc">init(retainingRaw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8212,7 +8234,7 @@ Will retain <code>GFileInputStream</code>.</p>
                     <code>
                     <a name="/s:3GIO15FileInputStreamC3rawACSv_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO15FileInputStreamC3rawACSv_tcfc">init(raw:)</a>
+                    <a class="token" href="#/s:3GIO15FileInputStreamC3rawACSv_tcfc">init(raw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8263,7 +8285,7 @@ Will retain <code>GFileInputStream</code>.</p>
                     <code>
                     <a name="/s:3GIO15FileInputStreamC12retainingRawACSv_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingRaw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO15FileInputStreamC12retainingRawACSv_tcfc">init(retainingRaw:)</a>
+                    <a class="token" href="#/s:3GIO15FileInputStreamC12retainingRawACSv_tcfc">init(retainingRaw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8314,7 +8336,7 @@ Will retain <code>GFileInputStream</code>.</p>
                     <code>
                     <a name="/s:3GIO15FileInputStreamC13opaquePointerACs06OpaqueF0V_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(opaquePointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO15FileInputStreamC13opaquePointerACs06OpaqueF0V_tcfc">init(opaquePointer:)</a>
+                    <a class="token" href="#/s:3GIO15FileInputStreamC13opaquePointerACs06OpaqueF0V_tcfc">init(opaquePointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8365,7 +8387,7 @@ Will retain <code>GFileInputStream</code>.</p>
                     <code>
                     <a name="/s:3GIO15FileInputStreamC22retainingOpaquePointerACs0fG0V_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingOpaquePointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO15FileInputStreamC22retainingOpaquePointerACs0fG0V_tcfc">init(retainingOpaquePointer:)</a>
+                    <a class="token" href="#/s:3GIO15FileInputStreamC22retainingOpaquePointerACs0fG0V_tcfc">init(retainingOpaquePointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8419,8 +8441,8 @@ Will retain <code>GFileInputStream</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.ict.griffith.edu.au/~rhexel/" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2020-09-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

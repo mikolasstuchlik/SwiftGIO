@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          GIO 2.64.4 Docs
+          GIO 2.66.4 Docs
         </a>
-         (88% documented)
+         (89% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx%2Egithub%2Eio%2FSwiftGIO%2Fdocsets%2FGIO%2Exml">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx.github.io%2FSwiftGIO%2Fdocsets%2FGIO.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -2205,6 +2205,12 @@
                 <a class="nav-group-task-link" href="../Extensions/TLSCertificateRequestFlags.html">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingError.html">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingType.html">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/TLSDatabaseLookupFlags.html">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -2648,6 +2654,9 @@
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO20tlsBackendGetDefaultAA13TLSBackendRefVSgyF">tlsBackendGetDefault()</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27tlsChannelBindingErrorQuarks6UInt32VyF">tlsChannelBindingErrorQuark()</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO22tlsClientConnectionNew12baseIoStream14serverIdentityAA09TLSClientD3RefVSgx_AA017SocketConnectableL0VSgtKAA16IOStreamProtocolRzlF">tlsClientConnectionNew(baseIoStream:serverIdentity:)</a>
               </li>
               <li class="nav-group-task">
@@ -2724,6 +2733,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO25unixMountIsSystemInternal10mountEntrySbx_tAA04UnixcH8ProtocolRzlF">unixMountIsSystemInternal(mountEntry:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO16unixMountPointAt9mountPath8timeReadAA04UnixcD3RefVSgSPys4Int8VGSg_Spys6UInt64VGSgtF">unixMountPointAt(mountPath:timeRead:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27unixMountPointsChangedSince4timeSbs6UInt64V_tF">unixMountPointsChangedSince(time:)</a>
@@ -5243,6 +5255,12 @@
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO26TLSCertificateRequestFlagsa">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSChannelBindingErrora">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO21TLSChannelBindingTypea">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSDatabaseLookupFlagsa">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -7578,6 +7596,7 @@
             <h1>Task</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">Task</span> <span class="p">:</span> <span class="kt">GLibObject</span><span class="o">.</span><span class="kt">Object</span><span class="p">,</span> <span class="kt"><a href="../Protocols/TaskProtocol.html">TaskProtocol</a></span></code></pre>
 
                 </div>
@@ -8083,6 +8102,9 @@ function (for &ldquo;short-circuit&rdquo; results, such as when passing
 0 to <code>g_input_stream_read_async()</code>).</li>
 </ul>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L16307-L16454">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -8095,7 +8117,7 @@ function (for &ldquo;short-circuit&rdquo; results, such as when passing
                     <code>
                     <a name="/s:3GIO4TaskCyACSpySo6_GTaskVGcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4TaskCyACSpySo6_GTaskVGcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO4TaskCyACSpySo6_GTaskVGcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8139,7 +8161,7 @@ i.e., ownership is transferred to the <code>Task</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L16297-L16299">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L16312-L16314">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8149,7 +8171,7 @@ i.e., ownership is transferred to the <code>Task</code> instance.</p>
                     <code>
                     <a name="/s:3GIO4TaskCyACSPySo6_GTaskVGcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4TaskCyACSPySo6_GTaskVGcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO4TaskCyACSPySo6_GTaskVGcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8191,7 +8213,7 @@ i.e., ownership is transferred to the <code>Task</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L16305-L16307">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L16320-L16322">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8201,7 +8223,7 @@ i.e., ownership is transferred to the <code>Task</code> instance.</p>
                     <code>
                     <a name="/s:3GIO4TaskC8gpointerACSgSvSg_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(gpointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4TaskC8gpointerACSgSvSg_tcfc">init(gpointer:)</a>
+                    <a class="token" href="#/s:3GIO4TaskC8gpointerACSgSvSg_tcfc">init(gpointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8244,7 +8266,7 @@ i.e., ownership is transferred to the <code>Task</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L16314-L16317">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L16329-L16332">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8254,7 +8276,7 @@ i.e., ownership is transferred to the <code>Task</code> instance.</p>
                     <code>
                     <a name="/s:3GIO4TaskC13gconstpointerACSgSVSg_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(gconstpointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4TaskC13gconstpointerACSgSVSg_tcfc">init(gconstpointer:)</a>
+                    <a class="token" href="#/s:3GIO4TaskC13gconstpointerACSgSVSg_tcfc">init(gconstpointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8297,7 +8319,7 @@ i.e., ownership is transferred to the <code>Task</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L16324-L16327">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L16339-L16342">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8307,7 +8329,7 @@ i.e., ownership is transferred to the <code>Task</code> instance.</p>
                     <code>
                     <a name="/s:3GIO4TaskCyACSgSPySo6_GTaskVGSgcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4TaskCyACSgSPySo6_GTaskVGSgcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO4TaskCyACSgSPySo6_GTaskVGSgcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8349,7 +8371,7 @@ i.e., ownership is transferred to the <code>Task</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L16333-L16336">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L16348-L16351">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8359,7 +8381,7 @@ i.e., ownership is transferred to the <code>Task</code> instance.</p>
                     <code>
                     <a name="/s:3GIO4TaskCyACSgSpySo6_GTaskVGSgcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4TaskCyACSgSpySo6_GTaskVGSgcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO4TaskCyACSgSpySo6_GTaskVGSgcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8401,7 +8423,7 @@ i.e., ownership is transferred to the <code>Task</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L16342-L16345">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L16357-L16360">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8411,7 +8433,7 @@ i.e., ownership is transferred to the <code>Task</code> instance.</p>
                     <code>
                     <a name="/s:3GIO4TaskC9retainingACSpySo6_GTaskVG_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retaining:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4TaskC9retainingACSpySo6_GTaskVG_tcfc">init(retaining:)</a>
+                    <a class="token" href="#/s:3GIO4TaskC9retainingACSpySo6_GTaskVG_tcfc">init(retaining:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8453,7 +8475,7 @@ i.e., ownership is transferred to the <code>Task</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L16351-L16353">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L16366-L16368">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8463,7 +8485,7 @@ i.e., ownership is transferred to the <code>Task</code> instance.</p>
                     <code>
                     <a name="/s:3GIO4TaskC4taskACx_tcAA0B8ProtocolRzlufc"></a>
                     <a name="//apple_ref/swift/Method/init(task:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4TaskC4taskACx_tcAA0B8ProtocolRzlufc">init(task:)</a>
+                    <a class="token" href="#/s:3GIO4TaskC4taskACx_tcAA0B8ProtocolRzlufc">init(task:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8504,7 +8526,7 @@ Will retain <code>GTask</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L16358-L16360">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L16373-L16375">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8514,7 +8536,7 @@ Will retain <code>GTask</code>.</p>
                     <code>
                     <a name="/s:3GIO4TaskC8cPointerACSpyxG_tclufc"></a>
                     <a name="//apple_ref/swift/Method/init(cPointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4TaskC8cPointerACSpyxG_tclufc">init(cPointer:)</a>
+                    <a class="token" href="#/s:3GIO4TaskC8cPointerACSpyxG_tclufc">init(cPointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8555,7 +8577,7 @@ Will retain <code>GTask</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L16365-L16367">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L16380-L16382">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8565,7 +8587,7 @@ Will retain <code>GTask</code>.</p>
                     <code>
                     <a name="/s:3GIO4TaskC17retainingCPointerACSpyxG_tclufc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingCPointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4TaskC17retainingCPointerACSpyxG_tclufc">init(retainingCPointer:)</a>
+                    <a class="token" href="#/s:3GIO4TaskC17retainingCPointerACSpyxG_tclufc">init(retainingCPointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8606,7 +8628,7 @@ Will retain <code>GTask</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L16372-L16374">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L16387-L16389">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8616,7 +8638,7 @@ Will retain <code>GTask</code>.</p>
                     <code>
                     <a name="/s:3GIO4TaskC3rawACSV_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4TaskC3rawACSV_tcfc">init(raw:)</a>
+                    <a class="token" href="#/s:3GIO4TaskC3rawACSV_tcfc">init(raw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8657,7 +8679,7 @@ Will retain <code>GTask</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L16379-L16381">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L16394-L16396">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8667,7 +8689,7 @@ Will retain <code>GTask</code>.</p>
                     <code>
                     <a name="/s:3GIO4TaskC12retainingRawACSV_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingRaw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4TaskC12retainingRawACSV_tcfc">init(retainingRaw:)</a>
+                    <a class="token" href="#/s:3GIO4TaskC12retainingRawACSV_tcfc">init(retainingRaw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8689,7 +8711,7 @@ Will retain <code>GTask</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L16385-L16387">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L16400-L16402">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8699,7 +8721,7 @@ Will retain <code>GTask</code>.</p>
                     <code>
                     <a name="/s:3GIO4TaskC3rawACSv_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4TaskC3rawACSv_tcfc">init(raw:)</a>
+                    <a class="token" href="#/s:3GIO4TaskC3rawACSv_tcfc">init(raw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8740,7 +8762,7 @@ Will retain <code>GTask</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L16392-L16394">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L16407-L16409">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8750,7 +8772,7 @@ Will retain <code>GTask</code>.</p>
                     <code>
                     <a name="/s:3GIO4TaskC12retainingRawACSv_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingRaw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4TaskC12retainingRawACSv_tcfc">init(retainingRaw:)</a>
+                    <a class="token" href="#/s:3GIO4TaskC12retainingRawACSv_tcfc">init(retainingRaw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8791,7 +8813,7 @@ Will retain <code>GTask</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L16399-L16401">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L16414-L16416">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8801,7 +8823,7 @@ Will retain <code>GTask</code>.</p>
                     <code>
                     <a name="/s:3GIO4TaskC13opaquePointerACs06OpaqueD0V_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(opaquePointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4TaskC13opaquePointerACs06OpaqueD0V_tcfc">init(opaquePointer:)</a>
+                    <a class="token" href="#/s:3GIO4TaskC13opaquePointerACs06OpaqueD0V_tcfc">init(opaquePointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8842,7 +8864,7 @@ Will retain <code>GTask</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L16406-L16408">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L16421-L16423">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8852,7 +8874,7 @@ Will retain <code>GTask</code>.</p>
                     <code>
                     <a name="/s:3GIO4TaskC22retainingOpaquePointerACs0dE0V_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingOpaquePointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4TaskC22retainingOpaquePointerACs0dE0V_tcfc">init(retainingOpaquePointer:)</a>
+                    <a class="token" href="#/s:3GIO4TaskC22retainingOpaquePointerACs0dE0V_tcfc">init(retainingOpaquePointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8893,7 +8915,7 @@ Will retain <code>GTask</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L16413-L16415">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L16428-L16430">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8903,7 +8925,7 @@ Will retain <code>GTask</code>.</p>
                     <code>
                     <a name="/s:3GIO4TaskC12sourceObject11cancellable8callback0F4DataACq_Sg_xSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgARtcAA19CancellableProtocolRz04GLibD00dL0R_r0_lufc"></a>
                     <a name="//apple_ref/swift/Method/init(sourceObject:cancellable:callback:callbackData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4TaskC12sourceObject11cancellable8callback0F4DataACq_Sg_xSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgARtcAA19CancellableProtocolRz04GLibD00dL0R_r0_lufc">init(sourceObject:cancellable:callback:callbackData:)</a>
+                    <a class="token" href="#/s:3GIO4TaskC12sourceObject11cancellable8callback0F4DataACq_Sg_xSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgARtcAA19CancellableProtocolRz04GLibD00dL0R_r0_lufc">init(sourceObject:<wbr>cancellable:<wbr>callback:<wbr>callbackData:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8939,7 +8961,7 @@ do not want this behavior, you can use
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L16433-L16436">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L16448-L16451">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8952,8 +8974,8 @@ do not want this behavior, you can use
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.ict.griffith.edu.au/~rhexel/" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2020-09-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

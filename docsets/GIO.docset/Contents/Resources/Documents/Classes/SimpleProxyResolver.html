@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          GIO 2.64.4 Docs
+          GIO 2.66.4 Docs
         </a>
-         (88% documented)
+         (89% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx%2Egithub%2Eio%2FSwiftGIO%2Fdocsets%2FGIO%2Exml">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx.github.io%2FSwiftGIO%2Fdocsets%2FGIO.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -2205,6 +2205,12 @@
                 <a class="nav-group-task-link" href="../Extensions/TLSCertificateRequestFlags.html">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingError.html">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingType.html">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/TLSDatabaseLookupFlags.html">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -2648,6 +2654,9 @@
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO20tlsBackendGetDefaultAA13TLSBackendRefVSgyF">tlsBackendGetDefault()</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27tlsChannelBindingErrorQuarks6UInt32VyF">tlsChannelBindingErrorQuark()</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO22tlsClientConnectionNew12baseIoStream14serverIdentityAA09TLSClientD3RefVSgx_AA017SocketConnectableL0VSgtKAA16IOStreamProtocolRzlF">tlsClientConnectionNew(baseIoStream:serverIdentity:)</a>
               </li>
               <li class="nav-group-task">
@@ -2724,6 +2733,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO25unixMountIsSystemInternal10mountEntrySbx_tAA04UnixcH8ProtocolRzlF">unixMountIsSystemInternal(mountEntry:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO16unixMountPointAt9mountPath8timeReadAA04UnixcD3RefVSgSPys4Int8VGSg_Spys6UInt64VGSgtF">unixMountPointAt(mountPath:timeRead:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27unixMountPointsChangedSince4timeSbs6UInt64V_tF">unixMountPointsChangedSince(time:)</a>
@@ -5243,6 +5255,12 @@
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO26TLSCertificateRequestFlagsa">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSChannelBindingErrora">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO21TLSChannelBindingTypea">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSDatabaseLookupFlagsa">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -7578,6 +7596,7 @@
             <h1>SimpleProxyResolver</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">SimpleProxyResolver</span> <span class="p">:</span> <span class="kt">GLibObject</span><span class="o">.</span><span class="kt">Object</span><span class="p">,</span> <span class="kt"><a href="../Protocols/SimpleProxyResolverProtocol.html">SimpleProxyResolverProtocol</a></span></code></pre>
 
                 </div>
@@ -7595,6 +7614,9 @@ can be used as the base class for another proxy resolver
 implementation, or it can be created and used manually, such as
 with <code>g_socket_client_set_proxy_resolver()</code>.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L5781-L5908">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -7607,7 +7629,7 @@ with <code>g_socket_client_set_proxy_resolver()</code>.</p>
                     <code>
                     <a name="/s:3GIO19SimpleProxyResolverCyACSpySo08_GSimplecD0VGcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19SimpleProxyResolverCyACSpySo08_GSimplecD0VGcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO19SimpleProxyResolverCyACSpySo08_GSimplecD0VGcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7651,7 +7673,7 @@ i.e., ownership is transferred to the <code>SimpleProxyResolver</code> instance.
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L5774-L5776">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L5786-L5788">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7661,7 +7683,7 @@ i.e., ownership is transferred to the <code>SimpleProxyResolver</code> instance.
                     <code>
                     <a name="/s:3GIO19SimpleProxyResolverCyACSPySo08_GSimplecD0VGcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19SimpleProxyResolverCyACSPySo08_GSimplecD0VGcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO19SimpleProxyResolverCyACSPySo08_GSimplecD0VGcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7703,7 +7725,7 @@ i.e., ownership is transferred to the <code>SimpleProxyResolver</code> instance.
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L5782-L5784">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L5794-L5796">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7713,7 +7735,7 @@ i.e., ownership is transferred to the <code>SimpleProxyResolver</code> instance.
                     <code>
                     <a name="/s:3GIO19SimpleProxyResolverC8gpointerACSgSvSg_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(gpointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19SimpleProxyResolverC8gpointerACSgSvSg_tcfc">init(gpointer:)</a>
+                    <a class="token" href="#/s:3GIO19SimpleProxyResolverC8gpointerACSgSvSg_tcfc">init(gpointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7756,7 +7778,7 @@ i.e., ownership is transferred to the <code>SimpleProxyResolver</code> instance.
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L5791-L5794">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L5803-L5806">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7766,7 +7788,7 @@ i.e., ownership is transferred to the <code>SimpleProxyResolver</code> instance.
                     <code>
                     <a name="/s:3GIO19SimpleProxyResolverC13gconstpointerACSgSVSg_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(gconstpointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19SimpleProxyResolverC13gconstpointerACSgSVSg_tcfc">init(gconstpointer:)</a>
+                    <a class="token" href="#/s:3GIO19SimpleProxyResolverC13gconstpointerACSgSVSg_tcfc">init(gconstpointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7809,7 +7831,7 @@ i.e., ownership is transferred to the <code>SimpleProxyResolver</code> instance.
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L5801-L5804">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L5813-L5816">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7819,7 +7841,7 @@ i.e., ownership is transferred to the <code>SimpleProxyResolver</code> instance.
                     <code>
                     <a name="/s:3GIO19SimpleProxyResolverCyACSgSPySo08_GSimplecD0VGSgcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19SimpleProxyResolverCyACSgSPySo08_GSimplecD0VGSgcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO19SimpleProxyResolverCyACSgSPySo08_GSimplecD0VGSgcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7861,7 +7883,7 @@ i.e., ownership is transferred to the <code>SimpleProxyResolver</code> instance.
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L5810-L5813">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L5822-L5825">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7871,7 +7893,7 @@ i.e., ownership is transferred to the <code>SimpleProxyResolver</code> instance.
                     <code>
                     <a name="/s:3GIO19SimpleProxyResolverCyACSgSpySo08_GSimplecD0VGSgcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19SimpleProxyResolverCyACSgSpySo08_GSimplecD0VGSgcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO19SimpleProxyResolverCyACSgSpySo08_GSimplecD0VGSgcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7913,7 +7935,7 @@ i.e., ownership is transferred to the <code>SimpleProxyResolver</code> instance.
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L5819-L5822">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L5831-L5834">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7923,7 +7945,7 @@ i.e., ownership is transferred to the <code>SimpleProxyResolver</code> instance.
                     <code>
                     <a name="/s:3GIO19SimpleProxyResolverC9retainingACSpySo08_GSimplecD0VG_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retaining:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19SimpleProxyResolverC9retainingACSpySo08_GSimplecD0VG_tcfc">init(retaining:)</a>
+                    <a class="token" href="#/s:3GIO19SimpleProxyResolverC9retainingACSpySo08_GSimplecD0VG_tcfc">init(retaining:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7965,7 +7987,7 @@ i.e., ownership is transferred to the <code>SimpleProxyResolver</code> instance.
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L5828-L5830">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L5840-L5842">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7975,7 +7997,7 @@ i.e., ownership is transferred to the <code>SimpleProxyResolver</code> instance.
                     <code>
                     <a name="/s:3GIO19SimpleProxyResolverC06simplecD0ACx_tcAA0bcD8ProtocolRzlufc"></a>
                     <a name="//apple_ref/swift/Method/init(simpleProxyResolver:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19SimpleProxyResolverC06simplecD0ACx_tcAA0bcD8ProtocolRzlufc">init(simpleProxyResolver:)</a>
+                    <a class="token" href="#/s:3GIO19SimpleProxyResolverC06simplecD0ACx_tcAA0bcD8ProtocolRzlufc">init(simpleProxyResolver:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8016,7 +8038,7 @@ Will retain <code>GSimpleProxyResolver</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L5835-L5837">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L5847-L5849">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8026,7 +8048,7 @@ Will retain <code>GSimpleProxyResolver</code>.</p>
                     <code>
                     <a name="/s:3GIO19SimpleProxyResolverC8cPointerACSpyxG_tclufc"></a>
                     <a name="//apple_ref/swift/Method/init(cPointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19SimpleProxyResolverC8cPointerACSpyxG_tclufc">init(cPointer:)</a>
+                    <a class="token" href="#/s:3GIO19SimpleProxyResolverC8cPointerACSpyxG_tclufc">init(cPointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8067,7 +8089,7 @@ Will retain <code>GSimpleProxyResolver</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L5842-L5844">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L5854-L5856">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8077,7 +8099,7 @@ Will retain <code>GSimpleProxyResolver</code>.</p>
                     <code>
                     <a name="/s:3GIO19SimpleProxyResolverC17retainingCPointerACSpyxG_tclufc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingCPointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19SimpleProxyResolverC17retainingCPointerACSpyxG_tclufc">init(retainingCPointer:)</a>
+                    <a class="token" href="#/s:3GIO19SimpleProxyResolverC17retainingCPointerACSpyxG_tclufc">init(retainingCPointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8118,7 +8140,7 @@ Will retain <code>GSimpleProxyResolver</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L5849-L5851">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L5861-L5863">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8128,7 +8150,7 @@ Will retain <code>GSimpleProxyResolver</code>.</p>
                     <code>
                     <a name="/s:3GIO19SimpleProxyResolverC3rawACSV_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19SimpleProxyResolverC3rawACSV_tcfc">init(raw:)</a>
+                    <a class="token" href="#/s:3GIO19SimpleProxyResolverC3rawACSV_tcfc">init(raw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8169,7 +8191,7 @@ Will retain <code>GSimpleProxyResolver</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L5856-L5858">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L5868-L5870">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8179,7 +8201,7 @@ Will retain <code>GSimpleProxyResolver</code>.</p>
                     <code>
                     <a name="/s:3GIO19SimpleProxyResolverC12retainingRawACSV_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingRaw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19SimpleProxyResolverC12retainingRawACSV_tcfc">init(retainingRaw:)</a>
+                    <a class="token" href="#/s:3GIO19SimpleProxyResolverC12retainingRawACSV_tcfc">init(retainingRaw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8201,7 +8223,7 @@ Will retain <code>GSimpleProxyResolver</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L5862-L5864">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L5874-L5876">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8211,7 +8233,7 @@ Will retain <code>GSimpleProxyResolver</code>.</p>
                     <code>
                     <a name="/s:3GIO19SimpleProxyResolverC3rawACSv_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19SimpleProxyResolverC3rawACSv_tcfc">init(raw:)</a>
+                    <a class="token" href="#/s:3GIO19SimpleProxyResolverC3rawACSv_tcfc">init(raw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8252,7 +8274,7 @@ Will retain <code>GSimpleProxyResolver</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L5869-L5871">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L5881-L5883">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8262,7 +8284,7 @@ Will retain <code>GSimpleProxyResolver</code>.</p>
                     <code>
                     <a name="/s:3GIO19SimpleProxyResolverC12retainingRawACSv_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingRaw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19SimpleProxyResolverC12retainingRawACSv_tcfc">init(retainingRaw:)</a>
+                    <a class="token" href="#/s:3GIO19SimpleProxyResolverC12retainingRawACSv_tcfc">init(retainingRaw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8303,7 +8325,7 @@ Will retain <code>GSimpleProxyResolver</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L5876-L5878">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L5888-L5890">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8313,7 +8335,7 @@ Will retain <code>GSimpleProxyResolver</code>.</p>
                     <code>
                     <a name="/s:3GIO19SimpleProxyResolverC13opaquePointerACs06OpaqueF0V_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(opaquePointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19SimpleProxyResolverC13opaquePointerACs06OpaqueF0V_tcfc">init(opaquePointer:)</a>
+                    <a class="token" href="#/s:3GIO19SimpleProxyResolverC13opaquePointerACs06OpaqueF0V_tcfc">init(opaquePointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8354,7 +8376,7 @@ Will retain <code>GSimpleProxyResolver</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L5883-L5885">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L5895-L5897">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8364,7 +8386,7 @@ Will retain <code>GSimpleProxyResolver</code>.</p>
                     <code>
                     <a name="/s:3GIO19SimpleProxyResolverC22retainingOpaquePointerACs0fG0V_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingOpaquePointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19SimpleProxyResolverC22retainingOpaquePointerACs0fG0V_tcfc">init(retainingOpaquePointer:)</a>
+                    <a class="token" href="#/s:3GIO19SimpleProxyResolverC22retainingOpaquePointerACs0fG0V_tcfc">init(retainingOpaquePointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8405,7 +8427,7 @@ Will retain <code>GSimpleProxyResolver</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L5890-L5892">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L5902-L5904">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8418,8 +8440,8 @@ Will retain <code>GSimpleProxyResolver</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.ict.griffith.edu.au/~rhexel/" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2020-09-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

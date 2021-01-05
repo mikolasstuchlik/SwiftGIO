@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          GIO 2.64.4 Docs
+          GIO 2.66.4 Docs
         </a>
-         (88% documented)
+         (89% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx%2Egithub%2Eio%2FSwiftGIO%2Fdocsets%2FGIO%2Exml">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx.github.io%2FSwiftGIO%2Fdocsets%2FGIO.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -2205,6 +2205,12 @@
                 <a class="nav-group-task-link" href="../Extensions/TLSCertificateRequestFlags.html">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingError.html">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingType.html">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/TLSDatabaseLookupFlags.html">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -2648,6 +2654,9 @@
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO20tlsBackendGetDefaultAA13TLSBackendRefVSgyF">tlsBackendGetDefault()</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27tlsChannelBindingErrorQuarks6UInt32VyF">tlsChannelBindingErrorQuark()</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO22tlsClientConnectionNew12baseIoStream14serverIdentityAA09TLSClientD3RefVSgx_AA017SocketConnectableL0VSgtKAA16IOStreamProtocolRzlF">tlsClientConnectionNew(baseIoStream:serverIdentity:)</a>
               </li>
               <li class="nav-group-task">
@@ -2724,6 +2733,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO25unixMountIsSystemInternal10mountEntrySbx_tAA04UnixcH8ProtocolRzlF">unixMountIsSystemInternal(mountEntry:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO16unixMountPointAt9mountPath8timeReadAA04UnixcD3RefVSgSPys4Int8VGSg_Spys6UInt64VGSgtF">unixMountPointAt(mountPath:timeRead:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27unixMountPointsChangedSince4timeSbs6UInt64V_tF">unixMountPointsChangedSince(time:)</a>
@@ -5243,6 +5255,12 @@
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO26TLSCertificateRequestFlagsa">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSChannelBindingErrora">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO21TLSChannelBindingTypea">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSDatabaseLookupFlagsa">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -7578,6 +7596,7 @@
             <h1>FileInfoProtocol</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">FileInfoProtocol</span> <span class="p">:</span> <span class="kt">ObjectProtocol</span></code></pre>
 
                 </div>
@@ -7612,6 +7631,9 @@ of a particular file at runtime.</p>
 <p><code>GFileAttributeMatcher</code> allows for searching through a <code>GFileInfo</code> for
 attributes.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-FileIOStream-IOModule.swift#L937-L944">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -7705,7 +7727,7 @@ attributes.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE7connect6signal5flags2toSiAA0bC10SignalNameO_10GLibObject12ConnectFlagsVyyctF"></a>
                     <a name="//apple_ref/swift/Method/connect(signal:flags:to:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE7connect6signal5flags2toSiAA0bC10SignalNameO_10GLibObject12ConnectFlagsVyyctF">connect(signal:flags:to:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE7connect6signal5flags2toSiAA0bC10SignalNameO_10GLibObject12ConnectFlagsVyyctF">connect(signal:<wbr>flags:<wbr>to:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7786,10 +7808,10 @@ attributes.</p>
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/FileInfo%20Class:%20FileInfoProtocol%20extension%20(methods%20and%20fields)"></a>
+                <a name="/FileInfo%20Class%3A%20FileInfoProtocol%20extension%20%28methods%20and%20fields%29"></a>
                 <a name="//apple_ref/swift/Section/FileInfo Class: FileInfoProtocol extension (methods and fields)" class="dashAnchor"></a>
                 <div class="section-name-container">
-                  <a class="section-name-link" href="#/FileInfo%20Class:%20FileInfoProtocol%20extension%20(methods%20and%20fields)"></a>
+                  <a class="section-name-link" href="#/FileInfo%20Class%3A%20FileInfoProtocol%20extension%20%28methods%20and%20fields%29"></a>
                   <h3 class="section-name"><p>FileInfo Class: FileInfoProtocol extension (methods and fields)</p>
 </h3>
                 </div>
@@ -7834,7 +7856,7 @@ attributes.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE8copyInto04destC0yqd___tAaBRd__lF"></a>
                     <a name="//apple_ref/swift/Method/copyInto(destInfo:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE8copyInto04destC0yqd___tAaBRd__lF">copyInto(destInfo:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE8copyInto04destC0yqd___tAaBRd__lF">copyInto(destInfo:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7903,7 +7925,7 @@ and then copies all of the file attributes from <code>src_info</code> to <code>d
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE20getAttributeAsString9attributeSSSgSPys4Int8VGSg_tF"></a>
                     <a name="//apple_ref/swift/Method/getAttributeAsString(attribute:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE20getAttributeAsString9attributeSSSgSPys4Int8VGSg_tF">getAttributeAsString(attribute:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE20getAttributeAsString9attributeSSSgSPys4Int8VGSg_tF">getAttributeAsString(attribute:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7914,7 +7936,7 @@ and then copies all of the file attributes from <code>src_info</code> to <code>d
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Gets the value of a attribute, formated as a string.
+                        <p>Gets the value of a attribute, formatted as a string.
 This escapes things as needed to make the string valid
 UTF-8.</p>
 
@@ -7939,7 +7961,7 @@ UTF-8.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE19getAttributeBoolean9attributeSbSPys4Int8VGSg_tF"></a>
                     <a name="//apple_ref/swift/Method/getAttributeBoolean(attribute:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE19getAttributeBoolean9attributeSbSPys4Int8VGSg_tF">getAttributeBoolean(attribute:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE19getAttributeBoolean9attributeSbSPys4Int8VGSg_tF">getAttributeBoolean(attribute:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7974,7 +7996,7 @@ contain a boolean value, <code>false</code> will be returned.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE22getAttributeByteString9attributeSSSgSPys4Int8VGSg_tF"></a>
                     <a name="//apple_ref/swift/Method/getAttributeByteString(attribute:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE22getAttributeByteString9attributeSSSgSPys4Int8VGSg_tF">getAttributeByteString(attribute:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE22getAttributeByteString9attributeSSSgSPys4Int8VGSg_tF">getAttributeByteString(attribute:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8009,7 +8031,7 @@ not contain a byte string, <code>nil</code> will be returned.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE16getAttributeData9attribute4type7valuePp6statusSbSPys4Int8VGSg_SpySo05GFileF4TypeaGSgSpySvSgGSgSpySo0nF6StatusaGSgtF"></a>
                     <a name="//apple_ref/swift/Method/getAttributeData(attribute:type:valuePp:status:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE16getAttributeData9attribute4type7valuePp6statusSbSPys4Int8VGSg_SpySo05GFileF4TypeaGSgSpySvSgGSgSpySo0nF6StatusaGSgtF">getAttributeData(attribute:type:valuePp:status:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE16getAttributeData9attribute4type7valuePp6statusSbSPys4Int8VGSg_SpySo05GFileF4TypeaGSgSpySvSgGSgSpySo0nF6StatusaGSgtF">getAttributeData(attribute:<wbr>type:<wbr>valuePp:<wbr>status:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8043,7 +8065,7 @@ not contain a byte string, <code>nil</code> will be returned.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE17getAttributeInt329attributes0G0VSPys4Int8VGSg_tF"></a>
                     <a name="//apple_ref/swift/Method/getAttributeInt32(attribute:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE17getAttributeInt329attributes0G0VSPys4Int8VGSg_tF">getAttributeInt32(attribute:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE17getAttributeInt329attributes0G0VSPys4Int8VGSg_tF">getAttributeInt32(attribute:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8079,7 +8101,7 @@ attribute does not contain a signed 32-bit integer, or is invalid,
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE17getAttributeInt649attributes0G0VSPys4Int8VGSg_tF"></a>
                     <a name="//apple_ref/swift/Method/getAttributeInt64(attribute:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE17getAttributeInt649attributes0G0VSPys4Int8VGSg_tF">getAttributeInt64(attribute:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE17getAttributeInt649attributes0G0VSPys4Int8VGSg_tF">getAttributeInt64(attribute:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8115,7 +8137,7 @@ attribute does not contain a signed 64-bit integer, or is invalid,
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE18getAttributeObject9attribute04GLibG00G3RefVSgSPys4Int8VGSg_tF"></a>
                     <a name="//apple_ref/swift/Method/getAttributeObject(attribute:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE18getAttributeObject9attribute04GLibG00G3RefVSgSPys4Int8VGSg_tF">getAttributeObject(attribute:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE18getAttributeObject9attribute04GLibG00G3RefVSgSPys4Int8VGSg_tF">getAttributeObject(attribute:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8150,7 +8172,7 @@ not contain a <code>GObject</code>, <code>nil</code> will be returned.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE18getAttributeStatus9attributeSo05GFilefG0aSPys4Int8VGSg_tF"></a>
                     <a name="//apple_ref/swift/Method/getAttributeStatus(attribute:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE18getAttributeStatus9attributeSo05GFilefG0aSPys4Int8VGSg_tF">getAttributeStatus(attribute:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE18getAttributeStatus9attributeSo05GFilefG0aSPys4Int8VGSg_tF">getAttributeStatus(attribute:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8184,7 +8206,7 @@ not contain a <code>GObject</code>, <code>nil</code> will be returned.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE18getAttributeString9attributeSSSgSPys4Int8VGSg_tF"></a>
                     <a name="//apple_ref/swift/Method/getAttributeString(attribute:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE18getAttributeString9attributeSSSgSPys4Int8VGSg_tF">getAttributeString(attribute:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE18getAttributeString9attributeSSSgSPys4Int8VGSg_tF">getAttributeString(attribute:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8219,7 +8241,7 @@ not contain a string, <code>nil</code> will be returned.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE19getAttributeStringv9attributeSpySpys4Int8VGSgGSgSPyAGGSg_tF"></a>
                     <a name="//apple_ref/swift/Method/getAttributeStringv(attribute:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE19getAttributeStringv9attributeSpySpys4Int8VGSgGSgSPyAGGSg_tF">getAttributeStringv(attribute:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE19getAttributeStringv9attributeSpySpys4Int8VGSgGSgSPyAGGSg_tF">getAttributeStringv(attribute:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8254,7 +8276,7 @@ not contain a stringv, <code>nil</code> will be returned.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE16getAttributeType9attributeSo05GFilefG0aSPys4Int8VGSg_tF"></a>
                     <a name="//apple_ref/swift/Method/getAttributeType(attribute:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE16getAttributeType9attributeSo05GFilefG0aSPys4Int8VGSg_tF">getAttributeType(attribute:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE16getAttributeType9attributeSo05GFilefG0aSPys4Int8VGSg_tF">getAttributeType(attribute:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8288,7 +8310,7 @@ not contain a stringv, <code>nil</code> will be returned.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE18getAttributeUint329attributes6UInt32VSPys4Int8VGSg_tF"></a>
                     <a name="//apple_ref/swift/Method/getAttributeUint32(attribute:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE18getAttributeUint329attributes6UInt32VSPys4Int8VGSg_tF">getAttributeUint32(attribute:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE18getAttributeUint329attributes6UInt32VSPys4Int8VGSg_tF">getAttributeUint32(attribute:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8324,7 +8346,7 @@ attribute does not contain an unsigned 32-bit integer, or is invalid,
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE18getAttributeUint649attributes6UInt64VSPys4Int8VGSg_tF"></a>
                     <a name="//apple_ref/swift/Method/getAttributeUint64(attribute:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE18getAttributeUint649attributes6UInt64VSPys4Int8VGSg_tF">getAttributeUint64(attribute:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE18getAttributeUint649attributes6UInt64VSPys4Int8VGSg_tF">getAttributeUint64(attribute:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8441,7 +8463,7 @@ G_FILE_ATTRIBUTE_TRASH_DELETION_DATE attribute is unset, <code>nil</code> is ret
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Gets a display name for a file.</p>
+                        <p>Gets a display name for a file. This is guaranteed to always be set.</p>
 
                       </div>
                       <div class="declaration">
@@ -8743,7 +8765,7 @@ will have microsecond precision.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE19getModificationTime6resultyqd___t4GLib0g3ValD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/getModificationTime(result:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE19getModificationTime6resultyqd___t4GLib0g3ValD0Rd__lF">getModificationTime(result:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE19getModificationTime6resultyqd___t4GLib0g3ValD0Rd__lF">getModificationTime(result:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8794,7 +8816,7 @@ Use g_file_info_get_modification_date_time() instead, as
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Gets the name for a file.</p>
+                        <p>Gets the name for a file. This is guaranteed to always be set.</p>
 
                       </div>
                       <div class="declaration">
@@ -8954,7 +8976,7 @@ See <code>G_FILE_ATTRIBUTE_STANDARD_SORT_ORDER</code>.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE3has9attributeSbSPys4Int8VGSg_tF"></a>
                     <a name="//apple_ref/swift/Method/has(attribute:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE3has9attributeSbSPys4Int8VGSg_tF">has(attribute:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE3has9attributeSbSPys4Int8VGSg_tF">has(attribute:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8988,7 +9010,7 @@ See <code>G_FILE_ATTRIBUTE_STANDARD_SORT_ORDER</code>.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE12hasNamespace9nameSpaceSbSPys4Int8VGSg_tF"></a>
                     <a name="//apple_ref/swift/Method/hasNamespace(nameSpace:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE12hasNamespace9nameSpaceSbSPys4Int8VGSg_tF">hasNamespace(nameSpace:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE12hasNamespace9nameSpaceSbSPys4Int8VGSg_tF">hasNamespace(nameSpace:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9023,7 +9045,7 @@ specified <code>name_space</code>.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE14listAttributes9nameSpaceSpySpys4Int8VGSgGSgSPyAGGSg_tF"></a>
                     <a name="//apple_ref/swift/Method/listAttributes(nameSpace:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE14listAttributes9nameSpaceSpySpys4Int8VGSgGSgSPyAGGSg_tF">listAttributes(nameSpace:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE14listAttributes9nameSpaceSpySpys4Int8VGSgGSgSPyAGGSg_tF">listAttributes(nameSpace:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9057,7 +9079,7 @@ specified <code>name_space</code>.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE6remove9attributeySPys4Int8VGSg_tF"></a>
                     <a name="//apple_ref/swift/Method/remove(attribute:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE6remove9attributeySPys4Int8VGSg_tF">remove(attribute:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE6remove9attributeySPys4Int8VGSg_tF">remove(attribute:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9091,7 +9113,7 @@ specified <code>name_space</code>.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE3set9attribute4type6valuePySPys4Int8VGSg_So18GFileAttributeTypeaSvSgtF"></a>
                     <a name="//apple_ref/swift/Method/set(attribute:type:valueP:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE3set9attribute4type6valuePySPys4Int8VGSg_So18GFileAttributeTypeaSvSgtF">set(attribute:type:valueP:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE3set9attribute4type6valuePySPys4Int8VGSg_So18GFileAttributeTypeaSvSgtF">set(attribute:<wbr>type:<wbr>valueP:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9126,7 +9148,7 @@ attribute, use <code>G_FILE_ATTRIBUTE_TYPE_INVALID</code> for <code>type</code>.
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE19setAttributeBoolean9attribute9attrValueySPys4Int8VGSg_SbtF"></a>
                     <a name="//apple_ref/swift/Method/setAttributeBoolean(attribute:attrValue:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE19setAttributeBoolean9attribute9attrValueySPys4Int8VGSg_SbtF">setAttributeBoolean(attribute:attrValue:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE19setAttributeBoolean9attribute9attrValueySPys4Int8VGSg_SbtF">setAttributeBoolean(attribute:<wbr>attrValue:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9161,7 +9183,7 @@ if possible.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE22setAttributeByteString9attribute9attrValueySPys4Int8VGSg_AJtF"></a>
                     <a name="//apple_ref/swift/Method/setAttributeByteString(attribute:attrValue:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE22setAttributeByteString9attribute9attrValueySPys4Int8VGSg_AJtF">setAttributeByteString(attribute:attrValue:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE22setAttributeByteString9attribute9attrValueySPys4Int8VGSg_AJtF">setAttributeByteString(attribute:<wbr>attrValue:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9196,7 +9218,7 @@ if possible.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE17setAttributeInt329attribute9attrValueySPys4Int8VGSg_s0G0VtF"></a>
                     <a name="//apple_ref/swift/Method/setAttributeInt32(attribute:attrValue:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE17setAttributeInt329attribute9attrValueySPys4Int8VGSg_s0G0VtF">setAttributeInt32(attribute:attrValue:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE17setAttributeInt329attribute9attrValueySPys4Int8VGSg_s0G0VtF">setAttributeInt32(attribute:<wbr>attrValue:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9231,7 +9253,7 @@ if possible.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE17setAttributeInt649attribute9attrValueySPys4Int8VGSg_s0G0VtF"></a>
                     <a name="//apple_ref/swift/Method/setAttributeInt64(attribute:attrValue:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE17setAttributeInt649attribute9attrValueySPys4Int8VGSg_s0G0VtF">setAttributeInt64(attribute:attrValue:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE17setAttributeInt649attribute9attrValueySPys4Int8VGSg_s0G0VtF">setAttributeInt64(attribute:<wbr>attrValue:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9266,7 +9288,7 @@ if possible.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE12setAttribute4maskyqd___tAA0bf7MatcherD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/setAttribute(mask:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE12setAttribute4maskyqd___tAA0bf7MatcherD0Rd__lF">setAttribute(mask:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE12setAttribute4maskyqd___tAA0bf7MatcherD0Rd__lF">setAttribute(mask:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9300,7 +9322,7 @@ if possible.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE18setAttributeObject9attribute9attrValueySPys4Int8VGSg_qd__t04GLibG00gD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/setAttributeObject(attribute:attrValue:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE18setAttributeObject9attribute9attrValueySPys4Int8VGSg_qd__t04GLibG00gD0Rd__lF">setAttributeObject(attribute:attrValue:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE18setAttributeObject9attribute9attrValueySPys4Int8VGSg_qd__t04GLibG00gD0Rd__lF">setAttributeObject(attribute:<wbr>attrValue:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9335,7 +9357,7 @@ if possible.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE18setAttributeStatus9attribute6statusSbSPys4Int8VGSg_So05GFilefG0atF"></a>
                     <a name="//apple_ref/swift/Method/setAttributeStatus(attribute:status:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE18setAttributeStatus9attribute6statusSbSPys4Int8VGSg_So05GFilefG0atF">setAttributeStatus(attribute:status:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE18setAttributeStatus9attribute6statusSbSPys4Int8VGSg_So05GFilefG0atF">setAttributeStatus(attribute:<wbr>status:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9374,7 +9396,7 @@ is returned and <code>info</code> is unchanged.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE18setAttributeString9attribute9attrValueySPys4Int8VGSg_AJtF"></a>
                     <a name="//apple_ref/swift/Method/setAttributeString(attribute:attrValue:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE18setAttributeString9attribute9attrValueySPys4Int8VGSg_AJtF">setAttributeString(attribute:attrValue:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE18setAttributeString9attribute9attrValueySPys4Int8VGSg_AJtF">setAttributeString(attribute:<wbr>attrValue:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9409,7 +9431,7 @@ if possible.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE19setAttributeStringv9attribute9attrValueySPys4Int8VGSg_SpySpyAHGSgGSgtF"></a>
                     <a name="//apple_ref/swift/Method/setAttributeStringv(attribute:attrValue:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE19setAttributeStringv9attribute9attrValueySPys4Int8VGSg_SpySpyAHGSgGSgtF">setAttributeStringv(attribute:attrValue:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE19setAttributeStringv9attribute9attrValueySPys4Int8VGSg_SpySpyAHGSgGSgtF">setAttributeStringv(attribute:<wbr>attrValue:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9446,7 +9468,7 @@ if possible.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE18setAttributeUint329attribute9attrValueySPys4Int8VGSg_s6UInt32VtF"></a>
                     <a name="//apple_ref/swift/Method/setAttributeUint32(attribute:attrValue:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE18setAttributeUint329attribute9attrValueySPys4Int8VGSg_s6UInt32VtF">setAttributeUint32(attribute:attrValue:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE18setAttributeUint329attribute9attrValueySPys4Int8VGSg_s6UInt32VtF">setAttributeUint32(attribute:<wbr>attrValue:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9481,7 +9503,7 @@ if possible.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE18setAttributeUint649attribute9attrValueySPys4Int8VGSg_s6UInt64VtF"></a>
                     <a name="//apple_ref/swift/Method/setAttributeUint64(attribute:attrValue:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE18setAttributeUint649attribute9attrValueySPys4Int8VGSg_s6UInt64VtF">setAttributeUint64(attribute:attrValue:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE18setAttributeUint649attribute9attrValueySPys4Int8VGSg_s6UInt64VtF">setAttributeUint64(attribute:<wbr>attrValue:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9516,7 +9538,7 @@ if possible.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE3set11contentTypeySPys4Int8VGSg_tF"></a>
                     <a name="//apple_ref/swift/Method/set(contentType:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE3set11contentTypeySPys4Int8VGSg_tF">set(contentType:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE3set11contentTypeySPys4Int8VGSg_tF">set(contentType:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9551,7 +9573,7 @@ See <code>G_FILE_ATTRIBUTE_STANDARD_CONTENT_TYPE</code>.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE3set11displayNameySPys4Int8VGSg_tF"></a>
                     <a name="//apple_ref/swift/Method/set(displayName:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE3set11displayNameySPys4Int8VGSg_tF">set(displayName:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE3set11displayNameySPys4Int8VGSg_tF">set(displayName:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9586,7 +9608,7 @@ See <code>G_FILE_ATTRIBUTE_STANDARD_DISPLAY_NAME</code>.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE3set8editNameySPys4Int8VGSg_tF"></a>
                     <a name="//apple_ref/swift/Method/set(editName:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE3set8editNameySPys4Int8VGSg_tF">set(editName:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE3set8editNameySPys4Int8VGSg_tF">set(editName:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9621,7 +9643,7 @@ See <code>G_FILE_ATTRIBUTE_STANDARD_EDIT_NAME</code>.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE03setB04typeySo9GFileTypea_tF"></a>
                     <a name="//apple_ref/swift/Method/setFile(type:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE03setB04typeySo9GFileTypea_tF">setFile(type:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE03setB04typeySo9GFileTypea_tF">setFile(type:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9656,7 +9678,7 @@ See <code>G_FILE_ATTRIBUTE_STANDARD_TYPE</code>.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE3set4iconyqd___tAA04IconD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/set(icon:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE3set4iconyqd___tAA04IconD0Rd__lF">set(icon:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE3set4iconyqd___tAA04IconD0Rd__lF">set(icon:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9691,7 +9713,7 @@ See <code>G_FILE_ATTRIBUTE_STANDARD_ICON</code>.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE3set8isHiddenySb_tF"></a>
                     <a name="//apple_ref/swift/Method/set(isHidden:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE3set8isHiddenySb_tF">set(isHidden:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE3set8isHiddenySb_tF">set(isHidden:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9726,7 +9748,7 @@ See <code>G_FILE_ATTRIBUTE_STANDARD_IS_HIDDEN</code>.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE3set9isSymlinkySb_tF"></a>
                     <a name="//apple_ref/swift/Method/set(isSymlink:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE3set9isSymlinkySb_tF">set(isSymlink:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE3set9isSymlinkySb_tF">set(isSymlink:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9761,7 +9783,7 @@ See <code>G_FILE_ATTRIBUTE_STANDARD_IS_SYMLINK</code>.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE23setModificationDateTime5mtimeyqd___t4GLib0ghD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/setModificationDateTime(mtime:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE23setModificationDateTime5mtimeyqd___t4GLib0ghD0Rd__lF">setModificationDateTime(mtime:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE23setModificationDateTime5mtimeyqd___t4GLib0ghD0Rd__lF">setModificationDateTime(mtime:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9797,7 +9819,7 @@ given date/time value.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE19setModificationTime5mtimeyqd___t4GLib0g3ValD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/setModificationTime(mtime:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE19setModificationTime5mtimeyqd___t4GLib0g3ValD0Rd__lF">setModificationTime(mtime:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE19setModificationTime5mtimeyqd___t4GLib0g3ValD0Rd__lF">setModificationTime(mtime:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9838,7 +9860,7 @@ Use g_file_info_set_modification_date_time() instead, as
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE3set4nameySPys4Int8VGSg_tF"></a>
                     <a name="//apple_ref/swift/Method/set(name:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE3set4nameySPys4Int8VGSg_tF">set(name:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE3set4nameySPys4Int8VGSg_tF">set(name:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9873,7 +9895,7 @@ See <code>G_FILE_ATTRIBUTE_STANDARD_NAME</code>.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE3set4sizeys5Int64V_tF"></a>
                     <a name="//apple_ref/swift/Method/set(size:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE3set4sizeys5Int64V_tF">set(size:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE3set4sizeys5Int64V_tF">set(size:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9908,7 +9930,7 @@ to the given size.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE3set9sortOrderys5Int32V_tF"></a>
                     <a name="//apple_ref/swift/Method/set(sortOrder:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE3set9sortOrderys5Int32V_tF">set(sortOrder:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE3set9sortOrderys5Int32V_tF">set(sortOrder:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9943,7 +9965,7 @@ to the given size.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE11setSymbolic4iconyqd___tAA04IconD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/setSymbolic(icon:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE11setSymbolic4iconyqd___tAA04IconD0Rd__lF">setSymbolic(icon:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE11setSymbolic4iconyqd___tAA04IconD0Rd__lF">setSymbolic(icon:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9978,7 +10000,7 @@ See <code>G_FILE_ATTRIBUTE_STANDARD_SYMBOLIC_ICON</code>.</p>
                     <code>
                     <a name="/s:3GIO16FileInfoProtocolPAAE3set13symlinkTargetySPys4Int8VGSg_tF"></a>
                     <a name="//apple_ref/swift/Method/set(symlinkTarget:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE3set13symlinkTargetySPys4Int8VGSg_tF">set(symlinkTarget:)</a>
+                    <a class="token" href="#/s:3GIO16FileInfoProtocolPAAE3set13symlinkTargetySPys4Int8VGSg_tF">set(symlinkTarget:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -10129,7 +10151,7 @@ G_FILE_ATTRIBUTE_TRASH_DELETION_DATE attribute is unset, <code>nil</code> is ret
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Gets a display name for a file.</p>
+                        <p>Gets a display name for a file. This is guaranteed to always be set.</p>
 
                       </div>
                       <div class="declaration">
@@ -10442,7 +10464,7 @@ will have microsecond precision.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Gets the name for a file.</p>
+                        <p>Gets the name for a file. This is guaranteed to always be set.</p>
 
                       </div>
                       <div class="declaration">
@@ -10605,8 +10627,8 @@ See <code>G_FILE_ATTRIBUTE_STANDARD_SORT_ORDER</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.ict.griffith.edu.au/~rhexel/" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2020-09-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

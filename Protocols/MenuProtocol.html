@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          GIO 2.64.4 Docs
+          GIO 2.66.4 Docs
         </a>
-         (88% documented)
+         (89% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx%2Egithub%2Eio%2FSwiftGIO%2Fdocsets%2FGIO%2Exml">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx.github.io%2FSwiftGIO%2Fdocsets%2FGIO.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -2205,6 +2205,12 @@
                 <a class="nav-group-task-link" href="../Extensions/TLSCertificateRequestFlags.html">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingError.html">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingType.html">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/TLSDatabaseLookupFlags.html">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -2648,6 +2654,9 @@
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO20tlsBackendGetDefaultAA13TLSBackendRefVSgyF">tlsBackendGetDefault()</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27tlsChannelBindingErrorQuarks6UInt32VyF">tlsChannelBindingErrorQuark()</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO22tlsClientConnectionNew12baseIoStream14serverIdentityAA09TLSClientD3RefVSgx_AA017SocketConnectableL0VSgtKAA16IOStreamProtocolRzlF">tlsClientConnectionNew(baseIoStream:serverIdentity:)</a>
               </li>
               <li class="nav-group-task">
@@ -2724,6 +2733,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO25unixMountIsSystemInternal10mountEntrySbx_tAA04UnixcH8ProtocolRzlF">unixMountIsSystemInternal(mountEntry:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO16unixMountPointAt9mountPath8timeReadAA04UnixcD3RefVSgSPys4Int8VGSg_Spys6UInt64VGSgtF">unixMountPointAt(mountPath:timeRead:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27unixMountPointsChangedSince4timeSbs6UInt64V_tF">unixMountPointsChangedSince(time:)</a>
@@ -5243,6 +5255,12 @@
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO26TLSCertificateRequestFlagsa">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSChannelBindingErrora">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO21TLSChannelBindingTypea">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSDatabaseLookupFlagsa">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -7578,6 +7596,7 @@
             <h1>MenuProtocol</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">MenuProtocol</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/MenuModelProtocol.html">MenuModelProtocol</a></span></code></pre>
 
                 </div>
@@ -7596,6 +7615,9 @@ a regular item, use <code>g_menu_insert()</code>. To add a section, use
 <code>g_menu_insert_section()</code>. To add a submenu, use
 <code>g_menu_insert_submenu()</code>.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-MemoryInputStream-NativeSocketAddress.swift#L1012-L1019">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -7689,7 +7711,7 @@ a regular item, use <code>g_menu_insert()</code>. To add a section, use
                     <code>
                     <a name="/s:3GIO12MenuProtocolPAAE7connect6signal5flags2toSiAA0B10SignalNameO_10GLibObject12ConnectFlagsVyyctF"></a>
                     <a name="//apple_ref/swift/Method/connect(signal:flags:to:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO12MenuProtocolPAAE7connect6signal5flags2toSiAA0B10SignalNameO_10GLibObject12ConnectFlagsVyyctF">connect(signal:flags:to:)</a>
+                    <a class="token" href="#/s:3GIO12MenuProtocolPAAE7connect6signal5flags2toSiAA0B10SignalNameO_10GLibObject12ConnectFlagsVyyctF">connect(signal:<wbr>flags:<wbr>to:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7770,10 +7792,10 @@ a regular item, use <code>g_menu_insert()</code>. To add a section, use
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Menu%20Class:%20MenuProtocol%20extension%20(methods%20and%20fields)"></a>
+                <a name="/Menu%20Class%3A%20MenuProtocol%20extension%20%28methods%20and%20fields%29"></a>
                 <a name="//apple_ref/swift/Section/Menu Class: MenuProtocol extension (methods and fields)" class="dashAnchor"></a>
                 <div class="section-name-container">
-                  <a class="section-name-link" href="#/Menu%20Class:%20MenuProtocol%20extension%20(methods%20and%20fields)"></a>
+                  <a class="section-name-link" href="#/Menu%20Class%3A%20MenuProtocol%20extension%20%28methods%20and%20fields%29"></a>
                   <h3 class="section-name"><p>Menu Class: MenuProtocol extension (methods and fields)</p>
 </h3>
                 </div>
@@ -7784,7 +7806,7 @@ a regular item, use <code>g_menu_insert()</code>. To add a section, use
                     <code>
                     <a name="/s:3GIO12MenuProtocolPAAE6append5label14detailedActionySPys4Int8VGSg_AJtF"></a>
                     <a name="//apple_ref/swift/Method/append(label:detailedAction:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO12MenuProtocolPAAE6append5label14detailedActionySPys4Int8VGSg_AJtF">append(label:detailedAction:)</a>
+                    <a class="token" href="#/s:3GIO12MenuProtocolPAAE6append5label14detailedActionySPys4Int8VGSg_AJtF">append(label:<wbr>detailedAction:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7820,7 +7842,7 @@ flexible alternative.</p>
                     <code>
                     <a name="/s:3GIO12MenuProtocolPAAE6append4itemyqd___tAA0b4ItemC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/append(item:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO12MenuProtocolPAAE6append4itemyqd___tAA0b4ItemC0Rd__lF">append(item:)</a>
+                    <a class="token" href="#/s:3GIO12MenuProtocolPAAE6append4itemyqd___tAA0b4ItemC0Rd__lF">append(item:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7856,7 +7878,7 @@ flexible alternative.</p>
                     <code>
                     <a name="/s:3GIO12MenuProtocolPAAE13appendSection5label7sectionySPys4Int8VGSg_qd__tAA0b5ModelC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/appendSection(label:section:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO12MenuProtocolPAAE13appendSection5label7sectionySPys4Int8VGSg_qd__tAA0b5ModelC0Rd__lF">appendSection(label:section:)</a>
+                    <a class="token" href="#/s:3GIO12MenuProtocolPAAE13appendSection5label7sectionySPys4Int8VGSg_qd__tAA0b5ModelC0Rd__lF">appendSection(label:<wbr>section:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7892,7 +7914,7 @@ more flexible alternative.</p>
                     <code>
                     <a name="/s:3GIO12MenuProtocolPAAE13appendSubmenu5label7submenuySPys4Int8VGSg_qd__tAA0b5ModelC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/appendSubmenu(label:submenu:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO12MenuProtocolPAAE13appendSubmenu5label7submenuySPys4Int8VGSg_qd__tAA0b5ModelC0Rd__lF">appendSubmenu(label:submenu:)</a>
+                    <a class="token" href="#/s:3GIO12MenuProtocolPAAE13appendSubmenu5label7submenuySPys4Int8VGSg_qd__tAA0b5ModelC0Rd__lF">appendSubmenu(label:<wbr>submenu:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7969,7 +7991,7 @@ longer be used.</p>
                     <code>
                     <a name="/s:3GIO12MenuProtocolPAAE6insert8position5label14detailedActionySi_SPys4Int8VGSgAKtF"></a>
                     <a name="//apple_ref/swift/Method/insert(position:label:detailedAction:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO12MenuProtocolPAAE6insert8position5label14detailedActionySi_SPys4Int8VGSgAKtF">insert(position:label:detailedAction:)</a>
+                    <a class="token" href="#/s:3GIO12MenuProtocolPAAE6insert8position5label14detailedActionySi_SPys4Int8VGSgAKtF">insert(position:<wbr>label:<wbr>detailedAction:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8005,7 +8027,7 @@ alternative.</p>
                     <code>
                     <a name="/s:3GIO12MenuProtocolPAAE10insertItem8position4itemySi_qd__tAA0beC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/insertItem(position:item:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO12MenuProtocolPAAE10insertItem8position4itemySi_qd__tAA0beC0Rd__lF">insertItem(position:item:)</a>
+                    <a class="token" href="#/s:3GIO12MenuProtocolPAAE10insertItem8position4itemySi_qd__tAA0beC0Rd__lF">insertItem(position:<wbr>item:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8055,7 +8077,7 @@ each of these functions.</p>
                     <code>
                     <a name="/s:3GIO12MenuProtocolPAAE13insertSection8position5label7sectionySi_SPys4Int8VGSgqd__tAA0b5ModelC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/insertSection(position:label:section:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO12MenuProtocolPAAE13insertSection8position5label7sectionySi_SPys4Int8VGSgqd__tAA0b5ModelC0Rd__lF">insertSection(position:label:section:)</a>
+                    <a class="token" href="#/s:3GIO12MenuProtocolPAAE13insertSection8position5label7sectionySi_SPys4Int8VGSgqd__tAA0b5ModelC0Rd__lF">insertSection(position:<wbr>label:<wbr>section:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8091,7 +8113,7 @@ flexible alternative.</p>
                     <code>
                     <a name="/s:3GIO12MenuProtocolPAAE13insertSubmenu8position5label7submenuySi_SPys4Int8VGSgqd__tAA0b5ModelC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/insertSubmenu(position:label:submenu:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO12MenuProtocolPAAE13insertSubmenu8position5label7submenuySi_SPys4Int8VGSgqd__tAA0b5ModelC0Rd__lF">insertSubmenu(position:label:submenu:)</a>
+                    <a class="token" href="#/s:3GIO12MenuProtocolPAAE13insertSubmenu8position5label7submenuySi_SPys4Int8VGSgqd__tAA0b5ModelC0Rd__lF">insertSubmenu(position:<wbr>label:<wbr>submenu:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8127,7 +8149,7 @@ flexible alternative.</p>
                     <code>
                     <a name="/s:3GIO12MenuProtocolPAAE7prepend5label14detailedActionySPys4Int8VGSg_AJtF"></a>
                     <a name="//apple_ref/swift/Method/prepend(label:detailedAction:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO12MenuProtocolPAAE7prepend5label14detailedActionySPys4Int8VGSg_AJtF">prepend(label:detailedAction:)</a>
+                    <a class="token" href="#/s:3GIO12MenuProtocolPAAE7prepend5label14detailedActionySPys4Int8VGSg_AJtF">prepend(label:<wbr>detailedAction:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8163,7 +8185,7 @@ flexible alternative.</p>
                     <code>
                     <a name="/s:3GIO12MenuProtocolPAAE7prepend4itemyqd___tAA0b4ItemC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/prepend(item:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO12MenuProtocolPAAE7prepend4itemyqd___tAA0b4ItemC0Rd__lF">prepend(item:)</a>
+                    <a class="token" href="#/s:3GIO12MenuProtocolPAAE7prepend4itemyqd___tAA0b4ItemC0Rd__lF">prepend(item:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8199,7 +8221,7 @@ flexible alternative.</p>
                     <code>
                     <a name="/s:3GIO12MenuProtocolPAAE14prependSection5label7sectionySPys4Int8VGSg_qd__tAA0b5ModelC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/prependSection(label:section:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO12MenuProtocolPAAE14prependSection5label7sectionySPys4Int8VGSg_qd__tAA0b5ModelC0Rd__lF">prependSection(label:section:)</a>
+                    <a class="token" href="#/s:3GIO12MenuProtocolPAAE14prependSection5label7sectionySPys4Int8VGSg_qd__tAA0b5ModelC0Rd__lF">prependSection(label:<wbr>section:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8235,7 +8257,7 @@ a more flexible alternative.</p>
                     <code>
                     <a name="/s:3GIO12MenuProtocolPAAE14prependSubmenu5label7submenuySPys4Int8VGSg_qd__tAA0b5ModelC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/prependSubmenu(label:submenu:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO12MenuProtocolPAAE14prependSubmenu5label7submenuySPys4Int8VGSg_qd__tAA0b5ModelC0Rd__lF">prependSubmenu(label:submenu:)</a>
+                    <a class="token" href="#/s:3GIO12MenuProtocolPAAE14prependSubmenu5label7submenuySPys4Int8VGSg_qd__tAA0b5ModelC0Rd__lF">prependSubmenu(label:<wbr>submenu:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8271,7 +8293,7 @@ a more flexible alternative.</p>
                     <code>
                     <a name="/s:3GIO12MenuProtocolPAAE6remove8positionySi_tF"></a>
                     <a name="//apple_ref/swift/Method/remove(position:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO12MenuProtocolPAAE6remove8positionySi_tF">remove(position:)</a>
+                    <a class="token" href="#/s:3GIO12MenuProtocolPAAE6remove8positionySi_tF">remove(position:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8351,8 +8373,8 @@ identity of the item itself is not preserved).</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.ict.griffith.edu.au/~rhexel/" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2020-09-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

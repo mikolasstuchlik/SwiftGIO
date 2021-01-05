@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          GIO 2.64.4 Docs
+          GIO 2.66.4 Docs
         </a>
-         (88% documented)
+         (89% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx%2Egithub%2Eio%2FSwiftGIO%2Fdocsets%2FGIO%2Exml">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx.github.io%2FSwiftGIO%2Fdocsets%2FGIO.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -2205,6 +2205,12 @@
                 <a class="nav-group-task-link" href="../Extensions/TLSCertificateRequestFlags.html">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingError.html">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingType.html">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/TLSDatabaseLookupFlags.html">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -2648,6 +2654,9 @@
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO20tlsBackendGetDefaultAA13TLSBackendRefVSgyF">tlsBackendGetDefault()</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27tlsChannelBindingErrorQuarks6UInt32VyF">tlsChannelBindingErrorQuark()</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO22tlsClientConnectionNew12baseIoStream14serverIdentityAA09TLSClientD3RefVSgx_AA017SocketConnectableL0VSgtKAA16IOStreamProtocolRzlF">tlsClientConnectionNew(baseIoStream:serverIdentity:)</a>
               </li>
               <li class="nav-group-task">
@@ -2724,6 +2733,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO25unixMountIsSystemInternal10mountEntrySbx_tAA04UnixcH8ProtocolRzlF">unixMountIsSystemInternal(mountEntry:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO16unixMountPointAt9mountPath8timeReadAA04UnixcD3RefVSgSPys4Int8VGSg_Spys6UInt64VGSgtF">unixMountPointAt(mountPath:timeRead:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27unixMountPointsChangedSince4timeSbs6UInt64V_tF">unixMountPointsChangedSince(time:)</a>
@@ -5243,6 +5255,12 @@
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO26TLSCertificateRequestFlagsa">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSChannelBindingErrora">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO21TLSChannelBindingTypea">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSDatabaseLookupFlagsa">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -7578,6 +7596,7 @@
             <h1>Application</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">Application</span> <span class="p">:</span> <span class="kt">GLibObject</span><span class="o">.</span><span class="kt">Object</span><span class="p">,</span> <span class="kt"><a href="../Protocols/ApplicationProtocol.html">ApplicationProtocol</a></span></code></pre>
 
                 </div>
@@ -7608,7 +7627,7 @@ desktop login. When your application is launched again, its
 arguments are passed through platform communication to the already
 running program. The already running instance of the program is
 called the &ldquo;primary instance&rdquo;; for non-unique applications this is
-the always the current instance. On Linux, the D-Bus session bus
+always the current instance. On Linux, the D-Bus session bus
 is used for communication.</p>
 
 <p>The use of <code>GApplication</code> differs from some other commonly-used
@@ -7700,6 +7719,9 @@ respectively.</p>
 <p>For an example of using extra D-Bus hooks with GApplication, see
 <a href="https://git.gnome.org/browse/glib/tree/gio/tests/gapplication-example-dbushooks.c">gapplication-example-dbushooks.c</a>.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-AppInfoMonitor-BufferedInputStream.swift#L1297-L1446">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -7712,7 +7734,7 @@ respectively.</p>
                     <code>
                     <a name="/s:3GIO11ApplicationCyACSpySo13_GApplicationVGcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO11ApplicationCyACSpySo13_GApplicationVGcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO11ApplicationCyACSpySo13_GApplicationVGcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7766,7 +7788,7 @@ i.e., ownership is transferred to the <code>Application</code> instance.</p>
                     <code>
                     <a name="/s:3GIO11ApplicationCyACSPySo13_GApplicationVGcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO11ApplicationCyACSPySo13_GApplicationVGcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO11ApplicationCyACSPySo13_GApplicationVGcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7818,7 +7840,7 @@ i.e., ownership is transferred to the <code>Application</code> instance.</p>
                     <code>
                     <a name="/s:3GIO11ApplicationC8gpointerACSgSvSg_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(gpointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO11ApplicationC8gpointerACSgSvSg_tcfc">init(gpointer:)</a>
+                    <a class="token" href="#/s:3GIO11ApplicationC8gpointerACSgSvSg_tcfc">init(gpointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7871,7 +7893,7 @@ i.e., ownership is transferred to the <code>Application</code> instance.</p>
                     <code>
                     <a name="/s:3GIO11ApplicationC13gconstpointerACSgSVSg_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(gconstpointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO11ApplicationC13gconstpointerACSgSVSg_tcfc">init(gconstpointer:)</a>
+                    <a class="token" href="#/s:3GIO11ApplicationC13gconstpointerACSgSVSg_tcfc">init(gconstpointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7924,7 +7946,7 @@ i.e., ownership is transferred to the <code>Application</code> instance.</p>
                     <code>
                     <a name="/s:3GIO11ApplicationCyACSgSPySo13_GApplicationVGSgcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO11ApplicationCyACSgSPySo13_GApplicationVGSgcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO11ApplicationCyACSgSPySo13_GApplicationVGSgcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7976,7 +7998,7 @@ i.e., ownership is transferred to the <code>Application</code> instance.</p>
                     <code>
                     <a name="/s:3GIO11ApplicationCyACSgSpySo13_GApplicationVGSgcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO11ApplicationCyACSgSpySo13_GApplicationVGSgcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO11ApplicationCyACSgSpySo13_GApplicationVGSgcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8028,7 +8050,7 @@ i.e., ownership is transferred to the <code>Application</code> instance.</p>
                     <code>
                     <a name="/s:3GIO11ApplicationC9retainingACSpySo13_GApplicationVG_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retaining:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO11ApplicationC9retainingACSpySo13_GApplicationVG_tcfc">init(retaining:)</a>
+                    <a class="token" href="#/s:3GIO11ApplicationC9retainingACSpySo13_GApplicationVG_tcfc">init(retaining:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8080,7 +8102,7 @@ i.e., ownership is transferred to the <code>Application</code> instance.</p>
                     <code>
                     <a name="/s:3GIO11ApplicationC11applicationACx_tcAA0B8ProtocolRzlufc"></a>
                     <a name="//apple_ref/swift/Method/init(application:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO11ApplicationC11applicationACx_tcAA0B8ProtocolRzlufc">init(application:)</a>
+                    <a class="token" href="#/s:3GIO11ApplicationC11applicationACx_tcAA0B8ProtocolRzlufc">init(application:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8131,7 +8153,7 @@ Will retain <code>GApplication</code>.</p>
                     <code>
                     <a name="/s:3GIO11ApplicationC8cPointerACSpyxG_tclufc"></a>
                     <a name="//apple_ref/swift/Method/init(cPointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO11ApplicationC8cPointerACSpyxG_tclufc">init(cPointer:)</a>
+                    <a class="token" href="#/s:3GIO11ApplicationC8cPointerACSpyxG_tclufc">init(cPointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8182,7 +8204,7 @@ Will retain <code>GApplication</code>.</p>
                     <code>
                     <a name="/s:3GIO11ApplicationC17retainingCPointerACSpyxG_tclufc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingCPointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO11ApplicationC17retainingCPointerACSpyxG_tclufc">init(retainingCPointer:)</a>
+                    <a class="token" href="#/s:3GIO11ApplicationC17retainingCPointerACSpyxG_tclufc">init(retainingCPointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8233,7 +8255,7 @@ Will retain <code>GApplication</code>.</p>
                     <code>
                     <a name="/s:3GIO11ApplicationC3rawACSV_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO11ApplicationC3rawACSV_tcfc">init(raw:)</a>
+                    <a class="token" href="#/s:3GIO11ApplicationC3rawACSV_tcfc">init(raw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8284,7 +8306,7 @@ Will retain <code>GApplication</code>.</p>
                     <code>
                     <a name="/s:3GIO11ApplicationC12retainingRawACSV_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingRaw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO11ApplicationC12retainingRawACSV_tcfc">init(retainingRaw:)</a>
+                    <a class="token" href="#/s:3GIO11ApplicationC12retainingRawACSV_tcfc">init(retainingRaw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8316,7 +8338,7 @@ Will retain <code>GApplication</code>.</p>
                     <code>
                     <a name="/s:3GIO11ApplicationC3rawACSv_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO11ApplicationC3rawACSv_tcfc">init(raw:)</a>
+                    <a class="token" href="#/s:3GIO11ApplicationC3rawACSv_tcfc">init(raw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8367,7 +8389,7 @@ Will retain <code>GApplication</code>.</p>
                     <code>
                     <a name="/s:3GIO11ApplicationC12retainingRawACSv_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingRaw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO11ApplicationC12retainingRawACSv_tcfc">init(retainingRaw:)</a>
+                    <a class="token" href="#/s:3GIO11ApplicationC12retainingRawACSv_tcfc">init(retainingRaw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8418,7 +8440,7 @@ Will retain <code>GApplication</code>.</p>
                     <code>
                     <a name="/s:3GIO11ApplicationC13opaquePointerACs06OpaqueD0V_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(opaquePointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO11ApplicationC13opaquePointerACs06OpaqueD0V_tcfc">init(opaquePointer:)</a>
+                    <a class="token" href="#/s:3GIO11ApplicationC13opaquePointerACs06OpaqueD0V_tcfc">init(opaquePointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8469,7 +8491,7 @@ Will retain <code>GApplication</code>.</p>
                     <code>
                     <a name="/s:3GIO11ApplicationC22retainingOpaquePointerACs0dE0V_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingOpaquePointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO11ApplicationC22retainingOpaquePointerACs0dE0V_tcfc">init(retainingOpaquePointer:)</a>
+                    <a class="token" href="#/s:3GIO11ApplicationC22retainingOpaquePointerACs0dE0V_tcfc">init(retainingOpaquePointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8520,7 +8542,7 @@ Will retain <code>GApplication</code>.</p>
                     <code>
                     <a name="/s:3GIO11ApplicationC13applicationID5flagsACSPys4Int8VGSg_AA0B5FlagsVtcfc"></a>
                     <a name="//apple_ref/swift/Method/init(applicationID:flags:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO11ApplicationC13applicationID5flagsACSPys4Int8VGSg_AA0B5FlagsVtcfc">init(applicationID:flags:)</a>
+                    <a class="token" href="#/s:3GIO11ApplicationC13applicationID5flagsACSPys4Int8VGSg_AA0B5FlagsVtcfc">init(applicationID:<wbr>flags:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8597,8 +8619,8 @@ this by using <code>g_application_set_default()</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.ict.griffith.edu.au/~rhexel/" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2020-09-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

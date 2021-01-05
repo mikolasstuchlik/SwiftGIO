@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          GIO 2.64.4 Docs
+          GIO 2.66.4 Docs
         </a>
-         (88% documented)
+         (89% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx%2Egithub%2Eio%2FSwiftGIO%2Fdocsets%2FGIO%2Exml">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx.github.io%2FSwiftGIO%2Fdocsets%2FGIO.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -2205,6 +2205,12 @@
                 <a class="nav-group-task-link" href="../Extensions/TLSCertificateRequestFlags.html">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingError.html">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingType.html">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/TLSDatabaseLookupFlags.html">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -2648,6 +2654,9 @@
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO20tlsBackendGetDefaultAA13TLSBackendRefVSgyF">tlsBackendGetDefault()</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27tlsChannelBindingErrorQuarks6UInt32VyF">tlsChannelBindingErrorQuark()</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO22tlsClientConnectionNew12baseIoStream14serverIdentityAA09TLSClientD3RefVSgx_AA017SocketConnectableL0VSgtKAA16IOStreamProtocolRzlF">tlsClientConnectionNew(baseIoStream:serverIdentity:)</a>
               </li>
               <li class="nav-group-task">
@@ -2724,6 +2733,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO25unixMountIsSystemInternal10mountEntrySbx_tAA04UnixcH8ProtocolRzlF">unixMountIsSystemInternal(mountEntry:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO16unixMountPointAt9mountPath8timeReadAA04UnixcD3RefVSgSPys4Int8VGSg_Spys6UInt64VGSgtF">unixMountPointAt(mountPath:timeRead:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27unixMountPointsChangedSince4timeSbs6UInt64V_tF">unixMountPointsChangedSince(time:)</a>
@@ -5243,6 +5255,12 @@
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO26TLSCertificateRequestFlagsa">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSChannelBindingErrora">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO21TLSChannelBindingTypea">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSDatabaseLookupFlagsa">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -7578,6 +7596,7 @@
             <h1>SubprocessLauncherRef</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SubprocessLauncherRef</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/SubprocessLauncherProtocol.html">SubprocessLauncherProtocol</a></span></code></pre>
 
                 </div>
@@ -7595,6 +7614,9 @@ popular cases, use of this class allows access to more advanced
 options.  It can also be used to launch multiple subprocesses with
 a similar configuration.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L14073-L14077">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -7630,7 +7652,7 @@ a similar configuration.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L14061">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L14076">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7653,7 +7675,7 @@ a similar configuration.</p>
                     <code>
                     <a name="/s:3GIO21SubprocessLauncherRefVyACSpySo012_GSubprocessC0VGcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO21SubprocessLauncherRefVyACSpySo012_GSubprocessC0VGcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO21SubprocessLauncherRefVyACSpySo012_GSubprocessC0VGcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7674,7 +7696,7 @@ a similar configuration.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L14066-L14068">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L14081-L14083">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7684,7 +7706,7 @@ a similar configuration.</p>
                     <code>
                     <a name="/s:3GIO21SubprocessLauncherRefVyACSPySo012_GSubprocessC0VGcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO21SubprocessLauncherRefVyACSPySo012_GSubprocessC0VGcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO21SubprocessLauncherRefVyACSPySo012_GSubprocessC0VGcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7705,7 +7727,7 @@ a similar configuration.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L14071-L14073">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L14086-L14088">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7715,7 +7737,7 @@ a similar configuration.</p>
                     <code>
                     <a name="/s:3GIO21SubprocessLauncherRefVyACSgSpySo012_GSubprocessC0VGSgcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO21SubprocessLauncherRefVyACSgSpySo012_GSubprocessC0VGSgcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO21SubprocessLauncherRefVyACSgSpySo012_GSubprocessC0VGSgcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7736,7 +7758,7 @@ a similar configuration.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L14076-L14079">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L14091-L14094">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7746,7 +7768,7 @@ a similar configuration.</p>
                     <code>
                     <a name="/s:3GIO21SubprocessLauncherRefVyACSgSPySo012_GSubprocessC0VGSgcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO21SubprocessLauncherRefVyACSgSPySo012_GSubprocessC0VGSgcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO21SubprocessLauncherRefVyACSgSPySo012_GSubprocessC0VGSgcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7767,7 +7789,7 @@ a similar configuration.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L14082-L14085">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L14097-L14100">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7777,7 +7799,7 @@ a similar configuration.</p>
                     <code>
                     <a name="/s:3GIO21SubprocessLauncherRefV8gpointerACSgSvSg_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(gpointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO21SubprocessLauncherRefV8gpointerACSgSvSg_tcfc">init(gpointer:)</a>
+                    <a class="token" href="#/s:3GIO21SubprocessLauncherRefV8gpointerACSgSvSg_tcfc">init(gpointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7798,7 +7820,7 @@ a similar configuration.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L14088-L14091">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L14103-L14106">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7808,7 +7830,7 @@ a similar configuration.</p>
                     <code>
                     <a name="/s:3GIO21SubprocessLauncherRefV13gconstpointerACSgSVSg_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(gconstpointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO21SubprocessLauncherRefV13gconstpointerACSgSVSg_tcfc">init(gconstpointer:)</a>
+                    <a class="token" href="#/s:3GIO21SubprocessLauncherRefV13gconstpointerACSgSVSg_tcfc">init(gconstpointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7829,7 +7851,7 @@ a similar configuration.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L14094-L14097">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L14109-L14112">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7839,7 +7861,7 @@ a similar configuration.</p>
                     <code>
                     <a name="/s:3GIO21SubprocessLauncherRefVyACxcAA0bC8ProtocolRzlufc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO21SubprocessLauncherRefVyACxcAA0bC8ProtocolRzlufc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO21SubprocessLauncherRefVyACxcAA0bC8ProtocolRzlufc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7860,7 +7882,7 @@ a similar configuration.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L14100-L14102">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L14115-L14117">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7870,7 +7892,7 @@ a similar configuration.</p>
                     <code>
                     <a name="/s:3GIO21SubprocessLauncherRefV8cPointerACSpyxG_tclufc"></a>
                     <a name="//apple_ref/swift/Method/init(cPointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO21SubprocessLauncherRefV8cPointerACSpyxG_tclufc">init(cPointer:)</a>
+                    <a class="token" href="#/s:3GIO21SubprocessLauncherRefV8cPointerACSpyxG_tclufc">init(cPointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7892,7 +7914,7 @@ a similar configuration.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L14106-L14108">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L14121-L14123">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7902,7 +7924,7 @@ a similar configuration.</p>
                     <code>
                     <a name="/s:3GIO21SubprocessLauncherRefV12constPointerACSPyxG_tclufc"></a>
                     <a name="//apple_ref/swift/Method/init(constPointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO21SubprocessLauncherRefV12constPointerACSPyxG_tclufc">init(constPointer:)</a>
+                    <a class="token" href="#/s:3GIO21SubprocessLauncherRefV12constPointerACSPyxG_tclufc">init(constPointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7924,7 +7946,7 @@ a similar configuration.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L14112-L14114">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L14127-L14129">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7934,7 +7956,7 @@ a similar configuration.</p>
                     <code>
                     <a name="/s:3GIO21SubprocessLauncherRefV8mutatingACSV_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(mutating:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO21SubprocessLauncherRefV8mutatingACSV_tcfc">init(mutating:)</a>
+                    <a class="token" href="#/s:3GIO21SubprocessLauncherRefV8mutatingACSV_tcfc">init(mutating:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7956,7 +7978,7 @@ a similar configuration.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L14118-L14120">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L14133-L14135">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7966,7 +7988,7 @@ a similar configuration.</p>
                     <code>
                     <a name="/s:3GIO21SubprocessLauncherRefV3rawACSv_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO21SubprocessLauncherRefV3rawACSv_tcfc">init(raw:)</a>
+                    <a class="token" href="#/s:3GIO21SubprocessLauncherRefV3rawACSv_tcfc">init(raw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7988,7 +8010,7 @@ a similar configuration.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L14124-L14126">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L14139-L14141">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7998,7 +8020,7 @@ a similar configuration.</p>
                     <code>
                     <a name="/s:3GIO21SubprocessLauncherRefV13opaquePointerACs06OpaqueF0V_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(opaquePointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO21SubprocessLauncherRefV13opaquePointerACs06OpaqueF0V_tcfc">init(opaquePointer:)</a>
+                    <a class="token" href="#/s:3GIO21SubprocessLauncherRefV13opaquePointerACs06OpaqueF0V_tcfc">init(opaquePointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8020,7 +8042,7 @@ a similar configuration.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L14130-L14132">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L14145-L14147">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8030,7 +8052,7 @@ a similar configuration.</p>
                     <code>
                     <a name="/s:3GIO21SubprocessLauncherRefV5flagsAcA0B5FlagsV_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(flags:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO21SubprocessLauncherRefV5flagsAcA0B5FlagsV_tcfc">init(flags:)</a>
+                    <a class="token" href="#/s:3GIO21SubprocessLauncherRefV5flagsAcA0B5FlagsV_tcfc">init(flags:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8056,7 +8078,7 @@ and will be used as the environment that the process is launched in.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L14139-L14142">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L14154-L14157">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8069,8 +8091,8 @@ and will be used as the environment that the process is launched in.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.ict.griffith.edu.au/~rhexel/" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2020-09-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

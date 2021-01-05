@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          GIO 2.64.4 Docs
+          GIO 2.66.4 Docs
         </a>
-         (88% documented)
+         (89% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx%2Egithub%2Eio%2FSwiftGIO%2Fdocsets%2FGIO%2Exml">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx.github.io%2FSwiftGIO%2Fdocsets%2FGIO.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -2205,6 +2205,12 @@
                 <a class="nav-group-task-link" href="../Extensions/TLSCertificateRequestFlags.html">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingError.html">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingType.html">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/TLSDatabaseLookupFlags.html">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -2648,6 +2654,9 @@
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO20tlsBackendGetDefaultAA13TLSBackendRefVSgyF">tlsBackendGetDefault()</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27tlsChannelBindingErrorQuarks6UInt32VyF">tlsChannelBindingErrorQuark()</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO22tlsClientConnectionNew12baseIoStream14serverIdentityAA09TLSClientD3RefVSgx_AA017SocketConnectableL0VSgtKAA16IOStreamProtocolRzlF">tlsClientConnectionNew(baseIoStream:serverIdentity:)</a>
               </li>
               <li class="nav-group-task">
@@ -2724,6 +2733,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO25unixMountIsSystemInternal10mountEntrySbx_tAA04UnixcH8ProtocolRzlF">unixMountIsSystemInternal(mountEntry:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO16unixMountPointAt9mountPath8timeReadAA04UnixcD3RefVSgSPys4Int8VGSg_Spys6UInt64VGSgtF">unixMountPointAt(mountPath:timeRead:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27unixMountPointsChangedSince4timeSbs6UInt64V_tF">unixMountPointsChangedSince(time:)</a>
@@ -5243,6 +5255,12 @@
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO26TLSCertificateRequestFlagsa">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSChannelBindingErrora">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO21TLSChannelBindingTypea">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSDatabaseLookupFlagsa">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -7578,6 +7596,7 @@
             <h1>Subprocess</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">Subprocess</span> <span class="p">:</span> <span class="kt">GLibObject</span><span class="o">.</span><span class="kt">Object</span><span class="p">,</span> <span class="kt"><a href="../Protocols/SubprocessProtocol.html">SubprocessProtocol</a></span></code></pre>
 
                 </div>
@@ -7641,6 +7660,9 @@ change of working directory, child setup functions, etc).</p>
 checked using functions such as <code>g_subprocess_get_if_exited()</code> (which
 are similar to the familiar WIFEXITED-style POSIX macros).</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13169-L13319">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -7653,7 +7675,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                     <code>
                     <a name="/s:3GIO10SubprocessCyACSpySo12_GSubprocessVGcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO10SubprocessCyACSpySo12_GSubprocessVGcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO10SubprocessCyACSpySo12_GSubprocessVGcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7697,7 +7719,7 @@ i.e., ownership is transferred to the <code>Subprocess</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13159-L13161">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13174-L13176">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7707,7 +7729,7 @@ i.e., ownership is transferred to the <code>Subprocess</code> instance.</p>
                     <code>
                     <a name="/s:3GIO10SubprocessCyACSPySo12_GSubprocessVGcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO10SubprocessCyACSPySo12_GSubprocessVGcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO10SubprocessCyACSPySo12_GSubprocessVGcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7749,7 +7771,7 @@ i.e., ownership is transferred to the <code>Subprocess</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13167-L13169">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13182-L13184">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7759,7 +7781,7 @@ i.e., ownership is transferred to the <code>Subprocess</code> instance.</p>
                     <code>
                     <a name="/s:3GIO10SubprocessC8gpointerACSgSvSg_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(gpointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO10SubprocessC8gpointerACSgSvSg_tcfc">init(gpointer:)</a>
+                    <a class="token" href="#/s:3GIO10SubprocessC8gpointerACSgSvSg_tcfc">init(gpointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7802,7 +7824,7 @@ i.e., ownership is transferred to the <code>Subprocess</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13176-L13179">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13191-L13194">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7812,7 +7834,7 @@ i.e., ownership is transferred to the <code>Subprocess</code> instance.</p>
                     <code>
                     <a name="/s:3GIO10SubprocessC13gconstpointerACSgSVSg_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(gconstpointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO10SubprocessC13gconstpointerACSgSVSg_tcfc">init(gconstpointer:)</a>
+                    <a class="token" href="#/s:3GIO10SubprocessC13gconstpointerACSgSVSg_tcfc">init(gconstpointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7855,7 +7877,7 @@ i.e., ownership is transferred to the <code>Subprocess</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13186-L13189">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13201-L13204">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7865,7 +7887,7 @@ i.e., ownership is transferred to the <code>Subprocess</code> instance.</p>
                     <code>
                     <a name="/s:3GIO10SubprocessCyACSgSPySo12_GSubprocessVGSgcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO10SubprocessCyACSgSPySo12_GSubprocessVGSgcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO10SubprocessCyACSgSPySo12_GSubprocessVGSgcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7907,7 +7929,7 @@ i.e., ownership is transferred to the <code>Subprocess</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13195-L13198">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13210-L13213">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7917,7 +7939,7 @@ i.e., ownership is transferred to the <code>Subprocess</code> instance.</p>
                     <code>
                     <a name="/s:3GIO10SubprocessCyACSgSpySo12_GSubprocessVGSgcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO10SubprocessCyACSgSpySo12_GSubprocessVGSgcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO10SubprocessCyACSgSpySo12_GSubprocessVGSgcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7959,7 +7981,7 @@ i.e., ownership is transferred to the <code>Subprocess</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13204-L13207">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13219-L13222">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7969,7 +7991,7 @@ i.e., ownership is transferred to the <code>Subprocess</code> instance.</p>
                     <code>
                     <a name="/s:3GIO10SubprocessC9retainingACSpySo12_GSubprocessVG_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retaining:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO10SubprocessC9retainingACSpySo12_GSubprocessVG_tcfc">init(retaining:)</a>
+                    <a class="token" href="#/s:3GIO10SubprocessC9retainingACSpySo12_GSubprocessVG_tcfc">init(retaining:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8011,7 +8033,7 @@ i.e., ownership is transferred to the <code>Subprocess</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13213-L13215">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13228-L13230">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8021,7 +8043,7 @@ i.e., ownership is transferred to the <code>Subprocess</code> instance.</p>
                     <code>
                     <a name="/s:3GIO10SubprocessC10subprocessACx_tcAA0B8ProtocolRzlufc"></a>
                     <a name="//apple_ref/swift/Method/init(subprocess:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO10SubprocessC10subprocessACx_tcAA0B8ProtocolRzlufc">init(subprocess:)</a>
+                    <a class="token" href="#/s:3GIO10SubprocessC10subprocessACx_tcAA0B8ProtocolRzlufc">init(subprocess:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8062,7 +8084,7 @@ Will retain <code>GSubprocess</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13220-L13222">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13235-L13237">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8072,7 +8094,7 @@ Will retain <code>GSubprocess</code>.</p>
                     <code>
                     <a name="/s:3GIO10SubprocessC8cPointerACSpyxG_tclufc"></a>
                     <a name="//apple_ref/swift/Method/init(cPointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO10SubprocessC8cPointerACSpyxG_tclufc">init(cPointer:)</a>
+                    <a class="token" href="#/s:3GIO10SubprocessC8cPointerACSpyxG_tclufc">init(cPointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8113,7 +8135,7 @@ Will retain <code>GSubprocess</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13227-L13229">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13242-L13244">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8123,7 +8145,7 @@ Will retain <code>GSubprocess</code>.</p>
                     <code>
                     <a name="/s:3GIO10SubprocessC17retainingCPointerACSpyxG_tclufc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingCPointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO10SubprocessC17retainingCPointerACSpyxG_tclufc">init(retainingCPointer:)</a>
+                    <a class="token" href="#/s:3GIO10SubprocessC17retainingCPointerACSpyxG_tclufc">init(retainingCPointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8164,7 +8186,7 @@ Will retain <code>GSubprocess</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13234-L13236">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13249-L13251">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8174,7 +8196,7 @@ Will retain <code>GSubprocess</code>.</p>
                     <code>
                     <a name="/s:3GIO10SubprocessC3rawACSV_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO10SubprocessC3rawACSV_tcfc">init(raw:)</a>
+                    <a class="token" href="#/s:3GIO10SubprocessC3rawACSV_tcfc">init(raw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8215,7 +8237,7 @@ Will retain <code>GSubprocess</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13241-L13243">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13256-L13258">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8225,7 +8247,7 @@ Will retain <code>GSubprocess</code>.</p>
                     <code>
                     <a name="/s:3GIO10SubprocessC12retainingRawACSV_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingRaw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO10SubprocessC12retainingRawACSV_tcfc">init(retainingRaw:)</a>
+                    <a class="token" href="#/s:3GIO10SubprocessC12retainingRawACSV_tcfc">init(retainingRaw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8247,7 +8269,7 @@ Will retain <code>GSubprocess</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13247-L13249">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13262-L13264">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8257,7 +8279,7 @@ Will retain <code>GSubprocess</code>.</p>
                     <code>
                     <a name="/s:3GIO10SubprocessC3rawACSv_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO10SubprocessC3rawACSv_tcfc">init(raw:)</a>
+                    <a class="token" href="#/s:3GIO10SubprocessC3rawACSv_tcfc">init(raw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8298,7 +8320,7 @@ Will retain <code>GSubprocess</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13254-L13256">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13269-L13271">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8308,7 +8330,7 @@ Will retain <code>GSubprocess</code>.</p>
                     <code>
                     <a name="/s:3GIO10SubprocessC12retainingRawACSv_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingRaw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO10SubprocessC12retainingRawACSv_tcfc">init(retainingRaw:)</a>
+                    <a class="token" href="#/s:3GIO10SubprocessC12retainingRawACSv_tcfc">init(retainingRaw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8349,7 +8371,7 @@ Will retain <code>GSubprocess</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13261-L13263">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13276-L13278">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8359,7 +8381,7 @@ Will retain <code>GSubprocess</code>.</p>
                     <code>
                     <a name="/s:3GIO10SubprocessC13opaquePointerACs06OpaqueD0V_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(opaquePointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO10SubprocessC13opaquePointerACs06OpaqueD0V_tcfc">init(opaquePointer:)</a>
+                    <a class="token" href="#/s:3GIO10SubprocessC13opaquePointerACs06OpaqueD0V_tcfc">init(opaquePointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8400,7 +8422,7 @@ Will retain <code>GSubprocess</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13268-L13270">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13283-L13285">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8410,7 +8432,7 @@ Will retain <code>GSubprocess</code>.</p>
                     <code>
                     <a name="/s:3GIO10SubprocessC22retainingOpaquePointerACs0dE0V_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingOpaquePointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO10SubprocessC22retainingOpaquePointerACs0dE0V_tcfc">init(retainingOpaquePointer:)</a>
+                    <a class="token" href="#/s:3GIO10SubprocessC22retainingOpaquePointerACs0dE0V_tcfc">init(retainingOpaquePointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8451,7 +8473,7 @@ Will retain <code>GSubprocess</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13275-L13277">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13290-L13292">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8461,7 +8483,7 @@ Will retain <code>GSubprocess</code>.</p>
                     <code>
                     <a name="/s:3GIO10SubprocessC4argv5flagsACSPySPys4Int8VGSgGSg_AA0B5FlagsVtKcfc"></a>
                     <a name="//apple_ref/swift/Method/init(argv:flags:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO10SubprocessC4argv5flagsACSPySPys4Int8VGSgGSg_AA0B5FlagsVtKcfc">init(argv:flags:)</a>
+                    <a class="token" href="#/s:3GIO10SubprocessC4argv5flagsACSPySPys4Int8VGSgGSg_AA0B5FlagsVtKcfc">init(argv:<wbr>flags:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8484,7 +8506,7 @@ Will retain <code>GSubprocess</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13286-L13291">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13301-L13306">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8494,7 +8516,7 @@ Will retain <code>GSubprocess</code>.</p>
                     <code>
                     <a name="/s:3GIO10SubprocessC14subprocessNewv4argv5flagsACSgSPySPys4Int8VGSgGSg_AA0B5FlagsVtKFZ"></a>
                     <a name="//apple_ref/swift/Method/subprocessNewv(argv:flags:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO10SubprocessC14subprocessNewv4argv5flagsACSgSPySPys4Int8VGSgGSg_AA0B5FlagsVtKFZ">subprocessNewv(argv:flags:)</a>
+                    <a class="token" href="#/s:3GIO10SubprocessC14subprocessNewv4argv5flagsACSgSPySPys4Int8VGSgGSg_AA0B5FlagsVtKFZ">subprocessNewv(argv:<wbr>flags:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8517,7 +8539,7 @@ Will retain <code>GSubprocess</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13296-L13302">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13311-L13317">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8530,8 +8552,8 @@ Will retain <code>GSubprocess</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.ict.griffith.edu.au/~rhexel/" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2020-09-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

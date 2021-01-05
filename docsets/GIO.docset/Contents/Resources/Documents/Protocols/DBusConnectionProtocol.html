@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          GIO 2.64.4 Docs
+          GIO 2.66.4 Docs
         </a>
-         (88% documented)
+         (89% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx%2Egithub%2Eio%2FSwiftGIO%2Fdocsets%2FGIO%2Exml">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx.github.io%2FSwiftGIO%2Fdocsets%2FGIO.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -2205,6 +2205,12 @@
                 <a class="nav-group-task-link" href="../Extensions/TLSCertificateRequestFlags.html">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingError.html">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingType.html">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/TLSDatabaseLookupFlags.html">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -2648,6 +2654,9 @@
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO20tlsBackendGetDefaultAA13TLSBackendRefVSgyF">tlsBackendGetDefault()</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27tlsChannelBindingErrorQuarks6UInt32VyF">tlsChannelBindingErrorQuark()</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO22tlsClientConnectionNew12baseIoStream14serverIdentityAA09TLSClientD3RefVSgx_AA017SocketConnectableL0VSgtKAA16IOStreamProtocolRzlF">tlsClientConnectionNew(baseIoStream:serverIdentity:)</a>
               </li>
               <li class="nav-group-task">
@@ -2724,6 +2733,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO25unixMountIsSystemInternal10mountEntrySbx_tAA04UnixcH8ProtocolRzlF">unixMountIsSystemInternal(mountEntry:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO16unixMountPointAt9mountPath8timeReadAA04UnixcD3RefVSgSPys4Int8VGSg_Spys6UInt64VGSgtF">unixMountPointAt(mountPath:timeRead:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27unixMountPointsChangedSince4timeSbs6UInt64V_tF">unixMountPointsChangedSince(time:)</a>
@@ -5243,6 +5255,12 @@
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO26TLSCertificateRequestFlagsa">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSChannelBindingErrora">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO21TLSChannelBindingTypea">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSDatabaseLookupFlagsa">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -7578,6 +7596,7 @@
             <h1>DBusConnectionProtocol</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">DBusConnectionProtocol</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AsyncInitableProtocol.html">AsyncInitableProtocol</a></span><span class="p">,</span> <span class="kt"><a href="../Protocols/InitableProtocol.html">InitableProtocol</a></span><span class="p">,</span> <span class="kt">ObjectProtocol</span></code></pre>
 
                 </div>
@@ -7633,6 +7652,9 @@ free it with <code>g_object_unref()</code>.</p>
 <p>Here is an example for exporting a <code>GObject:</code>
 <a href="https://git.gnome.org/browse/glib/tree/gio/tests/gdbus-example-export.c">gdbus-example-export.c</a></p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusAuthObserver-Emblem.swift#L582-L589">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -7726,7 +7748,7 @@ free it with <code>g_object_unref()</code>.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE4bind8property2to_5flags13transformFrom0I2To10GLibObject10BindingRefVSgAA0bC12PropertyNameO_qd_0_qd__AJ0N5FlagsVSbAJ05ValueO0V_AStcSbAS_AStctAJ0pqD0Rd__AJ0mD0Rd_0_r0_lF"></a>
                     <a name="//apple_ref/swift/Method/bind(property:to:_:flags:transformFrom:transformTo:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE4bind8property2to_5flags13transformFrom0I2To10GLibObject10BindingRefVSgAA0bC12PropertyNameO_qd_0_qd__AJ0N5FlagsVSbAJ05ValueO0V_AStcSbAS_AStctAJ0pqD0Rd__AJ0mD0Rd_0_r0_lF">bind(property:to:_:flags:transformFrom:transformTo:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE4bind8property2to_5flags13transformFrom0I2To10GLibObject10BindingRefVSgAA0bC12PropertyNameO_qd_0_qd__AJ0N5FlagsVSbAJ05ValueO0V_AStcSbAS_AStctAJ0pqD0Rd__AJ0mD0Rd_0_r0_lF">bind(property:<wbr>to:<wbr>_:<wbr>flags:<wbr>transformFrom:<wbr>transformTo:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7844,7 +7866,7 @@ free it with <code>g_object_unref()</code>.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE3get8property10GLibObject5ValueCAA0bC12PropertyNameO_tF"></a>
                     <a name="//apple_ref/swift/Method/get(property:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE3get8property10GLibObject5ValueCAA0bC12PropertyNameO_tF">get(property:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE3get8property10GLibObject5ValueCAA0bC12PropertyNameO_tF">get(property:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7901,7 +7923,7 @@ free it with <code>g_object_unref()</code>.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE3set8property5valueyAA0bC12PropertyNameO_10GLibObject5ValueCtF"></a>
                     <a name="//apple_ref/swift/Method/set(property:value:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE3set8property5valueyAA0bC12PropertyNameO_10GLibObject5ValueCtF">set(property:value:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE3set8property5valueyAA0bC12PropertyNameO_10GLibObject5ValueCtF">set(property:<wbr>value:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7959,7 +7981,7 @@ free it with <code>g_object_unref()</code>.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE7connect6signal5flags2toSiAA0bC10SignalNameO_10GLibObject12ConnectFlagsVyyctF"></a>
                     <a name="//apple_ref/swift/Method/connect(signal:flags:to:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE7connect6signal5flags2toSiAA0bC10SignalNameO_10GLibObject12ConnectFlagsVyyctF">connect(signal:flags:to:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE7connect6signal5flags2toSiAA0bC10SignalNameO_10GLibObject12ConnectFlagsVyyctF">connect(signal:<wbr>flags:<wbr>to:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8040,10 +8062,10 @@ free it with <code>g_object_unref()</code>.</p>
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/DBusConnection%20Class:%20DBusConnectionProtocol%20extension%20(methods%20and%20fields)"></a>
+                <a name="/DBusConnection%20Class%3A%20DBusConnectionProtocol%20extension%20%28methods%20and%20fields%29"></a>
                 <a name="//apple_ref/swift/Section/DBusConnection Class: DBusConnectionProtocol extension (methods and fields)" class="dashAnchor"></a>
                 <div class="section-name-container">
-                  <a class="section-name-link" href="#/DBusConnection%20Class:%20DBusConnectionProtocol%20extension%20(methods%20and%20fields)"></a>
+                  <a class="section-name-link" href="#/DBusConnection%20Class%3A%20DBusConnectionProtocol%20extension%20%28methods%20and%20fields%29"></a>
                   <h3 class="section-name"><p>DBusConnection Class: DBusConnectionProtocol extension (methods and fields)</p>
 </h3>
                 </div>
@@ -8054,7 +8076,7 @@ free it with <code>g_object_unref()</code>.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE9addFilter14filterFunction8userData0iJ8FreeFuncSiSpySo13_GDBusMessageVGSgSpySo01_mC0VGSg_AKs5Int32VSvSgtXC_ARyARXCSgtF"></a>
                     <a name="//apple_ref/swift/Method/addFilter(filterFunction:userData:userDataFreeFunc:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE9addFilter14filterFunction8userData0iJ8FreeFuncSiSpySo13_GDBusMessageVGSgSpySo01_mC0VGSg_AKs5Int32VSvSgtXC_ARyARXCSgtF">addFilter(filterFunction:userData:userDataFreeFunc:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE9addFilter14filterFunction8userData0iJ8FreeFuncSiSpySo13_GDBusMessageVGSgSpySo01_mC0VGSg_AKs5Int32VSvSgtXC_ARyARXCSgtF">addFilter(filterFunction:<wbr>userData:<wbr>userDataFreeFunc:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8114,7 +8136,7 @@ destroyed.)</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE4call7busName10objectPath09interfaceG006methodG010parameters9replyType5flags11timeoutMsec11cancellable8callback8userDataySPys4Int8VGSg_A3S4GLib10VariantRefVSgAT0xnY0VSgAA0B9CallFlagsVSiAA011CancellableY0VSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgA12_tF"></a>
                     <a name="//apple_ref/swift/Method/call(busName:objectPath:interfaceName:methodName:parameters:replyType:flags:timeoutMsec:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE4call7busName10objectPath09interfaceG006methodG010parameters9replyType5flags11timeoutMsec11cancellable8callback8userDataySPys4Int8VGSg_A3S4GLib10VariantRefVSgAT0xnY0VSgAA0B9CallFlagsVSiAA011CancellableY0VSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgA12_tF">call(busName:objectPath:interfaceName:methodName:parameters:replyType:flags:timeoutMsec:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE4call7busName10objectPath09interfaceG006methodG010parameters9replyType5flags11timeoutMsec11cancellable8callback8userDataySPys4Int8VGSg_A3S4GLib10VariantRefVSgAT0xnY0VSgAA0B9CallFlagsVSiAA011CancellableY0VSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgA12_tF">call(busName:<wbr>objectPath:<wbr>interfaceName:<wbr>methodName:<wbr>parameters:<wbr>replyType:<wbr>flags:<wbr>timeoutMsec:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8192,7 +8214,7 @@ the <code>G_DBUS_MESSAGE_FLAGS_NO_REPLY_EXPECTED</code> flag set.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE4call7busName10objectPath09interfaceG006methodG010parameters9replyType5flags11timeoutMsec11cancellable8callback8userDataySPys4Int8VGSg_A3Sqd_0_Sgqd_1_SgAA0B9CallFlagsVSiqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgA5_tAA011CancellableD0Rd__4GLib07VariantD0Rd_0_A8_07VariantnD0Rd_1_r1_lF"></a>
                     <a name="//apple_ref/swift/Method/call(busName:objectPath:interfaceName:methodName:parameters:replyType:flags:timeoutMsec:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE4call7busName10objectPath09interfaceG006methodG010parameters9replyType5flags11timeoutMsec11cancellable8callback8userDataySPys4Int8VGSg_A3Sqd_0_Sgqd_1_SgAA0B9CallFlagsVSiqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgA5_tAA011CancellableD0Rd__4GLib07VariantD0Rd_0_A8_07VariantnD0Rd_1_r1_lF">call(busName:objectPath:interfaceName:methodName:parameters:replyType:flags:timeoutMsec:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE4call7busName10objectPath09interfaceG006methodG010parameters9replyType5flags11timeoutMsec11cancellable8callback8userDataySPys4Int8VGSg_A3Sqd_0_Sgqd_1_SgAA0B9CallFlagsVSiqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgA5_tAA011CancellableD0Rd__4GLib07VariantD0Rd_0_A8_07VariantnD0Rd_1_r1_lF">call(busName:<wbr>objectPath:<wbr>interfaceName:<wbr>methodName:<wbr>parameters:<wbr>replyType:<wbr>flags:<wbr>timeoutMsec:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8270,7 +8292,7 @@ the <code>G_DBUS_MESSAGE_FLAGS_NO_REPLY_EXPECTED</code> flag set.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE10callFinish3res4GLib10VariantRefVSgqd___tKAA011AsyncResultD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/callFinish(res:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE10callFinish3res4GLib10VariantRefVSgqd___tKAA011AsyncResultD0Rd__lF">callFinish(res:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE10callFinish3res4GLib10VariantRefVSgqd___tKAA011AsyncResultD0Rd__lF">callFinish(res:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8304,7 +8326,7 @@ the <code>G_DBUS_MESSAGE_FLAGS_NO_REPLY_EXPECTED</code> flag set.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE8callSync7busName10objectPath09interfaceH006methodH010parameters9replyType5flags11timeoutMsec11cancellable4GLib10VariantRefVSgSPys4Int8VGSg_A3uqN0uoV0VSgAA0B9CallFlagsVSiAA011CancellableV0VSgtKF"></a>
                     <a name="//apple_ref/swift/Method/callSync(busName:objectPath:interfaceName:methodName:parameters:replyType:flags:timeoutMsec:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE8callSync7busName10objectPath09interfaceH006methodH010parameters9replyType5flags11timeoutMsec11cancellable4GLib10VariantRefVSgSPys4Int8VGSg_A3uqN0uoV0VSgAA0B9CallFlagsVSiAA011CancellableV0VSgtKF">callSync(busName:objectPath:interfaceName:methodName:parameters:replyType:flags:timeoutMsec:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE8callSync7busName10objectPath09interfaceH006methodH010parameters9replyType5flags11timeoutMsec11cancellable4GLib10VariantRefVSgSPys4Int8VGSg_A3uqN0uoV0VSgAA0B9CallFlagsVSiAA011CancellableV0VSgtKF">callSync(busName:<wbr>objectPath:<wbr>interfaceName:<wbr>methodName:<wbr>parameters:<wbr>replyType:<wbr>flags:<wbr>timeoutMsec:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8373,7 +8395,7 @@ this method.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE8callSync7busName10objectPath09interfaceH006methodH010parameters9replyType5flags11timeoutMsec11cancellable4GLib10VariantRefVSgSPys4Int8VGSg_A3Uqd_0_Sgqd_1_SgAA0B9CallFlagsVSiqd__SgtKAA011CancellableD0Rd__AN0uD0Rd_0_AN0uoD0Rd_1_r1_lF"></a>
                     <a name="//apple_ref/swift/Method/callSync(busName:objectPath:interfaceName:methodName:parameters:replyType:flags:timeoutMsec:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE8callSync7busName10objectPath09interfaceH006methodH010parameters9replyType5flags11timeoutMsec11cancellable4GLib10VariantRefVSgSPys4Int8VGSg_A3Uqd_0_Sgqd_1_SgAA0B9CallFlagsVSiqd__SgtKAA011CancellableD0Rd__AN0uD0Rd_0_AN0uoD0Rd_1_r1_lF">callSync(busName:objectPath:interfaceName:methodName:parameters:replyType:flags:timeoutMsec:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE8callSync7busName10objectPath09interfaceH006methodH010parameters9replyType5flags11timeoutMsec11cancellable4GLib10VariantRefVSgSPys4Int8VGSg_A3Uqd_0_Sgqd_1_SgAA0B9CallFlagsVSiqd__SgtKAA011CancellableD0Rd__AN0uD0Rd_0_AN0uoD0Rd_1_r1_lF">callSync(busName:<wbr>objectPath:<wbr>interfaceName:<wbr>methodName:<wbr>parameters:<wbr>replyType:<wbr>flags:<wbr>timeoutMsec:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8442,7 +8464,7 @@ this method.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE18callWithUnixFdList7busName10objectPath09interfaceK006methodK010parameters9replyType5flags11timeoutMsec02fdI011cancellable8callback8userDataySPys4Int8VGSg_A3T4GLib10VariantRefVSgAU07VariantR3RefVSgAA0B9CallFlagsVSiAA0G9FDListRefVSgAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgA16_tF"></a>
                     <a name="//apple_ref/swift/Method/callWithUnixFdList(busName:objectPath:interfaceName:methodName:parameters:replyType:flags:timeoutMsec:fdList:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE18callWithUnixFdList7busName10objectPath09interfaceK006methodK010parameters9replyType5flags11timeoutMsec02fdI011cancellable8callback8userDataySPys4Int8VGSg_A3T4GLib10VariantRefVSgAU07VariantR3RefVSgAA0B9CallFlagsVSiAA0G9FDListRefVSgAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgA16_tF">callWithUnixFdList(busName:objectPath:interfaceName:methodName:parameters:replyType:flags:timeoutMsec:fdList:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE18callWithUnixFdList7busName10objectPath09interfaceK006methodK010parameters9replyType5flags11timeoutMsec02fdI011cancellable8callback8userDataySPys4Int8VGSg_A3T4GLib10VariantRefVSgAU07VariantR3RefVSgAA0B9CallFlagsVSiAA0G9FDListRefVSgAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgA16_tF">callWithUnixFdList(busName:<wbr>objectPath:<wbr>interfaceName:<wbr>methodName:<wbr>parameters:<wbr>replyType:<wbr>flags:<wbr>timeoutMsec:<wbr>fdList:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8478,7 +8500,7 @@ this method.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE18callWithUnixFdList7busName10objectPath09interfaceK006methodK010parameters9replyType5flags11timeoutMsec02fdI011cancellable8callback8userDataySPys4Int8VGSg_A3Tqd_1_Sgqd_2_SgAA0B9CallFlagsVSiqd_0_Sgqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgA7_tAA011CancellableD0Rd__AA0g6FDListD0Rd_0_4GLib07VariantD0Rd_1_A11_07VariantrD0Rd_2_r2_lF"></a>
                     <a name="//apple_ref/swift/Method/callWithUnixFdList(busName:objectPath:interfaceName:methodName:parameters:replyType:flags:timeoutMsec:fdList:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE18callWithUnixFdList7busName10objectPath09interfaceK006methodK010parameters9replyType5flags11timeoutMsec02fdI011cancellable8callback8userDataySPys4Int8VGSg_A3Tqd_1_Sgqd_2_SgAA0B9CallFlagsVSiqd_0_Sgqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgA7_tAA011CancellableD0Rd__AA0g6FDListD0Rd_0_4GLib07VariantD0Rd_1_A11_07VariantrD0Rd_2_r2_lF">callWithUnixFdList(busName:objectPath:interfaceName:methodName:parameters:replyType:flags:timeoutMsec:fdList:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE18callWithUnixFdList7busName10objectPath09interfaceK006methodK010parameters9replyType5flags11timeoutMsec02fdI011cancellable8callback8userDataySPys4Int8VGSg_A3Tqd_1_Sgqd_2_SgAA0B9CallFlagsVSiqd_0_Sgqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgA7_tAA011CancellableD0Rd__AA0g6FDListD0Rd_0_4GLib07VariantD0Rd_1_A11_07VariantrD0Rd_2_r2_lF">callWithUnixFdList(busName:<wbr>objectPath:<wbr>interfaceName:<wbr>methodName:<wbr>parameters:<wbr>replyType:<wbr>flags:<wbr>timeoutMsec:<wbr>fdList:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8514,7 +8536,7 @@ this method.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE24callWithUnixFdListFinish03outhI03res4GLib10VariantRefVSgSpySpySo12_GUnixFDListVGSgGSg_qd__tKAA011AsyncResultD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/callWithUnixFdListFinish(outFdList:res:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE24callWithUnixFdListFinish03outhI03res4GLib10VariantRefVSgSpySpySo12_GUnixFDListVGSgGSg_qd__tKAA011AsyncResultD0Rd__lF">callWithUnixFdListFinish(outFdList:res:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE24callWithUnixFdListFinish03outhI03res4GLib10VariantRefVSgSpySpySo12_GUnixFDListVGSgGSg_qd__tKAA011AsyncResultD0Rd__lF">callWithUnixFdListFinish(outFdList:<wbr>res:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8548,7 +8570,7 @@ this method.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE22callWithUnixFdListSync7busName10objectPath09interfaceL006methodL010parameters9replyType5flags11timeoutMsec02fdI003outhI011cancellable4GLib10VariantRefVSgSPys4Int8VGSg_A3wsP07VariantS3RefVSgAA0B9CallFlagsVSiAA0G9FDListRefVSgSpySpySo12_GUnixFDListVGSgGSgAA14CancellableRefVSgtKF"></a>
                     <a name="//apple_ref/swift/Method/callWithUnixFdListSync(busName:objectPath:interfaceName:methodName:parameters:replyType:flags:timeoutMsec:fdList:outFdList:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE22callWithUnixFdListSync7busName10objectPath09interfaceL006methodL010parameters9replyType5flags11timeoutMsec02fdI003outhI011cancellable4GLib10VariantRefVSgSPys4Int8VGSg_A3wsP07VariantS3RefVSgAA0B9CallFlagsVSiAA0G9FDListRefVSgSpySpySo12_GUnixFDListVGSgGSgAA14CancellableRefVSgtKF">callWithUnixFdListSync(busName:objectPath:interfaceName:methodName:parameters:replyType:flags:timeoutMsec:fdList:outFdList:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE22callWithUnixFdListSync7busName10objectPath09interfaceL006methodL010parameters9replyType5flags11timeoutMsec02fdI003outhI011cancellable4GLib10VariantRefVSgSPys4Int8VGSg_A3wsP07VariantS3RefVSgAA0B9CallFlagsVSiAA0G9FDListRefVSgSpySpySo12_GUnixFDListVGSgGSgAA14CancellableRefVSgtKF">callWithUnixFdListSync(busName:<wbr>objectPath:<wbr>interfaceName:<wbr>methodName:<wbr>parameters:<wbr>replyType:<wbr>flags:<wbr>timeoutMsec:<wbr>fdList:<wbr>outFdList:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8584,7 +8606,7 @@ this method.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE22callWithUnixFdListSync7busName10objectPath09interfaceL006methodL010parameters9replyType5flags11timeoutMsec02fdI003outhI011cancellable4GLib10VariantRefVSgSPys4Int8VGSg_A3Wqd_1_Sgqd_2_SgAA0B9CallFlagsVSiqd_0_SgSpySpySo12_GUnixFDListVGSgGSgqd__SgtKAA011CancellableD0Rd__AA0g6FDListD0Rd_0_AP07VariantD0Rd_1_AP07VariantsD0Rd_2_r2_lF"></a>
                     <a name="//apple_ref/swift/Method/callWithUnixFdListSync(busName:objectPath:interfaceName:methodName:parameters:replyType:flags:timeoutMsec:fdList:outFdList:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE22callWithUnixFdListSync7busName10objectPath09interfaceL006methodL010parameters9replyType5flags11timeoutMsec02fdI003outhI011cancellable4GLib10VariantRefVSgSPys4Int8VGSg_A3Wqd_1_Sgqd_2_SgAA0B9CallFlagsVSiqd_0_SgSpySpySo12_GUnixFDListVGSgGSgqd__SgtKAA011CancellableD0Rd__AA0g6FDListD0Rd_0_AP07VariantD0Rd_1_AP07VariantsD0Rd_2_r2_lF">callWithUnixFdListSync(busName:objectPath:interfaceName:methodName:parameters:replyType:flags:timeoutMsec:fdList:outFdList:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE22callWithUnixFdListSync7busName10objectPath09interfaceL006methodL010parameters9replyType5flags11timeoutMsec02fdI003outhI011cancellable4GLib10VariantRefVSgSPys4Int8VGSg_A3Wqd_1_Sgqd_2_SgAA0B9CallFlagsVSiqd_0_SgSpySpySo12_GUnixFDListVGSgGSgqd__SgtKAA011CancellableD0Rd__AA0g6FDListD0Rd_0_AP07VariantD0Rd_1_AP07VariantsD0Rd_2_r2_lF">callWithUnixFdListSync(busName:<wbr>objectPath:<wbr>interfaceName:<wbr>methodName:<wbr>parameters:<wbr>replyType:<wbr>flags:<wbr>timeoutMsec:<wbr>fdList:<wbr>outFdList:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8620,7 +8642,7 @@ this method.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE5close11cancellable8callback8userDatayAA14CancellableRefVSg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAStF"></a>
                     <a name="//apple_ref/swift/Method/close(cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE5close11cancellable8callback8userDatayAA14CancellableRefVSg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAStF">close(cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE5close11cancellable8callback8userDatayAA14CancellableRefVSg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAStF">close(cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8677,7 +8699,7 @@ version.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE5close11cancellable8callback8userDatayqd__Sg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAQtAA011CancellableD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/close(cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE5close11cancellable8callback8userDatayqd__Sg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAQtAA011CancellableD0Rd__lF">close(cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE5close11cancellable8callback8userDatayqd__Sg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAQtAA011CancellableD0Rd__lF">close(cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8734,7 +8756,7 @@ version.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE11closeFinish3resSbqd___tKAA011AsyncResultD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/closeFinish(res:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE11closeFinish3resSbqd___tKAA011AsyncResultD0Rd__lF">closeFinish(res:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE11closeFinish3resSbqd___tKAA011AsyncResultD0Rd__lF">closeFinish(res:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8768,7 +8790,7 @@ version.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE9closeSync11cancellableSbAA14CancellableRefVSg_tKF"></a>
                     <a name="//apple_ref/swift/Method/closeSync(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE9closeSync11cancellableSbAA14CancellableRefVSg_tKF">closeSync(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE9closeSync11cancellableSbAA14CancellableRefVSg_tKF">closeSync(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8805,7 +8827,7 @@ does.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE9closeSync11cancellableSbqd__Sg_tKAA011CancellableD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/closeSync(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE9closeSync11cancellableSbqd__Sg_tKAA011CancellableD0Rd__lF">closeSync(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE9closeSync11cancellableSbqd__Sg_tKAA011CancellableD0Rd__lF">closeSync(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8842,7 +8864,7 @@ does.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE10emitSignal18destinationBusName10objectPath09interfaceI006signalI010parametersSbSPys4Int8VGSg_A3M4GLib10VariantRefVSgtKF"></a>
                     <a name="//apple_ref/swift/Method/emitSignal(destinationBusName:objectPath:interfaceName:signalName:parameters:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE10emitSignal18destinationBusName10objectPath09interfaceI006signalI010parametersSbSPys4Int8VGSg_A3M4GLib10VariantRefVSgtKF">emitSignal(destinationBusName:objectPath:interfaceName:signalName:parameters:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE10emitSignal18destinationBusName10objectPath09interfaceI006signalI010parametersSbSPys4Int8VGSg_A3M4GLib10VariantRefVSgtKF">emitSignal(destinationBusName:<wbr>objectPath:<wbr>interfaceName:<wbr>signalName:<wbr>parameters:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8882,7 +8904,7 @@ does.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE10emitSignal18destinationBusName10objectPath09interfaceI006signalI010parametersSbSPys4Int8VGSg_A3Mqd__SgtK4GLib07VariantD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/emitSignal(destinationBusName:objectPath:interfaceName:signalName:parameters:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE10emitSignal18destinationBusName10objectPath09interfaceI006signalI010parametersSbSPys4Int8VGSg_A3Mqd__SgtK4GLib07VariantD0Rd__lF">emitSignal(destinationBusName:objectPath:interfaceName:signalName:parameters:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE10emitSignal18destinationBusName10objectPath09interfaceI006signalI010parametersSbSPys4Int8VGSg_A3Mqd__SgtK4GLib07VariantD0Rd__lF">emitSignal(destinationBusName:<wbr>objectPath:<wbr>interfaceName:<wbr>signalName:<wbr>parameters:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8922,7 +8944,7 @@ does.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE17exportActionGroup10objectPath06actionG0SiSPys4Int8VGSg_qd__tKAA0fgD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/exportActionGroup(objectPath:actionGroup:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE17exportActionGroup10objectPath06actionG0SiSPys4Int8VGSg_qd__tKAA0fgD0Rd__lF">exportActionGroup(objectPath:actionGroup:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE17exportActionGroup10objectPath06actionG0SiSPys4Int8VGSg_qd__tKAA0fgD0Rd__lF">exportActionGroup(objectPath:<wbr>actionGroup:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8976,7 +8998,7 @@ context.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE15exportMenuModel10objectPath4menuSiSPys4Int8VGSg_qd__tKAA0fgD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/exportMenuModel(objectPath:menu:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE15exportMenuModel10objectPath4menuSiSPys4Int8VGSg_qd__tKAA0fgD0Rd__lF">exportMenuModel(objectPath:menu:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE15exportMenuModel10objectPath4menuSiSPys4Int8VGSg_qd__tKAA0fgD0Rd__lF">exportMenuModel(objectPath:<wbr>menu:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9021,7 +9043,7 @@ this function.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE5flush11cancellable8callback8userDatayAA14CancellableRefVSg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAStF"></a>
                     <a name="//apple_ref/swift/Method/flush(cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE5flush11cancellable8callback8userDatayAA14CancellableRefVSg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAStF">flush(cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE5flush11cancellable8callback8userDatayAA14CancellableRefVSg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAStF">flush(cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9068,7 +9090,7 @@ version.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE5flush11cancellable8callback8userDatayqd__Sg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAQtAA011CancellableD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/flush(cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE5flush11cancellable8callback8userDatayqd__Sg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAQtAA011CancellableD0Rd__lF">flush(cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE5flush11cancellable8callback8userDatayqd__Sg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAQtAA011CancellableD0Rd__lF">flush(cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9115,7 +9137,7 @@ version.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE11flushFinish3resSbqd___tKAA011AsyncResultD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/flushFinish(res:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE11flushFinish3resSbqd___tKAA011AsyncResultD0Rd__lF">flushFinish(res:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE11flushFinish3resSbqd___tKAA011AsyncResultD0Rd__lF">flushFinish(res:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9149,7 +9171,7 @@ version.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE9flushSync11cancellableSbAA14CancellableRefVSg_tKF"></a>
                     <a name="//apple_ref/swift/Method/flushSync(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE9flushSync11cancellableSbAA14CancellableRefVSg_tKF">flushSync(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE9flushSync11cancellableSbAA14CancellableRefVSg_tKF">flushSync(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9186,7 +9208,7 @@ does.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE9flushSync11cancellableSbqd__Sg_tKAA011CancellableD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/flushSync(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE9flushSync11cancellableSbqd__Sg_tKAA011CancellableD0Rd__lF">flushSync(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE9flushSync11cancellableSbqd__Sg_tKAA011CancellableD0Rd__lF">flushSync(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9516,7 +9538,7 @@ message bus connection.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE14registerObject10objectPath13interfaceInfo6vtable8userData0lM8FreeFuncSiSPys4Int8VGSg_qd__AA0B18InterfaceVTableRefVSgSvSgyAQXCSgtKAA0bqjD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/registerObject(objectPath:interfaceInfo:vtable:userData:userDataFreeFunc:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE14registerObject10objectPath13interfaceInfo6vtable8userData0lM8FreeFuncSiSPys4Int8VGSg_qd__AA0B18InterfaceVTableRefVSgSvSgyAQXCSgtKAA0bqjD0Rd__lF">registerObject(objectPath:interfaceInfo:vtable:userData:userDataFreeFunc:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE14registerObject10objectPath13interfaceInfo6vtable8userData0lM8FreeFuncSiSPys4Int8VGSg_qd__AA0B18InterfaceVTableRefVSgSvSgyAQXCSgtKAA0bqjD0Rd__lF">registerObject(objectPath:<wbr>interfaceInfo:<wbr>vtable:<wbr>userData:<wbr>userDataFreeFunc:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9587,7 +9609,7 @@ as the object is exported. Also note that <code>vtable</code> will be copied.</p
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE14registerObject10objectPath13interfaceInfo6vtable8userData0lM8FreeFuncSiSPys4Int8VGSg_qd__qd_0_SgSvSgyAOXCSgtKAA0b9InterfacejD0Rd__AA0bq6VTableD0Rd_0_r0_lF"></a>
                     <a name="//apple_ref/swift/Method/registerObject(objectPath:interfaceInfo:vtable:userData:userDataFreeFunc:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE14registerObject10objectPath13interfaceInfo6vtable8userData0lM8FreeFuncSiSPys4Int8VGSg_qd__qd_0_SgSvSgyAOXCSgtKAA0b9InterfacejD0Rd__AA0bq6VTableD0Rd_0_r0_lF">registerObject(objectPath:interfaceInfo:vtable:userData:userDataFreeFunc:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE14registerObject10objectPath13interfaceInfo6vtable8userData0lM8FreeFuncSiSPys4Int8VGSg_qd__qd_0_SgSvSgyAOXCSgtKAA0b9InterfacejD0Rd__AA0bq6VTableD0Rd_0_r0_lF">registerObject(objectPath:<wbr>interfaceInfo:<wbr>vtable:<wbr>userData:<wbr>userDataFreeFunc:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9658,7 +9680,7 @@ as the object is exported. Also note that <code>vtable</code> will be copied.</p
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE26registerObjectWithClosures10objectPath13interfaceInfo17methodCallClosure011getPropertyO003setqO0SiSPys4Int8VGSg_qd__04GLibF00O3RefVSgA2QtKAA0b9InterfacelD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/registerObjectWithClosures(objectPath:interfaceInfo:methodCallClosure:getPropertyClosure:setPropertyClosure:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE26registerObjectWithClosures10objectPath13interfaceInfo17methodCallClosure011getPropertyO003setqO0SiSPys4Int8VGSg_qd__04GLibF00O3RefVSgA2QtKAA0b9InterfacelD0Rd__lF">registerObjectWithClosures(objectPath:interfaceInfo:methodCallClosure:getPropertyClosure:setPropertyClosure:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE26registerObjectWithClosures10objectPath13interfaceInfo17methodCallClosure011getPropertyO003setqO0SiSPys4Int8VGSg_qd__04GLibF00O3RefVSgA2QtKAA0b9InterfacelD0Rd__lF">registerObjectWithClosures(objectPath:<wbr>interfaceInfo:<wbr>methodCallClosure:<wbr>getPropertyClosure:<wbr>setPropertyClosure:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9693,7 +9715,7 @@ as the object is exported. Also note that <code>vtable</code> will be copied.</p
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE26registerObjectWithClosures10objectPath13interfaceInfo17methodCallClosure011getPropertyO003setqO0SiSPys4Int8VGSg_qd_0_qd__SgA2NtK04GLibF00oD0Rd__AA0b9InterfacelD0Rd_0_r0_lF"></a>
                     <a name="//apple_ref/swift/Method/registerObjectWithClosures(objectPath:interfaceInfo:methodCallClosure:getPropertyClosure:setPropertyClosure:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE26registerObjectWithClosures10objectPath13interfaceInfo17methodCallClosure011getPropertyO003setqO0SiSPys4Int8VGSg_qd_0_qd__SgA2NtK04GLibF00oD0Rd__AA0b9InterfacelD0Rd_0_r0_lF">registerObjectWithClosures(objectPath:interfaceInfo:methodCallClosure:getPropertyClosure:setPropertyClosure:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE26registerObjectWithClosures10objectPath13interfaceInfo17methodCallClosure011getPropertyO003setqO0SiSPys4Int8VGSg_qd_0_qd__SgA2NtK04GLibF00oD0Rd__AA0b9InterfacelD0Rd_0_r0_lF">registerObjectWithClosures(objectPath:<wbr>interfaceInfo:<wbr>methodCallClosure:<wbr>getPropertyClosure:<wbr>setPropertyClosure:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9728,7 +9750,7 @@ as the object is exported. Also note that <code>vtable</code> will be copied.</p
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE15registerSubtree10objectPath6vtable5flags8userData0kL8FreeFuncSiSPys4Int8VGSg_qd__AA0bF5FlagsVSvSgyAPXCSgtKAA0bf6VTableD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/registerSubtree(objectPath:vtable:flags:userData:userDataFreeFunc:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE15registerSubtree10objectPath6vtable5flags8userData0kL8FreeFuncSiSPys4Int8VGSg_qd__AA0bF5FlagsVSvSgyAPXCSgtKAA0bf6VTableD0Rd__lF">registerSubtree(objectPath:vtable:flags:userData:userDataFreeFunc:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE15registerSubtree10objectPath6vtable5flags8userData0kL8FreeFuncSiSPys4Int8VGSg_qd__AA0bF5FlagsVSvSgyAPXCSgtKAA0bf6VTableD0Rd__lF">registerSubtree(objectPath:<wbr>vtable:<wbr>flags:<wbr>userData:<wbr>userDataFreeFunc:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9795,7 +9817,7 @@ this method.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE12removeFilter8filterIDySi_tF"></a>
                     <a name="//apple_ref/swift/Method/removeFilter(filterID:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE12removeFilter8filterIDySi_tF">removeFilter(filterID:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE12removeFilter8filterIDySi_tF">removeFilter(filterID:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9836,7 +9858,7 @@ called when it is guaranteed that the data is no longer needed.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE4send7message5flags9outSerialSbqd___AA0B16SendMessageFlagsVSpys6UInt32VGSgtKAA0bkD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/send(message:flags:outSerial:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE4send7message5flags9outSerialSbqd___AA0B16SendMessageFlagsVSpys6UInt32VGSgtKAA0bkD0Rd__lF">send(message:flags:outSerial:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE4send7message5flags9outSerialSbqd___AA0B16SendMessageFlagsVSpys6UInt32VGSgtKAA0bkD0Rd__lF">send(message:<wbr>flags:<wbr>outSerial:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9888,7 +9910,7 @@ UNIX file descriptors.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE20sendMessageWithReply7message5flags11timeoutMsec9outSerial11cancellable8callback8userDatayqd___AA0b4SendF5FlagsVSiSpys6UInt32VGSgAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgA1_tAA0bfD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/sendMessageWithReply(message:flags:timeoutMsec:outSerial:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE20sendMessageWithReply7message5flags11timeoutMsec9outSerial11cancellable8callback8userDatayqd___AA0b4SendF5FlagsVSiSpys6UInt32VGSgAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgA1_tAA0bfD0Rd__lF">sendMessageWithReply(message:flags:timeoutMsec:outSerial:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE20sendMessageWithReply7message5flags11timeoutMsec9outSerial11cancellable8callback8userDatayqd___AA0b4SendF5FlagsVSiSpys6UInt32VGSgAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgA1_tAA0bfD0Rd__lF">sendMessageWithReply(message:<wbr>flags:<wbr>timeoutMsec:<wbr>outSerial:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9948,7 +9970,7 @@ UNIX file descriptors.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE20sendMessageWithReply7message5flags11timeoutMsec9outSerial11cancellable8callback8userDatayqd_0__AA0b4SendF5FlagsVSiSpys6UInt32VGSgqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgA_tAA011CancellableD0Rd__AA0bfD0Rd_0_r0_lF"></a>
                     <a name="//apple_ref/swift/Method/sendMessageWithReply(message:flags:timeoutMsec:outSerial:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE20sendMessageWithReply7message5flags11timeoutMsec9outSerial11cancellable8callback8userDatayqd_0__AA0b4SendF5FlagsVSiSpys6UInt32VGSgqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgA_tAA011CancellableD0Rd__AA0bfD0Rd_0_r0_lF">sendMessageWithReply(message:flags:timeoutMsec:outSerial:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE20sendMessageWithReply7message5flags11timeoutMsec9outSerial11cancellable8callback8userDatayqd_0__AA0b4SendF5FlagsVSiSpys6UInt32VGSgqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgA_tAA011CancellableD0Rd__AA0bfD0Rd_0_r0_lF">sendMessageWithReply(message:<wbr>flags:<wbr>timeoutMsec:<wbr>outSerial:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -10008,7 +10030,7 @@ UNIX file descriptors.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE26sendMessageWithReplyFinish3resAA0bF3RefVSgqd___tKAA011AsyncResultD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/sendMessageWithReplyFinish(res:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE26sendMessageWithReplyFinish3resAA0bF3RefVSgqd___tKAA011AsyncResultD0Rd__lF">sendMessageWithReplyFinish(res:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE26sendMessageWithReplyFinish3resAA0bF3RefVSgqd___tKAA011AsyncResultD0Rd__lF">sendMessageWithReplyFinish(res:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -10051,7 +10073,7 @@ UNIX file descriptors.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE24sendMessageWithReplySync7message5flags11timeoutMsec9outSerial11cancellableAA0bF3RefVSgqd___AA0b4SendF5FlagsVSiSpys6UInt32VGSgAA011CancellableQ0VSgtKAA0bfD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/sendMessageWithReplySync(message:flags:timeoutMsec:outSerial:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE24sendMessageWithReplySync7message5flags11timeoutMsec9outSerial11cancellableAA0bF3RefVSgqd___AA0b4SendF5FlagsVSiSpys6UInt32VGSgAA011CancellableQ0VSgtKAA0bfD0Rd__lF">sendMessageWithReplySync(message:flags:timeoutMsec:outSerial:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE24sendMessageWithReplySync7message5flags11timeoutMsec9outSerial11cancellableAA0bF3RefVSgqd___AA0b4SendF5FlagsVSiSpys6UInt32VGSgAA011CancellableQ0VSgtKAA0bfD0Rd__lF">sendMessageWithReplySync(message:<wbr>flags:<wbr>timeoutMsec:<wbr>outSerial:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -10112,7 +10134,7 @@ UNIX file descriptors.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE24sendMessageWithReplySync7message5flags11timeoutMsec9outSerial11cancellableAA0bF3RefVSgqd_0__AA0b4SendF5FlagsVSiSpys6UInt32VGSgqd__SgtKAA011CancellableD0Rd__AA0bfD0Rd_0_r0_lF"></a>
                     <a name="//apple_ref/swift/Method/sendMessageWithReplySync(message:flags:timeoutMsec:outSerial:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE24sendMessageWithReplySync7message5flags11timeoutMsec9outSerial11cancellableAA0bF3RefVSgqd_0__AA0b4SendF5FlagsVSiSpys6UInt32VGSgqd__SgtKAA011CancellableD0Rd__AA0bfD0Rd_0_r0_lF">sendMessageWithReplySync(message:flags:timeoutMsec:outSerial:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE24sendMessageWithReplySync7message5flags11timeoutMsec9outSerial11cancellableAA0bF3RefVSgqd_0__AA0b4SendF5FlagsVSiSpys6UInt32VGSgqd__SgtKAA011CancellableD0Rd__AA0bfD0Rd_0_r0_lF">sendMessageWithReplySync(message:<wbr>flags:<wbr>timeoutMsec:<wbr>outSerial:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -10173,7 +10195,7 @@ UNIX file descriptors.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE3set11exitOnCloseySb_tF"></a>
                     <a name="//apple_ref/swift/Method/set(exitOnClose:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE3set11exitOnCloseySb_tF">set(exitOnClose:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE3set11exitOnCloseySb_tF">set(exitOnClose:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -10216,7 +10238,7 @@ when the user session ends.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE15signalSubscribe6sender13interfaceName6member10objectPath4arg05flags8callback8userData0pQ8FreeFuncSiSPys4Int8VGSg_A4qA0B11SignalFlagsVySpySo06_GDBusC0VGSg_A4QSpySo9_GVariantVGSgSvSgtXCSgA0_yA0_XCSgtF"></a>
                     <a name="//apple_ref/swift/Method/signalSubscribe(sender:interfaceName:member:objectPath:arg0:flags:callback:userData:userDataFreeFunc:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE15signalSubscribe6sender13interfaceName6member10objectPath4arg05flags8callback8userData0pQ8FreeFuncSiSPys4Int8VGSg_A4qA0B11SignalFlagsVySpySo06_GDBusC0VGSg_A4QSpySo9_GVariantVGSgSvSgtXCSgA0_yA0_XCSgtF">signalSubscribe(sender:interfaceName:member:objectPath:arg0:flags:callback:userData:userDataFreeFunc:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE15signalSubscribe6sender13interfaceName6member10objectPath4arg05flags8callback8userData0pQ8FreeFuncSiSPys4Int8VGSg_A4qA0B11SignalFlagsVySpySo06_GDBusC0VGSg_A4QSpySo9_GVariantVGSgSvSgtXCSgA0_yA0_XCSgtF">signalSubscribe(sender:<wbr>interfaceName:<wbr>member:<wbr>objectPath:<wbr>arg0:<wbr>flags:<wbr>callback:<wbr>userData:<wbr>userDataFreeFunc:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -10298,7 +10320,7 @@ to never be zero.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE17signalUnsubscribe14subscriptionIDySi_tF"></a>
                     <a name="//apple_ref/swift/Method/signalUnsubscribe(subscriptionID:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE17signalUnsubscribe14subscriptionIDySi_tF">signalUnsubscribe(subscriptionID:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE17signalUnsubscribe14subscriptionIDySi_tF">signalUnsubscribe(subscriptionID:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -10377,7 +10399,7 @@ created with this flag or if the method has already been called.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE19unexportActionGroup8exportIDySi_tF"></a>
                     <a name="//apple_ref/swift/Method/unexportActionGroup(exportID:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE19unexportActionGroup8exportIDySi_tF">unexportActionGroup(exportID:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE19unexportActionGroup8exportIDySi_tF">unexportActionGroup(exportID:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -10416,7 +10438,7 @@ same ID more than once.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE17unexportMenuModel8exportIDySi_tF"></a>
                     <a name="//apple_ref/swift/Method/unexportMenuModel(exportID:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE17unexportMenuModel8exportIDySi_tF">unexportMenuModel(exportID:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE17unexportMenuModel8exportIDySi_tF">unexportMenuModel(exportID:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -10455,7 +10477,7 @@ same ID more than once.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE16unregisterObject14registrationIDSbSi_tF"></a>
                     <a name="//apple_ref/swift/Method/unregisterObject(registrationID:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE16unregisterObject14registrationIDSbSi_tF">unregisterObject(registrationID:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE16unregisterObject14registrationIDSbSi_tF">unregisterObject(registrationID:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -10489,7 +10511,7 @@ same ID more than once.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE17unregisterSubtree14registrationIDSbSi_tF"></a>
                     <a name="//apple_ref/swift/Method/unregisterSubtree(registrationID:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE17unregisterSubtree14registrationIDSbSi_tF">unregisterSubtree(registrationID:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE17unregisterSubtree14registrationIDSbSi_tF">unregisterSubtree(registrationID:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -10523,7 +10545,7 @@ same ID more than once.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE012busOwnNameOnC04name5flags0I15AcquiredHandler0i4LostL08userData0nO8FreeFuncSiSPys4Int8VGSg_AA03BusG10OwnerFlagsVySpySo06_GDBusC0VGSg_ANSvSgtXCSgAvUyAUXCSgtF"></a>
                     <a name="//apple_ref/swift/Method/busOwnNameOnConnection(name:flags:nameAcquiredHandler:nameLostHandler:userData:userDataFreeFunc:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE012busOwnNameOnC04name5flags0I15AcquiredHandler0i4LostL08userData0nO8FreeFuncSiSPys4Int8VGSg_AA03BusG10OwnerFlagsVySpySo06_GDBusC0VGSg_ANSvSgtXCSgAvUyAUXCSgtF">busOwnNameOnConnection(name:flags:nameAcquiredHandler:nameLostHandler:userData:userDataFreeFunc:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE012busOwnNameOnC04name5flags0I15AcquiredHandler0i4LostL08userData0nO8FreeFuncSiSPys4Int8VGSg_AA03BusG10OwnerFlagsVySpySo06_GDBusC0VGSg_ANSvSgtXCSgAvUyAUXCSgtF">busOwnNameOnConnection(name:<wbr>flags:<wbr>nameAcquiredHandler:<wbr>nameLostHandler:<wbr>userData:<wbr>userDataFreeFunc:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -10558,7 +10580,7 @@ same ID more than once.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE012busOwnNameOnC12WithClosures4name5flags0K15AcquiredClosure0k4LostN0SiSPys4Int8VGSg_AA03BusG10OwnerFlagsV10GLibObject0N3RefVSgARtF"></a>
                     <a name="//apple_ref/swift/Method/busOwnNameOnConnectionWithClosures(name:flags:nameAcquiredClosure:nameLostClosure:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE012busOwnNameOnC12WithClosures4name5flags0K15AcquiredClosure0k4LostN0SiSPys4Int8VGSg_AA03BusG10OwnerFlagsV10GLibObject0N3RefVSgARtF">busOwnNameOnConnectionWithClosures(name:flags:nameAcquiredClosure:nameLostClosure:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE012busOwnNameOnC12WithClosures4name5flags0K15AcquiredClosure0k4LostN0SiSPys4Int8VGSg_AA03BusG10OwnerFlagsV10GLibObject0N3RefVSgARtF">busOwnNameOnConnectionWithClosures(name:<wbr>flags:<wbr>nameAcquiredClosure:<wbr>nameLostClosure:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -10593,7 +10615,7 @@ callbacks for easier binding in other languages.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE012busOwnNameOnC12WithClosures4name5flags0K15AcquiredClosure0k4LostN0SiSPys4Int8VGSg_AA03BusG10OwnerFlagsVqd__SgAOt10GLibObject0nD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/busOwnNameOnConnectionWithClosures(name:flags:nameAcquiredClosure:nameLostClosure:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE012busOwnNameOnC12WithClosures4name5flags0K15AcquiredClosure0k4LostN0SiSPys4Int8VGSg_AA03BusG10OwnerFlagsVqd__SgAOt10GLibObject0nD0Rd__lF">busOwnNameOnConnectionWithClosures(name:flags:nameAcquiredClosure:nameLostClosure:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE012busOwnNameOnC12WithClosures4name5flags0K15AcquiredClosure0k4LostN0SiSPys4Int8VGSg_AA03BusG10OwnerFlagsVqd__SgAOt10GLibObject0nD0Rd__lF">busOwnNameOnConnectionWithClosures(name:<wbr>flags:<wbr>nameAcquiredClosure:<wbr>nameLostClosure:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -10628,7 +10650,7 @@ callbacks for easier binding in other languages.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE014busWatchNameOnC04name5flags0I15AppearedHandler0i8VanishedL08userData0nO8FreeFuncSiSPys4Int8VGSg_AA03BusG12WatcherFlagsVySpySo06_GDBusC0VGSg_A2NSvSgtXCSgyAT_AnUtXCSgAUyAUXCSgtF"></a>
                     <a name="//apple_ref/swift/Method/busWatchNameOnConnection(name:flags:nameAppearedHandler:nameVanishedHandler:userData:userDataFreeFunc:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE014busWatchNameOnC04name5flags0I15AppearedHandler0i8VanishedL08userData0nO8FreeFuncSiSPys4Int8VGSg_AA03BusG12WatcherFlagsVySpySo06_GDBusC0VGSg_A2NSvSgtXCSgyAT_AnUtXCSgAUyAUXCSgtF">busWatchNameOnConnection(name:flags:nameAppearedHandler:nameVanishedHandler:userData:userDataFreeFunc:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE014busWatchNameOnC04name5flags0I15AppearedHandler0i8VanishedL08userData0nO8FreeFuncSiSPys4Int8VGSg_AA03BusG12WatcherFlagsVySpySo06_GDBusC0VGSg_A2NSvSgtXCSgyAT_AnUtXCSgAUyAUXCSgtF">busWatchNameOnConnection(name:<wbr>flags:<wbr>nameAppearedHandler:<wbr>nameVanishedHandler:<wbr>userData:<wbr>userDataFreeFunc:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -10663,7 +10685,7 @@ callbacks for easier binding in other languages.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE014busWatchNameOnC12WithClosures4name5flags0K15AppearedClosure0k8VanishedN0SiSPys4Int8VGSg_AA03BusG12WatcherFlagsV10GLibObject0N3RefVSgARtF"></a>
                     <a name="//apple_ref/swift/Method/busWatchNameOnConnectionWithClosures(name:flags:nameAppearedClosure:nameVanishedClosure:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE014busWatchNameOnC12WithClosures4name5flags0K15AppearedClosure0k8VanishedN0SiSPys4Int8VGSg_AA03BusG12WatcherFlagsV10GLibObject0N3RefVSgARtF">busWatchNameOnConnectionWithClosures(name:flags:nameAppearedClosure:nameVanishedClosure:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE014busWatchNameOnC12WithClosures4name5flags0K15AppearedClosure0k8VanishedN0SiSPys4Int8VGSg_AA03BusG12WatcherFlagsV10GLibObject0N3RefVSgARtF">busWatchNameOnConnectionWithClosures(name:<wbr>flags:<wbr>nameAppearedClosure:<wbr>nameVanishedClosure:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -10698,7 +10720,7 @@ easier binding in other languages.</p>
                     <code>
                     <a name="/s:3GIO22DBusConnectionProtocolPAAE014busWatchNameOnC12WithClosures4name5flags0K15AppearedClosure0k8VanishedN0SiSPys4Int8VGSg_AA03BusG12WatcherFlagsVqd__SgAOt10GLibObject0nD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/busWatchNameOnConnectionWithClosures(name:flags:nameAppearedClosure:nameVanishedClosure:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE014busWatchNameOnC12WithClosures4name5flags0K15AppearedClosure0k8VanishedN0SiSPys4Int8VGSg_AA03BusG12WatcherFlagsVqd__SgAOt10GLibObject0nD0Rd__lF">busWatchNameOnConnectionWithClosures(name:flags:nameAppearedClosure:nameVanishedClosure:)</a>
+                    <a class="token" href="#/s:3GIO22DBusConnectionProtocolPAAE014busWatchNameOnC12WithClosures4name5flags0K15AppearedClosure0k8VanishedN0SiSPys4Int8VGSg_AA03BusG12WatcherFlagsVqd__SgAOt10GLibObject0nD0Rd__lF">busWatchNameOnConnectionWithClosures(name:<wbr>flags:<wbr>nameAppearedClosure:<wbr>nameVanishedClosure:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -11078,8 +11100,8 @@ message bus connection.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.ict.griffith.edu.au/~rhexel/" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2020-09-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

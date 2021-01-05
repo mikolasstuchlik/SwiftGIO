@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          GIO 2.64.4 Docs
+          GIO 2.66.4 Docs
         </a>
-         (88% documented)
+         (89% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx%2Egithub%2Eio%2FSwiftGIO%2Fdocsets%2FGIO%2Exml">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx.github.io%2FSwiftGIO%2Fdocsets%2FGIO.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -2205,6 +2205,12 @@
                 <a class="nav-group-task-link" href="../Extensions/TLSCertificateRequestFlags.html">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingError.html">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingType.html">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/TLSDatabaseLookupFlags.html">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -2648,6 +2654,9 @@
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO20tlsBackendGetDefaultAA13TLSBackendRefVSgyF">tlsBackendGetDefault()</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27tlsChannelBindingErrorQuarks6UInt32VyF">tlsChannelBindingErrorQuark()</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO22tlsClientConnectionNew12baseIoStream14serverIdentityAA09TLSClientD3RefVSgx_AA017SocketConnectableL0VSgtKAA16IOStreamProtocolRzlF">tlsClientConnectionNew(baseIoStream:serverIdentity:)</a>
               </li>
               <li class="nav-group-task">
@@ -2724,6 +2733,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO25unixMountIsSystemInternal10mountEntrySbx_tAA04UnixcH8ProtocolRzlF">unixMountIsSystemInternal(mountEntry:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO16unixMountPointAt9mountPath8timeReadAA04UnixcD3RefVSgSPys4Int8VGSg_Spys6UInt64VGSgtF">unixMountPointAt(mountPath:timeRead:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27unixMountPointsChangedSince4timeSbs6UInt64V_tF">unixMountPointsChangedSince(time:)</a>
@@ -5243,6 +5255,12 @@
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO26TLSCertificateRequestFlagsa">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSChannelBindingErrora">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO21TLSChannelBindingTypea">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSDatabaseLookupFlagsa">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -7578,6 +7596,7 @@
             <h1>ListModelProtocol</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ListModelProtocol</span></code></pre>
 
                 </div>
@@ -7625,7 +7644,7 @@ return the same object for a given position until all references to
 it are gone.</p>
 
 <p>On the other side, a consumer is expected only to hold references on
-objects that are currently &ldquo;user visible&rdquo;, in order to faciliate the
+objects that are currently &ldquo;user visible&rdquo;, in order to facilitate the
 maximum level of laziness in the implementation of the list and to
 reduce the required number of signal connections at a given time.</p>
 
@@ -7635,6 +7654,9 @@ implementation, but typically it will be from the thread that owns
 the <a href="#g-main-context-push-thread-default">thread-default main context</a>
 in effect at the time that the model was created.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Initable-ListModel.swift#L481-L488">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -7728,7 +7750,7 @@ in effect at the time that the model was created.</p>
                     <code>
                     <a name="/s:3GIO17ListModelProtocolPAAE7connect6signal5flags2toSiAA0bC10SignalNameO_10GLibObject12ConnectFlagsVyyctF"></a>
                     <a name="//apple_ref/swift/Method/connect(signal:flags:to:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO17ListModelProtocolPAAE7connect6signal5flags2toSiAA0bC10SignalNameO_10GLibObject12ConnectFlagsVyyctF">connect(signal:flags:to:)</a>
+                    <a class="token" href="#/s:3GIO17ListModelProtocolPAAE7connect6signal5flags2toSiAA0bC10SignalNameO_10GLibObject12ConnectFlagsVyyctF">connect(signal:<wbr>flags:<wbr>to:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7809,10 +7831,10 @@ in effect at the time that the model was created.</p>
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/ListModel%20Interface:%20ListModelProtocol%20extension%20(methods%20and%20fields)"></a>
+                <a name="/ListModel%20Interface%3A%20ListModelProtocol%20extension%20%28methods%20and%20fields%29"></a>
                 <a name="//apple_ref/swift/Section/ListModel Interface: ListModelProtocol extension (methods and fields)" class="dashAnchor"></a>
                 <div class="section-name-container">
-                  <a class="section-name-link" href="#/ListModel%20Interface:%20ListModelProtocol%20extension%20(methods%20and%20fields)"></a>
+                  <a class="section-name-link" href="#/ListModel%20Interface%3A%20ListModelProtocol%20extension%20%28methods%20and%20fields%29"></a>
                   <h3 class="section-name"><p>ListModel Interface: ListModelProtocol extension (methods and fields)</p>
 </h3>
                 </div>
@@ -7823,7 +7845,7 @@ in effect at the time that the model was created.</p>
                     <code>
                     <a name="/s:3GIO17ListModelProtocolPAAE7getItem8positionSvSgSi_tF"></a>
                     <a name="//apple_ref/swift/Method/getItem(position:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO17ListModelProtocolPAAE7getItem8positionSvSgSi_tF">getItem(position:)</a>
+                    <a class="token" href="#/s:3GIO17ListModelProtocolPAAE7getItem8positionSvSgSi_tF">getItem(position:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7938,7 +7960,7 @@ less efficient than iterating the list with increasing values for
                     <code>
                     <a name="/s:3GIO17ListModelProtocolPAAE9getObject8position04GLibF00F3RefVSgSi_tF"></a>
                     <a name="//apple_ref/swift/Method/getObject(position:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO17ListModelProtocolPAAE9getObject8position04GLibF00F3RefVSgSi_tF">getObject(position:)</a>
+                    <a class="token" href="#/s:3GIO17ListModelProtocolPAAE9getObject8position04GLibF00F3RefVSgSi_tF">getObject(position:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7976,7 +7998,7 @@ of the list.  See <code>g_list_model_get_n_items()</code>.</p>
                     <code>
                     <a name="/s:3GIO17ListModelProtocolPAAE12itemsChanged8position7removed5addedySi_S2itF"></a>
                     <a name="//apple_ref/swift/Method/itemsChanged(position:removed:added:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO17ListModelProtocolPAAE12itemsChanged8position7removed5addedySi_S2itF">itemsChanged(position:removed:added:)</a>
+                    <a class="token" href="#/s:3GIO17ListModelProtocolPAAE12itemsChanged8position7removed5addedySi_S2itF">itemsChanged(position:<wbr>removed:<wbr>added:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8109,8 +8131,8 @@ less efficient than iterating the list with increasing values for
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.ict.griffith.edu.au/~rhexel/" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2020-09-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

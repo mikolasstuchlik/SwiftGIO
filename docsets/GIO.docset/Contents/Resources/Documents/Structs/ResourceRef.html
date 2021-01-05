@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          GIO 2.64.4 Docs
+          GIO 2.66.4 Docs
         </a>
-         (88% documented)
+         (89% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx%2Egithub%2Eio%2FSwiftGIO%2Fdocsets%2FGIO%2Exml">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx.github.io%2FSwiftGIO%2Fdocsets%2FGIO.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -2205,6 +2205,12 @@
                 <a class="nav-group-task-link" href="../Extensions/TLSCertificateRequestFlags.html">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingError.html">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingType.html">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/TLSDatabaseLookupFlags.html">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -2648,6 +2654,9 @@
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO20tlsBackendGetDefaultAA13TLSBackendRefVSgyF">tlsBackendGetDefault()</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27tlsChannelBindingErrorQuarks6UInt32VyF">tlsChannelBindingErrorQuark()</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO22tlsClientConnectionNew12baseIoStream14serverIdentityAA09TLSClientD3RefVSgx_AA017SocketConnectableL0VSgtKAA16IOStreamProtocolRzlF">tlsClientConnectionNew(baseIoStream:serverIdentity:)</a>
               </li>
               <li class="nav-group-task">
@@ -2724,6 +2733,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO25unixMountIsSystemInternal10mountEntrySbx_tAA04UnixcH8ProtocolRzlF">unixMountIsSystemInternal(mountEntry:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO16unixMountPointAt9mountPath8timeReadAA04UnixcD3RefVSgSPys4Int8VGSg_Spys6UInt64VGSgtF">unixMountPointAt(mountPath:timeRead:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27unixMountPointsChangedSince4timeSbs6UInt64V_tF">unixMountPointsChangedSince(time:)</a>
@@ -5243,6 +5255,12 @@
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO26TLSCertificateRequestFlagsa">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSChannelBindingErrora">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO21TLSChannelBindingTypea">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSDatabaseLookupFlagsa">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -7578,6 +7596,7 @@
             <h1>ResourceRef</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ResourceRef</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ResourceProtocol.html">ResourceProtocol</a></span></code></pre>
 
                 </div>
@@ -7620,6 +7639,13 @@ the resource file, rather than an (uncompressed) copy of it. For this, the gdk-p
 program must be in the PATH, or the <code>GDK_PIXBUF_PIXDATA</code> environment variable must be
 set to the full path to the gdk-pixbuf-pixdata executable; otherwise the resource compiler will
 abort.</p>
+
+<p><code>json-stripblanks</code> which will use the <code>json-glib-format</code> command to strip
+ignorable whitespace from the JSON file. For this to work, the
+<code>JSON_GLIB_FORMAT</code> environment variable must be set to the full path to the
+<code>json-glib-format</code> executable, or it must be in the <code>PATH</code>;
+otherwise the preprocessing step is skipped. In addition, at least version
+1.6 of <code>json-glib-format</code> is required.</p>
 
 <p>Resource files will be exported in the GResource namespace using the
 combination of the given <code>prefix</code> and the filename from the <code>file</code> element.
@@ -7708,6 +7734,9 @@ version will be used instead.  Whiteouts are not currently supported.</p>
 the slash should ideally be absolute, but this is not strictly required.  It is possible to overlay the
 location of a single resource with an individual file.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-ResolverClass-SeekableIface.swift#L857-L861">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -7743,7 +7772,7 @@ location of a single resource with an individual file.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-ResolverClass-SeekableIface.swift#L846">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-ResolverClass-SeekableIface.swift#L860">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7766,7 +7795,7 @@ location of a single resource with an individual file.</p>
                     <code>
                     <a name="/s:3GIO11ResourceRefVyACSpySo10_GResourceVGcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO11ResourceRefVyACSpySo10_GResourceVGcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO11ResourceRefVyACSpySo10_GResourceVGcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7787,7 +7816,7 @@ location of a single resource with an individual file.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-ResolverClass-SeekableIface.swift#L851-L853">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-ResolverClass-SeekableIface.swift#L865-L867">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7797,7 +7826,7 @@ location of a single resource with an individual file.</p>
                     <code>
                     <a name="/s:3GIO11ResourceRefVyACSPySo10_GResourceVGcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO11ResourceRefVyACSPySo10_GResourceVGcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO11ResourceRefVyACSPySo10_GResourceVGcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7818,7 +7847,7 @@ location of a single resource with an individual file.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-ResolverClass-SeekableIface.swift#L856-L858">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-ResolverClass-SeekableIface.swift#L870-L872">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7828,7 +7857,7 @@ location of a single resource with an individual file.</p>
                     <code>
                     <a name="/s:3GIO11ResourceRefVyACSgSpySo10_GResourceVGSgcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO11ResourceRefVyACSgSpySo10_GResourceVGSgcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO11ResourceRefVyACSgSpySo10_GResourceVGSgcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7849,7 +7878,7 @@ location of a single resource with an individual file.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-ResolverClass-SeekableIface.swift#L861-L864">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-ResolverClass-SeekableIface.swift#L875-L878">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7859,7 +7888,7 @@ location of a single resource with an individual file.</p>
                     <code>
                     <a name="/s:3GIO11ResourceRefVyACSgSPySo10_GResourceVGSgcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO11ResourceRefVyACSgSPySo10_GResourceVGSgcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO11ResourceRefVyACSgSPySo10_GResourceVGSgcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7880,7 +7909,7 @@ location of a single resource with an individual file.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-ResolverClass-SeekableIface.swift#L867-L870">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-ResolverClass-SeekableIface.swift#L881-L884">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7890,7 +7919,7 @@ location of a single resource with an individual file.</p>
                     <code>
                     <a name="/s:3GIO11ResourceRefV8gpointerACSgSvSg_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(gpointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO11ResourceRefV8gpointerACSgSvSg_tcfc">init(gpointer:)</a>
+                    <a class="token" href="#/s:3GIO11ResourceRefV8gpointerACSgSvSg_tcfc">init(gpointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7911,7 +7940,7 @@ location of a single resource with an individual file.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-ResolverClass-SeekableIface.swift#L873-L876">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-ResolverClass-SeekableIface.swift#L887-L890">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7921,7 +7950,7 @@ location of a single resource with an individual file.</p>
                     <code>
                     <a name="/s:3GIO11ResourceRefV13gconstpointerACSgSVSg_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(gconstpointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO11ResourceRefV13gconstpointerACSgSVSg_tcfc">init(gconstpointer:)</a>
+                    <a class="token" href="#/s:3GIO11ResourceRefV13gconstpointerACSgSVSg_tcfc">init(gconstpointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7942,7 +7971,7 @@ location of a single resource with an individual file.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-ResolverClass-SeekableIface.swift#L879-L882">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-ResolverClass-SeekableIface.swift#L893-L896">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7952,7 +7981,7 @@ location of a single resource with an individual file.</p>
                     <code>
                     <a name="/s:3GIO11ResourceRefVyACxcAA0B8ProtocolRzlufc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO11ResourceRefVyACxcAA0B8ProtocolRzlufc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO11ResourceRefVyACxcAA0B8ProtocolRzlufc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7973,7 +8002,7 @@ location of a single resource with an individual file.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-ResolverClass-SeekableIface.swift#L885-L887">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-ResolverClass-SeekableIface.swift#L899-L901">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7983,7 +8012,7 @@ location of a single resource with an individual file.</p>
                     <code>
                     <a name="/s:3GIO11ResourceRefV8cPointerACSpyxG_tclufc"></a>
                     <a name="//apple_ref/swift/Method/init(cPointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO11ResourceRefV8cPointerACSpyxG_tclufc">init(cPointer:)</a>
+                    <a class="token" href="#/s:3GIO11ResourceRefV8cPointerACSpyxG_tclufc">init(cPointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8005,7 +8034,7 @@ location of a single resource with an individual file.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-ResolverClass-SeekableIface.swift#L891-L893">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-ResolverClass-SeekableIface.swift#L905-L907">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8015,7 +8044,7 @@ location of a single resource with an individual file.</p>
                     <code>
                     <a name="/s:3GIO11ResourceRefV12constPointerACSPyxG_tclufc"></a>
                     <a name="//apple_ref/swift/Method/init(constPointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO11ResourceRefV12constPointerACSPyxG_tclufc">init(constPointer:)</a>
+                    <a class="token" href="#/s:3GIO11ResourceRefV12constPointerACSPyxG_tclufc">init(constPointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8037,7 +8066,7 @@ location of a single resource with an individual file.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-ResolverClass-SeekableIface.swift#L897-L899">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-ResolverClass-SeekableIface.swift#L911-L913">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8047,7 +8076,7 @@ location of a single resource with an individual file.</p>
                     <code>
                     <a name="/s:3GIO11ResourceRefV8mutatingACSV_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(mutating:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO11ResourceRefV8mutatingACSV_tcfc">init(mutating:)</a>
+                    <a class="token" href="#/s:3GIO11ResourceRefV8mutatingACSV_tcfc">init(mutating:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8069,7 +8098,7 @@ location of a single resource with an individual file.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-ResolverClass-SeekableIface.swift#L903-L905">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-ResolverClass-SeekableIface.swift#L917-L919">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8079,7 +8108,7 @@ location of a single resource with an individual file.</p>
                     <code>
                     <a name="/s:3GIO11ResourceRefV3rawACSv_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO11ResourceRefV3rawACSv_tcfc">init(raw:)</a>
+                    <a class="token" href="#/s:3GIO11ResourceRefV3rawACSv_tcfc">init(raw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8101,7 +8130,7 @@ location of a single resource with an individual file.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-ResolverClass-SeekableIface.swift#L909-L911">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-ResolverClass-SeekableIface.swift#L923-L925">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8111,7 +8140,7 @@ location of a single resource with an individual file.</p>
                     <code>
                     <a name="/s:3GIO11ResourceRefV13opaquePointerACs06OpaqueE0V_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(opaquePointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO11ResourceRefV13opaquePointerACs06OpaqueE0V_tcfc">init(opaquePointer:)</a>
+                    <a class="token" href="#/s:3GIO11ResourceRefV13opaquePointerACs06OpaqueE0V_tcfc">init(opaquePointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8133,7 +8162,7 @@ location of a single resource with an individual file.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-ResolverClass-SeekableIface.swift#L915-L917">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-ResolverClass-SeekableIface.swift#L929-L931">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8143,7 +8172,7 @@ location of a single resource with an individual file.</p>
                     <code>
                     <a name="/s:3GIO11ResourceRefV4dataACx_tKc4GLib13BytesProtocolRzlufc"></a>
                     <a name="//apple_ref/swift/Method/init(data:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO11ResourceRefV4dataACx_tKc4GLib13BytesProtocolRzlufc">init(data:)</a>
+                    <a class="token" href="#/s:3GIO11ResourceRefV4dataACx_tKc4GLib13BytesProtocolRzlufc">init(data:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8177,7 +8206,7 @@ GLib 2.56, or in older versions fail and exit the process.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-ResolverClass-SeekableIface.swift#L931-L936">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-ResolverClass-SeekableIface.swift#L945-L950">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8187,7 +8216,7 @@ GLib 2.56, or in older versions fail and exit the process.</p>
                     <code>
                     <a name="/s:3GIO11ResourceRefV7newFrom4dataACSgx_tK4GLib13BytesProtocolRzlFZ"></a>
                     <a name="//apple_ref/swift/Method/newFrom(data:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO11ResourceRefV7newFrom4dataACSgx_tK4GLib13BytesProtocolRzlFZ">newFrom(data:)</a>
+                    <a class="token" href="#/s:3GIO11ResourceRefV7newFrom4dataACSgx_tK4GLib13BytesProtocolRzlFZ">newFrom(data:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8219,7 +8248,7 @@ GLib 2.56, or in older versions fail and exit the process.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-ResolverClass-SeekableIface.swift#L949-L955">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-ResolverClass-SeekableIface.swift#L963-L969">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8229,7 +8258,7 @@ GLib 2.56, or in older versions fail and exit the process.</p>
                     <code>
                     <a name="/s:3GIO11ResourceRefV4load8filenameACSgSPys4Int8VGSg_tKFZ"></a>
                     <a name="//apple_ref/swift/Method/load(filename:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO11ResourceRefV4load8filenameACSgSPys4Int8VGSg_tKFZ">load(filename:)</a>
+                    <a class="token" href="#/s:3GIO11ResourceRefV4load8filenameACSgSPys4Int8VGSg_tKFZ">load(filename:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8259,7 +8288,7 @@ returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-ResolverClass-SeekableIface.swift#L967-L973">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-ResolverClass-SeekableIface.swift#L981-L987">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8272,8 +8301,8 @@ returned.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.ict.griffith.edu.au/~rhexel/" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2020-09-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

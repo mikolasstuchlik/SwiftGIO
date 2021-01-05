@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          GIO 2.64.4 Docs
+          GIO 2.66.4 Docs
         </a>
-         (88% documented)
+         (89% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx%2Egithub%2Eio%2FSwiftGIO%2Fdocsets%2FGIO%2Exml">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx.github.io%2FSwiftGIO%2Fdocsets%2FGIO.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -2205,6 +2205,12 @@
                 <a class="nav-group-task-link" href="../Extensions/TLSCertificateRequestFlags.html">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingError.html">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingType.html">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/TLSDatabaseLookupFlags.html">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -2648,6 +2654,9 @@
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO20tlsBackendGetDefaultAA13TLSBackendRefVSgyF">tlsBackendGetDefault()</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27tlsChannelBindingErrorQuarks6UInt32VyF">tlsChannelBindingErrorQuark()</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO22tlsClientConnectionNew12baseIoStream14serverIdentityAA09TLSClientD3RefVSgx_AA017SocketConnectableL0VSgtKAA16IOStreamProtocolRzlF">tlsClientConnectionNew(baseIoStream:serverIdentity:)</a>
               </li>
               <li class="nav-group-task">
@@ -2724,6 +2733,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO25unixMountIsSystemInternal10mountEntrySbx_tAA04UnixcH8ProtocolRzlF">unixMountIsSystemInternal(mountEntry:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO16unixMountPointAt9mountPath8timeReadAA04UnixcD3RefVSgSPys4Int8VGSg_Spys6UInt64VGSgtF">unixMountPointAt(mountPath:timeRead:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27unixMountPointsChangedSince4timeSbs6UInt64V_tF">unixMountPointsChangedSince(time:)</a>
@@ -5243,6 +5255,12 @@
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO26TLSCertificateRequestFlagsa">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSChannelBindingErrora">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO21TLSChannelBindingTypea">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSDatabaseLookupFlagsa">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -7578,6 +7596,7 @@
             <h1>BufferedInputStreamProtocol</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">BufferedInputStreamProtocol</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/FilterInputStreamProtocol.html">FilterInputStreamProtocol</a></span><span class="p">,</span> <span class="kt"><a href="../Protocols/SeekableProtocol.html">SeekableProtocol</a></span></code></pre>
 
                 </div>
@@ -7602,6 +7621,9 @@ buffered input stream&rsquo;s buffer, use
 <code>g_buffered_input_stream_set_buffer_size()</code>. Note that the buffer&rsquo;s size
 cannot be reduced below the size of the data within the buffer.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-AppInfoMonitor-BufferedInputStream.swift#L3753-L3760">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -7695,7 +7717,7 @@ cannot be reduced below the size of the data within the buffer.</p>
                     <code>
                     <a name="/s:3GIO27BufferedInputStreamProtocolPAAE4bind8property2to_5flags13transformFrom0J2To10GLibObject10BindingRefVSgAA0bcD12PropertyNameO_qd_0_qd__AJ0O5FlagsVSbAJ05ValueP0V_AStcSbAS_AStctAJ0qrE0Rd__AJ0nE0Rd_0_r0_lF"></a>
                     <a name="//apple_ref/swift/Method/bind(property:to:_:flags:transformFrom:transformTo:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO27BufferedInputStreamProtocolPAAE4bind8property2to_5flags13transformFrom0J2To10GLibObject10BindingRefVSgAA0bcD12PropertyNameO_qd_0_qd__AJ0O5FlagsVSbAJ05ValueP0V_AStcSbAS_AStctAJ0qrE0Rd__AJ0nE0Rd_0_r0_lF">bind(property:to:_:flags:transformFrom:transformTo:)</a>
+                    <a class="token" href="#/s:3GIO27BufferedInputStreamProtocolPAAE4bind8property2to_5flags13transformFrom0J2To10GLibObject10BindingRefVSgAA0bcD12PropertyNameO_qd_0_qd__AJ0O5FlagsVSbAJ05ValueP0V_AStcSbAS_AStctAJ0qrE0Rd__AJ0nE0Rd_0_r0_lF">bind(property:<wbr>to:<wbr>_:<wbr>flags:<wbr>transformFrom:<wbr>transformTo:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7813,7 +7835,7 @@ cannot be reduced below the size of the data within the buffer.</p>
                     <code>
                     <a name="/s:3GIO27BufferedInputStreamProtocolPAAE3get8property10GLibObject5ValueCAA0bcD12PropertyNameO_tF"></a>
                     <a name="//apple_ref/swift/Method/get(property:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO27BufferedInputStreamProtocolPAAE3get8property10GLibObject5ValueCAA0bcD12PropertyNameO_tF">get(property:)</a>
+                    <a class="token" href="#/s:3GIO27BufferedInputStreamProtocolPAAE3get8property10GLibObject5ValueCAA0bcD12PropertyNameO_tF">get(property:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7870,7 +7892,7 @@ cannot be reduced below the size of the data within the buffer.</p>
                     <code>
                     <a name="/s:3GIO27BufferedInputStreamProtocolPAAE3set8property5valueyAA0bcD12PropertyNameO_10GLibObject5ValueCtF"></a>
                     <a name="//apple_ref/swift/Method/set(property:value:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO27BufferedInputStreamProtocolPAAE3set8property5valueyAA0bcD12PropertyNameO_10GLibObject5ValueCtF">set(property:value:)</a>
+                    <a class="token" href="#/s:3GIO27BufferedInputStreamProtocolPAAE3set8property5valueyAA0bcD12PropertyNameO_10GLibObject5ValueCtF">set(property:<wbr>value:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7928,7 +7950,7 @@ cannot be reduced below the size of the data within the buffer.</p>
                     <code>
                     <a name="/s:3GIO27BufferedInputStreamProtocolPAAE7connect6signal5flags2toSiAA0bcD10SignalNameO_10GLibObject12ConnectFlagsVyyctF"></a>
                     <a name="//apple_ref/swift/Method/connect(signal:flags:to:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO27BufferedInputStreamProtocolPAAE7connect6signal5flags2toSiAA0bcD10SignalNameO_10GLibObject12ConnectFlagsVyyctF">connect(signal:flags:to:)</a>
+                    <a class="token" href="#/s:3GIO27BufferedInputStreamProtocolPAAE7connect6signal5flags2toSiAA0bcD10SignalNameO_10GLibObject12ConnectFlagsVyyctF">connect(signal:<wbr>flags:<wbr>to:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8009,10 +8031,10 @@ cannot be reduced below the size of the data within the buffer.</p>
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/BufferedInputStream%20Class:%20BufferedInputStreamProtocol%20extension%20(methods%20and%20fields)"></a>
+                <a name="/BufferedInputStream%20Class%3A%20BufferedInputStreamProtocol%20extension%20%28methods%20and%20fields%29"></a>
                 <a name="//apple_ref/swift/Section/BufferedInputStream Class: BufferedInputStreamProtocol extension (methods and fields)" class="dashAnchor"></a>
                 <div class="section-name-container">
-                  <a class="section-name-link" href="#/BufferedInputStream%20Class:%20BufferedInputStreamProtocol%20extension%20(methods%20and%20fields)"></a>
+                  <a class="section-name-link" href="#/BufferedInputStream%20Class%3A%20BufferedInputStreamProtocol%20extension%20%28methods%20and%20fields%29"></a>
                   <h3 class="section-name"><p>BufferedInputStream Class: BufferedInputStreamProtocol extension (methods and fields)</p>
 </h3>
                 </div>
@@ -8023,7 +8045,7 @@ cannot be reduced below the size of the data within the buffer.</p>
                     <code>
                     <a name="/s:3GIO27BufferedInputStreamProtocolPAAE4fill5count11cancellableS2i_AA14CancellableRefVSgtKF"></a>
                     <a name="//apple_ref/swift/Method/fill(count:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO27BufferedInputStreamProtocolPAAE4fill5count11cancellableS2i_AA14CancellableRefVSgtKF">fill(count:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO27BufferedInputStreamProtocolPAAE4fill5count11cancellableS2i_AA14CancellableRefVSgtKF">fill(count:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8080,7 +8102,7 @@ partial result will be returned, without an error.</p>
                     <code>
                     <a name="/s:3GIO27BufferedInputStreamProtocolPAAE4fill5count11cancellableS2i_qd__SgtKAA011CancellableE0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/fill(count:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO27BufferedInputStreamProtocolPAAE4fill5count11cancellableS2i_qd__SgtKAA011CancellableE0Rd__lF">fill(count:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO27BufferedInputStreamProtocolPAAE4fill5count11cancellableS2i_qd__SgtKAA011CancellableE0Rd__lF">fill(count:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8137,7 +8159,7 @@ partial result will be returned, without an error.</p>
                     <code>
                     <a name="/s:3GIO27BufferedInputStreamProtocolPAAE9fillAsync5count10ioPriority11cancellable8callback8userDataySi_SiAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAUtF"></a>
                     <a name="//apple_ref/swift/Method/fillAsync(count:ioPriority:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO27BufferedInputStreamProtocolPAAE9fillAsync5count10ioPriority11cancellable8callback8userDataySi_SiAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAUtF">fillAsync(count:ioPriority:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO27BufferedInputStreamProtocolPAAE9fillAsync5count10ioPriority11cancellable8callback8userDataySi_SiAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAUtF">fillAsync(count:<wbr>ioPriority:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8176,7 +8198,7 @@ of bytes that are required to fill the buffer.</p>
                     <code>
                     <a name="/s:3GIO27BufferedInputStreamProtocolPAAE9fillAsync5count10ioPriority11cancellable8callback8userDataySi_Siqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAStAA011CancellableE0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/fillAsync(count:ioPriority:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO27BufferedInputStreamProtocolPAAE9fillAsync5count10ioPriority11cancellable8callback8userDataySi_Siqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAStAA011CancellableE0Rd__lF">fillAsync(count:ioPriority:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO27BufferedInputStreamProtocolPAAE9fillAsync5count10ioPriority11cancellable8callback8userDataySi_Siqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAStAA011CancellableE0Rd__lF">fillAsync(count:<wbr>ioPriority:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8215,7 +8237,7 @@ of bytes that are required to fill the buffer.</p>
                     <code>
                     <a name="/s:3GIO27BufferedInputStreamProtocolPAAE10fillFinish6resultSiqd___tKAA011AsyncResultE0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/fillFinish(result:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO27BufferedInputStreamProtocolPAAE10fillFinish6resultSiqd___tKAA011AsyncResultE0Rd__lF">fillFinish(result:)</a>
+                    <a class="token" href="#/s:3GIO27BufferedInputStreamProtocolPAAE10fillFinish6resultSiqd___tKAA011AsyncResultE0Rd__lF">fillFinish(result:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8317,7 +8339,7 @@ of bytes that are required to fill the buffer.</p>
                     <code>
                     <a name="/s:3GIO27BufferedInputStreamProtocolPAAE4peek6buffer6offset5countSiSvSg_S2itF"></a>
                     <a name="//apple_ref/swift/Method/peek(buffer:offset:count:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO27BufferedInputStreamProtocolPAAE4peek6buffer6offset5countSiSvSg_S2itF">peek(buffer:offset:count:)</a>
+                    <a class="token" href="#/s:3GIO27BufferedInputStreamProtocolPAAE4peek6buffer6offset5countSiSvSg_S2itF">peek(buffer:<wbr>offset:<wbr>count:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8352,7 +8374,7 @@ offset <code>offset</code> bytes.</p>
                     <code>
                     <a name="/s:3GIO27BufferedInputStreamProtocolPAAE10peekBuffer5countSVSgSpySuGSg_tF"></a>
                     <a name="//apple_ref/swift/Method/peekBuffer(count:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO27BufferedInputStreamProtocolPAAE10peekBuffer5countSVSgSpySuGSg_tF">peekBuffer(count:)</a>
+                    <a class="token" href="#/s:3GIO27BufferedInputStreamProtocolPAAE10peekBuffer5countSVSgSpySuGSg_tF">peekBuffer(count:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8388,7 +8410,7 @@ the stream or filling the buffer.</p>
                     <code>
                     <a name="/s:3GIO27BufferedInputStreamProtocolPAAE8readByte11cancellableSiAA14CancellableRefVSg_tKF"></a>
                     <a name="//apple_ref/swift/Method/readByte(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO27BufferedInputStreamProtocolPAAE8readByte11cancellableSiAA14CancellableRefVSg_tKF">readByte(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO27BufferedInputStreamProtocolPAAE8readByte11cancellableSiAA14CancellableRefVSg_tKF">readByte(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8434,7 +8456,7 @@ partial result will be returned, without an error.</p>
                     <code>
                     <a name="/s:3GIO27BufferedInputStreamProtocolPAAE8readByte11cancellableSiqd__Sg_tKAA011CancellableE0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/readByte(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO27BufferedInputStreamProtocolPAAE8readByte11cancellableSiqd__Sg_tKAA011CancellableE0Rd__lF">readByte(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO27BufferedInputStreamProtocolPAAE8readByte11cancellableSiqd__Sg_tKAA011CancellableE0Rd__lF">readByte(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8480,7 +8502,7 @@ partial result will be returned, without an error.</p>
                     <code>
                     <a name="/s:3GIO27BufferedInputStreamProtocolPAAE9setBuffer4sizeySi_tF"></a>
                     <a name="//apple_ref/swift/Method/setBuffer(size:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO27BufferedInputStreamProtocolPAAE9setBuffer4sizeySi_tF">setBuffer(size:)</a>
+                    <a class="token" href="#/s:3GIO27BufferedInputStreamProtocolPAAE9setBuffer4sizeySi_tF">setBuffer(size:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8621,8 +8643,8 @@ smaller than its current contents.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.ict.griffith.edu.au/~rhexel/" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2020-09-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

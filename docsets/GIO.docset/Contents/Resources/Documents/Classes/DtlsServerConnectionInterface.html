@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          GIO 2.64.4 Docs
+          GIO 2.66.4 Docs
         </a>
-         (88% documented)
+         (89% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx%2Egithub%2Eio%2FSwiftGIO%2Fdocsets%2FGIO%2Exml">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx.github.io%2FSwiftGIO%2Fdocsets%2FGIO.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -2205,6 +2205,12 @@
                 <a class="nav-group-task-link" href="../Extensions/TLSCertificateRequestFlags.html">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingError.html">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingType.html">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/TLSDatabaseLookupFlags.html">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -2648,6 +2654,9 @@
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO20tlsBackendGetDefaultAA13TLSBackendRefVSgyF">tlsBackendGetDefault()</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27tlsChannelBindingErrorQuarks6UInt32VyF">tlsChannelBindingErrorQuark()</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO22tlsClientConnectionNew12baseIoStream14serverIdentityAA09TLSClientD3RefVSgx_AA017SocketConnectableL0VSgtKAA16IOStreamProtocolRzlF">tlsClientConnectionNew(baseIoStream:serverIdentity:)</a>
               </li>
               <li class="nav-group-task">
@@ -2724,6 +2733,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO25unixMountIsSystemInternal10mountEntrySbx_tAA04UnixcH8ProtocolRzlF">unixMountIsSystemInternal(mountEntry:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO16unixMountPointAt9mountPath8timeReadAA04UnixcD3RefVSgSPys4Int8VGSg_Spys6UInt64VGSgtF">unixMountPointAt(mountPath:timeRead:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27unixMountPointsChangedSince4timeSbs6UInt64V_tF">unixMountPointsChangedSince(time:)</a>
@@ -5243,6 +5255,12 @@
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO26TLSCertificateRequestFlagsa">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSChannelBindingErrora">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO21TLSChannelBindingTypea">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSDatabaseLookupFlagsa">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -7578,6 +7596,7 @@
             <h1>DtlsServerConnectionInterface</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">DtlsServerConnectionInterface</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/DtlsServerConnectionInterfaceProtocol.html">DtlsServerConnectionInterfaceProtocol</a></span></code></pre>
 
                 </div>
@@ -7588,6 +7607,9 @@ Use <code>DtlsServerConnectionInterface</code> as a strong reference or owner of
 
 <p>vtable for a <code>GDtlsServerConnection</code> implementation.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusArgInfo-EmblemClass.swift#L9709-L9851">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -7623,7 +7645,7 @@ Use <code>DtlsServerConnectionInterface</code> as a strong reference or owner of
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusArgInfo-EmblemClass.swift#L9710">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusArgInfo-EmblemClass.swift#L9712">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7633,7 +7655,7 @@ Use <code>DtlsServerConnectionInterface</code> as a strong reference or owner of
                     <code>
                     <a name="/s:3GIO29DtlsServerConnectionInterfaceCyACSpySo06_GDtlscdE0VGcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO29DtlsServerConnectionInterfaceCyACSpySo06_GDtlscdE0VGcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO29DtlsServerConnectionInterfaceCyACSpySo06_GDtlscdE0VGcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7675,7 +7697,7 @@ i.e., ownership is transferred to the <code>DtlsServerConnectionInterface</code>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusArgInfo-EmblemClass.swift#L9716-L9718">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusArgInfo-EmblemClass.swift#L9718-L9720">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7685,7 +7707,7 @@ i.e., ownership is transferred to the <code>DtlsServerConnectionInterface</code>
                     <code>
                     <a name="/s:3GIO29DtlsServerConnectionInterfaceCyACSPySo06_GDtlscdE0VGcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO29DtlsServerConnectionInterfaceCyACSPySo06_GDtlscdE0VGcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO29DtlsServerConnectionInterfaceCyACSPySo06_GDtlscdE0VGcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7727,7 +7749,7 @@ i.e., ownership is transferred to the <code>DtlsServerConnectionInterface</code>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusArgInfo-EmblemClass.swift#L9724-L9726">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusArgInfo-EmblemClass.swift#L9726-L9728">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7737,7 +7759,7 @@ i.e., ownership is transferred to the <code>DtlsServerConnectionInterface</code>
                     <code>
                     <a name="/s:3GIO29DtlsServerConnectionInterfaceC8gpointerACSgSvSg_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(gpointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO29DtlsServerConnectionInterfaceC8gpointerACSgSvSg_tcfc">init(gpointer:)</a>
+                    <a class="token" href="#/s:3GIO29DtlsServerConnectionInterfaceC8gpointerACSgSvSg_tcfc">init(gpointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7780,7 +7802,7 @@ i.e., ownership is transferred to the <code>DtlsServerConnectionInterface</code>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusArgInfo-EmblemClass.swift#L9733-L9736">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusArgInfo-EmblemClass.swift#L9735-L9738">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7790,7 +7812,7 @@ i.e., ownership is transferred to the <code>DtlsServerConnectionInterface</code>
                     <code>
                     <a name="/s:3GIO29DtlsServerConnectionInterfaceC13gconstpointerACSgSVSg_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(gconstpointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO29DtlsServerConnectionInterfaceC13gconstpointerACSgSVSg_tcfc">init(gconstpointer:)</a>
+                    <a class="token" href="#/s:3GIO29DtlsServerConnectionInterfaceC13gconstpointerACSgSVSg_tcfc">init(gconstpointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7833,7 +7855,7 @@ i.e., ownership is transferred to the <code>DtlsServerConnectionInterface</code>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusArgInfo-EmblemClass.swift#L9743-L9746">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusArgInfo-EmblemClass.swift#L9745-L9748">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7843,7 +7865,7 @@ i.e., ownership is transferred to the <code>DtlsServerConnectionInterface</code>
                     <code>
                     <a name="/s:3GIO29DtlsServerConnectionInterfaceCyACSgSPySo06_GDtlscdE0VGSgcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO29DtlsServerConnectionInterfaceCyACSgSPySo06_GDtlscdE0VGSgcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO29DtlsServerConnectionInterfaceCyACSgSPySo06_GDtlscdE0VGSgcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7885,7 +7907,7 @@ i.e., ownership is transferred to the <code>DtlsServerConnectionInterface</code>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusArgInfo-EmblemClass.swift#L9752-L9755">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusArgInfo-EmblemClass.swift#L9754-L9757">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7895,7 +7917,7 @@ i.e., ownership is transferred to the <code>DtlsServerConnectionInterface</code>
                     <code>
                     <a name="/s:3GIO29DtlsServerConnectionInterfaceCyACSgSpySo06_GDtlscdE0VGSgcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO29DtlsServerConnectionInterfaceCyACSgSpySo06_GDtlscdE0VGSgcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO29DtlsServerConnectionInterfaceCyACSgSpySo06_GDtlscdE0VGSgcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7937,7 +7959,7 @@ i.e., ownership is transferred to the <code>DtlsServerConnectionInterface</code>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusArgInfo-EmblemClass.swift#L9761-L9764">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusArgInfo-EmblemClass.swift#L9763-L9766">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7947,7 +7969,7 @@ i.e., ownership is transferred to the <code>DtlsServerConnectionInterface</code>
                     <code>
                     <a name="/s:3GIO29DtlsServerConnectionInterfaceC9retainingACSpySo06_GDtlscdE0VG_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retaining:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO29DtlsServerConnectionInterfaceC9retainingACSpySo06_GDtlscdE0VG_tcfc">init(retaining:)</a>
+                    <a class="token" href="#/s:3GIO29DtlsServerConnectionInterfaceC9retainingACSpySo06_GDtlscdE0VG_tcfc">init(retaining:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7989,7 +8011,7 @@ i.e., ownership is transferred to the <code>DtlsServerConnectionInterface</code>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusArgInfo-EmblemClass.swift#L9770-L9773">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusArgInfo-EmblemClass.swift#L9772-L9775">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7999,7 +8021,7 @@ i.e., ownership is transferred to the <code>DtlsServerConnectionInterface</code>
                     <code>
                     <a name="/s:3GIO29DtlsServerConnectionInterfaceCyACxcAA0bcdE8ProtocolRzlufc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO29DtlsServerConnectionInterfaceCyACxcAA0bcdE8ProtocolRzlufc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO29DtlsServerConnectionInterfaceCyACxcAA0bcdE8ProtocolRzlufc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8040,7 +8062,7 @@ i.e., ownership is transferred to the <code>DtlsServerConnectionInterface</code>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusArgInfo-EmblemClass.swift#L9778-L9781">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusArgInfo-EmblemClass.swift#L9780-L9783">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8050,7 +8072,7 @@ i.e., ownership is transferred to the <code>DtlsServerConnectionInterface</code>
                     <code>
                     <a name="/s:3GIO29DtlsServerConnectionInterfaceC8cPointerACSpyxG_tclufc"></a>
                     <a name="//apple_ref/swift/Method/init(cPointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO29DtlsServerConnectionInterfaceC8cPointerACSpyxG_tclufc">init(cPointer:)</a>
+                    <a class="token" href="#/s:3GIO29DtlsServerConnectionInterfaceC8cPointerACSpyxG_tclufc">init(cPointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8091,7 +8113,7 @@ i.e., ownership is transferred to the <code>DtlsServerConnectionInterface</code>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusArgInfo-EmblemClass.swift#L9791-L9793">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusArgInfo-EmblemClass.swift#L9793-L9795">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8101,7 +8123,7 @@ i.e., ownership is transferred to the <code>DtlsServerConnectionInterface</code>
                     <code>
                     <a name="/s:3GIO29DtlsServerConnectionInterfaceC17retainingCPointerACSpyxG_tclufc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingCPointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO29DtlsServerConnectionInterfaceC17retainingCPointerACSpyxG_tclufc">init(retainingCPointer:)</a>
+                    <a class="token" href="#/s:3GIO29DtlsServerConnectionInterfaceC17retainingCPointerACSpyxG_tclufc">init(retainingCPointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8142,7 +8164,7 @@ i.e., ownership is transferred to the <code>DtlsServerConnectionInterface</code>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusArgInfo-EmblemClass.swift#L9798-L9801">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusArgInfo-EmblemClass.swift#L9800-L9803">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8152,7 +8174,7 @@ i.e., ownership is transferred to the <code>DtlsServerConnectionInterface</code>
                     <code>
                     <a name="/s:3GIO29DtlsServerConnectionInterfaceC3rawACSV_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO29DtlsServerConnectionInterfaceC3rawACSV_tcfc">init(raw:)</a>
+                    <a class="token" href="#/s:3GIO29DtlsServerConnectionInterfaceC3rawACSV_tcfc">init(raw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8193,7 +8215,7 @@ i.e., ownership is transferred to the <code>DtlsServerConnectionInterface</code>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusArgInfo-EmblemClass.swift#L9806-L9808">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusArgInfo-EmblemClass.swift#L9808-L9810">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8203,7 +8225,7 @@ i.e., ownership is transferred to the <code>DtlsServerConnectionInterface</code>
                     <code>
                     <a name="/s:3GIO29DtlsServerConnectionInterfaceC12retainingRawACSV_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingRaw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO29DtlsServerConnectionInterfaceC12retainingRawACSV_tcfc">init(retainingRaw:)</a>
+                    <a class="token" href="#/s:3GIO29DtlsServerConnectionInterfaceC12retainingRawACSV_tcfc">init(retainingRaw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8225,7 +8247,7 @@ i.e., ownership is transferred to the <code>DtlsServerConnectionInterface</code>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusArgInfo-EmblemClass.swift#L9812-L9815">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusArgInfo-EmblemClass.swift#L9814-L9817">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8235,7 +8257,7 @@ i.e., ownership is transferred to the <code>DtlsServerConnectionInterface</code>
                     <code>
                     <a name="/s:3GIO29DtlsServerConnectionInterfaceC3rawACSv_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO29DtlsServerConnectionInterfaceC3rawACSv_tcfc">init(raw:)</a>
+                    <a class="token" href="#/s:3GIO29DtlsServerConnectionInterfaceC3rawACSv_tcfc">init(raw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8276,7 +8298,7 @@ i.e., ownership is transferred to the <code>DtlsServerConnectionInterface</code>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusArgInfo-EmblemClass.swift#L9820-L9822">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusArgInfo-EmblemClass.swift#L9822-L9824">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8286,7 +8308,7 @@ i.e., ownership is transferred to the <code>DtlsServerConnectionInterface</code>
                     <code>
                     <a name="/s:3GIO29DtlsServerConnectionInterfaceC12retainingRawACSv_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingRaw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO29DtlsServerConnectionInterfaceC12retainingRawACSv_tcfc">init(retainingRaw:)</a>
+                    <a class="token" href="#/s:3GIO29DtlsServerConnectionInterfaceC12retainingRawACSv_tcfc">init(retainingRaw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8327,7 +8349,7 @@ i.e., ownership is transferred to the <code>DtlsServerConnectionInterface</code>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusArgInfo-EmblemClass.swift#L9827-L9830">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusArgInfo-EmblemClass.swift#L9829-L9832">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8337,7 +8359,7 @@ i.e., ownership is transferred to the <code>DtlsServerConnectionInterface</code>
                     <code>
                     <a name="/s:3GIO29DtlsServerConnectionInterfaceC13opaquePointerACs06OpaqueG0V_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(opaquePointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO29DtlsServerConnectionInterfaceC13opaquePointerACs06OpaqueG0V_tcfc">init(opaquePointer:)</a>
+                    <a class="token" href="#/s:3GIO29DtlsServerConnectionInterfaceC13opaquePointerACs06OpaqueG0V_tcfc">init(opaquePointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8378,7 +8400,7 @@ i.e., ownership is transferred to the <code>DtlsServerConnectionInterface</code>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusArgInfo-EmblemClass.swift#L9835-L9837">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusArgInfo-EmblemClass.swift#L9837-L9839">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8388,7 +8410,7 @@ i.e., ownership is transferred to the <code>DtlsServerConnectionInterface</code>
                     <code>
                     <a name="/s:3GIO29DtlsServerConnectionInterfaceC22retainingOpaquePointerACs0gH0V_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingOpaquePointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO29DtlsServerConnectionInterfaceC22retainingOpaquePointerACs0gH0V_tcfc">init(retainingOpaquePointer:)</a>
+                    <a class="token" href="#/s:3GIO29DtlsServerConnectionInterfaceC22retainingOpaquePointerACs0gH0V_tcfc">init(retainingOpaquePointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8429,7 +8451,7 @@ i.e., ownership is transferred to the <code>DtlsServerConnectionInterface</code>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusArgInfo-EmblemClass.swift#L9842-L9845">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusArgInfo-EmblemClass.swift#L9844-L9847">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8442,8 +8464,8 @@ i.e., ownership is transferred to the <code>DtlsServerConnectionInterface</code>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.ict.griffith.edu.au/~rhexel/" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2020-09-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

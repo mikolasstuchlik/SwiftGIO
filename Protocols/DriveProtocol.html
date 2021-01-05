@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          GIO 2.64.4 Docs
+          GIO 2.66.4 Docs
         </a>
-         (88% documented)
+         (89% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx%2Egithub%2Eio%2FSwiftGIO%2Fdocsets%2FGIO%2Exml">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx.github.io%2FSwiftGIO%2Fdocsets%2FGIO.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -2205,6 +2205,12 @@
                 <a class="nav-group-task-link" href="../Extensions/TLSCertificateRequestFlags.html">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingError.html">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingType.html">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/TLSDatabaseLookupFlags.html">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -2648,6 +2654,9 @@
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO20tlsBackendGetDefaultAA13TLSBackendRefVSgyF">tlsBackendGetDefault()</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27tlsChannelBindingErrorQuarks6UInt32VyF">tlsChannelBindingErrorQuark()</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO22tlsClientConnectionNew12baseIoStream14serverIdentityAA09TLSClientD3RefVSgx_AA017SocketConnectableL0VSgtKAA16IOStreamProtocolRzlF">tlsClientConnectionNew(baseIoStream:serverIdentity:)</a>
               </li>
               <li class="nav-group-task">
@@ -2724,6 +2733,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO25unixMountIsSystemInternal10mountEntrySbx_tAA04UnixcH8ProtocolRzlF">unixMountIsSystemInternal(mountEntry:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO16unixMountPointAt9mountPath8timeReadAA04UnixcD3RefVSgSPys4Int8VGSg_Spys6UInt64VGSgtF">unixMountPointAt(mountPath:timeRead:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27unixMountPointsChangedSince4timeSbs6UInt64V_tF">unixMountPointsChangedSince(time:)</a>
@@ -5243,6 +5255,12 @@
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO26TLSCertificateRequestFlagsa">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSChannelBindingErrora">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO21TLSChannelBindingTypea">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSDatabaseLookupFlagsa">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -7578,6 +7596,7 @@
             <h1>DriveProtocol</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">DriveProtocol</span></code></pre>
 
                 </div>
@@ -7599,7 +7618,7 @@ automatically detected and ejecting the media.</p>
 
 <p>If the <code>GDrive</code> reports that media isn&rsquo;t automatically detected, one
 can poll for media; typically one should not do this periodically
-as a poll for media operation is potententially expensive and may
+as a poll for media operation is potentially expensive and may
 spin up the drive creating noise.</p>
 
 <p><code>GDrive</code> supports starting and stopping drives with authentication
@@ -7614,6 +7633,9 @@ file manager, use <code>g_drive_get_start_stop_type()</code>.</p>
 <p>For porting from GnomeVFS note that there is no equivalent of
 <code>GDrive</code> in that API.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L1833-L1840">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -7707,7 +7729,7 @@ file manager, use <code>g_drive_get_start_stop_type()</code>.</p>
                     <code>
                     <a name="/s:3GIO13DriveProtocolPAAE7connect6signal5flags2toSiAA0B10SignalNameO_10GLibObject12ConnectFlagsVyyctF"></a>
                     <a name="//apple_ref/swift/Method/connect(signal:flags:to:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13DriveProtocolPAAE7connect6signal5flags2toSiAA0B10SignalNameO_10GLibObject12ConnectFlagsVyyctF">connect(signal:flags:to:)</a>
+                    <a class="token" href="#/s:3GIO13DriveProtocolPAAE7connect6signal5flags2toSiAA0B10SignalNameO_10GLibObject12ConnectFlagsVyyctF">connect(signal:<wbr>flags:<wbr>to:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7788,10 +7810,10 @@ file manager, use <code>g_drive_get_start_stop_type()</code>.</p>
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Drive%20Interface:%20DriveProtocol%20extension%20(methods%20and%20fields)"></a>
+                <a name="/Drive%20Interface%3A%20DriveProtocol%20extension%20%28methods%20and%20fields%29"></a>
                 <a name="//apple_ref/swift/Section/Drive Interface: DriveProtocol extension (methods and fields)" class="dashAnchor"></a>
                 <div class="section-name-container">
-                  <a class="section-name-link" href="#/Drive%20Interface:%20DriveProtocol%20extension%20(methods%20and%20fields)"></a>
+                  <a class="section-name-link" href="#/Drive%20Interface%3A%20DriveProtocol%20extension%20%28methods%20and%20fields%29"></a>
                   <h3 class="section-name"><p>Drive Interface: DriveProtocol extension (methods and fields)</p>
 </h3>
                 </div>
@@ -7972,7 +7994,7 @@ file manager, use <code>g_drive_get_start_stop_type()</code>.</p>
                     <code>
                     <a name="/s:3GIO13DriveProtocolPAAE5eject5flags11cancellable8callback8userDatayAA17MountUnmountFlagsV_AA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAVtF"></a>
                     <a name="//apple_ref/swift/Method/eject(flags:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13DriveProtocolPAAE5eject5flags11cancellable8callback8userDatayAA17MountUnmountFlagsV_AA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAVtF">eject(flags:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO13DriveProtocolPAAE5eject5flags11cancellable8callback8userDatayAA17MountUnmountFlagsV_AA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAVtF">eject(flags:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8014,7 +8036,7 @@ Use g_drive_eject_with_operation() instead.</p>
                     <code>
                     <a name="/s:3GIO13DriveProtocolPAAE5eject5flags11cancellable8callback8userDatayAA17MountUnmountFlagsV_qd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgATtAA011CancellableC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/eject(flags:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13DriveProtocolPAAE5eject5flags11cancellable8callback8userDatayAA17MountUnmountFlagsV_qd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgATtAA011CancellableC0Rd__lF">eject(flags:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO13DriveProtocolPAAE5eject5flags11cancellable8callback8userDatayAA17MountUnmountFlagsV_qd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgATtAA011CancellableC0Rd__lF">eject(flags:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8056,7 +8078,7 @@ Use g_drive_eject_with_operation() instead.</p>
                     <code>
                     <a name="/s:3GIO13DriveProtocolPAAE11ejectFinish6resultSbqd___tKAA011AsyncResultC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/ejectFinish(result:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13DriveProtocolPAAE11ejectFinish6resultSbqd___tKAA011AsyncResultC0Rd__lF">ejectFinish(result:)</a>
+                    <a class="token" href="#/s:3GIO13DriveProtocolPAAE11ejectFinish6resultSbqd___tKAA011AsyncResultC0Rd__lF">ejectFinish(result:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8094,7 +8116,7 @@ Use g_drive_eject_with_operation_finish() instead.</p>
                     <code>
                     <a name="/s:3GIO13DriveProtocolPAAE18ejectWithOperation5flags05mountF011cancellable8callback8userDatayAA17MountUnmountFlagsV_AA0mF3RefVSgAA011CancellableP0VSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAZtF"></a>
                     <a name="//apple_ref/swift/Method/ejectWithOperation(flags:mountOperation:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13DriveProtocolPAAE18ejectWithOperation5flags05mountF011cancellable8callback8userDatayAA17MountUnmountFlagsV_AA0mF3RefVSgAA011CancellableP0VSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAZtF">ejectWithOperation(flags:mountOperation:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO13DriveProtocolPAAE18ejectWithOperation5flags05mountF011cancellable8callback8userDatayAA17MountUnmountFlagsV_AA0mF3RefVSgAA011CancellableP0VSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAZtF">ejectWithOperation(flags:<wbr>mountOperation:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8130,7 +8152,7 @@ and <code>GAsyncResult</code> data returned in the <code>callback</code>.</p>
                     <code>
                     <a name="/s:3GIO13DriveProtocolPAAE18ejectWithOperation5flags05mountF011cancellable8callback8userDatayAA17MountUnmountFlagsV_qd_0_Sgqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAVtAA011CancellableC0Rd__AA0mfC0Rd_0_r0_lF"></a>
                     <a name="//apple_ref/swift/Method/ejectWithOperation(flags:mountOperation:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13DriveProtocolPAAE18ejectWithOperation5flags05mountF011cancellable8callback8userDatayAA17MountUnmountFlagsV_qd_0_Sgqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAVtAA011CancellableC0Rd__AA0mfC0Rd_0_r0_lF">ejectWithOperation(flags:mountOperation:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO13DriveProtocolPAAE18ejectWithOperation5flags05mountF011cancellable8callback8userDatayAA17MountUnmountFlagsV_qd_0_Sgqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAVtAA011CancellableC0Rd__AA0mfC0Rd_0_r0_lF">ejectWithOperation(flags:<wbr>mountOperation:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8166,7 +8188,7 @@ and <code>GAsyncResult</code> data returned in the <code>callback</code>.</p>
                     <code>
                     <a name="/s:3GIO13DriveProtocolPAAE24ejectWithOperationFinish6resultSbqd___tKAA011AsyncResultC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/ejectWithOperationFinish(result:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13DriveProtocolPAAE24ejectWithOperationFinish6resultSbqd___tKAA011AsyncResultC0Rd__lF">ejectWithOperationFinish(result:)</a>
+                    <a class="token" href="#/s:3GIO13DriveProtocolPAAE24ejectWithOperationFinish6resultSbqd___tKAA011AsyncResultC0Rd__lF">ejectWithOperationFinish(result:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8271,7 +8293,7 @@ themselves.</p>
                     <code>
                     <a name="/s:3GIO13DriveProtocolPAAE13getIdentifier4kindSSSgSPys4Int8VGSg_tF"></a>
                     <a name="//apple_ref/swift/Method/getIdentifier(kind:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13DriveProtocolPAAE13getIdentifier4kindSSSgSPys4Int8VGSg_tF">getIdentifier(kind:)</a>
+                    <a class="token" href="#/s:3GIO13DriveProtocolPAAE13getIdentifier4kindSSSgSPys4Int8VGSg_tF">getIdentifier(kind:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8550,7 +8572,7 @@ for more details.</p>
                     <code>
                     <a name="/s:3GIO13DriveProtocolPAAE12pollForMedia11cancellable8callback8userDatayAA14CancellableRefVSg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAStF"></a>
                     <a name="//apple_ref/swift/Method/pollForMedia(cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13DriveProtocolPAAE12pollForMedia11cancellable8callback8userDatayAA14CancellableRefVSg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAStF">pollForMedia(cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO13DriveProtocolPAAE12pollForMedia11cancellable8callback8userDatayAA14CancellableRefVSg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAStF">pollForMedia(cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8588,7 +8610,7 @@ result of the operation.</p>
                     <code>
                     <a name="/s:3GIO13DriveProtocolPAAE12pollForMedia11cancellable8callback8userDatayqd__Sg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAQtAA011CancellableC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/pollForMedia(cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13DriveProtocolPAAE12pollForMedia11cancellable8callback8userDatayqd__Sg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAQtAA011CancellableC0Rd__lF">pollForMedia(cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO13DriveProtocolPAAE12pollForMedia11cancellable8callback8userDatayqd__Sg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAQtAA011CancellableC0Rd__lF">pollForMedia(cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8626,7 +8648,7 @@ result of the operation.</p>
                     <code>
                     <a name="/s:3GIO13DriveProtocolPAAE18pollForMediaFinish6resultSbqd___tKAA011AsyncResultC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/pollForMediaFinish(result:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13DriveProtocolPAAE18pollForMediaFinish6resultSbqd___tKAA011AsyncResultC0Rd__lF">pollForMediaFinish(result:)</a>
+                    <a class="token" href="#/s:3GIO13DriveProtocolPAAE18pollForMediaFinish6resultSbqd___tKAA011AsyncResultC0Rd__lF">pollForMediaFinish(result:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8660,7 +8682,7 @@ result of the operation.</p>
                     <code>
                     <a name="/s:3GIO13DriveProtocolPAAE5start5flags14mountOperation11cancellable8callback8userDatayAA0B10StartFlagsV_AA05MountG3RefVSgAA011CancellableO0VSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAZtF"></a>
                     <a name="//apple_ref/swift/Method/start(flags:mountOperation:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13DriveProtocolPAAE5start5flags14mountOperation11cancellable8callback8userDatayAA0B10StartFlagsV_AA05MountG3RefVSgAA011CancellableO0VSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAZtF">start(flags:mountOperation:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO13DriveProtocolPAAE5start5flags14mountOperation11cancellable8callback8userDatayAA0B10StartFlagsV_AA05MountG3RefVSgAA011CancellableO0VSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAZtF">start(flags:<wbr>mountOperation:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8698,7 +8720,7 @@ result of the operation.</p>
                     <code>
                     <a name="/s:3GIO13DriveProtocolPAAE5start5flags14mountOperation11cancellable8callback8userDatayAA0B10StartFlagsV_qd_0_Sgqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAVtAA011CancellableC0Rd__AA05MountgC0Rd_0_r0_lF"></a>
                     <a name="//apple_ref/swift/Method/start(flags:mountOperation:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13DriveProtocolPAAE5start5flags14mountOperation11cancellable8callback8userDatayAA0B10StartFlagsV_qd_0_Sgqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAVtAA011CancellableC0Rd__AA05MountgC0Rd_0_r0_lF">start(flags:mountOperation:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO13DriveProtocolPAAE5start5flags14mountOperation11cancellable8callback8userDatayAA0B10StartFlagsV_qd_0_Sgqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAVtAA011CancellableC0Rd__AA05MountgC0Rd_0_r0_lF">start(flags:<wbr>mountOperation:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8736,7 +8758,7 @@ result of the operation.</p>
                     <code>
                     <a name="/s:3GIO13DriveProtocolPAAE11startFinish6resultSbqd___tKAA011AsyncResultC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/startFinish(result:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13DriveProtocolPAAE11startFinish6resultSbqd___tKAA011AsyncResultC0Rd__lF">startFinish(result:)</a>
+                    <a class="token" href="#/s:3GIO13DriveProtocolPAAE11startFinish6resultSbqd___tKAA011AsyncResultC0Rd__lF">startFinish(result:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8770,7 +8792,7 @@ result of the operation.</p>
                     <code>
                     <a name="/s:3GIO13DriveProtocolPAAE4stop5flags14mountOperation11cancellable8callback8userDatayAA17MountUnmountFlagsV_AA0lG3RefVSgAA011CancellableO0VSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAZtF"></a>
                     <a name="//apple_ref/swift/Method/stop(flags:mountOperation:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13DriveProtocolPAAE4stop5flags14mountOperation11cancellable8callback8userDatayAA17MountUnmountFlagsV_AA0lG3RefVSgAA011CancellableO0VSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAZtF">stop(flags:mountOperation:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO13DriveProtocolPAAE4stop5flags14mountOperation11cancellable8callback8userDatayAA17MountUnmountFlagsV_AA0lG3RefVSgAA011CancellableO0VSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAZtF">stop(flags:<wbr>mountOperation:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8808,7 +8830,7 @@ result of the operation.</p>
                     <code>
                     <a name="/s:3GIO13DriveProtocolPAAE4stop5flags14mountOperation11cancellable8callback8userDatayAA17MountUnmountFlagsV_qd_0_Sgqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAVtAA011CancellableC0Rd__AA0lgC0Rd_0_r0_lF"></a>
                     <a name="//apple_ref/swift/Method/stop(flags:mountOperation:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13DriveProtocolPAAE4stop5flags14mountOperation11cancellable8callback8userDatayAA17MountUnmountFlagsV_qd_0_Sgqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAVtAA011CancellableC0Rd__AA0lgC0Rd_0_r0_lF">stop(flags:mountOperation:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO13DriveProtocolPAAE4stop5flags14mountOperation11cancellable8callback8userDatayAA17MountUnmountFlagsV_qd_0_Sgqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAVtAA011CancellableC0Rd__AA0lgC0Rd_0_r0_lF">stop(flags:<wbr>mountOperation:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8846,7 +8868,7 @@ result of the operation.</p>
                     <code>
                     <a name="/s:3GIO13DriveProtocolPAAE10stopFinish6resultSbqd___tKAA011AsyncResultC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/stopFinish(result:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13DriveProtocolPAAE10stopFinish6resultSbqd___tKAA011AsyncResultC0Rd__lF">stopFinish(result:)</a>
+                    <a class="token" href="#/s:3GIO13DriveProtocolPAAE10stopFinish6resultSbqd___tKAA011AsyncResultC0Rd__lF">stopFinish(result:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8925,7 +8947,7 @@ result of the operation.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Checks if <code>drive</code> is capabable of automatically detecting media changes.</p>
+                        <p>Checks if <code>drive</code> is capable of automatically detecting media changes.</p>
 
                       </div>
                       <div class="declaration">
@@ -9193,8 +9215,8 @@ its elements have been unreffed with <code>g_object_unref()</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.ict.griffith.edu.au/~rhexel/" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2020-09-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

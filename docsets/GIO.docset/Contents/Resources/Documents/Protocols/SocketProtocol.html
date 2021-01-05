@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          GIO 2.64.4 Docs
+          GIO 2.66.4 Docs
         </a>
-         (88% documented)
+         (89% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx%2Egithub%2Eio%2FSwiftGIO%2Fdocsets%2FGIO%2Exml">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx.github.io%2FSwiftGIO%2Fdocsets%2FGIO.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -2205,6 +2205,12 @@
                 <a class="nav-group-task-link" href="../Extensions/TLSCertificateRequestFlags.html">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingError.html">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingType.html">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/TLSDatabaseLookupFlags.html">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -2648,6 +2654,9 @@
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO20tlsBackendGetDefaultAA13TLSBackendRefVSgyF">tlsBackendGetDefault()</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27tlsChannelBindingErrorQuarks6UInt32VyF">tlsChannelBindingErrorQuark()</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO22tlsClientConnectionNew12baseIoStream14serverIdentityAA09TLSClientD3RefVSgx_AA017SocketConnectableL0VSgtKAA16IOStreamProtocolRzlF">tlsClientConnectionNew(baseIoStream:serverIdentity:)</a>
               </li>
               <li class="nav-group-task">
@@ -2724,6 +2733,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO25unixMountIsSystemInternal10mountEntrySbx_tAA04UnixcH8ProtocolRzlF">unixMountIsSystemInternal(mountEntry:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO16unixMountPointAt9mountPath8timeReadAA04UnixcD3RefVSgSPys4Int8VGSg_Spys6UInt64VGSgtF">unixMountPointAt(mountPath:timeRead:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27unixMountPointsChangedSince4timeSbs6UInt64V_tF">unixMountPointsChangedSince(time:)</a>
@@ -5243,6 +5255,12 @@
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO26TLSCertificateRequestFlagsa">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSChannelBindingErrora">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO21TLSChannelBindingTypea">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSDatabaseLookupFlagsa">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -7578,6 +7596,7 @@
             <h1>SocketProtocol</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SocketProtocol</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/DatagramBasedProtocol.html">DatagramBasedProtocol</a></span><span class="p">,</span> <span class="kt"><a href="../Protocols/InitableProtocol.html">InitableProtocol</a></span><span class="p">,</span> <span class="kt">ObjectProtocol</span></code></pre>
 
                 </div>
@@ -7639,6 +7658,9 @@ if it tries to write to <code>stdout</code> after it has been closed.</p>
 a <code>GSocket</code> concurrently from multiple threads, you must implement your own
 locking.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L6218-L6225">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -7671,7 +7693,7 @@ locking.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L6208">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L6220">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7709,7 +7731,7 @@ locking.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L6211">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L6223">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7732,7 +7754,7 @@ locking.</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE4bind8property2to_5flags13transformFrom0H2To10GLibObject10BindingRefVSgAA0B12PropertyNameO_qd_0_qd__AJ0M5FlagsVSbAJ05ValueN0V_AStcSbAS_AStctAJ0opC0Rd__AJ0lC0Rd_0_r0_lF"></a>
                     <a name="//apple_ref/swift/Method/bind(property:to:_:flags:transformFrom:transformTo:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE4bind8property2to_5flags13transformFrom0H2To10GLibObject10BindingRefVSgAA0B12PropertyNameO_qd_0_qd__AJ0M5FlagsVSbAJ05ValueN0V_AStcSbAS_AStctAJ0opC0Rd__AJ0lC0Rd_0_r0_lF">bind(property:to:_:flags:transformFrom:transformTo:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE4bind8property2to_5flags13transformFrom0H2To10GLibObject10BindingRefVSgAA0B12PropertyNameO_qd_0_qd__AJ0M5FlagsVSbAJ05ValueN0V_AStcSbAS_AStctAJ0opC0Rd__AJ0lC0Rd_0_r0_lF">bind(property:<wbr>to:<wbr>_:<wbr>flags:<wbr>transformFrom:<wbr>transformTo:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7840,7 +7862,7 @@ locking.</p>
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L6681-L6705">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L6693-L6717">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7850,7 +7872,7 @@ locking.</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE3get8property10GLibObject5ValueCAA0B12PropertyNameO_tF"></a>
                     <a name="//apple_ref/swift/Method/get(property:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE3get8property10GLibObject5ValueCAA0B12PropertyNameO_tF">get(property:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE3get8property10GLibObject5ValueCAA0B12PropertyNameO_tF">get(property:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7897,7 +7919,7 @@ locking.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L6710-L6714">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L6722-L6726">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7907,7 +7929,7 @@ locking.</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE3set8property5valueyAA0B12PropertyNameO_10GLibObject5ValueCtF"></a>
                     <a name="//apple_ref/swift/Method/set(property:value:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE3set8property5valueyAA0B12PropertyNameO_10GLibObject5ValueCtF">set(property:value:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE3set8property5valueyAA0B12PropertyNameO_10GLibObject5ValueCtF">set(property:<wbr>value:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7955,7 +7977,7 @@ locking.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L6720-L6722">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L6732-L6734">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7965,7 +7987,7 @@ locking.</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE7connect6signal5flags2toSiAA0B10SignalNameO_10GLibObject12ConnectFlagsVyyctF"></a>
                     <a name="//apple_ref/swift/Method/connect(signal:flags:to:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE7connect6signal5flags2toSiAA0B10SignalNameO_10GLibObject12ConnectFlagsVyyctF">connect(signal:flags:to:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE7connect6signal5flags2toSiAA0B10SignalNameO_10GLibObject12ConnectFlagsVyyctF">connect(signal:<wbr>flags:<wbr>to:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8037,7 +8059,7 @@ locking.</p>
                         <p>positive handler ID, or a value less than or equal to <code>0</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L6778-L6797">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L6790-L6809">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8046,10 +8068,10 @@ locking.</p>
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Socket%20Class:%20SocketProtocol%20extension%20(methods%20and%20fields)"></a>
+                <a name="/Socket%20Class%3A%20SocketProtocol%20extension%20%28methods%20and%20fields%29"></a>
                 <a name="//apple_ref/swift/Section/Socket Class: SocketProtocol extension (methods and fields)" class="dashAnchor"></a>
                 <div class="section-name-container">
-                  <a class="section-name-link" href="#/Socket%20Class:%20SocketProtocol%20extension%20(methods%20and%20fields)"></a>
+                  <a class="section-name-link" href="#/Socket%20Class%3A%20SocketProtocol%20extension%20%28methods%20and%20fields%29"></a>
                   <h3 class="section-name"><p>Socket Class: SocketProtocol extension (methods and fields)</p>
 </h3>
                 </div>
@@ -8060,7 +8082,7 @@ locking.</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE6accept11cancellableAA0B3RefVSgAA011CancellableF0VSg_tKF"></a>
                     <a name="//apple_ref/swift/Method/accept(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE6accept11cancellableAA0B3RefVSgAA011CancellableF0VSg_tKF">accept(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE6accept11cancellableAA0B3RefVSgAA011CancellableF0VSg_tKF">accept(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8093,7 +8115,7 @@ To be notified of an incoming connection, wait for the <code>G_IO_IN</code> cond
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L6815-L6821">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L6827-L6833">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8103,7 +8125,7 @@ To be notified of an incoming connection, wait for the <code>G_IO_IN</code> cond
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE6accept11cancellableAA0B3RefVSgqd__Sg_tKAA011CancellableC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/accept(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE6accept11cancellableAA0B3RefVSgqd__Sg_tKAA011CancellableC0Rd__lF">accept(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE6accept11cancellableAA0B3RefVSgqd__Sg_tKAA011CancellableC0Rd__lF">accept(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8136,7 +8158,7 @@ To be notified of an incoming connection, wait for the <code>G_IO_IN</code> cond
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L6832-L6838">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L6844-L6850">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8146,7 +8168,7 @@ To be notified of an incoming connection, wait for the <code>G_IO_IN</code> cond
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE4bind7address10allowReuseSbqd___SbtKAA0b7AddressC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/bind(address:allowReuse:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE4bind7address10allowReuseSbqd___SbtKAA0b7AddressC0Rd__lF">bind(address:allowReuse:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE4bind7address10allowReuseSbqd___SbtKAA0b7AddressC0Rd__lF">bind(address:<wbr>allowReuse:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8192,7 +8214,7 @@ UDP packets to an address with multiple listeners is not defined.)</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L6863-L6868">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L6875-L6880">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8228,7 +8250,7 @@ used in non-blocking mode.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L6873-L6878">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L6885-L6890">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8290,7 +8312,7 @@ does.)</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L6909-L6914">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L6921-L6926">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8300,7 +8322,7 @@ does.)</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE14conditionCheck0D04GLib11IOConditionVAH_tF"></a>
                     <a name="//apple_ref/swift/Method/conditionCheck(condition:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE14conditionCheck0D04GLib11IOConditionVAH_tF">conditionCheck(condition:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE14conditionCheck0D04GLib11IOConditionVAH_tF">conditionCheck(condition:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8340,7 +8362,7 @@ these conditions will always be set in the output if they are true.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L6933-L6936">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L6945-L6948">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8350,7 +8372,7 @@ these conditions will always be set in the output if they are true.</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE18conditionTimedWait0D09timeoutUs11cancellableSb4GLib11IOConditionV_s5Int64VAA14CancellableRefVSgtKF"></a>
                     <a name="//apple_ref/swift/Method/conditionTimedWait(condition:timeoutUs:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE18conditionTimedWait0D09timeoutUs11cancellableSb4GLib11IOConditionV_s5Int64VAA14CancellableRefVSgtKF">conditionTimedWait(condition:timeoutUs:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE18conditionTimedWait0D09timeoutUs11cancellableSb4GLib11IOConditionV_s5Int64VAA14CancellableRefVSgtKF">conditionTimedWait(condition:<wbr>timeoutUs:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8389,7 +8411,7 @@ exact number of milliseconds.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L6954-L6959">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L6966-L6971">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8399,7 +8421,7 @@ exact number of milliseconds.</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE18conditionTimedWait0D09timeoutUs11cancellableSb4GLib11IOConditionV_s5Int64Vqd__SgtKAA011CancellableC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/conditionTimedWait(condition:timeoutUs:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE18conditionTimedWait0D09timeoutUs11cancellableSb4GLib11IOConditionV_s5Int64Vqd__SgtKAA011CancellableC0Rd__lF">conditionTimedWait(condition:timeoutUs:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE18conditionTimedWait0D09timeoutUs11cancellableSb4GLib11IOConditionV_s5Int64Vqd__SgtKAA011CancellableC0Rd__lF">conditionTimedWait(condition:<wbr>timeoutUs:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8438,7 +8460,7 @@ exact number of milliseconds.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L6976-L6981">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L6988-L6993">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8448,7 +8470,7 @@ exact number of milliseconds.</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE13conditionWait0D011cancellableSb4GLib11IOConditionV_AA14CancellableRefVSgtKF"></a>
                     <a name="//apple_ref/swift/Method/conditionWait(condition:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE13conditionWait0D011cancellableSb4GLib11IOConditionV_AA14CancellableRefVSgtKF">conditionWait(condition:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE13conditionWait0D011cancellableSb4GLib11IOConditionV_AA14CancellableRefVSgtKF">conditionWait(condition:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8481,7 +8503,7 @@ the appropriate value (<code>G_IO_ERROR_CANCELLED</code> or
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L6993-L6998">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7005-L7010">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8491,7 +8513,7 @@ the appropriate value (<code>G_IO_ERROR_CANCELLED</code> or
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE13conditionWait0D011cancellableSb4GLib11IOConditionV_qd__SgtKAA011CancellableC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/conditionWait(condition:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE13conditionWait0D011cancellableSb4GLib11IOConditionV_qd__SgtKAA011CancellableC0Rd__lF">conditionWait(condition:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE13conditionWait0D011cancellableSb4GLib11IOConditionV_qd__SgtKAA011CancellableC0Rd__lF">conditionWait(condition:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8524,7 +8546,7 @@ the appropriate value (<code>G_IO_ERROR_CANCELLED</code> or
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7009-L7014">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7021-L7026">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8534,7 +8556,7 @@ the appropriate value (<code>G_IO_ERROR_CANCELLED</code> or
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE7connect7address11cancellableSbqd___AA14CancellableRefVSgtKAA0b7AddressC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/connect(address:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE7connect7address11cancellableSbqd___AA14CancellableRefVSgtKAA0b7AddressC0Rd__lF">connect(address:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE7connect7address11cancellableSbqd___AA14CancellableRefVSgtKAA0b7AddressC0Rd__lF">connect(address:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8573,7 +8595,7 @@ checked with <code>g_socket_check_connect_result()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7032-L7037">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7044-L7049">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8583,7 +8605,7 @@ checked with <code>g_socket_check_connect_result()</code>.</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE7connect7address11cancellableSbqd_0__qd__SgtKAA011CancellableC0Rd__AA0b7AddressC0Rd_0_r0_lF"></a>
                     <a name="//apple_ref/swift/Method/connect(address:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE7connect7address11cancellableSbqd_0__qd__SgtKAA011CancellableC0Rd__AA0b7AddressC0Rd_0_r0_lF">connect(address:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE7connect7address11cancellableSbqd_0__qd__SgtKAA011CancellableC0Rd__AA0b7AddressC0Rd_0_r0_lF">connect(address:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8622,7 +8644,7 @@ checked with <code>g_socket_check_connect_result()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7054-L7059">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7066-L7071">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8657,7 +8679,7 @@ checked with <code>g_socket_check_connect_result()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7063-L7066">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7075-L7078">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8667,7 +8689,7 @@ checked with <code>g_socket_check_connect_result()</code>.</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE12createSource9condition11cancellable4GLib0E3RefVSgAG11IOConditionV_AA011CancellableI0VSgtF"></a>
                     <a name="//apple_ref/swift/Method/createSource(condition:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE12createSource9condition11cancellable4GLib0E3RefVSgAG11IOConditionV_AA011CancellableI0VSgtF">createSource(condition:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE12createSource9condition11cancellable4GLib0E3RefVSgAG11IOConditionV_AA011CancellableI0VSgtF">createSource(condition:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8710,7 +8732,7 @@ you call will then fail with a <code>G_IO_ERROR_TIMED_OUT</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7088-L7091">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7100-L7103">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8720,7 +8742,7 @@ you call will then fail with a <code>G_IO_ERROR_TIMED_OUT</code>.</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE12createSource9condition11cancellable4GLib0E3RefVSgAG11IOConditionV_qd__SgtAA011CancellableC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/createSource(condition:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE12createSource9condition11cancellable4GLib0E3RefVSgAG11IOConditionV_qd__SgtAA011CancellableC0Rd__lF">createSource(condition:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE12createSource9condition11cancellable4GLib0E3RefVSgAG11IOConditionV_qd__SgtAA011CancellableC0Rd__lF">createSource(condition:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8763,7 +8785,7 @@ you call will then fail with a <code>G_IO_ERROR_TIMED_OUT</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7112-L7115">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7124-L7127">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8808,7 +8830,7 @@ exactly the right size.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7129-L7132">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7141-L7144">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8843,7 +8865,7 @@ see <code>g_socket_set_blocking()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7136-L7139">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7148-L7151">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8879,7 +8901,7 @@ addresses.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7144-L7147">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7156-L7159">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8915,6 +8937,7 @@ by reading the <code>SO_PEERCRED</code> option on the underlying socket.</p>
 <li>OpenBSD since GLib 2.30</li>
 <li>Solaris, Illumos and OpenSolaris since GLib 2.40</li>
 <li>NetBSD since GLib 2.42</li>
+<li>macOS, tvOS, iOS since GLib 2.66</li>
 </ul>
 
 <p>Other ways to obtain credentials from a foreign peer includes the
@@ -8933,7 +8956,7 @@ by reading the <code>SO_PEERCRED</code> option on the underlying socket.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7168-L7173">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7181-L7186">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8967,7 +8990,7 @@ by reading the <code>SO_PEERCRED</code> option on the underlying socket.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7176-L7179">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7189-L7192">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9005,7 +9028,7 @@ on the socket.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7186-L7189">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7199-L7202">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9040,7 +9063,7 @@ see <code>g_socket_set_keepalive()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7193-L7196">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7206-L7209">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9075,7 +9098,7 @@ see <code>g_socket_set_listen_backlog()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7200-L7203">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7213-L7216">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9111,7 +9134,7 @@ either explicitly or implicitly when connecting.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7208-L7213">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7221-L7226">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9147,7 +9170,7 @@ multicast listeners on the same host.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7218-L7221">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7231-L7234">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9182,7 +9205,7 @@ multicast listeners on the same host.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7225-L7228">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7238-L7241">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9192,7 +9215,7 @@ multicast listeners on the same host.</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE9getOption5level7optname5valueSbSi_SiSpys5Int32VGSgtKF"></a>
                     <a name="//apple_ref/swift/Method/getOption(level:optname:value:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE9getOption5level7optname5valueSbSi_SiSpys5Int32VGSgtKF">getOption(level:optname:value:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE9getOption5level7optname5valueSbSi_SiSpys5Int32VGSgtKF">getOption(level:<wbr>optname:<wbr>value:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9228,7 +9251,7 @@ headers.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7243-L7248">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7256-L7261">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9263,7 +9286,7 @@ In case the protocol is unknown, -1 is returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7252-L7255">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7265-L7268">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9298,7 +9321,7 @@ useful for connection oriented sockets that have been connected.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7259-L7264">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7272-L7277">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9332,7 +9355,7 @@ useful for connection oriented sockets that have been connected.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7267-L7270">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7280-L7283">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9367,7 +9390,7 @@ useful for connection oriented sockets that have been connected.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7274-L7277">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7287-L7290">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9402,7 +9425,7 @@ useful for connection oriented sockets that have been connected.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7281-L7284">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7294-L7297">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9412,7 +9435,7 @@ useful for connection oriented sockets that have been connected.</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE13joinMulticast5group14sourceSpecific5ifaceSbqd___SbSPys4Int8VGSgtKAA011InetAddressC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/joinMulticast(group:sourceSpecific:iface:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE13joinMulticast5group14sourceSpecific5ifaceSbqd___SbSPys4Int8VGSgtKAA011InetAddressC0Rd__lF">joinMulticast(group:sourceSpecific:iface:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE13joinMulticast5group14sourceSpecific5ifaceSbqd___SbSPys4Int8VGSgtKAA011InetAddressC0Rd__lF">joinMulticast(group:<wbr>sourceSpecific:<wbr>iface:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9449,7 +9472,7 @@ with a <code>G_IO_ERROR_NOT_SUPPORTED</code> error.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7300-L7305">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7313-L7318">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9459,7 +9482,7 @@ with a <code>G_IO_ERROR_NOT_SUPPORTED</code> error.</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE21joinMulticastGroupSsm5group14sourceSpecific5ifaceSbqd___qd__SgSPys4Int8VGSgtKAA011InetAddressC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/joinMulticastGroupSsm(group:sourceSpecific:iface:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE21joinMulticastGroupSsm5group14sourceSpecific5ifaceSbqd___qd__SgSPys4Int8VGSgtKAA011InetAddressC0Rd__lF">joinMulticastGroupSsm(group:sourceSpecific:iface:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE21joinMulticastGroupSsm5group14sourceSpecific5ifaceSbqd___qd__SgSPys4Int8VGSgtKAA011InetAddressC0Rd__lF">joinMulticastGroupSsm(group:<wbr>sourceSpecific:<wbr>iface:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9497,7 +9520,7 @@ packets from more than one source.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7322-L7327">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7335-L7340">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9507,7 +9530,7 @@ packets from more than one source.</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE14leaveMulticast5group14sourceSpecific5ifaceSbqd___SbSPys4Int8VGSgtKAA011InetAddressC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/leaveMulticast(group:sourceSpecific:iface:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE14leaveMulticast5group14sourceSpecific5ifaceSbqd___SbSPys4Int8VGSgtKAA011InetAddressC0Rd__lF">leaveMulticast(group:sourceSpecific:iface:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE14leaveMulticast5group14sourceSpecific5ifaceSbqd___SbSPys4Int8VGSgtKAA011InetAddressC0Rd__lF">leaveMulticast(group:<wbr>sourceSpecific:<wbr>iface:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9539,7 +9562,7 @@ unicast messages after calling this.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7338-L7343">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7351-L7356">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9549,7 +9572,7 @@ unicast messages after calling this.</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE22leaveMulticastGroupSsm5group14sourceSpecific5ifaceSbqd___qd__SgSPys4Int8VGSgtKAA011InetAddressC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/leaveMulticastGroupSsm(group:sourceSpecific:iface:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE22leaveMulticastGroupSsm5group14sourceSpecific5ifaceSbqd___qd__SgSPys4Int8VGSgtKAA011InetAddressC0Rd__lF">leaveMulticastGroupSsm(group:sourceSpecific:iface:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE22leaveMulticastGroupSsm5group14sourceSpecific5ifaceSbqd___qd__SgSPys4Int8VGSgtKAA011InetAddressC0Rd__lF">leaveMulticastGroupSsm(group:<wbr>sourceSpecific:<wbr>iface:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9578,7 +9601,7 @@ unicast messages after calling this.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7351-L7356">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7364-L7369">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9619,7 +9642,7 @@ to accept incoming requests using <code>g_socket_accept()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7366-L7371">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7379-L7384">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9629,7 +9652,7 @@ to accept incoming requests using <code>g_socket_accept()</code>.</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE7receive6buffer4size11cancellableSiSpys4Int8VGSg_SiAA14CancellableRefVSgtKF"></a>
                     <a name="//apple_ref/swift/Method/receive(buffer:size:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE7receive6buffer4size11cancellableSiSpys4Int8VGSg_SiAA14CancellableRefVSgtKF">receive(buffer:size:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE7receive6buffer4size11cancellableSiSpys4Int8VGSg_SiAA14CancellableRefVSgtKF">receive(buffer:<wbr>size:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9675,7 +9698,7 @@ returned. To be notified when data is available, wait for the
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7396-L7401">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7409-L7414">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9685,7 +9708,7 @@ returned. To be notified when data is available, wait for the
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE7receive6buffer4size11cancellableSiSpys4Int8VGSg_Siqd__SgtKAA011CancellableC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/receive(buffer:size:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE7receive6buffer4size11cancellableSiSpys4Int8VGSg_Siqd__SgtKAA011CancellableC0Rd__lF">receive(buffer:size:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE7receive6buffer4size11cancellableSiSpys4Int8VGSg_Siqd__SgtKAA011CancellableC0Rd__lF">receive(buffer:<wbr>size:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9731,7 +9754,7 @@ returned. To be notified when data is available, wait for the
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7425-L7430">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7438-L7443">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9741,7 +9764,7 @@ returned. To be notified when data is available, wait for the
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE11receiveFrom7address6buffer4size11cancellableSiSpySpySo15_GSocketAddressVGSgGSg_Spys4Int8VGSgSiAA14CancellableRefVSgtKF"></a>
                     <a name="//apple_ref/swift/Method/receiveFrom(address:buffer:size:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE11receiveFrom7address6buffer4size11cancellableSiSpySpySo15_GSocketAddressVGSgGSg_Spys4Int8VGSgSiAA14CancellableRefVSgtKF">receiveFrom(address:buffer:size:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE11receiveFrom7address6buffer4size11cancellableSiSpySpySo15_GSocketAddressVGSgGSg_Spys4Int8VGSgSiAA14CancellableRefVSgtKF">receiveFrom(address:<wbr>buffer:<wbr>size:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9771,7 +9794,7 @@ source address of the received packet.
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7439-L7444">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7452-L7457">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9781,7 +9804,7 @@ source address of the received packet.
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE11receiveFrom7address6buffer4size11cancellableSiSpySpySo15_GSocketAddressVGSgGSg_Spys4Int8VGSgSiqd__SgtKAA011CancellableC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/receiveFrom(address:buffer:size:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE11receiveFrom7address6buffer4size11cancellableSiSpySpySo15_GSocketAddressVGSgGSg_Spys4Int8VGSgSiqd__SgtKAA011CancellableC0Rd__lF">receiveFrom(address:buffer:size:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE11receiveFrom7address6buffer4size11cancellableSiSpySpySo15_GSocketAddressVGSgGSg_Spys4Int8VGSgSiqd__SgtKAA011CancellableC0Rd__lF">receiveFrom(address:<wbr>buffer:<wbr>size:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9811,7 +9834,7 @@ source address of the received packet.
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7452-L7457">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7465-L7470">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9821,7 +9844,7 @@ source address of the received packet.
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE14receiveMessage7address7vectors10numVectors8messages0H8Messages5flags11cancellableSiSpySpySo15_GSocketAddressVGSgGSg_SpySo13_GInputVectorVGSgSiSpySpySpySo01_n7ControlE0VGSgGSgGSgSpys5Int32VGSgA5_AA14CancellableRefVSgtKF"></a>
                     <a name="//apple_ref/swift/Method/receiveMessage(address:vectors:numVectors:messages:numMessages:flags:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE14receiveMessage7address7vectors10numVectors8messages0H8Messages5flags11cancellableSiSpySpySo15_GSocketAddressVGSgGSg_SpySo13_GInputVectorVGSgSiSpySpySpySo01_n7ControlE0VGSgGSgGSgSpys5Int32VGSgA5_AA14CancellableRefVSgtKF">receiveMessage(address:vectors:numVectors:messages:numMessages:flags:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE14receiveMessage7address7vectors10numVectors8messages0H8Messages5flags11cancellableSiSpySpySo15_GSocketAddressVGSgGSg_SpySo13_GInputVectorVGSgSiSpySpySpySo01_n7ControlE0VGSgGSgGSgSpys5Int32VGSgA5_AA14CancellableRefVSgtKF">receiveMessage(address:<wbr>vectors:<wbr>numVectors:<wbr>messages:<wbr>numMessages:<wbr>flags:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9903,7 +9926,7 @@ returned. To be notified when data is available, wait for the
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7518-L7523">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7531-L7536">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9913,7 +9936,7 @@ returned. To be notified when data is available, wait for the
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE14receiveMessage7address7vectors10numVectors8messages0H8Messages5flags11cancellableSiSpySpySo15_GSocketAddressVGSgGSg_SpySo13_GInputVectorVGSgSiSpySpySpySo01_n7ControlE0VGSgGSgGSgSpys5Int32VGSgA5_qd__SgtKAA011CancellableC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/receiveMessage(address:vectors:numVectors:messages:numMessages:flags:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE14receiveMessage7address7vectors10numVectors8messages0H8Messages5flags11cancellableSiSpySpySo15_GSocketAddressVGSgGSg_SpySo13_GInputVectorVGSgSiSpySpySpySo01_n7ControlE0VGSgGSgGSgSpys5Int32VGSgA5_qd__SgtKAA011CancellableC0Rd__lF">receiveMessage(address:vectors:numVectors:messages:numMessages:flags:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE14receiveMessage7address7vectors10numVectors8messages0H8Messages5flags11cancellableSiSpySpySo15_GSocketAddressVGSgGSg_SpySo13_GInputVectorVGSgSiSpySpySpySo01_n7ControlE0VGSgGSgGSgSpys5Int32VGSgA5_qd__SgtKAA011CancellableC0Rd__lF">receiveMessage(address:<wbr>vectors:<wbr>numVectors:<wbr>messages:<wbr>numMessages:<wbr>flags:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9995,7 +10018,7 @@ returned. To be notified when data is available, wait for the
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7583-L7588">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7596-L7601">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10005,7 +10028,7 @@ returned. To be notified when data is available, wait for the
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE7receive8messages11numMessages5flags11cancellableSiSpySo14_GInputMessageVGSg_S2iAA14CancellableRefVSgtKF"></a>
                     <a name="//apple_ref/swift/Method/receive(messages:numMessages:flags:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE7receive8messages11numMessages5flags11cancellableSiSpySo14_GInputMessageVGSg_S2iAA14CancellableRefVSgtKF">receive(messages:numMessages:flags:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE7receive8messages11numMessages5flags11cancellableSiSpySo14_GInputMessageVGSg_S2iAA14CancellableRefVSgtKF">receive(messages:<wbr>numMessages:<wbr>flags:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -10076,7 +10099,7 @@ messages successfully received before the error will be returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7638-L7643">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7651-L7656">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10086,7 +10109,7 @@ messages successfully received before the error will be returned.</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE7receive8messages11numMessages5flags11cancellableSiSpySo14_GInputMessageVGSg_S2iqd__SgtKAA011CancellableC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/receive(messages:numMessages:flags:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE7receive8messages11numMessages5flags11cancellableSiSpySo14_GInputMessageVGSg_S2iqd__SgtKAA011CancellableC0Rd__lF">receive(messages:numMessages:flags:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE7receive8messages11numMessages5flags11cancellableSiSpySo14_GInputMessageVGSg_S2iqd__SgtKAA011CancellableC0Rd__lF">receive(messages:<wbr>numMessages:<wbr>flags:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -10157,7 +10180,7 @@ messages successfully received before the error will be returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7692-L7697">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7705-L7710">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10167,7 +10190,7 @@ messages successfully received before the error will be returned.</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE19receiveWithBlocking6buffer4size8blocking11cancellableSiSpys4Int8VGSg_SiSbAA14CancellableRefVSgtKF"></a>
                     <a name="//apple_ref/swift/Method/receiveWithBlocking(buffer:size:blocking:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE19receiveWithBlocking6buffer4size8blocking11cancellableSiSpys4Int8VGSg_SiSbAA14CancellableRefVSgtKF">receiveWithBlocking(buffer:size:blocking:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE19receiveWithBlocking6buffer4size8blocking11cancellableSiSpys4Int8VGSg_SiSbAA14CancellableRefVSgtKF">receiveWithBlocking(buffer:<wbr>size:<wbr>blocking:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -10193,7 +10216,7 @@ the <code><a href="../Protocols/SocketProtocol.html#/s:3GIO14SocketProtocolPAAE8
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7702-L7707">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7715-L7720">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10203,7 +10226,7 @@ the <code><a href="../Protocols/SocketProtocol.html#/s:3GIO14SocketProtocolPAAE8
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE19receiveWithBlocking6buffer4size8blocking11cancellableSiSpys4Int8VGSg_SiSbqd__SgtKAA011CancellableC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/receiveWithBlocking(buffer:size:blocking:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE19receiveWithBlocking6buffer4size8blocking11cancellableSiSpys4Int8VGSg_SiSbqd__SgtKAA011CancellableC0Rd__lF">receiveWithBlocking(buffer:size:blocking:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE19receiveWithBlocking6buffer4size8blocking11cancellableSiSpys4Int8VGSg_SiSbqd__SgtKAA011CancellableC0Rd__lF">receiveWithBlocking(buffer:<wbr>size:<wbr>blocking:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -10229,7 +10252,7 @@ the <code><a href="../Protocols/SocketProtocol.html#/s:3GIO14SocketProtocolPAAE8
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7711-L7716">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7724-L7729">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10239,7 +10262,7 @@ the <code><a href="../Protocols/SocketProtocol.html#/s:3GIO14SocketProtocolPAAE8
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE4send6buffer4size11cancellableSiSPys4Int8VGSg_SiAA14CancellableRefVSgtKF"></a>
                     <a name="//apple_ref/swift/Method/send(buffer:size:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE4send6buffer4size11cancellableSiSPys4Int8VGSg_SiAA14CancellableRefVSgtKF">send(buffer:size:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE4send6buffer4size11cancellableSiSPys4Int8VGSg_SiAA14CancellableRefVSgtKF">send(buffer:<wbr>size:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -10276,7 +10299,7 @@ very common due to the way the underlying APIs work.)</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7732-L7737">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7745-L7750">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10286,7 +10309,7 @@ very common due to the way the underlying APIs work.)</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE4send6buffer4size11cancellableSiSPys4Int8VGSg_Siqd__SgtKAA011CancellableC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/send(buffer:size:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE4send6buffer4size11cancellableSiSPys4Int8VGSg_Siqd__SgtKAA011CancellableC0Rd__lF">send(buffer:size:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE4send6buffer4size11cancellableSiSPys4Int8VGSg_Siqd__SgtKAA011CancellableC0Rd__lF">send(buffer:<wbr>size:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -10323,7 +10346,7 @@ very common due to the way the underlying APIs work.)</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7752-L7757">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7765-L7770">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10333,7 +10356,7 @@ very common due to the way the underlying APIs work.)</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE11sendMessage7address7vectors10numVectors8messages0H8Messages5flags11cancellableSiAA0B10AddressRefVSg_SpySo14_GOutputVectorVGSgSiSpySpySo015_GSocketControlE0VGSgGSgS2iAA011CancellableO0VSgtKF"></a>
                     <a name="//apple_ref/swift/Method/sendMessage(address:vectors:numVectors:messages:numMessages:flags:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE11sendMessage7address7vectors10numVectors8messages0H8Messages5flags11cancellableSiAA0B10AddressRefVSg_SpySo14_GOutputVectorVGSgSiSpySpySo015_GSocketControlE0VGSgGSgS2iAA011CancellableO0VSgtKF">sendMessage(address:vectors:numVectors:messages:numMessages:flags:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE11sendMessage7address7vectors10numVectors8messages0H8Messages5flags11cancellableSiAA0B10AddressRefVSg_SpySo14_GOutputVectorVGSgSiSpySpySo015_GSocketControlE0VGSgGSgS2iAA011CancellableO0VSgtKF">sendMessage(address:<wbr>vectors:<wbr>numVectors:<wbr>messages:<wbr>numMessages:<wbr>flags:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -10393,7 +10416,7 @@ very common due to the way the underlying APIs work.)</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7796-L7801">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7809-L7814">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10403,7 +10426,7 @@ very common due to the way the underlying APIs work.)</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE11sendMessage7address7vectors10numVectors8messages0H8Messages5flags11cancellableSiqd_0_Sg_SpySo14_GOutputVectorVGSgSiSpySpySo015_GSocketControlE0VGSgGSgS2iqd__SgtKAA011CancellableC0Rd__AA0b7AddressC0Rd_0_r0_lF"></a>
                     <a name="//apple_ref/swift/Method/sendMessage(address:vectors:numVectors:messages:numMessages:flags:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE11sendMessage7address7vectors10numVectors8messages0H8Messages5flags11cancellableSiqd_0_Sg_SpySo14_GOutputVectorVGSgSiSpySpySo015_GSocketControlE0VGSgGSgS2iqd__SgtKAA011CancellableC0Rd__AA0b7AddressC0Rd_0_r0_lF">sendMessage(address:vectors:numVectors:messages:numMessages:flags:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE11sendMessage7address7vectors10numVectors8messages0H8Messages5flags11cancellableSiqd_0_Sg_SpySo14_GOutputVectorVGSgSiSpySpySo015_GSocketControlE0VGSgGSgS2iqd__SgtKAA011CancellableC0Rd__AA0b7AddressC0Rd_0_r0_lF">sendMessage(address:<wbr>vectors:<wbr>numVectors:<wbr>messages:<wbr>numMessages:<wbr>flags:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -10463,7 +10486,7 @@ very common due to the way the underlying APIs work.)</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7839-L7844">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7852-L7857">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10473,7 +10496,7 @@ very common due to the way the underlying APIs work.)</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE22sendMessageWithTimeout7address7vectors10numVectors8messages0J8Messages5flags9timeoutUs12bytesWritten11cancellableSo15GPollableReturnaAA0B10AddressRefVSg_SPySo14_GOutputVectorVGSgSiSpySpySo015_GSocketControlE0VGSgGSgS2is5Int64VSpySuGSgAA011CancellableW0VSgtKF"></a>
                     <a name="//apple_ref/swift/Method/sendMessageWithTimeout(address:vectors:numVectors:messages:numMessages:flags:timeoutUs:bytesWritten:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE22sendMessageWithTimeout7address7vectors10numVectors8messages0J8Messages5flags9timeoutUs12bytesWritten11cancellableSo15GPollableReturnaAA0B10AddressRefVSg_SPySo14_GOutputVectorVGSgSiSpySpySo015_GSocketControlE0VGSgGSgS2is5Int64VSpySuGSgAA011CancellableW0VSgtKF">sendMessageWithTimeout(address:vectors:numVectors:messages:numMessages:flags:timeoutUs:bytesWritten:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE22sendMessageWithTimeout7address7vectors10numVectors8messages0J8Messages5flags9timeoutUs12bytesWritten11cancellableSo15GPollableReturnaAA0B10AddressRefVSg_SPySo14_GOutputVectorVGSgSiSpySpySo015_GSocketControlE0VGSgGSgS2is5Int64VSpySuGSgAA011CancellableW0VSgtKF">sendMessageWithTimeout(address:<wbr>vectors:<wbr>numVectors:<wbr>messages:<wbr>numMessages:<wbr>flags:<wbr>timeoutUs:<wbr>bytesWritten:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -10503,7 +10526,7 @@ returned. <code>bytes_written</code> will contain 0 in both cases.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7853-L7858">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7866-L7871">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10513,7 +10536,7 @@ returned. <code>bytes_written</code> will contain 0 in both cases.</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE22sendMessageWithTimeout7address7vectors10numVectors8messages0J8Messages5flags9timeoutUs12bytesWritten11cancellableSo15GPollableReturnaqd_0_Sg_SPySo14_GOutputVectorVGSgSiSpySpySo015_GSocketControlE0VGSgGSgS2is5Int64VSpySuGSgqd__SgtKAA011CancellableC0Rd__AA0b7AddressC0Rd_0_r0_lF"></a>
                     <a name="//apple_ref/swift/Method/sendMessageWithTimeout(address:vectors:numVectors:messages:numMessages:flags:timeoutUs:bytesWritten:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE22sendMessageWithTimeout7address7vectors10numVectors8messages0J8Messages5flags9timeoutUs12bytesWritten11cancellableSo15GPollableReturnaqd_0_Sg_SPySo14_GOutputVectorVGSgSiSpySpySo015_GSocketControlE0VGSgGSgS2is5Int64VSpySuGSgqd__SgtKAA011CancellableC0Rd__AA0b7AddressC0Rd_0_r0_lF">sendMessageWithTimeout(address:vectors:numVectors:messages:numMessages:flags:timeoutUs:bytesWritten:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE22sendMessageWithTimeout7address7vectors10numVectors8messages0J8Messages5flags9timeoutUs12bytesWritten11cancellableSo15GPollableReturnaqd_0_Sg_SPySo14_GOutputVectorVGSgSiSpySpySo015_GSocketControlE0VGSgGSgS2is5Int64VSpySuGSgqd__SgtKAA011CancellableC0Rd__AA0b7AddressC0Rd_0_r0_lF">sendMessageWithTimeout(address:<wbr>vectors:<wbr>numVectors:<wbr>messages:<wbr>numMessages:<wbr>flags:<wbr>timeoutUs:<wbr>bytesWritten:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -10543,7 +10566,7 @@ returned. <code>bytes_written</code> will contain 0 in both cases.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7866-L7871">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7879-L7884">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10553,7 +10576,7 @@ returned. <code>bytes_written</code> will contain 0 in both cases.</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE4send8messages11numMessages5flags11cancellableSiSpySo15_GOutputMessageVGSg_S2iAA14CancellableRefVSgtKF"></a>
                     <a name="//apple_ref/swift/Method/send(messages:numMessages:flags:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE4send8messages11numMessages5flags11cancellableSiSpySo15_GOutputMessageVGSg_S2iAA14CancellableRefVSgtKF">send(messages:numMessages:flags:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE4send8messages11numMessages5flags11cancellableSiSpySo15_GOutputMessageVGSg_S2iAA14CancellableRefVSgtKF">send(messages:<wbr>numMessages:<wbr>flags:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -10610,7 +10633,7 @@ successfully sent before the error will be returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7907-L7912">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7920-L7925">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10620,7 +10643,7 @@ successfully sent before the error will be returned.</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE4send8messages11numMessages5flags11cancellableSiSpySo15_GOutputMessageVGSg_S2iqd__SgtKAA011CancellableC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/send(messages:numMessages:flags:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE4send8messages11numMessages5flags11cancellableSiSpySo15_GOutputMessageVGSg_S2iqd__SgtKAA011CancellableC0Rd__lF">send(messages:numMessages:flags:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE4send8messages11numMessages5flags11cancellableSiSpySo15_GOutputMessageVGSg_S2iqd__SgtKAA011CancellableC0Rd__lF">send(messages:<wbr>numMessages:<wbr>flags:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -10677,7 +10700,7 @@ successfully sent before the error will be returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7947-L7952">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7960-L7965">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10687,7 +10710,7 @@ successfully sent before the error will be returned.</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE6sendTo7address6buffer4size11cancellableSiAA0B10AddressRefVSg_SPys4Int8VGSgSiAA011CancellableK0VSgtKF"></a>
                     <a name="//apple_ref/swift/Method/sendTo(address:buffer:size:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE6sendTo7address6buffer4size11cancellableSiAA0B10AddressRefVSg_SPys4Int8VGSgSiAA011CancellableK0VSgtKF">sendTo(address:buffer:size:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE6sendTo7address6buffer4size11cancellableSiAA0B10AddressRefVSg_SPys4Int8VGSgSiAA011CancellableK0VSgtKF">sendTo(address:<wbr>buffer:<wbr>size:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -10715,7 +10738,7 @@ successfully sent before the error will be returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7959-L7964">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7972-L7977">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10725,7 +10748,7 @@ successfully sent before the error will be returned.</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE6sendTo7address6buffer4size11cancellableSiqd_0_Sg_SPys4Int8VGSgSiqd__SgtKAA011CancellableC0Rd__AA0b7AddressC0Rd_0_r0_lF"></a>
                     <a name="//apple_ref/swift/Method/sendTo(address:buffer:size:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE6sendTo7address6buffer4size11cancellableSiqd_0_Sg_SPys4Int8VGSgSiqd__SgtKAA011CancellableC0Rd__AA0b7AddressC0Rd_0_r0_lF">sendTo(address:buffer:size:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE6sendTo7address6buffer4size11cancellableSiqd_0_Sg_SPys4Int8VGSgSiqd__SgtKAA011CancellableC0Rd__AA0b7AddressC0Rd_0_r0_lF">sendTo(address:<wbr>buffer:<wbr>size:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -10753,7 +10776,7 @@ successfully sent before the error will be returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7970-L7975">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7983-L7988">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10763,7 +10786,7 @@ successfully sent before the error will be returned.</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE16sendWithBlocking6buffer4size8blocking11cancellableSiSPys4Int8VGSg_SiSbAA14CancellableRefVSgtKF"></a>
                     <a name="//apple_ref/swift/Method/sendWithBlocking(buffer:size:blocking:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE16sendWithBlocking6buffer4size8blocking11cancellableSiSPys4Int8VGSg_SiSbAA14CancellableRefVSgtKF">sendWithBlocking(buffer:size:blocking:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE16sendWithBlocking6buffer4size8blocking11cancellableSiSPys4Int8VGSg_SiSbAA14CancellableRefVSgtKF">sendWithBlocking(buffer:<wbr>size:<wbr>blocking:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -10789,7 +10812,7 @@ the <code><a href="../Protocols/SocketProtocol.html#/s:3GIO14SocketProtocolPAAE8
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7980-L7985">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7993-L7998">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10799,7 +10822,7 @@ the <code><a href="../Protocols/SocketProtocol.html#/s:3GIO14SocketProtocolPAAE8
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE16sendWithBlocking6buffer4size8blocking11cancellableSiSPys4Int8VGSg_SiSbqd__SgtKAA011CancellableC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/sendWithBlocking(buffer:size:blocking:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE16sendWithBlocking6buffer4size8blocking11cancellableSiSPys4Int8VGSg_SiSbqd__SgtKAA011CancellableC0Rd__lF">sendWithBlocking(buffer:size:blocking:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE16sendWithBlocking6buffer4size8blocking11cancellableSiSPys4Int8VGSg_SiSbqd__SgtKAA011CancellableC0Rd__lF">sendWithBlocking(buffer:<wbr>size:<wbr>blocking:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -10825,7 +10848,7 @@ the <code><a href="../Protocols/SocketProtocol.html#/s:3GIO14SocketProtocolPAAE8
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L7989-L7994">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8002-L8007">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10835,7 +10858,7 @@ the <code><a href="../Protocols/SocketProtocol.html#/s:3GIO14SocketProtocolPAAE8
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE3set8blockingySb_tF"></a>
                     <a name="//apple_ref/swift/Method/set(blocking:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE3set8blockingySb_tF">set(blocking:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE3set8blockingySb_tF">set(blocking:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -10867,7 +10890,7 @@ is a GSocket level feature.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8005-L8008">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8018-L8021">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10877,7 +10900,7 @@ is a GSocket level feature.</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE3set9broadcastySb_tF"></a>
                     <a name="//apple_ref/swift/Method/set(broadcast:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE3set9broadcastySb_tF">set(broadcast:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE3set9broadcastySb_tF">set(broadcast:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -10902,7 +10925,7 @@ This is <code>false</code> by default.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8012-L8015">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8025-L8028">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10912,7 +10935,7 @@ This is <code>false</code> by default.</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE3set9keepaliveySb_tF"></a>
                     <a name="//apple_ref/swift/Method/set(keepalive:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE3set9keepaliveySb_tF">set(keepalive:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE3set9keepaliveySb_tF">set(keepalive:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -10950,7 +10973,7 @@ garbage-collected if clients crash or become unreachable.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8032-L8035">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8045-L8048">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10960,7 +10983,7 @@ garbage-collected if clients crash or become unreachable.</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE9setListen7backlogySi_tF"></a>
                     <a name="//apple_ref/swift/Method/setListen(backlog:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE9setListen7backlogySi_tF">setListen(backlog:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE9setListen7backlogySi_tF">setListen(backlog:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -10990,7 +11013,7 @@ effect if called after that.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8044-L8047">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8057-L8060">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11000,7 +11023,7 @@ effect if called after that.</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE12setMulticast8loopbackySb_tF"></a>
                     <a name="//apple_ref/swift/Method/setMulticast(loopback:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE12setMulticast8loopbackySb_tF">setMulticast(loopback:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE12setMulticast8loopbackySb_tF">setMulticast(loopback:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -11026,7 +11049,7 @@ by default.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8052-L8055">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8065-L8068">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11036,7 +11059,7 @@ by default.</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE12setMulticast3ttlySi_tF"></a>
                     <a name="//apple_ref/swift/Method/setMulticast(ttl:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE12setMulticast3ttlySi_tF">setMulticast(ttl:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE12setMulticast3ttlySi_tF">setMulticast(ttl:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -11062,7 +11085,7 @@ the local network.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8060-L8063">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8073-L8076">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11072,7 +11095,7 @@ the local network.</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE9setOption5level7optname5valueSbSi_S2itKF"></a>
                     <a name="//apple_ref/swift/Method/setOption(level:optname:value:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE9setOption5level7optname5valueSbSi_S2itKF">setOption(level:optname:value:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE9setOption5level7optname5valueSbSi_S2itKF">setOption(level:<wbr>optname:<wbr>value:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -11104,7 +11127,7 @@ headers.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8074-L8079">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8087-L8092">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11114,7 +11137,7 @@ headers.</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE3set7timeoutySi_tF"></a>
                     <a name="//apple_ref/swift/Method/set(timeout:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE3set7timeoutySi_tF">set(timeout:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE3set7timeoutySi_tF">set(timeout:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -11157,7 +11180,7 @@ cause the timeout to be reset.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8101-L8104">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8114-L8117">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11167,7 +11190,7 @@ cause the timeout to be reset.</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE3set3ttlySi_tF"></a>
                     <a name="//apple_ref/swift/Method/set(ttl:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE3set3ttlySi_tF">set(ttl:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE3set3ttlySi_tF">set(ttl:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -11192,7 +11215,7 @@ By default the platform-specific default value is used.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8108-L8111">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8121-L8124">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11202,7 +11225,7 @@ By default the platform-specific default value is used.</p>
                     <code>
                     <a name="/s:3GIO14SocketProtocolPAAE8shutdown0D4Read0D5WriteS2b_SbtKF"></a>
                     <a name="//apple_ref/swift/Method/shutdown(shutdownRead:shutdownWrite:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE8shutdown0D4Read0D5WriteS2b_SbtKF">shutdown(shutdownRead:shutdownWrite:)</a>
+                    <a class="token" href="#/s:3GIO14SocketProtocolPAAE8shutdown0D4Read0D5WriteS2b_SbtKF">shutdown(shutdownRead:<wbr>shutdownWrite:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -11239,7 +11262,7 @@ other side saw all sent data.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8127-L8132">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8140-L8145">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11281,7 +11304,7 @@ of speaking IPv4.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8143-L8146">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8156-L8159">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11326,7 +11349,7 @@ exactly the right size.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8159-L8176">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8172-L8189">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11360,7 +11383,7 @@ exactly the right size.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8178-L8197">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8191-L8210">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11394,7 +11417,7 @@ exactly the right size.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8200-L8213">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8213-L8226">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11430,6 +11453,7 @@ by reading the <code>SO_PEERCRED</code> option on the underlying socket.</p>
 <li>OpenBSD since GLib 2.30</li>
 <li>Solaris, Illumos and OpenSolaris since GLib 2.40</li>
 <li>NetBSD since GLib 2.42</li>
+<li>macOS, tvOS, iOS since GLib 2.66</li>
 </ul>
 
 <p>Other ways to obtain credentials from a foreign peer includes the
@@ -11448,7 +11472,7 @@ by reading the <code>SO_PEERCRED</code> option on the underlying socket.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8234-L8260">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8248-L8275">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11482,7 +11506,7 @@ by reading the <code>SO_PEERCRED</code> option on the underlying socket.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8262-L8268">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8277-L8283">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11516,7 +11540,7 @@ by reading the <code>SO_PEERCRED</code> option on the underlying socket.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8270-L8280">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8285-L8295">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11550,7 +11574,7 @@ by reading the <code>SO_PEERCRED</code> option on the underlying socket.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8283-L8289">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8298-L8304">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11590,7 +11614,7 @@ connect, this function will not return <code>true</code> until after you call
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8298-L8310">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8313-L8325">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11624,7 +11648,7 @@ connect, this function will not return <code>true</code> until after you call
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8312-L8337">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8327-L8352">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11659,7 +11683,7 @@ see <code>g_socket_set_listen_backlog()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8341-L8358">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8356-L8373">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11695,7 +11719,7 @@ either explicitly or implicitly when connecting.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8363-L8373">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8378-L8388">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11731,7 +11755,7 @@ multicast listeners on the same host.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8378-L8392">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8393-L8407">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11766,7 +11790,7 @@ multicast listeners on the same host.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8396-L8409">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8411-L8424">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11800,7 +11824,7 @@ multicast listeners on the same host.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8411-L8418">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8426-L8433">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11835,7 +11859,7 @@ useful for connection oriented sockets that have been connected.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8422-L8431">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8437-L8446">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11869,7 +11893,7 @@ useful for connection oriented sockets that have been connected.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8434-L8440">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8449-L8455">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11903,7 +11927,7 @@ useful for connection oriented sockets that have been connected.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8443-L8473">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8458-L8488">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11937,7 +11961,7 @@ useful for connection oriented sockets that have been connected.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8476-L8488">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8491-L8503">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11971,7 +11995,7 @@ useful for connection oriented sockets that have been connected.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8490-L8495">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8505-L8510">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12005,7 +12029,7 @@ useful for connection oriented sockets that have been connected.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8497-L8502">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8512-L8517">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -12018,8 +12042,8 @@ useful for connection oriented sockets that have been connected.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.ict.griffith.edu.au/~rhexel/" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2020-09-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

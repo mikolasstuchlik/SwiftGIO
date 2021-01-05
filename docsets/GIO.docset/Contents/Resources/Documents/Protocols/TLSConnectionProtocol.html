@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          GIO 2.64.4 Docs
+          GIO 2.66.4 Docs
         </a>
-         (88% documented)
+         (89% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx%2Egithub%2Eio%2FSwiftGIO%2Fdocsets%2FGIO%2Exml">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx.github.io%2FSwiftGIO%2Fdocsets%2FGIO.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -2205,6 +2205,12 @@
                 <a class="nav-group-task-link" href="../Extensions/TLSCertificateRequestFlags.html">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingError.html">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingType.html">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/TLSDatabaseLookupFlags.html">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -2648,6 +2654,9 @@
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO20tlsBackendGetDefaultAA13TLSBackendRefVSgyF">tlsBackendGetDefault()</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27tlsChannelBindingErrorQuarks6UInt32VyF">tlsChannelBindingErrorQuark()</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO22tlsClientConnectionNew12baseIoStream14serverIdentityAA09TLSClientD3RefVSgx_AA017SocketConnectableL0VSgtKAA16IOStreamProtocolRzlF">tlsClientConnectionNew(baseIoStream:serverIdentity:)</a>
               </li>
               <li class="nav-group-task">
@@ -2724,6 +2733,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO25unixMountIsSystemInternal10mountEntrySbx_tAA04UnixcH8ProtocolRzlF">unixMountIsSystemInternal(mountEntry:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO16unixMountPointAt9mountPath8timeReadAA04UnixcD3RefVSgSPys4Int8VGSg_Spys6UInt64VGSgtF">unixMountPointAt(mountPath:timeRead:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27unixMountPointsChangedSince4timeSbs6UInt64V_tF">unixMountPointsChangedSince(time:)</a>
@@ -5243,6 +5255,12 @@
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO26TLSCertificateRequestFlagsa">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSChannelBindingErrora">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO21TLSChannelBindingTypea">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSDatabaseLookupFlagsa">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -7578,6 +7596,7 @@
             <h1>TLSConnectionProtocol</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">TLSConnectionProtocol</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/IOStreamProtocol.html">IOStreamProtocol</a></span></code></pre>
 
                 </div>
@@ -7594,6 +7613,9 @@ implement client-side and server-side TLS, respectively.</p>
 
 <p>For DTLS (Datagram TLS) support, see <code>GDtlsConnection</code>.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3216-L3223">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -7687,7 +7709,7 @@ implement client-side and server-side TLS, respectively.</p>
                     <code>
                     <a name="/s:3GIO21TLSConnectionProtocolPAAE4bind8property2to_5flags13transformFrom0H2To10GLibObject10BindingRefVSgAA0B12PropertyNameO_qd_0_qd__AJ0M5FlagsVSbAJ05ValueN0V_AStcSbAS_AStctAJ0opC0Rd__AJ0lC0Rd_0_r0_lF"></a>
                     <a name="//apple_ref/swift/Method/bind(property:to:_:flags:transformFrom:transformTo:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE4bind8property2to_5flags13transformFrom0H2To10GLibObject10BindingRefVSgAA0B12PropertyNameO_qd_0_qd__AJ0M5FlagsVSbAJ05ValueN0V_AStcSbAS_AStctAJ0opC0Rd__AJ0lC0Rd_0_r0_lF">bind(property:to:_:flags:transformFrom:transformTo:)</a>
+                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE4bind8property2to_5flags13transformFrom0H2To10GLibObject10BindingRefVSgAA0B12PropertyNameO_qd_0_qd__AJ0M5FlagsVSbAJ05ValueN0V_AStcSbAS_AStctAJ0opC0Rd__AJ0lC0Rd_0_r0_lF">bind(property:<wbr>to:<wbr>_:<wbr>flags:<wbr>transformFrom:<wbr>transformTo:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7795,7 +7817,7 @@ implement client-side and server-side TLS, respectively.</p>
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3522-L3546">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3521-L3545">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7805,7 +7827,7 @@ implement client-side and server-side TLS, respectively.</p>
                     <code>
                     <a name="/s:3GIO21TLSConnectionProtocolPAAE3get8property10GLibObject5ValueCAA0B12PropertyNameO_tF"></a>
                     <a name="//apple_ref/swift/Method/get(property:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE3get8property10GLibObject5ValueCAA0B12PropertyNameO_tF">get(property:)</a>
+                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE3get8property10GLibObject5ValueCAA0B12PropertyNameO_tF">get(property:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7852,7 +7874,7 @@ implement client-side and server-side TLS, respectively.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3551-L3555">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3550-L3554">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7862,7 +7884,7 @@ implement client-side and server-side TLS, respectively.</p>
                     <code>
                     <a name="/s:3GIO21TLSConnectionProtocolPAAE3set8property5valueyAA0B12PropertyNameO_10GLibObject5ValueCtF"></a>
                     <a name="//apple_ref/swift/Method/set(property:value:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE3set8property5valueyAA0B12PropertyNameO_10GLibObject5ValueCtF">set(property:value:)</a>
+                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE3set8property5valueyAA0B12PropertyNameO_10GLibObject5ValueCtF">set(property:<wbr>value:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7910,7 +7932,7 @@ implement client-side and server-side TLS, respectively.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3561-L3563">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3560-L3562">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7920,7 +7942,7 @@ implement client-side and server-side TLS, respectively.</p>
                     <code>
                     <a name="/s:3GIO21TLSConnectionProtocolPAAE7connect6signal5flags2toSiAA0B10SignalNameO_10GLibObject12ConnectFlagsVyyctF"></a>
                     <a name="//apple_ref/swift/Method/connect(signal:flags:to:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE7connect6signal5flags2toSiAA0B10SignalNameO_10GLibObject12ConnectFlagsVyyctF">connect(signal:flags:to:)</a>
+                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE7connect6signal5flags2toSiAA0B10SignalNameO_10GLibObject12ConnectFlagsVyyctF">connect(signal:<wbr>flags:<wbr>to:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7992,7 +8014,7 @@ implement client-side and server-side TLS, respectively.</p>
                         <p>positive handler ID, or a value less than or equal to <code>0</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3692-L3711">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3690-L3709">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8001,10 +8023,10 @@ implement client-side and server-side TLS, respectively.</p>
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/TLSConnection%20Class:%20TLSConnectionProtocol%20extension%20(methods%20and%20fields)"></a>
+                <a name="/TLSConnection%20Class%3A%20TLSConnectionProtocol%20extension%20%28methods%20and%20fields%29"></a>
                 <a name="//apple_ref/swift/Section/TLSConnection Class: TLSConnectionProtocol extension (methods and fields)" class="dashAnchor"></a>
                 <div class="section-name-container">
-                  <a class="section-name-link" href="#/TLSConnection%20Class:%20TLSConnectionProtocol%20extension%20(methods%20and%20fields)"></a>
+                  <a class="section-name-link" href="#/TLSConnection%20Class%3A%20TLSConnectionProtocol%20extension%20%28methods%20and%20fields%29"></a>
                   <h3 class="section-name"><p>TLSConnection Class: TLSConnectionProtocol extension (methods and fields)</p>
 </h3>
                 </div>
@@ -8015,7 +8037,7 @@ implement client-side and server-side TLS, respectively.</p>
                     <code>
                     <a name="/s:3GIO21TLSConnectionProtocolPAAE21emitAcceptCertificate8peerCert6errorsSbqd___AA19TLSCertificateFlagsVtAA0jC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/emitAcceptCertificate(peerCert:errors:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE21emitAcceptCertificate8peerCert6errorsSbqd___AA19TLSCertificateFlagsVtAA0jC0Rd__lF">emitAcceptCertificate(peerCert:errors:)</a>
+                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE21emitAcceptCertificate8peerCert6errorsSbqd___AA19TLSCertificateFlagsVtAA0jC0Rd__lF">emitAcceptCertificate(peerCert:<wbr>errors:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8040,7 +8062,7 @@ implement client-side and server-side TLS, respectively.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3721-L3724">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3719-L3722">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8075,7 +8097,99 @@ implement client-side and server-side TLS, respectively.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3728-L3731">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3726-L3729">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3GIO21TLSConnectionProtocolPAAE21getChannelBindingData4type4dataSbSo04GTlseF4Typea_4GLib12ByteArrayRefVSgtKF"></a>
+                    <a name="//apple_ref/swift/Method/getChannelBindingData(type:data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE21getChannelBindingData4type4dataSbSo04GTlseF4Typea_4GLib12ByteArrayRefVSgtKF">getChannelBindingData(type:<wbr>data:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Query the TLS backend for TLS channel binding data of <code>type</code> for <code>conn</code>.</p>
+
+<p>This call retrieves TLS channel binding data as specified in RFC
+<a href="https://tools.ietf.org/html/rfc5056">5056</a>, RFC
+<a href="https://tools.ietf.org/html/rfc5929">5929</a>, and related RFCs.  The
+binding data is returned in <code>data</code>.  The <code>data</code> is resized by the callee
+using <code>GByteArray</code> buffer management and will be freed when the <code>data</code>
+is destroyed by <code>g_byte_array_unref()</code>. If <code>data</code> is <code>nil</code>, it will only
+check whether TLS backend is able to fetch the data (e.g. whether <code>type</code>
+is supported by the TLS backend). It does not guarantee that the data
+will be available though.  That could happen if TLS connection does not
+support <code>type</code> or the binding data is not available yet due to additional
+negotiation or input required.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">getChannelBindingData</span><span class="p">(</span><span class="nv">type</span><span class="p">:</span> <span class="kt">GTlsChannelBindingType</span><span class="p">,</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">GLib</span><span class="o">.</span><span class="kt">ByteArrayRef</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3744-L3749">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3GIO21TLSConnectionProtocolPAAE21getChannelBindingData4type4dataSbSo04GTlseF4Typea_qd__SgtK4GLib09ByteArrayC0Rd__lF"></a>
+                    <a name="//apple_ref/swift/Method/getChannelBindingData(type:data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE21getChannelBindingData4type4dataSbSo04GTlseF4Typea_qd__SgtK4GLib09ByteArrayC0Rd__lF">getChannelBindingData(type:<wbr>data:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Query the TLS backend for TLS channel binding data of <code>type</code> for <code>conn</code>.</p>
+
+<p>This call retrieves TLS channel binding data as specified in RFC
+<a href="https://tools.ietf.org/html/rfc5056">5056</a>, RFC
+<a href="https://tools.ietf.org/html/rfc5929">5929</a>, and related RFCs.  The
+binding data is returned in <code>data</code>.  The <code>data</code> is resized by the callee
+using <code>GByteArray</code> buffer management and will be freed when the <code>data</code>
+is destroyed by <code>g_byte_array_unref()</code>. If <code>data</code> is <code>nil</code>, it will only
+check whether TLS backend is able to fetch the data (e.g. whether <code>type</code>
+is supported by the TLS backend). It does not guarantee that the data
+will be available though.  That could happen if TLS connection does not
+support <code>type</code> or the binding data is not available yet due to additional
+negotiation or input required.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="n">getChannelBindingData</span><span class="o">&lt;</span><span class="kt">ByteArrayT</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">type</span><span class="p">:</span> <span class="kt">GTlsChannelBindingType</span><span class="p">,</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">ByteArrayT</span><span class="p">?)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="k">where</span> <span class="kt">ByteArrayT</span> <span class="p">:</span> <span class="kt">ByteArrayProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3763-L3768">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8110,7 +8224,7 @@ peer certificates. See <code>g_tls_connection_set_database()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3735-L3738">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3772-L3775">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8146,7 +8260,7 @@ no user interaction will occur for this connection.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3743-L3746">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3780-L3783">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8186,7 +8300,7 @@ does not support ALPN, then this will be <code>nil</code>. See
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3755-L3758">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3792-L3795">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8207,8 +8321,8 @@ does not support ALPN, then this will be <code>nil</code>. See
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Gets <code>conn</code>&lsquo;s peer&rsquo;s certificate after the handshake has completed.
-(It is not set during the emission of
+                        <p>Gets <code>conn</code>&lsquo;s peer&rsquo;s certificate after the handshake has completed
+or failed. (It is not set during the emission of
 <code>GTlsConnection::accept</code>-certificate.)</p>
 
                       </div>
@@ -8222,7 +8336,7 @@ does not support ALPN, then this will be <code>nil</code>. See
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3763-L3766">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3800-L3803">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8244,8 +8358,8 @@ does not support ALPN, then this will be <code>nil</code>. See
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Gets the errors associated with validating <code>conn</code>&lsquo;s peer&rsquo;s
-certificate, after the handshake has completed. (It is not set
-during the emission of <code>GTlsConnection::accept</code>-certificate.)</p>
+certificate, after the handshake has completed or failed. (It is
+not set during the emission of <code>GTlsConnection::accept</code>-certificate.)</p>
 
                       </div>
                       <div class="declaration">
@@ -8258,7 +8372,7 @@ during the emission of <code>GTlsConnection::accept</code>-certificate.)</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3771-L3774">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3808-L3811">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8299,7 +8413,7 @@ Changing the rehandshake mode is no longer
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3783-L3786">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3820-L3823">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8335,7 +8449,7 @@ when the connection is closed. See
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3791-L3794">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3828-L3831">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8374,7 +8488,7 @@ Use g_tls_connection_get_database() instead</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3801-L3804">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3838-L3841">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8384,7 +8498,7 @@ Use g_tls_connection_get_database() instead</p>
                     <code>
                     <a name="/s:3GIO21TLSConnectionProtocolPAAE9handshake11cancellableSbAA14CancellableRefVSg_tKF"></a>
                     <a name="//apple_ref/swift/Method/handshake(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE9handshake11cancellableSbAA14CancellableRefVSg_tKF">handshake(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE9handshake11cancellableSbAA14CancellableRefVSg_tKF">handshake(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8438,7 +8552,7 @@ handshake.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3837-L3842">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3874-L3879">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8448,7 +8562,7 @@ handshake.</p>
                     <code>
                     <a name="/s:3GIO21TLSConnectionProtocolPAAE9handshake11cancellableSbqd__Sg_tKAA011CancellableC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/handshake(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE9handshake11cancellableSbqd__Sg_tKAA011CancellableC0Rd__lF">handshake(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE9handshake11cancellableSbqd__Sg_tKAA011CancellableC0Rd__lF">handshake(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8502,7 +8616,7 @@ handshake.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3874-L3879">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3911-L3916">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8512,7 +8626,7 @@ handshake.</p>
                     <code>
                     <a name="/s:3GIO21TLSConnectionProtocolPAAE14handshakeAsync10ioPriority11cancellable8callback8userDataySi_AA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgATtF"></a>
                     <a name="//apple_ref/swift/Method/handshakeAsync(ioPriority:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE14handshakeAsync10ioPriority11cancellable8callback8userDataySi_AA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgATtF">handshakeAsync(ioPriority:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE14handshakeAsync10ioPriority11cancellable8callback8userDataySi_AA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgATtF">handshakeAsync(ioPriority:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8537,7 +8651,7 @@ handshake.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3883-L3886">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3920-L3923">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8547,7 +8661,7 @@ handshake.</p>
                     <code>
                     <a name="/s:3GIO21TLSConnectionProtocolPAAE14handshakeAsync10ioPriority11cancellable8callback8userDataySi_qd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgARtAA011CancellableC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/handshakeAsync(ioPriority:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE14handshakeAsync10ioPriority11cancellable8callback8userDataySi_qd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgARtAA011CancellableC0Rd__lF">handshakeAsync(ioPriority:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE14handshakeAsync10ioPriority11cancellable8callback8userDataySi_qd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgARtAA011CancellableC0Rd__lF">handshakeAsync(ioPriority:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8572,7 +8686,7 @@ handshake.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3889-L3892">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3926-L3929">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8582,7 +8696,7 @@ handshake.</p>
                     <code>
                     <a name="/s:3GIO21TLSConnectionProtocolPAAE15handshakeFinish6resultSbqd___tKAA011AsyncResultC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/handshakeFinish(result:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE15handshakeFinish6resultSbqd___tKAA011AsyncResultC0Rd__lF">handshakeFinish(result:)</a>
+                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE15handshakeFinish6resultSbqd___tKAA011AsyncResultC0Rd__lF">handshakeFinish(result:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8607,7 +8721,7 @@ handshake.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3896-L3901">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3933-L3938">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8617,7 +8731,7 @@ handshake.</p>
                     <code>
                     <a name="/s:3GIO21TLSConnectionProtocolPAAE13setAdvertised9protocolsySPySPys4Int8VGSgGSg_tF"></a>
                     <a name="//apple_ref/swift/Method/setAdvertised(protocols:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE13setAdvertised9protocolsySPySPys4Int8VGSgGSg_tF">setAdvertised(protocols:)</a>
+                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE13setAdvertised9protocolsySPySPys4Int8VGSgGSg_tF">setAdvertised(protocols:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8650,7 +8764,7 @@ for a list of registered protocol IDs.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3913-L3916">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3950-L3953">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8660,7 +8774,7 @@ for a list of registered protocol IDs.</p>
                     <code>
                     <a name="/s:3GIO21TLSConnectionProtocolPAAE3set11certificateyqd___tAA014TLSCertificateC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/set(certificate:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE3set11certificateyqd___tAA014TLSCertificateC0Rd__lF">set(certificate:)</a>
+                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE3set11certificateyqd___tAA014TLSCertificateC0Rd__lF">set(certificate:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8701,7 +8815,7 @@ non-<code>nil</code>.)</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3936-L3939">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3973-L3976">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8709,9 +8823,9 @@ non-<code>nil</code>.)</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:3GIO21TLSConnectionProtocolPAAE3set8databaseyqd___tAA011TLSDatabaseC0Rd__lF"></a>
+                    <a name="/s:3GIO21TLSConnectionProtocolPAAE3set8databaseyAA14TLSDatabaseRefVSg_tF"></a>
                     <a name="//apple_ref/swift/Method/set(database:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE3set8databaseyqd___tAA011TLSDatabaseC0Rd__lF">set(database:)</a>
+                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE3set8databaseyAA14TLSDatabaseRefVSg_tF">set(database:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8737,12 +8851,53 @@ client-side connections, unless that bit is not set in
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@inlinable</span>
-<span class="kd">func</span> <span class="k">set</span><span class="o">&lt;</span><span class="kt">TLSDatabaseT</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">database</span><span class="p">:</span> <span class="kt">TLSDatabaseT</span><span class="p">)</span> <span class="k">where</span> <span class="kt">TLSDatabaseT</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/TLSDatabaseProtocol.html">TLSDatabaseProtocol</a></span></code></pre>
+<span class="kd">func</span> <span class="nf">set</span><span class="p">(</span><span class="nv">database</span><span class="p">:</span> <span class="kt"><a href="../Structs/TLSDatabaseRef.html">TLSDatabaseRef</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3949-L3952">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3986-L3989">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3GIO21TLSConnectionProtocolPAAE3set8databaseyqd__Sg_tAA011TLSDatabaseC0Rd__lF"></a>
+                    <a name="//apple_ref/swift/Method/set(database:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE3set8databaseyqd__Sg_tAA011TLSDatabaseC0Rd__lF">set(database:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the certificate database that is used to verify peer certificates.
+This is set to the default database by default. See
+<code>g_tls_backend_get_default_database()</code>. If set to <code>nil</code>, then
+peer certificate validation will always set the
+<code>G_TLS_CERTIFICATE_UNKNOWN_CA</code> error (meaning
+<code>GTlsConnection::accept</code>-certificate will always be emitted on
+client-side connections, unless that bit is not set in
+<code>GTlsClientConnection:validation</code>-flags).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="k">set</span><span class="o">&lt;</span><span class="kt">TLSDatabaseT</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">database</span><span class="p">:</span> <span class="kt">TLSDatabaseT</span><span class="p">?)</span> <span class="k">where</span> <span class="kt">TLSDatabaseT</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/TLSDatabaseProtocol.html">TLSDatabaseProtocol</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3998-L4001">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8752,7 +8907,7 @@ client-side connections, unless that bit is not set in
                     <code>
                     <a name="/s:3GIO21TLSConnectionProtocolPAAE3set11interactionyAA17TLSInteractionRefVSg_tF"></a>
                     <a name="//apple_ref/swift/Method/set(interaction:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE3set11interactionyAA17TLSInteractionRefVSg_tF">set(interaction:)</a>
+                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE3set11interactionyAA17TLSInteractionRefVSg_tF">set(interaction:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8781,7 +8936,7 @@ should occur for this connection.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3960-L3963">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L4009-L4012">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8791,7 +8946,7 @@ should occur for this connection.</p>
                     <code>
                     <a name="/s:3GIO21TLSConnectionProtocolPAAE3set11interactionyqd__Sg_tAA014TLSInteractionC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/set(interaction:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE3set11interactionyqd__Sg_tAA014TLSInteractionC0Rd__lF">set(interaction:)</a>
+                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE3set11interactionyqd__Sg_tAA014TLSInteractionC0Rd__lF">set(interaction:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8820,7 +8975,7 @@ should occur for this connection.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3970-L3973">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L4019-L4022">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8830,7 +8985,7 @@ should occur for this connection.</p>
                     <code>
                     <a name="/s:3GIO21TLSConnectionProtocolPAAE14setRehandshake4modeySo04GTlsE4Modea_tF"></a>
                     <a name="//apple_ref/swift/Method/setRehandshake(mode:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE14setRehandshake4modeySo04GTlsE4Modea_tF">setRehandshake(mode:)</a>
+                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE14setRehandshake4modeySo04GTlsE4Modea_tF">setRehandshake(mode:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8863,7 +9018,7 @@ Changing the rehandshake mode is no longer
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L3984-L3987">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L4033-L4036">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8873,7 +9028,7 @@ Changing the rehandshake mode is no longer
                     <code>
                     <a name="/s:3GIO21TLSConnectionProtocolPAAE3set18requireCloseNotifyySb_tF"></a>
                     <a name="//apple_ref/swift/Method/set(requireCloseNotify:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE3set18requireCloseNotifyySb_tF">set(requireCloseNotify:)</a>
+                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE3set18requireCloseNotifyySb_tF">set(requireCloseNotify:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8923,7 +9078,7 @@ operations are pending on <code>conn</code> or the base I/O stream.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L4016-L4019">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L4065-L4068">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8933,7 +9088,7 @@ operations are pending on <code>conn</code> or the base I/O stream.</p>
                     <code>
                     <a name="/s:3GIO21TLSConnectionProtocolPAAE3set15useSystemCertdbySb_tF"></a>
                     <a name="//apple_ref/swift/Method/set(useSystemCertdb:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE3set15useSystemCertdbySb_tF">set(useSystemCertdb:)</a>
+                    <a class="token" href="#/s:3GIO21TLSConnectionProtocolPAAE3set15useSystemCertdbySb_tF">set(useSystemCertdb:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8967,7 +9122,7 @@ Use g_tls_connection_set_database() instead</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L4031-L4034">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L4080-L4083">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9002,7 +9157,7 @@ Use g_tls_connection_set_database() instead</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L4037-L4065">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L4086-L4114">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9038,7 +9193,7 @@ used. See <code>g_tls_backend_get_default_database()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L4070-L4088">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L4119-L4137">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9074,7 +9229,7 @@ user for passwords where necessary.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L4093-L4110">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L4142-L4159">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9114,7 +9269,7 @@ does not support ALPN, then this will be <code>nil</code>. See
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L4119-L4131">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L4168-L4180">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9135,8 +9290,8 @@ does not support ALPN, then this will be <code>nil</code>. See
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Gets <code>conn</code>&lsquo;s peer&rsquo;s certificate after the handshake has completed.
-(It is not set during the emission of
+                        <p>Gets <code>conn</code>&lsquo;s peer&rsquo;s certificate after the handshake has completed
+or failed. (It is not set during the emission of
 <code>GTlsConnection::accept</code>-certificate.)</p>
 
                       </div>
@@ -9150,7 +9305,7 @@ does not support ALPN, then this will be <code>nil</code>. See
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L4136-L4144">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L4185-L4193">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9172,8 +9327,8 @@ does not support ALPN, then this will be <code>nil</code>. See
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Gets the errors associated with validating <code>conn</code>&lsquo;s peer&rsquo;s
-certificate, after the handshake has completed. (It is not set
-during the emission of <code>GTlsConnection::accept</code>-certificate.)</p>
+certificate, after the handshake has completed or failed. (It is
+not set during the emission of <code>GTlsConnection::accept</code>-certificate.)</p>
 
                       </div>
                       <div class="declaration">
@@ -9186,7 +9341,7 @@ during the emission of <code>GTlsConnection::accept</code>-certificate.)</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L4149-L4157">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L4198-L4206">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9226,7 +9381,7 @@ Changing the rehandshake mode is no longer
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L4166-L4190">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L4215-L4239">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9262,7 +9417,7 @@ when the connection is closed. See
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L4195-L4233">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L4244-L4282">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9300,7 +9455,7 @@ Use g_tls_connection_get_database() instead</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L4240-L4263">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L4289-L4312">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9334,7 +9489,7 @@ Use g_tls_connection_get_database() instead</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L4265-L4270">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L4314-L4319">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9368,7 +9523,7 @@ Use g_tls_connection_get_database() instead</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L4272-L4277">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L4321-L4326">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9381,8 +9536,8 @@ Use g_tls_connection_get_database() instead</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.ict.griffith.edu.au/~rhexel/" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2020-09-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

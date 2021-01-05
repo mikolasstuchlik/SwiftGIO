@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          GIO 2.64.4 Docs
+          GIO 2.66.4 Docs
         </a>
-         (88% documented)
+         (89% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx%2Egithub%2Eio%2FSwiftGIO%2Fdocsets%2FGIO%2Exml">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx.github.io%2FSwiftGIO%2Fdocsets%2FGIO.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -2205,6 +2205,12 @@
                 <a class="nav-group-task-link" href="../Extensions/TLSCertificateRequestFlags.html">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingError.html">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingType.html">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/TLSDatabaseLookupFlags.html">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -2648,6 +2654,9 @@
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO20tlsBackendGetDefaultAA13TLSBackendRefVSgyF">tlsBackendGetDefault()</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27tlsChannelBindingErrorQuarks6UInt32VyF">tlsChannelBindingErrorQuark()</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO22tlsClientConnectionNew12baseIoStream14serverIdentityAA09TLSClientD3RefVSgx_AA017SocketConnectableL0VSgtKAA16IOStreamProtocolRzlF">tlsClientConnectionNew(baseIoStream:serverIdentity:)</a>
               </li>
               <li class="nav-group-task">
@@ -2724,6 +2733,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO25unixMountIsSystemInternal10mountEntrySbx_tAA04UnixcH8ProtocolRzlF">unixMountIsSystemInternal(mountEntry:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO16unixMountPointAt9mountPath8timeReadAA04UnixcD3RefVSgSPys4Int8VGSg_Spys6UInt64VGSgtF">unixMountPointAt(mountPath:timeRead:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27unixMountPointsChangedSince4timeSbs6UInt64V_tF">unixMountPointsChangedSince(time:)</a>
@@ -5243,6 +5255,12 @@
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO26TLSCertificateRequestFlagsa">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSChannelBindingErrora">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO21TLSChannelBindingTypea">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSDatabaseLookupFlagsa">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -7578,6 +7596,7 @@
             <h1>DtlsConnectionProtocol</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">DtlsConnectionProtocol</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/DatagramBasedProtocol.html">DatagramBasedProtocol</a></span></code></pre>
 
                 </div>
@@ -7607,6 +7626,9 @@ do that if they wish. If they do not, and <code>g_socket_close()</code> is calle
 base socket, the <code>GDtlsConnection</code> will not raise a <code>G_IO_ERROR_NOT_CONNECTED</code>
 error on further I/O.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3018-L3025">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -7700,7 +7722,7 @@ error on further I/O.</p>
                     <code>
                     <a name="/s:3GIO22DtlsConnectionProtocolPAAE4bind8property2to_5flags13transformFrom0I2To10GLibObject10BindingRefVSgAA0bC12PropertyNameO_qd_0_qd__AJ0N5FlagsVSbAJ05ValueO0V_AStcSbAS_AStctAJ0pqD0Rd__AJ0mD0Rd_0_r0_lF"></a>
                     <a name="//apple_ref/swift/Method/bind(property:to:_:flags:transformFrom:transformTo:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE4bind8property2to_5flags13transformFrom0I2To10GLibObject10BindingRefVSgAA0bC12PropertyNameO_qd_0_qd__AJ0N5FlagsVSbAJ05ValueO0V_AStcSbAS_AStctAJ0pqD0Rd__AJ0mD0Rd_0_r0_lF">bind(property:to:_:flags:transformFrom:transformTo:)</a>
+                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE4bind8property2to_5flags13transformFrom0I2To10GLibObject10BindingRefVSgAA0bC12PropertyNameO_qd_0_qd__AJ0N5FlagsVSbAJ05ValueO0V_AStcSbAS_AStctAJ0pqD0Rd__AJ0mD0Rd_0_r0_lF">bind(property:<wbr>to:<wbr>_:<wbr>flags:<wbr>transformFrom:<wbr>transformTo:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7808,7 +7830,7 @@ error on further I/O.</p>
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3337-L3361">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3336-L3360">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7818,7 +7840,7 @@ error on further I/O.</p>
                     <code>
                     <a name="/s:3GIO22DtlsConnectionProtocolPAAE3get8property10GLibObject5ValueCAA0bC12PropertyNameO_tF"></a>
                     <a name="//apple_ref/swift/Method/get(property:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE3get8property10GLibObject5ValueCAA0bC12PropertyNameO_tF">get(property:)</a>
+                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE3get8property10GLibObject5ValueCAA0bC12PropertyNameO_tF">get(property:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7865,7 +7887,7 @@ error on further I/O.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3366-L3370">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3365-L3369">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7875,7 +7897,7 @@ error on further I/O.</p>
                     <code>
                     <a name="/s:3GIO22DtlsConnectionProtocolPAAE3set8property5valueyAA0bC12PropertyNameO_10GLibObject5ValueCtF"></a>
                     <a name="//apple_ref/swift/Method/set(property:value:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE3set8property5valueyAA0bC12PropertyNameO_10GLibObject5ValueCtF">set(property:value:)</a>
+                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE3set8property5valueyAA0bC12PropertyNameO_10GLibObject5ValueCtF">set(property:<wbr>value:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7923,7 +7945,7 @@ error on further I/O.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3376-L3378">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3375-L3377">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7933,7 +7955,7 @@ error on further I/O.</p>
                     <code>
                     <a name="/s:3GIO22DtlsConnectionProtocolPAAE7connect6signal5flags2toSiAA0bC10SignalNameO_10GLibObject12ConnectFlagsVyyctF"></a>
                     <a name="//apple_ref/swift/Method/connect(signal:flags:to:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE7connect6signal5flags2toSiAA0bC10SignalNameO_10GLibObject12ConnectFlagsVyyctF">connect(signal:flags:to:)</a>
+                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE7connect6signal5flags2toSiAA0bC10SignalNameO_10GLibObject12ConnectFlagsVyyctF">connect(signal:<wbr>flags:<wbr>to:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8005,7 +8027,7 @@ error on further I/O.</p>
                         <p>positive handler ID, or a value less than or equal to <code>0</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3469-L3488">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3467-L3486">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8014,10 +8036,10 @@ error on further I/O.</p>
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/DtlsConnection%20Interface:%20DtlsConnectionProtocol%20extension%20(methods%20and%20fields)"></a>
+                <a name="/DtlsConnection%20Interface%3A%20DtlsConnectionProtocol%20extension%20%28methods%20and%20fields%29"></a>
                 <a name="//apple_ref/swift/Section/DtlsConnection Interface: DtlsConnectionProtocol extension (methods and fields)" class="dashAnchor"></a>
                 <div class="section-name-container">
-                  <a class="section-name-link" href="#/DtlsConnection%20Interface:%20DtlsConnectionProtocol%20extension%20(methods%20and%20fields)"></a>
+                  <a class="section-name-link" href="#/DtlsConnection%20Interface%3A%20DtlsConnectionProtocol%20extension%20%28methods%20and%20fields%29"></a>
                   <h3 class="section-name"><p>DtlsConnection Interface: DtlsConnectionProtocol extension (methods and fields)</p>
 </h3>
                 </div>
@@ -8028,7 +8050,7 @@ error on further I/O.</p>
                     <code>
                     <a name="/s:3GIO22DtlsConnectionProtocolPAAE5close11cancellableSbAA14CancellableRefVSg_tKF"></a>
                     <a name="//apple_ref/swift/Method/close(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE5close11cancellableSbAA14CancellableRefVSg_tKF">close(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE5close11cancellableSbAA14CancellableRefVSg_tKF">close(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8070,7 +8092,7 @@ partially-closed and any pending untransmitted data may be lost. Call
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3515-L3520">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3513-L3518">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8080,7 +8102,7 @@ partially-closed and any pending untransmitted data may be lost. Call
                     <code>
                     <a name="/s:3GIO22DtlsConnectionProtocolPAAE5close11cancellableSbqd__Sg_tKAA011CancellableD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/close(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE5close11cancellableSbqd__Sg_tKAA011CancellableD0Rd__lF">close(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE5close11cancellableSbqd__Sg_tKAA011CancellableD0Rd__lF">close(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8122,7 +8144,7 @@ partially-closed and any pending untransmitted data may be lost. Call
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3540-L3545">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3538-L3543">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8132,7 +8154,7 @@ partially-closed and any pending untransmitted data may be lost. Call
                     <code>
                     <a name="/s:3GIO22DtlsConnectionProtocolPAAE10closeAsync10ioPriority11cancellable8callback8userDataySi_AA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgATtF"></a>
                     <a name="//apple_ref/swift/Method/closeAsync(ioPriority:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE10closeAsync10ioPriority11cancellable8callback8userDataySi_AA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgATtF">closeAsync(ioPriority:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE10closeAsync10ioPriority11cancellable8callback8userDataySi_AA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgATtF">closeAsync(ioPriority:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8157,7 +8179,7 @@ more information.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3549-L3552">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3547-L3550">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8167,7 +8189,7 @@ more information.</p>
                     <code>
                     <a name="/s:3GIO22DtlsConnectionProtocolPAAE10closeAsync10ioPriority11cancellable8callback8userDataySi_qd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgARtAA011CancellableD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/closeAsync(ioPriority:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE10closeAsync10ioPriority11cancellable8callback8userDataySi_qd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgARtAA011CancellableD0Rd__lF">closeAsync(ioPriority:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE10closeAsync10ioPriority11cancellable8callback8userDataySi_qd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgARtAA011CancellableD0Rd__lF">closeAsync(ioPriority:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8192,7 +8214,7 @@ more information.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3555-L3558">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3553-L3556">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8202,7 +8224,7 @@ more information.</p>
                     <code>
                     <a name="/s:3GIO22DtlsConnectionProtocolPAAE11closeFinish6resultSbqd___tKAA011AsyncResultD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/closeFinish(result:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE11closeFinish6resultSbqd___tKAA011AsyncResultD0Rd__lF">closeFinish(result:)</a>
+                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE11closeFinish6resultSbqd___tKAA011AsyncResultD0Rd__lF">closeFinish(result:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8227,7 +8249,7 @@ for more information.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3562-L3567">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3560-L3565">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8237,7 +8259,7 @@ for more information.</p>
                     <code>
                     <a name="/s:3GIO22DtlsConnectionProtocolPAAE21emitAcceptCertificate8peerCert6errorsSbqd___AA19TLSCertificateFlagsVtAA0kD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/emitAcceptCertificate(peerCert:errors:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE21emitAcceptCertificate8peerCert6errorsSbqd___AA19TLSCertificateFlagsVtAA0kD0Rd__lF">emitAcceptCertificate(peerCert:errors:)</a>
+                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE21emitAcceptCertificate8peerCert6errorsSbqd___AA19TLSCertificateFlagsVtAA0kD0Rd__lF">emitAcceptCertificate(peerCert:<wbr>errors:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8262,7 +8284,7 @@ for more information.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3571-L3574">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3569-L3572">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8297,7 +8319,99 @@ for more information.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3578-L3581">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3576-L3579">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3GIO22DtlsConnectionProtocolPAAE21getChannelBindingData4type4dataSbSo04GTlsfG4Typea_4GLib12ByteArrayRefVSgtKF"></a>
+                    <a name="//apple_ref/swift/Method/getChannelBindingData(type:data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE21getChannelBindingData4type4dataSbSo04GTlsfG4Typea_4GLib12ByteArrayRefVSgtKF">getChannelBindingData(type:<wbr>data:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Query the TLS backend for TLS channel binding data of <code>type</code> for <code>conn</code>.</p>
+
+<p>This call retrieves TLS channel binding data as specified in RFC
+<a href="https://tools.ietf.org/html/rfc5056">5056</a>, RFC
+<a href="https://tools.ietf.org/html/rfc5929">5929</a>, and related RFCs.  The
+binding data is returned in <code>data</code>.  The <code>data</code> is resized by the callee
+using <code>GByteArray</code> buffer management and will be freed when the <code>data</code>
+is destroyed by <code>g_byte_array_unref()</code>. If <code>data</code> is <code>nil</code>, it will only
+check whether TLS backend is able to fetch the data (e.g. whether <code>type</code>
+is supported by the TLS backend). It does not guarantee that the data
+will be available though.  That could happen if TLS connection does not
+support <code>type</code> or the binding data is not available yet due to additional
+negotiation or input required.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="nf">getChannelBindingData</span><span class="p">(</span><span class="nv">type</span><span class="p">:</span> <span class="kt">GTlsChannelBindingType</span><span class="p">,</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">GLib</span><span class="o">.</span><span class="kt">ByteArrayRef</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3594-L3599">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3GIO22DtlsConnectionProtocolPAAE21getChannelBindingData4type4dataSbSo04GTlsfG4Typea_qd__SgtK4GLib09ByteArrayD0Rd__lF"></a>
+                    <a name="//apple_ref/swift/Method/getChannelBindingData(type:data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE21getChannelBindingData4type4dataSbSo04GTlsfG4Typea_qd__SgtK4GLib09ByteArrayD0Rd__lF">getChannelBindingData(type:<wbr>data:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Query the TLS backend for TLS channel binding data of <code>type</code> for <code>conn</code>.</p>
+
+<p>This call retrieves TLS channel binding data as specified in RFC
+<a href="https://tools.ietf.org/html/rfc5056">5056</a>, RFC
+<a href="https://tools.ietf.org/html/rfc5929">5929</a>, and related RFCs.  The
+binding data is returned in <code>data</code>.  The <code>data</code> is resized by the callee
+using <code>GByteArray</code> buffer management and will be freed when the <code>data</code>
+is destroyed by <code>g_byte_array_unref()</code>. If <code>data</code> is <code>nil</code>, it will only
+check whether TLS backend is able to fetch the data (e.g. whether <code>type</code>
+is supported by the TLS backend). It does not guarantee that the data
+will be available though.  That could happen if TLS connection does not
+support <code>type</code> or the binding data is not available yet due to additional
+negotiation or input required.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="n">getChannelBindingData</span><span class="o">&lt;</span><span class="kt">ByteArrayT</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">type</span><span class="p">:</span> <span class="kt">GTlsChannelBindingType</span><span class="p">,</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">ByteArrayT</span><span class="p">?)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="k">where</span> <span class="kt">ByteArrayT</span> <span class="p">:</span> <span class="kt">ByteArrayProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3613-L3618">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8332,7 +8446,7 @@ peer certificates. See <code>g_dtls_connection_set_database()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3585-L3588">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3622-L3625">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8368,7 +8482,7 @@ no user interaction will occur for this connection.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3593-L3596">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3630-L3633">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8408,7 +8522,7 @@ does not support ALPN, then this will be <code>nil</code>. See
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3605-L3608">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3642-L3645">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8429,8 +8543,8 @@ does not support ALPN, then this will be <code>nil</code>. See
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Gets <code>conn</code>&lsquo;s peer&rsquo;s certificate after the handshake has completed.
-(It is not set during the emission of
+                        <p>Gets <code>conn</code>&lsquo;s peer&rsquo;s certificate after the handshake has completed
+or failed. (It is not set during the emission of
 <code>GDtlsConnection::accept</code>-certificate.)</p>
 
                       </div>
@@ -8444,7 +8558,7 @@ does not support ALPN, then this will be <code>nil</code>. See
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3613-L3616">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3650-L3653">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8466,8 +8580,8 @@ does not support ALPN, then this will be <code>nil</code>. See
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Gets the errors associated with validating <code>conn</code>&lsquo;s peer&rsquo;s
-certificate, after the handshake has completed. (It is not set
-during the emission of <code>GDtlsConnection::accept</code>-certificate.)</p>
+certificate, after the handshake has completed or failed. (It is
+not set during the emission of <code>GDtlsConnection::accept</code>-certificate.)</p>
 
                       </div>
                       <div class="declaration">
@@ -8480,7 +8594,7 @@ during the emission of <code>GDtlsConnection::accept</code>-certificate.)</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3621-L3624">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3658-L3661">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8521,7 +8635,7 @@ Changing the rehandshake mode is no longer
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3633-L3636">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3670-L3673">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8557,7 +8671,7 @@ when the connection is closed. See
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3641-L3644">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3678-L3681">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8567,7 +8681,7 @@ when the connection is closed. See
                     <code>
                     <a name="/s:3GIO22DtlsConnectionProtocolPAAE9handshake11cancellableSbAA14CancellableRefVSg_tKF"></a>
                     <a name="//apple_ref/swift/Method/handshake(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE9handshake11cancellableSbAA14CancellableRefVSg_tKF">handshake(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE9handshake11cancellableSbAA14CancellableRefVSg_tKF">handshake(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8616,7 +8730,7 @@ handshake.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3672-L3677">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3709-L3714">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8626,7 +8740,7 @@ handshake.</p>
                     <code>
                     <a name="/s:3GIO22DtlsConnectionProtocolPAAE9handshake11cancellableSbqd__Sg_tKAA011CancellableD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/handshake(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE9handshake11cancellableSbqd__Sg_tKAA011CancellableD0Rd__lF">handshake(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE9handshake11cancellableSbqd__Sg_tKAA011CancellableD0Rd__lF">handshake(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8675,7 +8789,7 @@ handshake.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3704-L3709">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3741-L3746">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8685,7 +8799,7 @@ handshake.</p>
                     <code>
                     <a name="/s:3GIO22DtlsConnectionProtocolPAAE14handshakeAsync10ioPriority11cancellable8callback8userDataySi_AA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgATtF"></a>
                     <a name="//apple_ref/swift/Method/handshakeAsync(ioPriority:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE14handshakeAsync10ioPriority11cancellable8callback8userDataySi_AA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgATtF">handshakeAsync(ioPriority:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE14handshakeAsync10ioPriority11cancellable8callback8userDataySi_AA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgATtF">handshakeAsync(ioPriority:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8710,7 +8824,7 @@ handshake.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3713-L3716">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3750-L3753">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8720,7 +8834,7 @@ handshake.</p>
                     <code>
                     <a name="/s:3GIO22DtlsConnectionProtocolPAAE14handshakeAsync10ioPriority11cancellable8callback8userDataySi_qd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgARtAA011CancellableD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/handshakeAsync(ioPriority:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE14handshakeAsync10ioPriority11cancellable8callback8userDataySi_qd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgARtAA011CancellableD0Rd__lF">handshakeAsync(ioPriority:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE14handshakeAsync10ioPriority11cancellable8callback8userDataySi_qd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgARtAA011CancellableD0Rd__lF">handshakeAsync(ioPriority:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8745,7 +8859,7 @@ handshake.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3719-L3722">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3756-L3759">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8755,7 +8869,7 @@ handshake.</p>
                     <code>
                     <a name="/s:3GIO22DtlsConnectionProtocolPAAE15handshakeFinish6resultSbqd___tKAA011AsyncResultD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/handshakeFinish(result:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE15handshakeFinish6resultSbqd___tKAA011AsyncResultD0Rd__lF">handshakeFinish(result:)</a>
+                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE15handshakeFinish6resultSbqd___tKAA011AsyncResultD0Rd__lF">handshakeFinish(result:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8780,7 +8894,7 @@ handshake.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3726-L3731">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3763-L3768">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8790,7 +8904,7 @@ handshake.</p>
                     <code>
                     <a name="/s:3GIO22DtlsConnectionProtocolPAAE13setAdvertised9protocolsySPySPys4Int8VGSgGSg_tF"></a>
                     <a name="//apple_ref/swift/Method/setAdvertised(protocols:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE13setAdvertised9protocolsySPySPys4Int8VGSgGSg_tF">setAdvertised(protocols:)</a>
+                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE13setAdvertised9protocolsySPySPys4Int8VGSgGSg_tF">setAdvertised(protocols:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8823,7 +8937,7 @@ for a list of registered protocol IDs.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3743-L3746">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3780-L3783">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8833,7 +8947,7 @@ for a list of registered protocol IDs.</p>
                     <code>
                     <a name="/s:3GIO22DtlsConnectionProtocolPAAE3set11certificateyqd___tAA014TLSCertificateD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/set(certificate:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE3set11certificateyqd___tAA014TLSCertificateD0Rd__lF">set(certificate:)</a>
+                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE3set11certificateyqd___tAA014TLSCertificateD0Rd__lF">set(certificate:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8874,7 +8988,7 @@ non-<code>nil</code>.)</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3766-L3769">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3803-L3806">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8882,9 +8996,9 @@ non-<code>nil</code>.)</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:3GIO22DtlsConnectionProtocolPAAE3set8databaseyqd___tAA011TLSDatabaseD0Rd__lF"></a>
+                    <a name="/s:3GIO22DtlsConnectionProtocolPAAE3set8databaseyAA14TLSDatabaseRefVSg_tF"></a>
                     <a name="//apple_ref/swift/Method/set(database:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE3set8databaseyqd___tAA011TLSDatabaseD0Rd__lF">set(database:)</a>
+                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE3set8databaseyAA14TLSDatabaseRefVSg_tF">set(database:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8910,12 +9024,53 @@ client-side connections, unless that bit is not set in
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight swift"><code><span class="kd">@inlinable</span>
-<span class="kd">func</span> <span class="k">set</span><span class="o">&lt;</span><span class="kt">TLSDatabaseT</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">database</span><span class="p">:</span> <span class="kt">TLSDatabaseT</span><span class="p">)</span> <span class="k">where</span> <span class="kt">TLSDatabaseT</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/TLSDatabaseProtocol.html">TLSDatabaseProtocol</a></span></code></pre>
+<span class="kd">func</span> <span class="nf">set</span><span class="p">(</span><span class="nv">database</span><span class="p">:</span> <span class="kt"><a href="../Structs/TLSDatabaseRef.html">TLSDatabaseRef</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3779-L3782">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3816-L3819">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3GIO22DtlsConnectionProtocolPAAE3set8databaseyqd__Sg_tAA011TLSDatabaseD0Rd__lF"></a>
+                    <a name="//apple_ref/swift/Method/set(database:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE3set8databaseyqd__Sg_tAA011TLSDatabaseD0Rd__lF">set(database:<wbr>)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Sets the certificate database that is used to verify peer certificates.
+This is set to the default database by default. See
+<code>g_tls_backend_get_default_database()</code>. If set to <code>nil</code>, then
+peer certificate validation will always set the
+<code>G_TLS_CERTIFICATE_UNKNOWN_CA</code> error (meaning
+<code>GDtlsConnection::accept</code>-certificate will always be emitted on
+client-side connections, unless that bit is not set in
+<code>GDtlsClientConnection:validation</code>-flags).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">func</span> <span class="k">set</span><span class="o">&lt;</span><span class="kt">TLSDatabaseT</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">database</span><span class="p">:</span> <span class="kt">TLSDatabaseT</span><span class="p">?)</span> <span class="k">where</span> <span class="kt">TLSDatabaseT</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/TLSDatabaseProtocol.html">TLSDatabaseProtocol</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3828-L3831">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8925,7 +9080,7 @@ client-side connections, unless that bit is not set in
                     <code>
                     <a name="/s:3GIO22DtlsConnectionProtocolPAAE3set11interactionyAA17TLSInteractionRefVSg_tF"></a>
                     <a name="//apple_ref/swift/Method/set(interaction:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE3set11interactionyAA17TLSInteractionRefVSg_tF">set(interaction:)</a>
+                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE3set11interactionyAA17TLSInteractionRefVSg_tF">set(interaction:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8954,7 +9109,7 @@ should occur for this connection.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3790-L3793">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3839-L3842">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8964,7 +9119,7 @@ should occur for this connection.</p>
                     <code>
                     <a name="/s:3GIO22DtlsConnectionProtocolPAAE3set11interactionyqd__Sg_tAA014TLSInteractionD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/set(interaction:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE3set11interactionyqd__Sg_tAA014TLSInteractionD0Rd__lF">set(interaction:)</a>
+                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE3set11interactionyqd__Sg_tAA014TLSInteractionD0Rd__lF">set(interaction:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8993,7 +9148,7 @@ should occur for this connection.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3800-L3803">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3849-L3852">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9003,7 +9158,7 @@ should occur for this connection.</p>
                     <code>
                     <a name="/s:3GIO22DtlsConnectionProtocolPAAE14setRehandshake4modeySo04GTlsF4Modea_tF"></a>
                     <a name="//apple_ref/swift/Method/setRehandshake(mode:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE14setRehandshake4modeySo04GTlsF4Modea_tF">setRehandshake(mode:)</a>
+                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE14setRehandshake4modeySo04GTlsF4Modea_tF">setRehandshake(mode:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9036,7 +9191,7 @@ Changing the rehandshake mode is no longer
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3814-L3817">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3863-L3866">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9046,7 +9201,7 @@ Changing the rehandshake mode is no longer
                     <code>
                     <a name="/s:3GIO22DtlsConnectionProtocolPAAE3set18requireCloseNotifyySb_tF"></a>
                     <a name="//apple_ref/swift/Method/set(requireCloseNotify:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE3set18requireCloseNotifyySb_tF">set(requireCloseNotify:)</a>
+                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE3set18requireCloseNotifyySb_tF">set(requireCloseNotify:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9094,7 +9249,7 @@ than closing <code>conn</code> itself.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3844-L3847">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3893-L3896">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9104,7 +9259,7 @@ than closing <code>conn</code> itself.</p>
                     <code>
                     <a name="/s:3GIO22DtlsConnectionProtocolPAAE8shutdown0E4Read0E5Write11cancellableS2b_SbAA14CancellableRefVSgtKF"></a>
                     <a name="//apple_ref/swift/Method/shutdown(shutdownRead:shutdownWrite:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE8shutdown0E4Read0E5Write11cancellableS2b_SbAA14CancellableRefVSgtKF">shutdown(shutdownRead:shutdownWrite:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE8shutdown0E4Read0E5Write11cancellableS2b_SbAA14CancellableRefVSgtKF">shutdown(shutdownRead:<wbr>shutdownWrite:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9143,7 +9298,7 @@ partially-closed and any pending untransmitted data may be lost. Call
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3865-L3870">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3914-L3919">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9153,7 +9308,7 @@ partially-closed and any pending untransmitted data may be lost. Call
                     <code>
                     <a name="/s:3GIO22DtlsConnectionProtocolPAAE8shutdown0E4Read0E5Write11cancellableS2b_Sbqd__SgtKAA011CancellableD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/shutdown(shutdownRead:shutdownWrite:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE8shutdown0E4Read0E5Write11cancellableS2b_Sbqd__SgtKAA011CancellableD0Rd__lF">shutdown(shutdownRead:shutdownWrite:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE8shutdown0E4Read0E5Write11cancellableS2b_Sbqd__SgtKAA011CancellableD0Rd__lF">shutdown(shutdownRead:<wbr>shutdownWrite:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9192,7 +9347,7 @@ partially-closed and any pending untransmitted data may be lost. Call
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3887-L3892">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3936-L3941">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9202,7 +9357,7 @@ partially-closed and any pending untransmitted data may be lost. Call
                     <code>
                     <a name="/s:3GIO22DtlsConnectionProtocolPAAE13shutdownAsync0E4Read0E5Write10ioPriority11cancellable8callback8userDataySb_SbSiAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAVtF"></a>
                     <a name="//apple_ref/swift/Method/shutdownAsync(shutdownRead:shutdownWrite:ioPriority:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE13shutdownAsync0E4Read0E5Write10ioPriority11cancellable8callback8userDataySb_SbSiAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAVtF">shutdownAsync(shutdownRead:shutdownWrite:ioPriority:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE13shutdownAsync0E4Read0E5Write10ioPriority11cancellable8callback8userDataySb_SbSiAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAVtF">shutdownAsync(shutdownRead:<wbr>shutdownWrite:<wbr>ioPriority:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9227,7 +9382,7 @@ partially-closed and any pending untransmitted data may be lost. Call
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3896-L3899">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3945-L3948">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9237,7 +9392,7 @@ partially-closed and any pending untransmitted data may be lost. Call
                     <code>
                     <a name="/s:3GIO22DtlsConnectionProtocolPAAE13shutdownAsync0E4Read0E5Write10ioPriority11cancellable8callback8userDataySb_SbSiqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgATtAA011CancellableD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/shutdownAsync(shutdownRead:shutdownWrite:ioPriority:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE13shutdownAsync0E4Read0E5Write10ioPriority11cancellable8callback8userDataySb_SbSiqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgATtAA011CancellableD0Rd__lF">shutdownAsync(shutdownRead:shutdownWrite:ioPriority:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE13shutdownAsync0E4Read0E5Write10ioPriority11cancellable8callback8userDataySb_SbSiqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgATtAA011CancellableD0Rd__lF">shutdownAsync(shutdownRead:<wbr>shutdownWrite:<wbr>ioPriority:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9262,7 +9417,7 @@ partially-closed and any pending untransmitted data may be lost. Call
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3902-L3905">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3951-L3954">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9272,7 +9427,7 @@ partially-closed and any pending untransmitted data may be lost. Call
                     <code>
                     <a name="/s:3GIO22DtlsConnectionProtocolPAAE14shutdownFinish6resultSbqd___tKAA011AsyncResultD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/shutdownFinish(result:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE14shutdownFinish6resultSbqd___tKAA011AsyncResultD0Rd__lF">shutdownFinish(result:)</a>
+                    <a class="token" href="#/s:3GIO22DtlsConnectionProtocolPAAE14shutdownFinish6resultSbqd___tKAA011AsyncResultD0Rd__lF">shutdownFinish(result:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9297,7 +9452,7 @@ partially-closed and any pending untransmitted data may be lost. Call
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3909-L3914">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3958-L3963">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9332,7 +9487,7 @@ partially-closed and any pending untransmitted data may be lost. Call
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3917-L3945">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3966-L3994">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9368,7 +9523,7 @@ used. See <code>g_tls_backend_get_default_database()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3950-L3968">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3999-L4017">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9404,7 +9559,7 @@ user for passwords where necessary.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3973-L3990">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4022-L4039">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9444,7 +9599,7 @@ does not support ALPN, then this will be <code>nil</code>. See
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L3999-L4011">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4048-L4060">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9465,8 +9620,8 @@ does not support ALPN, then this will be <code>nil</code>. See
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Gets <code>conn</code>&lsquo;s peer&rsquo;s certificate after the handshake has completed.
-(It is not set during the emission of
+                        <p>Gets <code>conn</code>&lsquo;s peer&rsquo;s certificate after the handshake has completed
+or failed. (It is not set during the emission of
 <code>GDtlsConnection::accept</code>-certificate.)</p>
 
                       </div>
@@ -9480,7 +9635,7 @@ does not support ALPN, then this will be <code>nil</code>. See
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4016-L4024">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4065-L4073">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9502,8 +9657,8 @@ does not support ALPN, then this will be <code>nil</code>. See
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Gets the errors associated with validating <code>conn</code>&lsquo;s peer&rsquo;s
-certificate, after the handshake has completed. (It is not set
-during the emission of <code>GDtlsConnection::accept</code>-certificate.)</p>
+certificate, after the handshake has completed or failed. (It is
+not set during the emission of <code>GDtlsConnection::accept</code>-certificate.)</p>
 
                       </div>
                       <div class="declaration">
@@ -9516,7 +9671,7 @@ during the emission of <code>GDtlsConnection::accept</code>-certificate.)</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4029-L4037">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4078-L4086">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9556,7 +9711,7 @@ Changing the rehandshake mode is no longer
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4046-L4070">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4095-L4119">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9592,7 +9747,7 @@ when the connection is closed. See
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4075-L4111">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4124-L4160">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9605,8 +9760,8 @@ when the connection is closed. See
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.ict.griffith.edu.au/~rhexel/" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2020-09-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

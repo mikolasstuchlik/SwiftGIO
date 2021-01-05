@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          GIO 2.64.4 Docs
+          GIO 2.66.4 Docs
         </a>
-         (88% documented)
+         (89% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx%2Egithub%2Eio%2FSwiftGIO%2Fdocsets%2FGIO%2Exml">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx.github.io%2FSwiftGIO%2Fdocsets%2FGIO.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -2205,6 +2205,12 @@
                 <a class="nav-group-task-link" href="../Extensions/TLSCertificateRequestFlags.html">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingError.html">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingType.html">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/TLSDatabaseLookupFlags.html">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -2648,6 +2654,9 @@
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO20tlsBackendGetDefaultAA13TLSBackendRefVSgyF">tlsBackendGetDefault()</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27tlsChannelBindingErrorQuarks6UInt32VyF">tlsChannelBindingErrorQuark()</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO22tlsClientConnectionNew12baseIoStream14serverIdentityAA09TLSClientD3RefVSgx_AA017SocketConnectableL0VSgtKAA16IOStreamProtocolRzlF">tlsClientConnectionNew(baseIoStream:serverIdentity:)</a>
               </li>
               <li class="nav-group-task">
@@ -2724,6 +2733,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO25unixMountIsSystemInternal10mountEntrySbx_tAA04UnixcH8ProtocolRzlF">unixMountIsSystemInternal(mountEntry:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO16unixMountPointAt9mountPath8timeReadAA04UnixcD3RefVSgSPys4Int8VGSg_Spys6UInt64VGSgtF">unixMountPointAt(mountPath:timeRead:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27unixMountPointsChangedSince4timeSbs6UInt64V_tF">unixMountPointsChangedSince(time:)</a>
@@ -5243,6 +5255,12 @@
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO26TLSCertificateRequestFlagsa">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSChannelBindingErrora">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO21TLSChannelBindingTypea">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSDatabaseLookupFlagsa">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -7578,6 +7596,7 @@
             <h1>InetAddressRef</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">InetAddressRef</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/InetAddressProtocol.html">InetAddressProtocol</a></span></code></pre>
 
                 </div>
@@ -7597,6 +7616,9 @@ look up the <code>GInetAddress</code> for a hostname. Use
 <code>GInetSocketAddress</code> (which includes a <code>GInetAddress</code> as well as a
 port number).</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-IOStream-ListStore.swift#L807-L811">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -7655,7 +7677,7 @@ port number).</p>
                     <code>
                     <a name="/s:3GIO14InetAddressRefVyACSpySo06_GInetC0VGcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14InetAddressRefVyACSpySo06_GInetC0VGcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO14InetAddressRefVyACSpySo06_GInetC0VGcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7686,7 +7708,7 @@ port number).</p>
                     <code>
                     <a name="/s:3GIO14InetAddressRefVyACSPySo06_GInetC0VGcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14InetAddressRefVyACSPySo06_GInetC0VGcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO14InetAddressRefVyACSPySo06_GInetC0VGcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7717,7 +7739,7 @@ port number).</p>
                     <code>
                     <a name="/s:3GIO14InetAddressRefVyACSgSpySo06_GInetC0VGSgcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14InetAddressRefVyACSgSpySo06_GInetC0VGSgcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO14InetAddressRefVyACSgSpySo06_GInetC0VGSgcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7748,7 +7770,7 @@ port number).</p>
                     <code>
                     <a name="/s:3GIO14InetAddressRefVyACSgSPySo06_GInetC0VGSgcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14InetAddressRefVyACSgSPySo06_GInetC0VGSgcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO14InetAddressRefVyACSgSPySo06_GInetC0VGSgcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7779,7 +7801,7 @@ port number).</p>
                     <code>
                     <a name="/s:3GIO14InetAddressRefV8gpointerACSgSvSg_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(gpointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14InetAddressRefV8gpointerACSgSvSg_tcfc">init(gpointer:)</a>
+                    <a class="token" href="#/s:3GIO14InetAddressRefV8gpointerACSgSvSg_tcfc">init(gpointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7810,7 +7832,7 @@ port number).</p>
                     <code>
                     <a name="/s:3GIO14InetAddressRefV13gconstpointerACSgSVSg_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(gconstpointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14InetAddressRefV13gconstpointerACSgSVSg_tcfc">init(gconstpointer:)</a>
+                    <a class="token" href="#/s:3GIO14InetAddressRefV13gconstpointerACSgSVSg_tcfc">init(gconstpointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7841,7 +7863,7 @@ port number).</p>
                     <code>
                     <a name="/s:3GIO14InetAddressRefVyACxcAA0bC8ProtocolRzlufc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14InetAddressRefVyACxcAA0bC8ProtocolRzlufc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO14InetAddressRefVyACxcAA0bC8ProtocolRzlufc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7872,7 +7894,7 @@ port number).</p>
                     <code>
                     <a name="/s:3GIO14InetAddressRefV8cPointerACSpyxG_tclufc"></a>
                     <a name="//apple_ref/swift/Method/init(cPointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14InetAddressRefV8cPointerACSpyxG_tclufc">init(cPointer:)</a>
+                    <a class="token" href="#/s:3GIO14InetAddressRefV8cPointerACSpyxG_tclufc">init(cPointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7904,7 +7926,7 @@ port number).</p>
                     <code>
                     <a name="/s:3GIO14InetAddressRefV12constPointerACSPyxG_tclufc"></a>
                     <a name="//apple_ref/swift/Method/init(constPointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14InetAddressRefV12constPointerACSPyxG_tclufc">init(constPointer:)</a>
+                    <a class="token" href="#/s:3GIO14InetAddressRefV12constPointerACSPyxG_tclufc">init(constPointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7936,7 +7958,7 @@ port number).</p>
                     <code>
                     <a name="/s:3GIO14InetAddressRefV8mutatingACSV_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(mutating:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14InetAddressRefV8mutatingACSV_tcfc">init(mutating:)</a>
+                    <a class="token" href="#/s:3GIO14InetAddressRefV8mutatingACSV_tcfc">init(mutating:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7968,7 +7990,7 @@ port number).</p>
                     <code>
                     <a name="/s:3GIO14InetAddressRefV3rawACSv_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14InetAddressRefV3rawACSv_tcfc">init(raw:)</a>
+                    <a class="token" href="#/s:3GIO14InetAddressRefV3rawACSv_tcfc">init(raw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8000,7 +8022,7 @@ port number).</p>
                     <code>
                     <a name="/s:3GIO14InetAddressRefV13opaquePointerACs06OpaqueF0V_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(opaquePointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14InetAddressRefV13opaquePointerACs06OpaqueF0V_tcfc">init(opaquePointer:)</a>
+                    <a class="token" href="#/s:3GIO14InetAddressRefV13opaquePointerACs06OpaqueF0V_tcfc">init(opaquePointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8032,7 +8054,7 @@ port number).</p>
                     <code>
                     <a name="/s:3GIO14InetAddressRefV3anyACSo13GSocketFamilya_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(any:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14InetAddressRefV3anyACSo13GSocketFamilya_tcfc">init(any:)</a>
+                    <a class="token" href="#/s:3GIO14InetAddressRefV3anyACSo13GSocketFamilya_tcfc">init(any:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8066,7 +8088,7 @@ port number).</p>
                     <code>
                     <a name="/s:3GIO14InetAddressRefV5bytes6familyACSPys5UInt8VGSg_So13GSocketFamilyatcfc"></a>
                     <a name="//apple_ref/swift/Method/init(bytes:family:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14InetAddressRefV5bytes6familyACSPys5UInt8VGSg_So13GSocketFamilyatcfc">init(bytes:family:)</a>
+                    <a class="token" href="#/s:3GIO14InetAddressRefV5bytes6familyACSPys5UInt8VGSg_So13GSocketFamilyatcfc">init(bytes:<wbr>family:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8099,7 +8121,7 @@ port number).</p>
                     <code>
                     <a name="/s:3GIO14InetAddressRefV6stringACSPys4Int8VGSg_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(string:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14InetAddressRefV6stringACSPys4Int8VGSg_tcfc">init(string:)</a>
+                    <a class="token" href="#/s:3GIO14InetAddressRefV6stringACSPys4Int8VGSg_tcfc">init(string:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8130,7 +8152,7 @@ port number).</p>
                     <code>
                     <a name="/s:3GIO14InetAddressRefV8loopbackACSo13GSocketFamilya_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(loopback:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14InetAddressRefV8loopbackACSo13GSocketFamilya_tcfc">init(loopback:)</a>
+                    <a class="token" href="#/s:3GIO14InetAddressRefV8loopbackACSo13GSocketFamilya_tcfc">init(loopback:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8161,7 +8183,7 @@ port number).</p>
                     <code>
                     <a name="/s:3GIO14InetAddressRefV3new3anyACSgSo13GSocketFamilya_tFZ"></a>
                     <a name="//apple_ref/swift/Method/new(any:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14InetAddressRefV3new3anyACSgSo13GSocketFamilya_tFZ">new(any:)</a>
+                    <a class="token" href="#/s:3GIO14InetAddressRefV3new3anyACSgSo13GSocketFamilya_tFZ">new(any:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8193,7 +8215,7 @@ care&rdquo;) for <code>family</code>.</p>
                     <code>
                     <a name="/s:3GIO14InetAddressRefV7newFrom5bytes6familyACSgSPys5UInt8VGSg_So13GSocketFamilyatFZ"></a>
                     <a name="//apple_ref/swift/Method/newFrom(bytes:family:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14InetAddressRefV7newFrom5bytes6familyACSgSPys5UInt8VGSg_So13GSocketFamilyatFZ">newFrom(bytes:family:)</a>
+                    <a class="token" href="#/s:3GIO14InetAddressRefV7newFrom5bytes6familyACSgSPys5UInt8VGSg_So13GSocketFamilyatFZ">newFrom(bytes:<wbr>family:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8226,7 +8248,7 @@ care&rdquo;) for <code>family</code>.</p>
                     <code>
                     <a name="/s:3GIO14InetAddressRefV7newFrom6stringACSgSPys4Int8VGSg_tFZ"></a>
                     <a name="//apple_ref/swift/Method/newFrom(string:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14InetAddressRefV7newFrom6stringACSgSPys4Int8VGSg_tFZ">newFrom(string:)</a>
+                    <a class="token" href="#/s:3GIO14InetAddressRefV7newFrom6stringACSgSPys4Int8VGSg_tFZ">newFrom(string:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8257,7 +8279,7 @@ care&rdquo;) for <code>family</code>.</p>
                     <code>
                     <a name="/s:3GIO14InetAddressRefV3new8loopbackACSgSo13GSocketFamilya_tFZ"></a>
                     <a name="//apple_ref/swift/Method/new(loopback:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14InetAddressRefV3new8loopbackACSgSo13GSocketFamilya_tFZ">new(loopback:)</a>
+                    <a class="token" href="#/s:3GIO14InetAddressRefV3new8loopbackACSgSo13GSocketFamilya_tFZ">new(loopback:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8291,8 +8313,8 @@ care&rdquo;) for <code>family</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.ict.griffith.edu.au/~rhexel/" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2020-09-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          GIO 2.64.4 Docs
+          GIO 2.66.4 Docs
         </a>
-         (88% documented)
+         (89% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx%2Egithub%2Eio%2FSwiftGIO%2Fdocsets%2FGIO%2Exml">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx.github.io%2FSwiftGIO%2Fdocsets%2FGIO.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -2205,6 +2205,12 @@
                 <a class="nav-group-task-link" href="../Extensions/TLSCertificateRequestFlags.html">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingError.html">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingType.html">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/TLSDatabaseLookupFlags.html">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -2648,6 +2654,9 @@
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO20tlsBackendGetDefaultAA13TLSBackendRefVSgyF">tlsBackendGetDefault()</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27tlsChannelBindingErrorQuarks6UInt32VyF">tlsChannelBindingErrorQuark()</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO22tlsClientConnectionNew12baseIoStream14serverIdentityAA09TLSClientD3RefVSgx_AA017SocketConnectableL0VSgtKAA16IOStreamProtocolRzlF">tlsClientConnectionNew(baseIoStream:serverIdentity:)</a>
               </li>
               <li class="nav-group-task">
@@ -2724,6 +2733,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO25unixMountIsSystemInternal10mountEntrySbx_tAA04UnixcH8ProtocolRzlF">unixMountIsSystemInternal(mountEntry:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO16unixMountPointAt9mountPath8timeReadAA04UnixcD3RefVSgSPys4Int8VGSg_Spys6UInt64VGSgtF">unixMountPointAt(mountPath:timeRead:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27unixMountPointsChangedSince4timeSbs6UInt64V_tF">unixMountPointsChangedSince(time:)</a>
@@ -5243,6 +5255,12 @@
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO26TLSCertificateRequestFlagsa">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSChannelBindingErrora">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO21TLSChannelBindingTypea">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSDatabaseLookupFlagsa">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -7578,6 +7596,7 @@
             <h1>DataInputStreamProtocol</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">DataInputStreamProtocol</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/BufferedInputStreamProtocol.html">BufferedInputStreamProtocol</a></span></code></pre>
 
                 </div>
@@ -7590,6 +7609,9 @@ Alternatively, use <code><a href="../Structs/DataInputStreamRef.html">DataInputS
 <p>Data input stream implements <code>GInputStream</code> and includes functions for
 reading structured data directly from a binary input stream.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusAuthObserver-Emblem.swift#L9331-L9338">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -7683,7 +7705,7 @@ reading structured data directly from a binary input stream.</p>
                     <code>
                     <a name="/s:3GIO23DataInputStreamProtocolPAAE4bind8property2to_5flags13transformFrom0J2To10GLibObject10BindingRefVSgAA0bcD12PropertyNameO_qd_0_qd__AJ0O5FlagsVSbAJ05ValueP0V_AStcSbAS_AStctAJ0qrE0Rd__AJ0nE0Rd_0_r0_lF"></a>
                     <a name="//apple_ref/swift/Method/bind(property:to:_:flags:transformFrom:transformTo:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE4bind8property2to_5flags13transformFrom0J2To10GLibObject10BindingRefVSgAA0bcD12PropertyNameO_qd_0_qd__AJ0O5FlagsVSbAJ05ValueP0V_AStcSbAS_AStctAJ0qrE0Rd__AJ0nE0Rd_0_r0_lF">bind(property:to:_:flags:transformFrom:transformTo:)</a>
+                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE4bind8property2to_5flags13transformFrom0J2To10GLibObject10BindingRefVSgAA0bcD12PropertyNameO_qd_0_qd__AJ0O5FlagsVSbAJ05ValueP0V_AStcSbAS_AStctAJ0qrE0Rd__AJ0nE0Rd_0_r0_lF">bind(property:<wbr>to:<wbr>_:<wbr>flags:<wbr>transformFrom:<wbr>transformTo:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7801,7 +7823,7 @@ reading structured data directly from a binary input stream.</p>
                     <code>
                     <a name="/s:3GIO23DataInputStreamProtocolPAAE3get8property10GLibObject5ValueCAA0bcD12PropertyNameO_tF"></a>
                     <a name="//apple_ref/swift/Method/get(property:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE3get8property10GLibObject5ValueCAA0bcD12PropertyNameO_tF">get(property:)</a>
+                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE3get8property10GLibObject5ValueCAA0bcD12PropertyNameO_tF">get(property:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7858,7 +7880,7 @@ reading structured data directly from a binary input stream.</p>
                     <code>
                     <a name="/s:3GIO23DataInputStreamProtocolPAAE3set8property5valueyAA0bcD12PropertyNameO_10GLibObject5ValueCtF"></a>
                     <a name="//apple_ref/swift/Method/set(property:value:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE3set8property5valueyAA0bcD12PropertyNameO_10GLibObject5ValueCtF">set(property:value:)</a>
+                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE3set8property5valueyAA0bcD12PropertyNameO_10GLibObject5ValueCtF">set(property:<wbr>value:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7916,7 +7938,7 @@ reading structured data directly from a binary input stream.</p>
                     <code>
                     <a name="/s:3GIO23DataInputStreamProtocolPAAE7connect6signal5flags2toSiAA0bcD10SignalNameO_10GLibObject12ConnectFlagsVyyctF"></a>
                     <a name="//apple_ref/swift/Method/connect(signal:flags:to:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE7connect6signal5flags2toSiAA0bcD10SignalNameO_10GLibObject12ConnectFlagsVyyctF">connect(signal:flags:to:)</a>
+                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE7connect6signal5flags2toSiAA0bcD10SignalNameO_10GLibObject12ConnectFlagsVyyctF">connect(signal:<wbr>flags:<wbr>to:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7997,10 +8019,10 @@ reading structured data directly from a binary input stream.</p>
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/DataInputStream%20Class:%20DataInputStreamProtocol%20extension%20(methods%20and%20fields)"></a>
+                <a name="/DataInputStream%20Class%3A%20DataInputStreamProtocol%20extension%20%28methods%20and%20fields%29"></a>
                 <a name="//apple_ref/swift/Section/DataInputStream Class: DataInputStreamProtocol extension (methods and fields)" class="dashAnchor"></a>
                 <div class="section-name-container">
-                  <a class="section-name-link" href="#/DataInputStream%20Class:%20DataInputStreamProtocol%20extension%20(methods%20and%20fields)"></a>
+                  <a class="section-name-link" href="#/DataInputStream%20Class%3A%20DataInputStreamProtocol%20extension%20%28methods%20and%20fields%29"></a>
                   <h3 class="section-name"><p>DataInputStream Class: DataInputStreamProtocol extension (methods and fields)</p>
 </h3>
                 </div>
@@ -8079,7 +8101,7 @@ reading structured data directly from a binary input stream.</p>
                     <code>
                     <a name="/s:3GIO23DataInputStreamProtocolPAAE8readByte11cancellables5UInt8VAA14CancellableRefVSg_tKF"></a>
                     <a name="//apple_ref/swift/Method/readByte(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE8readByte11cancellables5UInt8VAA14CancellableRefVSg_tKF">readByte(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE8readByte11cancellables5UInt8VAA14CancellableRefVSg_tKF">readByte(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8113,7 +8135,7 @@ reading structured data directly from a binary input stream.</p>
                     <code>
                     <a name="/s:3GIO23DataInputStreamProtocolPAAE8readByte11cancellables5UInt8Vqd__Sg_tKAA011CancellableE0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/readByte(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE8readByte11cancellables5UInt8Vqd__Sg_tKAA011CancellableE0Rd__lF">readByte(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE8readByte11cancellables5UInt8Vqd__Sg_tKAA011CancellableE0Rd__lF">readByte(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8147,7 +8169,7 @@ reading structured data directly from a binary input stream.</p>
                     <code>
                     <a name="/s:3GIO23DataInputStreamProtocolPAAE9readInt1611cancellables0G0VAA14CancellableRefVSg_tKF"></a>
                     <a name="//apple_ref/swift/Method/readInt16(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE9readInt1611cancellables0G0VAA14CancellableRefVSg_tKF">readInt16(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE9readInt1611cancellables0G0VAA14CancellableRefVSg_tKF">readInt16(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8184,7 +8206,7 @@ see <code>g_data_input_stream_get_byte_order()</code> and <code>g_data_input_str
                     <code>
                     <a name="/s:3GIO23DataInputStreamProtocolPAAE9readInt1611cancellables0G0Vqd__Sg_tKAA011CancellableE0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/readInt16(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE9readInt1611cancellables0G0Vqd__Sg_tKAA011CancellableE0Rd__lF">readInt16(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE9readInt1611cancellables0G0Vqd__Sg_tKAA011CancellableE0Rd__lF">readInt16(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8221,7 +8243,7 @@ see <code>g_data_input_stream_get_byte_order()</code> and <code>g_data_input_str
                     <code>
                     <a name="/s:3GIO23DataInputStreamProtocolPAAE9readInt3211cancellables0G0VAA14CancellableRefVSg_tKF"></a>
                     <a name="//apple_ref/swift/Method/readInt32(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE9readInt3211cancellables0G0VAA14CancellableRefVSg_tKF">readInt32(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE9readInt3211cancellables0G0VAA14CancellableRefVSg_tKF">readInt32(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8262,7 +8284,7 @@ was cancelled, the error <code>G_IO_ERROR_CANCELLED</code> will be returned.</p>
                     <code>
                     <a name="/s:3GIO23DataInputStreamProtocolPAAE9readInt3211cancellables0G0Vqd__Sg_tKAA011CancellableE0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/readInt32(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE9readInt3211cancellables0G0Vqd__Sg_tKAA011CancellableE0Rd__lF">readInt32(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE9readInt3211cancellables0G0Vqd__Sg_tKAA011CancellableE0Rd__lF">readInt32(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8303,7 +8325,7 @@ was cancelled, the error <code>G_IO_ERROR_CANCELLED</code> will be returned.</p>
                     <code>
                     <a name="/s:3GIO23DataInputStreamProtocolPAAE9readInt6411cancellables0G0VAA14CancellableRefVSg_tKF"></a>
                     <a name="//apple_ref/swift/Method/readInt64(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE9readInt6411cancellables0G0VAA14CancellableRefVSg_tKF">readInt64(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE9readInt6411cancellables0G0VAA14CancellableRefVSg_tKF">readInt64(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8344,7 +8366,7 @@ was cancelled, the error <code>G_IO_ERROR_CANCELLED</code> will be returned.</p>
                     <code>
                     <a name="/s:3GIO23DataInputStreamProtocolPAAE9readInt6411cancellables0G0Vqd__Sg_tKAA011CancellableE0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/readInt64(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE9readInt6411cancellables0G0Vqd__Sg_tKAA011CancellableE0Rd__lF">readInt64(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE9readInt6411cancellables0G0Vqd__Sg_tKAA011CancellableE0Rd__lF">readInt64(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8385,7 +8407,7 @@ was cancelled, the error <code>G_IO_ERROR_CANCELLED</code> will be returned.</p>
                     <code>
                     <a name="/s:3GIO23DataInputStreamProtocolPAAE8readLine6length11cancellableSSSgSpySuGSg_AA14CancellableRefVSgtKF"></a>
                     <a name="//apple_ref/swift/Method/readLine(length:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE8readLine6length11cancellableSSSgSpySuGSg_AA14CancellableRefVSgtKF">readLine(length:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE8readLine6length11cancellableSSSgSpySuGSg_AA14CancellableRefVSgtKF">readLine(length:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8425,7 +8447,7 @@ was cancelled, the error <code>G_IO_ERROR_CANCELLED</code> will be returned.</p>
                     <code>
                     <a name="/s:3GIO23DataInputStreamProtocolPAAE8readLine6length11cancellableSSSgSpySuGSg_qd__SgtKAA011CancellableE0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/readLine(length:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE8readLine6length11cancellableSSSgSpySuGSg_qd__SgtKAA011CancellableE0Rd__lF">readLine(length:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE8readLine6length11cancellableSSSgSpySuGSg_qd__SgtKAA011CancellableE0Rd__lF">readLine(length:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8465,7 +8487,7 @@ was cancelled, the error <code>G_IO_ERROR_CANCELLED</code> will be returned.</p>
                     <code>
                     <a name="/s:3GIO23DataInputStreamProtocolPAAE13readLineAsync10ioPriority11cancellable8callback04userB0ySi_AA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgATtF"></a>
                     <a name="//apple_ref/swift/Method/readLineAsync(ioPriority:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE13readLineAsync10ioPriority11cancellable8callback04userB0ySi_AA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgATtF">readLineAsync(ioPriority:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE13readLineAsync10ioPriority11cancellable8callback04userB0ySi_AA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgATtF">readLineAsync(ioPriority:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8504,7 +8526,7 @@ the result of the operation.</p>
                     <code>
                     <a name="/s:3GIO23DataInputStreamProtocolPAAE13readLineAsync10ioPriority11cancellable8callback04userB0ySi_qd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgARtAA011CancellableE0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/readLineAsync(ioPriority:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE13readLineAsync10ioPriority11cancellable8callback04userB0ySi_qd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgARtAA011CancellableE0Rd__lF">readLineAsync(ioPriority:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE13readLineAsync10ioPriority11cancellable8callback04userB0ySi_qd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgARtAA011CancellableE0Rd__lF">readLineAsync(ioPriority:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8543,7 +8565,7 @@ the result of the operation.</p>
                     <code>
                     <a name="/s:3GIO23DataInputStreamProtocolPAAE14readLineFinish6result6lengthSSSgqd___SpySuGSgtKAA011AsyncResultE0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/readLineFinish(result:length:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE14readLineFinish6result6lengthSSSgqd___SpySuGSgtKAA011AsyncResultE0Rd__lF">readLineFinish(result:length:)</a>
+                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE14readLineFinish6result6lengthSSSgqd___SpySuGSgtKAA011AsyncResultE0Rd__lF">readLineFinish(result:<wbr>length:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8580,7 +8602,7 @@ well.</p>
                     <code>
                     <a name="/s:3GIO23DataInputStreamProtocolPAAE18readLineFinishUTF86result6lengthSSSgqd___SpySuGSgtKAA011AsyncResultE0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/readLineFinishUTF8(result:length:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE18readLineFinishUTF86result6lengthSSSgqd___SpySuGSgtKAA011AsyncResultE0Rd__lF">readLineFinishUTF8(result:length:)</a>
+                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE18readLineFinishUTF86result6lengthSSSgqd___SpySuGSgtKAA011AsyncResultE0Rd__lF">readLineFinishUTF8(result:<wbr>length:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8615,7 +8637,7 @@ well.</p>
                     <code>
                     <a name="/s:3GIO23DataInputStreamProtocolPAAE12readLineUTF86length11cancellableSSSgSpySuGSg_AA14CancellableRefVSgtKF"></a>
                     <a name="//apple_ref/swift/Method/readLineUTF8(length:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE12readLineUTF86length11cancellableSSSgSpySuGSg_AA14CancellableRefVSgtKF">readLineUTF8(length:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE12readLineUTF86length11cancellableSSSgSpySuGSg_AA14CancellableRefVSgtKF">readLineUTF8(length:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8653,7 +8675,7 @@ was cancelled, the error <code>G_IO_ERROR_CANCELLED</code> will be returned.</p>
                     <code>
                     <a name="/s:3GIO23DataInputStreamProtocolPAAE12readLineUTF86length11cancellableSSSgSpySuGSg_qd__SgtKAA011CancellableE0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/readLineUTF8(length:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE12readLineUTF86length11cancellableSSSgSpySuGSg_qd__SgtKAA011CancellableE0Rd__lF">readLineUTF8(length:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE12readLineUTF86length11cancellableSSSgSpySuGSg_qd__SgtKAA011CancellableE0Rd__lF">readLineUTF8(length:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8691,7 +8713,7 @@ was cancelled, the error <code>G_IO_ERROR_CANCELLED</code> will be returned.</p>
                     <code>
                     <a name="/s:3GIO23DataInputStreamProtocolPAAE10readUint1611cancellables6UInt16VAA14CancellableRefVSg_tKF"></a>
                     <a name="//apple_ref/swift/Method/readUint16(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE10readUint1611cancellables6UInt16VAA14CancellableRefVSg_tKF">readUint16(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE10readUint1611cancellables6UInt16VAA14CancellableRefVSg_tKF">readUint16(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8728,7 +8750,7 @@ see <code>g_data_input_stream_get_byte_order()</code> and <code>g_data_input_str
                     <code>
                     <a name="/s:3GIO23DataInputStreamProtocolPAAE10readUint1611cancellables6UInt16Vqd__Sg_tKAA011CancellableE0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/readUint16(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE10readUint1611cancellables6UInt16Vqd__Sg_tKAA011CancellableE0Rd__lF">readUint16(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE10readUint1611cancellables6UInt16Vqd__Sg_tKAA011CancellableE0Rd__lF">readUint16(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8765,7 +8787,7 @@ see <code>g_data_input_stream_get_byte_order()</code> and <code>g_data_input_str
                     <code>
                     <a name="/s:3GIO23DataInputStreamProtocolPAAE10readUint3211cancellables6UInt32VAA14CancellableRefVSg_tKF"></a>
                     <a name="//apple_ref/swift/Method/readUint32(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE10readUint3211cancellables6UInt32VAA14CancellableRefVSg_tKF">readUint32(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE10readUint3211cancellables6UInt32VAA14CancellableRefVSg_tKF">readUint32(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8806,7 +8828,7 @@ was cancelled, the error <code>G_IO_ERROR_CANCELLED</code> will be returned.</p>
                     <code>
                     <a name="/s:3GIO23DataInputStreamProtocolPAAE10readUint3211cancellables6UInt32Vqd__Sg_tKAA011CancellableE0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/readUint32(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE10readUint3211cancellables6UInt32Vqd__Sg_tKAA011CancellableE0Rd__lF">readUint32(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE10readUint3211cancellables6UInt32Vqd__Sg_tKAA011CancellableE0Rd__lF">readUint32(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8847,7 +8869,7 @@ was cancelled, the error <code>G_IO_ERROR_CANCELLED</code> will be returned.</p>
                     <code>
                     <a name="/s:3GIO23DataInputStreamProtocolPAAE10readUint6411cancellables6UInt64VAA14CancellableRefVSg_tKF"></a>
                     <a name="//apple_ref/swift/Method/readUint64(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE10readUint6411cancellables6UInt64VAA14CancellableRefVSg_tKF">readUint64(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE10readUint6411cancellables6UInt64VAA14CancellableRefVSg_tKF">readUint64(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8888,7 +8910,7 @@ was cancelled, the error <code>G_IO_ERROR_CANCELLED</code> will be returned.</p>
                     <code>
                     <a name="/s:3GIO23DataInputStreamProtocolPAAE10readUint6411cancellables6UInt64Vqd__Sg_tKAA011CancellableE0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/readUint64(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE10readUint6411cancellables6UInt64Vqd__Sg_tKAA011CancellableE0Rd__lF">readUint64(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE10readUint6411cancellables6UInt64Vqd__Sg_tKAA011CancellableE0Rd__lF">readUint64(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8929,7 +8951,7 @@ was cancelled, the error <code>G_IO_ERROR_CANCELLED</code> will be returned.</p>
                     <code>
                     <a name="/s:3GIO23DataInputStreamProtocolPAAE9readUntil9stopChars6length11cancellableSSSgSPys4Int8VGSg_SpySuGSgAA14CancellableRefVSgtKF"></a>
                     <a name="//apple_ref/swift/Method/readUntil(stopChars:length:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE9readUntil9stopChars6length11cancellableSSSgSPys4Int8VGSg_SpySuGSgAA14CancellableRefVSgtKF">readUntil(stopChars:length:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE9readUntil9stopChars6length11cancellableSSSgSPys4Int8VGSg_SpySuGSgAA14CancellableRefVSgtKF">readUntil(stopChars:<wbr>length:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8978,7 +9000,7 @@ Use g_data_input_stream_read_upto() instead, which has more
                     <code>
                     <a name="/s:3GIO23DataInputStreamProtocolPAAE9readUntil9stopChars6length11cancellableSSSgSPys4Int8VGSg_SpySuGSgqd__SgtKAA011CancellableE0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/readUntil(stopChars:length:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE9readUntil9stopChars6length11cancellableSSSgSPys4Int8VGSg_SpySuGSgqd__SgtKAA011CancellableE0Rd__lF">readUntil(stopChars:length:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE9readUntil9stopChars6length11cancellableSSSgSPys4Int8VGSg_SpySuGSgqd__SgtKAA011CancellableE0Rd__lF">readUntil(stopChars:<wbr>length:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9027,7 +9049,7 @@ Use g_data_input_stream_read_upto() instead, which has more
                     <code>
                     <a name="/s:3GIO23DataInputStreamProtocolPAAE14readUntilAsync9stopChars10ioPriority11cancellable8callback04userB0ySPys4Int8VGSg_SiAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAYtF"></a>
                     <a name="//apple_ref/swift/Method/readUntilAsync(stopChars:ioPriority:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE14readUntilAsync9stopChars10ioPriority11cancellable8callback04userB0ySPys4Int8VGSg_SiAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAYtF">readUntilAsync(stopChars:ioPriority:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE14readUntilAsync9stopChars10ioPriority11cancellable8callback04userB0ySPys4Int8VGSg_SiAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAYtF">readUntilAsync(stopChars:<wbr>ioPriority:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9080,7 +9102,7 @@ Use g_data_input_stream_read_upto_async() instead, which
                     <code>
                     <a name="/s:3GIO23DataInputStreamProtocolPAAE14readUntilAsync9stopChars10ioPriority11cancellable8callback04userB0ySPys4Int8VGSg_Siqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAWtAA011CancellableE0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/readUntilAsync(stopChars:ioPriority:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE14readUntilAsync9stopChars10ioPriority11cancellable8callback04userB0ySPys4Int8VGSg_Siqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAWtAA011CancellableE0Rd__lF">readUntilAsync(stopChars:ioPriority:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE14readUntilAsync9stopChars10ioPriority11cancellable8callback04userB0ySPys4Int8VGSg_Siqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAWtAA011CancellableE0Rd__lF">readUntilAsync(stopChars:<wbr>ioPriority:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9133,7 +9155,7 @@ Use g_data_input_stream_read_upto_async() instead, which
                     <code>
                     <a name="/s:3GIO23DataInputStreamProtocolPAAE15readUntilFinish6result6lengthSSSgqd___SpySuGSgtKAA011AsyncResultE0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/readUntilFinish(result:length:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE15readUntilFinish6result6lengthSSSgqd___SpySuGSgtKAA011AsyncResultE0Rd__lF">readUntilFinish(result:length:)</a>
+                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE15readUntilFinish6result6lengthSSSgqd___SpySuGSgtKAA011AsyncResultE0Rd__lF">readUntilFinish(result:<wbr>length:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9173,7 +9195,7 @@ Use g_data_input_stream_read_upto_finish() instead, which
                     <code>
                     <a name="/s:3GIO23DataInputStreamProtocolPAAE8readUpto9stopChars0hI3Len6length11cancellableSSSgSPys4Int8VGSg_SiSpySuGSgAA14CancellableRefVSgtKF"></a>
                     <a name="//apple_ref/swift/Method/readUpto(stopChars:stopCharsLen:length:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE8readUpto9stopChars0hI3Len6length11cancellableSSSgSPys4Int8VGSg_SiSpySuGSgAA14CancellableRefVSgtKF">readUpto(stopChars:stopCharsLen:length:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE8readUpto9stopChars0hI3Len6length11cancellableSSSgSPys4Int8VGSg_SiSpySuGSgAA14CancellableRefVSgtKF">readUpto(stopChars:<wbr>stopCharsLen:<wbr>length:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9218,7 +9240,7 @@ specified.</p>
                     <code>
                     <a name="/s:3GIO23DataInputStreamProtocolPAAE8readUpto9stopChars0hI3Len6length11cancellableSSSgSPys4Int8VGSg_SiSpySuGSgqd__SgtKAA011CancellableE0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/readUpto(stopChars:stopCharsLen:length:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE8readUpto9stopChars0hI3Len6length11cancellableSSSgSPys4Int8VGSg_SiSpySuGSgqd__SgtKAA011CancellableE0Rd__lF">readUpto(stopChars:stopCharsLen:length:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE8readUpto9stopChars0hI3Len6length11cancellableSSSgSPys4Int8VGSg_SiSpySuGSgqd__SgtKAA011CancellableE0Rd__lF">readUpto(stopChars:<wbr>stopCharsLen:<wbr>length:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9263,7 +9285,7 @@ specified.</p>
                     <code>
                     <a name="/s:3GIO23DataInputStreamProtocolPAAE13readUptoAsync9stopChars0iJ3Len10ioPriority11cancellable8callback04userB0ySPys4Int8VGSg_S2iAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAZtF"></a>
                     <a name="//apple_ref/swift/Method/readUptoAsync(stopChars:stopCharsLen:ioPriority:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE13readUptoAsync9stopChars0iJ3Len10ioPriority11cancellable8callback04userB0ySPys4Int8VGSg_S2iAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAZtF">readUptoAsync(stopChars:stopCharsLen:ioPriority:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE13readUptoAsync9stopChars0iJ3Len10ioPriority11cancellable8callback04userB0ySPys4Int8VGSg_S2iAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAZtF">readUptoAsync(stopChars:<wbr>stopCharsLen:<wbr>ioPriority:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9310,7 +9332,7 @@ the result of the operation.</p>
                     <code>
                     <a name="/s:3GIO23DataInputStreamProtocolPAAE13readUptoAsync9stopChars0iJ3Len10ioPriority11cancellable8callback04userB0ySPys4Int8VGSg_S2iqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAXtAA011CancellableE0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/readUptoAsync(stopChars:stopCharsLen:ioPriority:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE13readUptoAsync9stopChars0iJ3Len10ioPriority11cancellable8callback04userB0ySPys4Int8VGSg_S2iqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAXtAA011CancellableE0Rd__lF">readUptoAsync(stopChars:stopCharsLen:ioPriority:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE13readUptoAsync9stopChars0iJ3Len10ioPriority11cancellable8callback04userB0ySPys4Int8VGSg_S2iqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAXtAA011CancellableE0Rd__lF">readUptoAsync(stopChars:<wbr>stopCharsLen:<wbr>ioPriority:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9357,7 +9379,7 @@ the result of the operation.</p>
                     <code>
                     <a name="/s:3GIO23DataInputStreamProtocolPAAE14readUptoFinish6result6lengthSSSgqd___SpySuGSgtKAA011AsyncResultE0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/readUptoFinish(result:length:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE14readUptoFinish6result6lengthSSSgqd___SpySuGSgtKAA011AsyncResultE0Rd__lF">readUptoFinish(result:length:)</a>
+                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE14readUptoFinish6result6lengthSSSgqd___SpySuGSgtKAA011AsyncResultE0Rd__lF">readUptoFinish(result:<wbr>length:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9398,7 +9420,7 @@ have to use <code>g_data_input_stream_read_byte()</code> to get it before callin
                     <code>
                     <a name="/s:3GIO23DataInputStreamProtocolPAAE7setByte5orderySo05GDatadG5Ordera_tF"></a>
                     <a name="//apple_ref/swift/Method/setByte(order:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE7setByte5orderySo05GDatadG5Ordera_tF">setByte(order:)</a>
+                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE7setByte5orderySo05GDatadG5Ordera_tF">setByte(order:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9433,7 +9455,7 @@ reads from the <code>stream</code> will be read in the given <code>order</code>.
                     <code>
                     <a name="/s:3GIO23DataInputStreamProtocolPAAE10setNewline4typeySo05GDatadG4Typea_tF"></a>
                     <a name="//apple_ref/swift/Method/setNewline(type:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE10setNewline4typeySo05GDatadG4Typea_tF">setNewline(type:)</a>
+                    <a class="token" href="#/s:3GIO23DataInputStreamProtocolPAAE10setNewline4typeySo05GDatadG4Typea_tF">setNewline(type:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9576,8 +9598,8 @@ chunk ends in &ldquo;CR&rdquo; we must read an additional byte to know if this i
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.ict.griffith.edu.au/~rhexel/" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2020-09-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

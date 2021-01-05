@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          GIO 2.64.4 Docs
+          GIO 2.66.4 Docs
         </a>
-         (88% documented)
+         (89% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx%2Egithub%2Eio%2FSwiftGIO%2Fdocsets%2FGIO%2Exml">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx.github.io%2FSwiftGIO%2Fdocsets%2FGIO.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -2205,6 +2205,12 @@
                 <a class="nav-group-task-link" href="../Extensions/TLSCertificateRequestFlags.html">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingError.html">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingType.html">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/TLSDatabaseLookupFlags.html">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -2648,6 +2654,9 @@
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO20tlsBackendGetDefaultAA13TLSBackendRefVSgyF">tlsBackendGetDefault()</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27tlsChannelBindingErrorQuarks6UInt32VyF">tlsChannelBindingErrorQuark()</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO22tlsClientConnectionNew12baseIoStream14serverIdentityAA09TLSClientD3RefVSgx_AA017SocketConnectableL0VSgtKAA16IOStreamProtocolRzlF">tlsClientConnectionNew(baseIoStream:serverIdentity:)</a>
               </li>
               <li class="nav-group-task">
@@ -2724,6 +2733,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO25unixMountIsSystemInternal10mountEntrySbx_tAA04UnixcH8ProtocolRzlF">unixMountIsSystemInternal(mountEntry:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO16unixMountPointAt9mountPath8timeReadAA04UnixcD3RefVSgSPys4Int8VGSg_Spys6UInt64VGSgtF">unixMountPointAt(mountPath:timeRead:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27unixMountPointsChangedSince4timeSbs6UInt64V_tF">unixMountPointsChangedSince(time:)</a>
@@ -5243,6 +5255,12 @@
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO26TLSCertificateRequestFlagsa">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSChannelBindingErrora">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO21TLSChannelBindingTypea">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSDatabaseLookupFlagsa">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -7578,6 +7596,7 @@
             <h1>TLSInteractionProtocol</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">TLSInteractionProtocol</span> <span class="p">:</span> <span class="kt">ObjectProtocol</span></code></pre>
 
                 </div>
@@ -7608,6 +7627,9 @@ initialization function. Any interactions not implemented will return
 <code>G_TLS_INTERACTION_UNHANDLED</code>. If a derived class implements an async method,
 it must also implement the corresponding finish method.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L4996-L5003">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -7640,7 +7662,7 @@ it must also implement the corresponding finish method.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L4941">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L4998">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7678,7 +7700,7 @@ it must also implement the corresponding finish method.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L4944">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L5001">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7701,7 +7723,7 @@ it must also implement the corresponding finish method.</p>
                     <code>
                     <a name="/s:3GIO22TLSInteractionProtocolPAAE7connect6signal5flags2toSiAA0B10SignalNameO_10GLibObject12ConnectFlagsVyyctF"></a>
                     <a name="//apple_ref/swift/Method/connect(signal:flags:to:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22TLSInteractionProtocolPAAE7connect6signal5flags2toSiAA0B10SignalNameO_10GLibObject12ConnectFlagsVyyctF">connect(signal:flags:to:)</a>
+                    <a class="token" href="#/s:3GIO22TLSInteractionProtocolPAAE7connect6signal5flags2toSiAA0B10SignalNameO_10GLibObject12ConnectFlagsVyyctF">connect(signal:<wbr>flags:<wbr>to:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7773,7 +7795,7 @@ it must also implement the corresponding finish method.</p>
                         <p>positive handler ID, or a value less than or equal to <code>0</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L5240-L5259">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L5297-L5316">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7782,10 +7804,10 @@ it must also implement the corresponding finish method.</p>
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/TLSInteraction%20Class:%20TLSInteractionProtocol%20extension%20(methods%20and%20fields)"></a>
+                <a name="/TLSInteraction%20Class%3A%20TLSInteractionProtocol%20extension%20%28methods%20and%20fields%29"></a>
                 <a name="//apple_ref/swift/Section/TLSInteraction Class: TLSInteractionProtocol extension (methods and fields)" class="dashAnchor"></a>
                 <div class="section-name-container">
-                  <a class="section-name-link" href="#/TLSInteraction%20Class:%20TLSInteractionProtocol%20extension%20(methods%20and%20fields)"></a>
+                  <a class="section-name-link" href="#/TLSInteraction%20Class%3A%20TLSInteractionProtocol%20extension%20%28methods%20and%20fields%29"></a>
                   <h3 class="section-name"><p>TLSInteraction Class: TLSInteractionProtocol extension (methods and fields)</p>
 </h3>
                 </div>
@@ -7796,7 +7818,7 @@ it must also implement the corresponding finish method.</p>
                     <code>
                     <a name="/s:3GIO22TLSInteractionProtocolPAAE3ask8password11cancellableSo21GTlsInteractionResultaqd___AA14CancellableRefVSgtKAA011TLSPasswordC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/ask(password:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22TLSInteractionProtocolPAAE3ask8password11cancellableSo21GTlsInteractionResultaqd___AA14CancellableRefVSgtKAA011TLSPasswordC0Rd__lF">ask(password:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO22TLSInteractionProtocolPAAE3ask8password11cancellableSo21GTlsInteractionResultaqd___AA14CancellableRefVSgtKAA011TLSPasswordC0Rd__lF">ask(password:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7832,7 +7854,7 @@ not support immediate cancellation.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L5280-L5285">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L5337-L5342">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7842,7 +7864,7 @@ not support immediate cancellation.</p>
                     <code>
                     <a name="/s:3GIO22TLSInteractionProtocolPAAE3ask8password11cancellableSo21GTlsInteractionResultaqd_0__qd__SgtKAA011CancellableC0Rd__AA011TLSPasswordC0Rd_0_r0_lF"></a>
                     <a name="//apple_ref/swift/Method/ask(password:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22TLSInteractionProtocolPAAE3ask8password11cancellableSo21GTlsInteractionResultaqd_0__qd__SgtKAA011CancellableC0Rd__AA011TLSPasswordC0Rd_0_r0_lF">ask(password:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO22TLSInteractionProtocolPAAE3ask8password11cancellableSo21GTlsInteractionResultaqd_0__qd__SgtKAA011CancellableC0Rd__AA011TLSPasswordC0Rd_0_r0_lF">ask(password:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7878,7 +7900,7 @@ not support immediate cancellation.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L5299-L5304">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L5356-L5361">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7888,7 +7910,7 @@ not support immediate cancellation.</p>
                     <code>
                     <a name="/s:3GIO22TLSInteractionProtocolPAAE16askPasswordAsync8password11cancellable8callback8userDatayqd___AA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgATtAA011TLSPasswordC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/askPasswordAsync(password:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22TLSInteractionProtocolPAAE16askPasswordAsync8password11cancellable8callback8userDatayqd___AA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgATtAA011TLSPasswordC0Rd__lF">askPasswordAsync(password:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO22TLSInteractionProtocolPAAE16askPasswordAsync8password11cancellable8callback8userDatayqd___AA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgATtAA011TLSPasswordC0Rd__lF">askPasswordAsync(password:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7926,7 +7948,7 @@ not support immediate cancellation.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L5321-L5324">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L5378-L5381">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7936,7 +7958,7 @@ not support immediate cancellation.</p>
                     <code>
                     <a name="/s:3GIO22TLSInteractionProtocolPAAE16askPasswordAsync8password11cancellable8callback8userDatayqd_0__qd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgARtAA011CancellableC0Rd__AA011TLSPasswordC0Rd_0_r0_lF"></a>
                     <a name="//apple_ref/swift/Method/askPasswordAsync(password:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22TLSInteractionProtocolPAAE16askPasswordAsync8password11cancellable8callback8userDatayqd_0__qd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgARtAA011CancellableC0Rd__AA011TLSPasswordC0Rd_0_r0_lF">askPasswordAsync(password:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO22TLSInteractionProtocolPAAE16askPasswordAsync8password11cancellable8callback8userDatayqd_0__qd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgARtAA011CancellableC0Rd__AA011TLSPasswordC0Rd_0_r0_lF">askPasswordAsync(password:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7974,7 +7996,7 @@ not support immediate cancellation.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L5340-L5343">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L5397-L5400">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7984,7 +8006,7 @@ not support immediate cancellation.</p>
                     <code>
                     <a name="/s:3GIO22TLSInteractionProtocolPAAE17askPasswordFinish6resultSo21GTlsInteractionResultaqd___tKAA05AsyncjC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/askPasswordFinish(result:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22TLSInteractionProtocolPAAE17askPasswordFinish6resultSo21GTlsInteractionResultaqd___tKAA05AsyncjC0Rd__lF">askPasswordFinish(result:)</a>
+                    <a class="token" href="#/s:3GIO22TLSInteractionProtocolPAAE17askPasswordFinish6resultSo21GTlsInteractionResultaqd___tKAA05AsyncjC0Rd__lF">askPasswordFinish(result:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8016,7 +8038,7 @@ contains a <code>G_IO_ERROR_CANCELLED</code> error code.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L5354-L5359">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L5411-L5416">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8026,7 +8048,7 @@ contains a <code>G_IO_ERROR_CANCELLED</code> error code.</p>
                     <code>
                     <a name="/s:3GIO22TLSInteractionProtocolPAAE9invokeAsk8password11cancellableSo21GTlsInteractionResultaqd___AA14CancellableRefVSgtKAA011TLSPasswordC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/invokeAsk(password:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22TLSInteractionProtocolPAAE9invokeAsk8password11cancellableSo21GTlsInteractionResultaqd___AA14CancellableRefVSgtKAA011TLSPasswordC0Rd__lF">invokeAsk(password:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO22TLSInteractionProtocolPAAE9invokeAsk8password11cancellableSo21GTlsInteractionResultaqd___AA14CancellableRefVSgtKAA011TLSPasswordC0Rd__lF">invokeAsk(password:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8068,7 +8090,7 @@ not support immediate cancellation.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L5380-L5385">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L5437-L5442">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8078,7 +8100,7 @@ not support immediate cancellation.</p>
                     <code>
                     <a name="/s:3GIO22TLSInteractionProtocolPAAE9invokeAsk8password11cancellableSo21GTlsInteractionResultaqd_0__qd__SgtKAA011CancellableC0Rd__AA011TLSPasswordC0Rd_0_r0_lF"></a>
                     <a name="//apple_ref/swift/Method/invokeAsk(password:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22TLSInteractionProtocolPAAE9invokeAsk8password11cancellableSo21GTlsInteractionResultaqd_0__qd__SgtKAA011CancellableC0Rd__AA011TLSPasswordC0Rd_0_r0_lF">invokeAsk(password:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO22TLSInteractionProtocolPAAE9invokeAsk8password11cancellableSo21GTlsInteractionResultaqd_0__qd__SgtKAA011CancellableC0Rd__AA011TLSPasswordC0Rd_0_r0_lF">invokeAsk(password:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8120,7 +8142,7 @@ not support immediate cancellation.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L5405-L5410">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L5462-L5467">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8130,7 +8152,7 @@ not support immediate cancellation.</p>
                     <code>
                     <a name="/s:3GIO22TLSInteractionProtocolPAAE24invokeRequestCertificate10connection5flags11cancellableSo21GTlsInteractionResultaqd___So0jfE5FlagsaAA14CancellableRefVSgtKAA013TLSConnectionC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/invokeRequestCertificate(connection:flags:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22TLSInteractionProtocolPAAE24invokeRequestCertificate10connection5flags11cancellableSo21GTlsInteractionResultaqd___So0jfE5FlagsaAA14CancellableRefVSgtKAA013TLSConnectionC0Rd__lF">invokeRequestCertificate(connection:flags:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO22TLSInteractionProtocolPAAE24invokeRequestCertificate10connection5flags11cancellableSo21GTlsInteractionResultaqd___So0jfE5FlagsaAA14CancellableRefVSgtKAA013TLSConnectionC0Rd__lF">invokeRequestCertificate(connection:<wbr>flags:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8173,7 +8195,7 @@ not support immediate cancellation.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L5432-L5437">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L5489-L5494">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8183,7 +8205,7 @@ not support immediate cancellation.</p>
                     <code>
                     <a name="/s:3GIO22TLSInteractionProtocolPAAE24invokeRequestCertificate10connection5flags11cancellableSo21GTlsInteractionResultaqd_0__So0jfE5Flagsaqd__SgtKAA011CancellableC0Rd__AA013TLSConnectionC0Rd_0_r0_lF"></a>
                     <a name="//apple_ref/swift/Method/invokeRequestCertificate(connection:flags:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22TLSInteractionProtocolPAAE24invokeRequestCertificate10connection5flags11cancellableSo21GTlsInteractionResultaqd_0__So0jfE5Flagsaqd__SgtKAA011CancellableC0Rd__AA013TLSConnectionC0Rd_0_r0_lF">invokeRequestCertificate(connection:flags:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO22TLSInteractionProtocolPAAE24invokeRequestCertificate10connection5flags11cancellableSo21GTlsInteractionResultaqd_0__So0jfE5Flagsaqd__SgtKAA011CancellableC0Rd__AA013TLSConnectionC0Rd_0_r0_lF">invokeRequestCertificate(connection:<wbr>flags:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8226,7 +8248,7 @@ not support immediate cancellation.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L5458-L5463">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L5515-L5520">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8236,7 +8258,7 @@ not support immediate cancellation.</p>
                     <code>
                     <a name="/s:3GIO22TLSInteractionProtocolPAAE18requestCertificate10connection5flags11cancellableSo21GTlsInteractionResultaqd___So0iE12RequestFlagsaAA14CancellableRefVSgtKAA013TLSConnectionC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/requestCertificate(connection:flags:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22TLSInteractionProtocolPAAE18requestCertificate10connection5flags11cancellableSo21GTlsInteractionResultaqd___So0iE12RequestFlagsaAA14CancellableRefVSgtKAA013TLSConnectionC0Rd__lF">requestCertificate(connection:flags:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO22TLSInteractionProtocolPAAE18requestCertificate10connection5flags11cancellableSo21GTlsInteractionResultaqd___So0iE12RequestFlagsaAA14CancellableRefVSgtKAA013TLSConnectionC0Rd__lF">requestCertificate(connection:<wbr>flags:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8275,7 +8297,7 @@ not support immediate cancellation.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L5481-L5486">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L5538-L5543">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8285,7 +8307,7 @@ not support immediate cancellation.</p>
                     <code>
                     <a name="/s:3GIO22TLSInteractionProtocolPAAE18requestCertificate10connection5flags11cancellableSo21GTlsInteractionResultaqd_0__So0iE12RequestFlagsaqd__SgtKAA011CancellableC0Rd__AA013TLSConnectionC0Rd_0_r0_lF"></a>
                     <a name="//apple_ref/swift/Method/requestCertificate(connection:flags:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22TLSInteractionProtocolPAAE18requestCertificate10connection5flags11cancellableSo21GTlsInteractionResultaqd_0__So0iE12RequestFlagsaqd__SgtKAA011CancellableC0Rd__AA013TLSConnectionC0Rd_0_r0_lF">requestCertificate(connection:flags:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO22TLSInteractionProtocolPAAE18requestCertificate10connection5flags11cancellableSo21GTlsInteractionResultaqd_0__So0iE12RequestFlagsaqd__SgtKAA011CancellableC0Rd__AA013TLSConnectionC0Rd_0_r0_lF">requestCertificate(connection:<wbr>flags:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8324,7 +8346,7 @@ not support immediate cancellation.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L5503-L5508">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L5560-L5565">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8334,7 +8356,7 @@ not support immediate cancellation.</p>
                     <code>
                     <a name="/s:3GIO22TLSInteractionProtocolPAAE23requestCertificateAsync10connection5flags11cancellable8callback8userDatayqd___So04GTlsE12RequestFlagsaAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAWtAA013TLSConnectionC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/requestCertificateAsync(connection:flags:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22TLSInteractionProtocolPAAE23requestCertificateAsync10connection5flags11cancellable8callback8userDatayqd___So04GTlsE12RequestFlagsaAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAWtAA013TLSConnectionC0Rd__lF">requestCertificateAsync(connection:flags:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO22TLSInteractionProtocolPAAE23requestCertificateAsync10connection5flags11cancellable8callback8userDatayqd___So04GTlsE12RequestFlagsaAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAWtAA013TLSConnectionC0Rd__lF">requestCertificateAsync(connection:<wbr>flags:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8365,7 +8387,7 @@ request, which will usually abort the TLS connection.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L5518-L5521">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L5575-L5578">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8375,7 +8397,7 @@ request, which will usually abort the TLS connection.</p>
                     <code>
                     <a name="/s:3GIO22TLSInteractionProtocolPAAE23requestCertificateAsync10connection5flags11cancellable8callback8userDatayqd_0__So04GTlsE12RequestFlagsaqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAUtAA011CancellableC0Rd__AA013TLSConnectionC0Rd_0_r0_lF"></a>
                     <a name="//apple_ref/swift/Method/requestCertificateAsync(connection:flags:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22TLSInteractionProtocolPAAE23requestCertificateAsync10connection5flags11cancellable8callback8userDatayqd_0__So04GTlsE12RequestFlagsaqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAUtAA011CancellableC0Rd__AA013TLSConnectionC0Rd_0_r0_lF">requestCertificateAsync(connection:flags:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO22TLSInteractionProtocolPAAE23requestCertificateAsync10connection5flags11cancellable8callback8userDatayqd_0__So04GTlsE12RequestFlagsaqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAUtAA011CancellableC0Rd__AA013TLSConnectionC0Rd_0_r0_lF">requestCertificateAsync(connection:<wbr>flags:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8406,7 +8428,7 @@ request, which will usually abort the TLS connection.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L5530-L5533">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L5587-L5590">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8416,7 +8438,7 @@ request, which will usually abort the TLS connection.</p>
                     <code>
                     <a name="/s:3GIO22TLSInteractionProtocolPAAE24requestCertificateFinish6resultSo21GTlsInteractionResultaqd___tKAA05AsyncjC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/requestCertificateFinish(result:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22TLSInteractionProtocolPAAE24requestCertificateFinish6resultSo21GTlsInteractionResultaqd___tKAA05AsyncjC0Rd__lF">requestCertificateFinish(result:)</a>
+                    <a class="token" href="#/s:3GIO22TLSInteractionProtocolPAAE24requestCertificateFinish6resultSo21GTlsInteractionResultaqd___tKAA05AsyncjC0Rd__lF">requestCertificateFinish(result:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8449,7 +8471,7 @@ contains a <code>G_IO_ERROR_CANCELLED</code> error code.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L5545-L5550">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L5602-L5607">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8462,8 +8484,8 @@ contains a <code>G_IO_ERROR_CANCELLED</code> error code.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.ict.griffith.edu.au/~rhexel/" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2020-09-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

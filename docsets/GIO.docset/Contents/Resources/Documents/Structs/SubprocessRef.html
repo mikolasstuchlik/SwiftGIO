@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          GIO 2.64.4 Docs
+          GIO 2.66.4 Docs
         </a>
-         (88% documented)
+         (89% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx%2Egithub%2Eio%2FSwiftGIO%2Fdocsets%2FGIO%2Exml">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx.github.io%2FSwiftGIO%2Fdocsets%2FGIO.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -2205,6 +2205,12 @@
                 <a class="nav-group-task-link" href="../Extensions/TLSCertificateRequestFlags.html">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingError.html">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingType.html">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/TLSDatabaseLookupFlags.html">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -2648,6 +2654,9 @@
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO20tlsBackendGetDefaultAA13TLSBackendRefVSgyF">tlsBackendGetDefault()</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27tlsChannelBindingErrorQuarks6UInt32VyF">tlsChannelBindingErrorQuark()</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO22tlsClientConnectionNew12baseIoStream14serverIdentityAA09TLSClientD3RefVSgx_AA017SocketConnectableL0VSgtKAA16IOStreamProtocolRzlF">tlsClientConnectionNew(baseIoStream:serverIdentity:)</a>
               </li>
               <li class="nav-group-task">
@@ -2724,6 +2733,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO25unixMountIsSystemInternal10mountEntrySbx_tAA04UnixcH8ProtocolRzlF">unixMountIsSystemInternal(mountEntry:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO16unixMountPointAt9mountPath8timeReadAA04UnixcD3RefVSgSPys4Int8VGSg_Spys6UInt64VGSgtF">unixMountPointAt(mountPath:timeRead:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27unixMountPointsChangedSince4timeSbs6UInt64V_tF">unixMountPointsChangedSince(time:)</a>
@@ -5243,6 +5255,12 @@
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO26TLSCertificateRequestFlagsa">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSChannelBindingErrora">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO21TLSChannelBindingTypea">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSDatabaseLookupFlagsa">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -7578,6 +7596,7 @@
             <h1>SubprocessRef</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SubprocessRef</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/SubprocessProtocol.html">SubprocessProtocol</a></span></code></pre>
 
                 </div>
@@ -7641,6 +7660,9 @@ change of working directory, child setup functions, etc).</p>
 checked using functions such as <code>g_subprocess_get_if_exited()</code> (which
 are similar to the familiar WIFEXITED-style POSIX macros).</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13010-L13014">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -7676,7 +7698,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L12998">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13013">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7699,7 +7721,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                     <code>
                     <a name="/s:3GIO13SubprocessRefVyACSpySo12_GSubprocessVGcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13SubprocessRefVyACSpySo12_GSubprocessVGcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO13SubprocessRefVyACSpySo12_GSubprocessVGcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7720,7 +7742,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13003-L13005">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13018-L13020">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7730,7 +7752,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                     <code>
                     <a name="/s:3GIO13SubprocessRefVyACSPySo12_GSubprocessVGcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13SubprocessRefVyACSPySo12_GSubprocessVGcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO13SubprocessRefVyACSPySo12_GSubprocessVGcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7751,7 +7773,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13008-L13010">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13023-L13025">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7761,7 +7783,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                     <code>
                     <a name="/s:3GIO13SubprocessRefVyACSgSpySo12_GSubprocessVGSgcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13SubprocessRefVyACSgSpySo12_GSubprocessVGSgcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO13SubprocessRefVyACSgSpySo12_GSubprocessVGSgcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7782,7 +7804,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13013-L13016">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13028-L13031">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7792,7 +7814,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                     <code>
                     <a name="/s:3GIO13SubprocessRefVyACSgSPySo12_GSubprocessVGSgcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13SubprocessRefVyACSgSPySo12_GSubprocessVGSgcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO13SubprocessRefVyACSgSPySo12_GSubprocessVGSgcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7813,7 +7835,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13019-L13022">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13034-L13037">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7823,7 +7845,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                     <code>
                     <a name="/s:3GIO13SubprocessRefV8gpointerACSgSvSg_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(gpointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13SubprocessRefV8gpointerACSgSvSg_tcfc">init(gpointer:)</a>
+                    <a class="token" href="#/s:3GIO13SubprocessRefV8gpointerACSgSvSg_tcfc">init(gpointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7844,7 +7866,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13025-L13028">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13040-L13043">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7854,7 +7876,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                     <code>
                     <a name="/s:3GIO13SubprocessRefV13gconstpointerACSgSVSg_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(gconstpointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13SubprocessRefV13gconstpointerACSgSVSg_tcfc">init(gconstpointer:)</a>
+                    <a class="token" href="#/s:3GIO13SubprocessRefV13gconstpointerACSgSVSg_tcfc">init(gconstpointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7875,7 +7897,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13031-L13034">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13046-L13049">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7885,7 +7907,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                     <code>
                     <a name="/s:3GIO13SubprocessRefVyACxcAA0B8ProtocolRzlufc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13SubprocessRefVyACxcAA0B8ProtocolRzlufc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO13SubprocessRefVyACxcAA0B8ProtocolRzlufc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7906,7 +7928,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13037-L13039">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13052-L13054">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7916,7 +7938,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                     <code>
                     <a name="/s:3GIO13SubprocessRefV8cPointerACSpyxG_tclufc"></a>
                     <a name="//apple_ref/swift/Method/init(cPointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13SubprocessRefV8cPointerACSpyxG_tclufc">init(cPointer:)</a>
+                    <a class="token" href="#/s:3GIO13SubprocessRefV8cPointerACSpyxG_tclufc">init(cPointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7938,7 +7960,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13043-L13045">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13058-L13060">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7948,7 +7970,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                     <code>
                     <a name="/s:3GIO13SubprocessRefV12constPointerACSPyxG_tclufc"></a>
                     <a name="//apple_ref/swift/Method/init(constPointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13SubprocessRefV12constPointerACSPyxG_tclufc">init(constPointer:)</a>
+                    <a class="token" href="#/s:3GIO13SubprocessRefV12constPointerACSPyxG_tclufc">init(constPointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7970,7 +7992,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13049-L13051">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13064-L13066">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7980,7 +8002,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                     <code>
                     <a name="/s:3GIO13SubprocessRefV8mutatingACSV_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(mutating:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13SubprocessRefV8mutatingACSV_tcfc">init(mutating:)</a>
+                    <a class="token" href="#/s:3GIO13SubprocessRefV8mutatingACSV_tcfc">init(mutating:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8002,7 +8024,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13055-L13057">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13070-L13072">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8012,7 +8034,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                     <code>
                     <a name="/s:3GIO13SubprocessRefV3rawACSv_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13SubprocessRefV3rawACSv_tcfc">init(raw:)</a>
+                    <a class="token" href="#/s:3GIO13SubprocessRefV3rawACSv_tcfc">init(raw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8034,7 +8056,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13061-L13063">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13076-L13078">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8044,7 +8066,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                     <code>
                     <a name="/s:3GIO13SubprocessRefV13opaquePointerACs06OpaqueE0V_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(opaquePointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13SubprocessRefV13opaquePointerACs06OpaqueE0V_tcfc">init(opaquePointer:)</a>
+                    <a class="token" href="#/s:3GIO13SubprocessRefV13opaquePointerACs06OpaqueE0V_tcfc">init(opaquePointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8066,7 +8088,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13067-L13069">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13082-L13084">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8076,7 +8098,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                     <code>
                     <a name="/s:3GIO13SubprocessRefV4argv5flagsACSPySPys4Int8VGSgGSg_AA0B5FlagsVtKcfc"></a>
                     <a name="//apple_ref/swift/Method/init(argv:flags:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13SubprocessRefV4argv5flagsACSPySPys4Int8VGSgGSg_AA0B5FlagsVtKcfc">init(argv:flags:)</a>
+                    <a class="token" href="#/s:3GIO13SubprocessRefV4argv5flagsACSPySPys4Int8VGSgGSg_AA0B5FlagsVtKcfc">init(argv:<wbr>flags:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8099,7 +8121,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13078-L13083">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13093-L13098">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8109,7 +8131,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                     <code>
                     <a name="/s:3GIO13SubprocessRefV14subprocessNewv4argv5flagsACSgSPySPys4Int8VGSgGSg_AA0B5FlagsVtKFZ"></a>
                     <a name="//apple_ref/swift/Method/subprocessNewv(argv:flags:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13SubprocessRefV14subprocessNewv4argv5flagsACSgSPySPys4Int8VGSgGSg_AA0B5FlagsVtKFZ">subprocessNewv(argv:flags:)</a>
+                    <a class="token" href="#/s:3GIO13SubprocessRefV14subprocessNewv4argv5flagsACSgSPySPys4Int8VGSgGSg_AA0B5FlagsVtKFZ">subprocessNewv(argv:<wbr>flags:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8132,7 +8154,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13087-L13093">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13102-L13108">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8145,8 +8167,8 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.ict.griffith.edu.au/~rhexel/" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2020-09-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

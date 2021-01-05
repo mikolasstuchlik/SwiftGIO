@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          GIO 2.64.4 Docs
+          GIO 2.66.4 Docs
         </a>
-         (88% documented)
+         (89% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx%2Egithub%2Eio%2FSwiftGIO%2Fdocsets%2FGIO%2Exml">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx.github.io%2FSwiftGIO%2Fdocsets%2FGIO.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -2205,6 +2205,12 @@
                 <a class="nav-group-task-link" href="../Extensions/TLSCertificateRequestFlags.html">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingError.html">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingType.html">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/TLSDatabaseLookupFlags.html">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -2648,6 +2654,9 @@
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO20tlsBackendGetDefaultAA13TLSBackendRefVSgyF">tlsBackendGetDefault()</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27tlsChannelBindingErrorQuarks6UInt32VyF">tlsChannelBindingErrorQuark()</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO22tlsClientConnectionNew12baseIoStream14serverIdentityAA09TLSClientD3RefVSgx_AA017SocketConnectableL0VSgtKAA16IOStreamProtocolRzlF">tlsClientConnectionNew(baseIoStream:serverIdentity:)</a>
               </li>
               <li class="nav-group-task">
@@ -2724,6 +2733,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO25unixMountIsSystemInternal10mountEntrySbx_tAA04UnixcH8ProtocolRzlF">unixMountIsSystemInternal(mountEntry:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO16unixMountPointAt9mountPath8timeReadAA04UnixcD3RefVSgSPys4Int8VGSg_Spys6UInt64VGSgtF">unixMountPointAt(mountPath:timeRead:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27unixMountPointsChangedSince4timeSbs6UInt64V_tF">unixMountPointsChangedSince(time:)</a>
@@ -5243,6 +5255,12 @@
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO26TLSCertificateRequestFlagsa">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSChannelBindingErrora">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO21TLSChannelBindingTypea">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSDatabaseLookupFlagsa">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -7578,6 +7596,7 @@
             <h1>DBusObjectProxyProtocol</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">DBusObjectProxyProtocol</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/DBusObjectProtocol.html">DBusObjectProtocol</a></span><span class="p">,</span> <span class="kt">ObjectProtocol</span></code></pre>
 
                 </div>
@@ -7592,6 +7611,9 @@ with one or more D-Bus interfaces. Normally, you don&rsquo;t instantiate
 a <code>GDBusObjectProxy</code> yourself - typically <code>GDBusObjectManagerClient</code>
 is used to obtain it.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusAuthObserver-Emblem.swift#L6544-L6551">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -7685,7 +7707,7 @@ is used to obtain it.</p>
                     <code>
                     <a name="/s:3GIO23DBusObjectProxyProtocolPAAE4bind8property2to_5flags13transformFrom0J2To04GLibC010BindingRefVSgAA0bcD12PropertyNameO_qd_0_qd__AJ0N5FlagsVSbAJ05ValueO0V_AStcSbAS_AStctAJ0pqE0Rd__AJ0cE0Rd_0_r0_lF"></a>
                     <a name="//apple_ref/swift/Method/bind(property:to:_:flags:transformFrom:transformTo:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DBusObjectProxyProtocolPAAE4bind8property2to_5flags13transformFrom0J2To04GLibC010BindingRefVSgAA0bcD12PropertyNameO_qd_0_qd__AJ0N5FlagsVSbAJ05ValueO0V_AStcSbAS_AStctAJ0pqE0Rd__AJ0cE0Rd_0_r0_lF">bind(property:to:_:flags:transformFrom:transformTo:)</a>
+                    <a class="token" href="#/s:3GIO23DBusObjectProxyProtocolPAAE4bind8property2to_5flags13transformFrom0J2To04GLibC010BindingRefVSgAA0bcD12PropertyNameO_qd_0_qd__AJ0N5FlagsVSbAJ05ValueO0V_AStcSbAS_AStctAJ0pqE0Rd__AJ0cE0Rd_0_r0_lF">bind(property:<wbr>to:<wbr>_:<wbr>flags:<wbr>transformFrom:<wbr>transformTo:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7803,7 +7825,7 @@ is used to obtain it.</p>
                     <code>
                     <a name="/s:3GIO23DBusObjectProxyProtocolPAAE3get8property04GLibC05ValueCAA0bcD12PropertyNameO_tF"></a>
                     <a name="//apple_ref/swift/Method/get(property:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DBusObjectProxyProtocolPAAE3get8property04GLibC05ValueCAA0bcD12PropertyNameO_tF">get(property:)</a>
+                    <a class="token" href="#/s:3GIO23DBusObjectProxyProtocolPAAE3get8property04GLibC05ValueCAA0bcD12PropertyNameO_tF">get(property:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7860,7 +7882,7 @@ is used to obtain it.</p>
                     <code>
                     <a name="/s:3GIO23DBusObjectProxyProtocolPAAE3set8property5valueyAA0bcD12PropertyNameO_04GLibC05ValueCtF"></a>
                     <a name="//apple_ref/swift/Method/set(property:value:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DBusObjectProxyProtocolPAAE3set8property5valueyAA0bcD12PropertyNameO_04GLibC05ValueCtF">set(property:value:)</a>
+                    <a class="token" href="#/s:3GIO23DBusObjectProxyProtocolPAAE3set8property5valueyAA0bcD12PropertyNameO_04GLibC05ValueCtF">set(property:<wbr>value:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7918,7 +7940,7 @@ is used to obtain it.</p>
                     <code>
                     <a name="/s:3GIO23DBusObjectProxyProtocolPAAE7connect6signal5flags2toSiAA0bcD10SignalNameO_04GLibC012ConnectFlagsVyyctF"></a>
                     <a name="//apple_ref/swift/Method/connect(signal:flags:to:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO23DBusObjectProxyProtocolPAAE7connect6signal5flags2toSiAA0bcD10SignalNameO_04GLibC012ConnectFlagsVyyctF">connect(signal:flags:to:)</a>
+                    <a class="token" href="#/s:3GIO23DBusObjectProxyProtocolPAAE7connect6signal5flags2toSiAA0bcD10SignalNameO_04GLibC012ConnectFlagsVyyctF">connect(signal:<wbr>flags:<wbr>to:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7999,10 +8021,10 @@ is used to obtain it.</p>
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/DBusObjectProxy%20Class:%20DBusObjectProxyProtocol%20extension%20(methods%20and%20fields)"></a>
+                <a name="/DBusObjectProxy%20Class%3A%20DBusObjectProxyProtocol%20extension%20%28methods%20and%20fields%29"></a>
                 <a name="//apple_ref/swift/Section/DBusObjectProxy Class: DBusObjectProxyProtocol extension (methods and fields)" class="dashAnchor"></a>
                 <div class="section-name-container">
-                  <a class="section-name-link" href="#/DBusObjectProxy%20Class:%20DBusObjectProxyProtocol%20extension%20(methods%20and%20fields)"></a>
+                  <a class="section-name-link" href="#/DBusObjectProxy%20Class%3A%20DBusObjectProxyProtocol%20extension%20%28methods%20and%20fields%29"></a>
                   <h3 class="section-name"><p>DBusObjectProxy Class: DBusObjectProxyProtocol extension (methods and fields)</p>
 </h3>
                 </div>
@@ -8084,8 +8106,8 @@ is used to obtain it.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.ict.griffith.edu.au/~rhexel/" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2020-09-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

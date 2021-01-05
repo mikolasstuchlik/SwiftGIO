@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="index.html">
-          GIO 2.64.4 Docs
+          GIO 2.66.4 Docs
         </a>
-         (88% documented)
+         (89% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx%2Egithub%2Eio%2FSwiftGIO%2Fdocsets%2FGIO%2Exml">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx.github.io%2FSwiftGIO%2Fdocsets%2FGIO.xml">
             <img class="header-icon" src="img/dash.png"/>
             Install in Dash
           </a>
@@ -2205,6 +2205,12 @@
                 <a class="nav-group-task-link" href="Extensions/TLSCertificateRequestFlags.html">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/TLSChannelBindingError.html">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/TLSChannelBindingType.html">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Extensions/TLSDatabaseLookupFlags.html">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -2648,6 +2654,9 @@
                 <a class="nav-group-task-link" href="Functions.html#/s:3GIO20tlsBackendGetDefaultAA13TLSBackendRefVSgyF">tlsBackendGetDefault()</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Functions.html#/s:3GIO27tlsChannelBindingErrorQuarks6UInt32VyF">tlsChannelBindingErrorQuark()</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Functions.html#/s:3GIO22tlsClientConnectionNew12baseIoStream14serverIdentityAA09TLSClientD3RefVSgx_AA017SocketConnectableL0VSgtKAA16IOStreamProtocolRzlF">tlsClientConnectionNew(baseIoStream:serverIdentity:)</a>
               </li>
               <li class="nav-group-task">
@@ -2724,6 +2733,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Functions.html#/s:3GIO25unixMountIsSystemInternal10mountEntrySbx_tAA04UnixcH8ProtocolRzlF">unixMountIsSystemInternal(mountEntry:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Functions.html#/s:3GIO16unixMountPointAt9mountPath8timeReadAA04UnixcD3RefVSgSPys4Int8VGSg_Spys6UInt64VGSgtF">unixMountPointAt(mountPath:timeRead:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Functions.html#/s:3GIO27unixMountPointsChangedSince4timeSbs6UInt64V_tF">unixMountPointsChangedSince(time:)</a>
@@ -5241,6 +5253,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Typealiases.html#/s:3GIO26TLSCertificateRequestFlagsa">TLSCertificateRequestFlags</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Typealiases.html#/s:3GIO22TLSChannelBindingErrora">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Typealiases.html#/s:3GIO21TLSChannelBindingTypea">TLSChannelBindingType</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Typealiases.html#/s:3GIO22TLSDatabaseLookupFlagsa">TLSDatabaseLookupFlags</a>
@@ -8984,7 +9002,7 @@ encoding selected for the filesystem it is in then the copy name will not be set
                       <div class="abstract">
                         <p>A key in the &ldquo;standard&rdquo; namespace for getting the description of the file.
 The description is a utf8 string that describes the file, generally containing
-the filename, but can also contain furter information. Example descriptions
+the filename, but can also contain further information. Example descriptions
 could be &ldquo;filename (on hostname)&rdquo; for a remote file or &ldquo;filename (in trash)&rdquo;
 for a file in the trash. This is useful for instance as the window title
 when displaying a directory or for a bookmarks menu.</p>
@@ -9020,8 +9038,8 @@ when displaying a directory or for a bookmarks menu.</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>A key in the &ldquo;standard&rdquo; namespace for getting the display name of the file.
-A display name is guaranteed to be in UTF8 and can thus be displayed in
-the UI.
+A display name is guaranteed to be in UTF-8 and can thus be displayed in
+the UI. It is guaranteed to be set on every file.
 Corresponding <code>GFileAttributeType</code> is <code>G_FILE_ATTRIBUTE_TYPE_STRING</code>.</p>
 
                       </div>
@@ -9318,7 +9336,8 @@ at <code>G_FILE_ATTRIBUTE_STANDARD_SYMLINK_TARGET</code> for the persistent URI.
                       <div class="abstract">
                         <p>A key in the &ldquo;standard&rdquo; namespace for getting the name of the file.
 The name is the on-disk filename which may not be in any known encoding,
-and can thus not be generally displayed as is.
+and can thus not be generally displayed as is. It is guaranteed to be set on
+every file.
 Use <code>G_FILE_ATTRIBUTE_STANDARD_DISPLAY_NAME</code> if you need to display the
 name in a user interface.
 Corresponding <code>GFileAttributeType</code> is <code>G_FILE_ATTRIBUTE_TYPE_BYTE_STRING</code>.</p>
@@ -9333,7 +9352,7 @@ Corresponding <code>GFileAttributeType</code> is <code>G_FILE_ATTRIBUTE_TYPE_BYT
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L298">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L299">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9364,7 +9383,7 @@ Corresponding <code>GFileAttributeType</code> is <code>G_FILE_ATTRIBUTE_TYPE_UIN
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L302">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L303">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9399,7 +9418,7 @@ was zero.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L310">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L311">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9431,7 +9450,7 @@ The value for this key should contain a <code>GIcon</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L315">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L316">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9463,7 +9482,7 @@ is a symlink. Corresponding <code>GFileAttributeType</code> is
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L320">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L321">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9495,7 +9514,7 @@ Corresponding <code>GFileAttributeType</code> is <code>G_FILE_ATTRIBUTE_TYPE_STR
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L325">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L326">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9527,7 +9546,7 @@ The value for this key should contain a <code>GFileType</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L330">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L331">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9559,7 +9578,7 @@ This attribute is <code>true</code> if thumbnailing failed. Corresponding
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L335">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L336">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9596,7 +9615,7 @@ it indicates that thumbnailing may be attempted again and may succeed.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L345">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L346">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9628,7 +9647,7 @@ image. Corresponding <code>GFileAttributeType</code> is
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L350">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L351">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9661,7 +9680,7 @@ file was last accessed, in seconds since the UNIX epoch.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L356">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L357">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9694,7 +9713,7 @@ the file was last accessed. This should be used in conjunction with
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L362">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L363">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9729,7 +9748,7 @@ UNIX epoch.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L370">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L371">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9762,7 +9781,7 @@ the file was last changed. This should be used in conjunction with
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L376">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L377">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9785,7 +9804,8 @@ Corresponding <code>GFileAttributeType</code> is <code>G_FILE_ATTRIBUTE_TYPE_UIN
 and contains the time since the file was created, in seconds since the UNIX
 epoch.</p>
 
-<p>This corresponds to the NTFS ctime.</p>
+<p>This may correspond to Linux stx_btime, FreeBSD st_birthtim, NetBSD
+st_birthtime or NTFS ctime.</p>
 
                       </div>
                       <div class="declaration">
@@ -9797,7 +9817,7 @@ epoch.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L384">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L386">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9830,7 +9850,7 @@ the file was created. This should be used in conjunction with
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L390">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L392">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9863,7 +9883,7 @@ file was modified, in seconds since the UNIX epoch.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L396">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L398">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9896,7 +9916,7 @@ the file was last modified. This should be used in conjunction with
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L402">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L404">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9929,7 +9949,7 @@ Corresponding <code>GFileAttributeType</code> is <code>G_FILE_ATTRIBUTE_TYPE_STR
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L408">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L410">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9961,7 +9981,7 @@ Corresponding <code>GFileAttributeType</code> is <code>G_FILE_ATTRIBUTE_TYPE_UIN
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L413">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L415">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9994,7 +10014,7 @@ was trashed. Corresponding <code>GFileAttributeType</code> is
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L419">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L421">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10026,7 +10046,7 @@ Corresponding <code>GFileAttributeType</code> is <code>G_FILE_ATTRIBUTE_TYPE_UIN
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L424">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L426">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10058,7 +10078,7 @@ Corresponding <code>GFileAttributeType</code> is <code>G_FILE_ATTRIBUTE_TYPE_UIN
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L429">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L431">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10091,7 +10111,7 @@ available for UNIX file systems. Corresponding <code>GFileAttributeType</code> i
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L435">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L437">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10123,7 +10143,7 @@ Corresponding <code>GFileAttributeType</code> is <code>G_FILE_ATTRIBUTE_TYPE_UIN
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L440">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L442">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10155,7 +10175,7 @@ This attribute is only available for UNIX file systems. Corresponding
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L445">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L447">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10189,7 +10209,7 @@ Corresponding <code>GFileAttributeType</code> is <code>G_FILE_ATTRIBUTE_TYPE_BOO
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L452">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L454">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10224,7 +10244,7 @@ Corresponding <code>GFileAttributeType</code> is <code>G_FILE_ATTRIBUTE_TYPE_UIN
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L460">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L462">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10257,7 +10277,7 @@ for UNIX file systems. Corresponding <code>GFileAttributeType</code> is
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L466">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L468">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10290,7 +10310,7 @@ is <code>G_FILE_ATTRIBUTE_TYPE_UINT32</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L472">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L474">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10322,7 +10342,7 @@ Corresponding <code>GFileAttributeType</code> is <code>G_FILE_ATTRIBUTE_TYPE_UIN
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L477">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L479">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10353,7 +10373,7 @@ See <a href="#extending-gio">Extending GIO</a>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L481">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L483">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10388,7 +10408,7 @@ for application-wide actions.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L489">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L491">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10419,7 +10439,7 @@ menus that are linked from this item.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L493">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L495">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10455,7 +10475,7 @@ for &lsquo;verbs&rsquo; (ie: stock icons).</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L502">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L504">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10485,7 +10505,7 @@ for &lsquo;verbs&rsquo; (ie: stock icons).</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L505">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L507">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10518,7 +10538,7 @@ will be activated.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L511">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L513">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10552,7 +10572,7 @@ as a header.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L518">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L520">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10584,7 +10604,7 @@ as a header.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L523">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L525">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10645,7 +10665,7 @@ See <a href="#extending-gio">Extending GIO</a>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L529">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L531">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10676,7 +10696,7 @@ See <a href="#extending-gio">Extending GIO</a>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L533">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L535">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10707,7 +10727,7 @@ See <a href="#extending-gio">Extending GIO</a>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L537">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L539">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10737,7 +10757,7 @@ See <a href="#extending-gio">Extending GIO</a>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L540">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L542">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10768,7 +10788,7 @@ See <a href="#extending-gio">Extending GIO</a>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L544">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L546">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10799,7 +10819,7 @@ Used by TLS servers.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L548">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L550">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10830,7 +10850,7 @@ is the most common purpose in use. Used by TLS clients.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L552">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L554">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10861,7 +10881,7 @@ See <a href="#extending-gio">Extending GIO</a>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L556">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L558">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10899,7 +10919,7 @@ a &ldquo;Network&rdquo; heading and <code>device</code> volumes under a &ldquo;D
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L567">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L569">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10929,7 +10949,7 @@ a &ldquo;Network&rdquo; heading and <code>device</code> volumes under a &ldquo;D
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L576">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L578">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10959,7 +10979,7 @@ a &ldquo;Network&rdquo; heading and <code>device</code> volumes under a &ldquo;D
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L579">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L581">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -10989,7 +11009,7 @@ a &ldquo;Network&rdquo; heading and <code>device</code> volumes under a &ldquo;D
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L582">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L584">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11019,7 +11039,7 @@ a &ldquo;Network&rdquo; heading and <code>device</code> volumes under a &ldquo;D
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L585">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L587">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11050,7 +11070,7 @@ See <a href="#extending-gio">Extending GIO</a>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L589">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-constants.swift#L591">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -11063,8 +11083,8 @@ See <a href="#extending-gio">Extending GIO</a>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.ict.griffith.edu.au/~rhexel/" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2020-09-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

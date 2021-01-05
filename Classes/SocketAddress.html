@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          GIO 2.64.4 Docs
+          GIO 2.66.4 Docs
         </a>
-         (88% documented)
+         (89% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx%2Egithub%2Eio%2FSwiftGIO%2Fdocsets%2FGIO%2Exml">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx.github.io%2FSwiftGIO%2Fdocsets%2FGIO.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -2205,6 +2205,12 @@
                 <a class="nav-group-task-link" href="../Extensions/TLSCertificateRequestFlags.html">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingError.html">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingType.html">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/TLSDatabaseLookupFlags.html">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -2648,6 +2654,9 @@
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO20tlsBackendGetDefaultAA13TLSBackendRefVSgyF">tlsBackendGetDefault()</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27tlsChannelBindingErrorQuarks6UInt32VyF">tlsChannelBindingErrorQuark()</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO22tlsClientConnectionNew12baseIoStream14serverIdentityAA09TLSClientD3RefVSgx_AA017SocketConnectableL0VSgtKAA16IOStreamProtocolRzlF">tlsClientConnectionNew(baseIoStream:serverIdentity:)</a>
               </li>
               <li class="nav-group-task">
@@ -2724,6 +2733,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO25unixMountIsSystemInternal10mountEntrySbx_tAA04UnixcH8ProtocolRzlF">unixMountIsSystemInternal(mountEntry:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO16unixMountPointAt9mountPath8timeReadAA04UnixcD3RefVSgSPys4Int8VGSg_Spys6UInt64VGSgtF">unixMountPointAt(mountPath:timeRead:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27unixMountPointsChangedSince4timeSbs6UInt64V_tF">unixMountPointsChangedSince(time:)</a>
@@ -5243,6 +5255,12 @@
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO26TLSCertificateRequestFlagsa">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSChannelBindingErrora">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO21TLSChannelBindingTypea">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSDatabaseLookupFlagsa">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -7578,6 +7596,7 @@
             <h1>SocketAddress</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">SocketAddress</span> <span class="p">:</span> <span class="kt">GLibObject</span><span class="o">.</span><span class="kt">Object</span><span class="p">,</span> <span class="kt"><a href="../Protocols/SocketAddressProtocol.html">SocketAddressProtocol</a></span></code></pre>
 
                 </div>
@@ -7590,6 +7609,9 @@ Use <code>SocketAddress</code> as a strong reference or owner of a <code>GSocket
 sockets API. This is an abstract class; use <code>GInetSocketAddress</code>
 for internet sockets, or <code>GUnixSocketAddress</code> for UNIX domain sockets.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8646-L8785">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -7602,7 +7624,7 @@ for internet sockets, or <code>GUnixSocketAddress</code> for UNIX domain sockets
                     <code>
                     <a name="/s:3GIO13SocketAddressCyACSpySo08_GSocketC0VGcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13SocketAddressCyACSpySo08_GSocketC0VGcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO13SocketAddressCyACSpySo08_GSocketC0VGcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7646,7 +7668,7 @@ i.e., ownership is transferred to the <code>SocketAddress</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8636-L8638">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8651-L8653">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7656,7 +7678,7 @@ i.e., ownership is transferred to the <code>SocketAddress</code> instance.</p>
                     <code>
                     <a name="/s:3GIO13SocketAddressCyACSPySo08_GSocketC0VGcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13SocketAddressCyACSPySo08_GSocketC0VGcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO13SocketAddressCyACSPySo08_GSocketC0VGcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7698,7 +7720,7 @@ i.e., ownership is transferred to the <code>SocketAddress</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8644-L8646">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8659-L8661">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7708,7 +7730,7 @@ i.e., ownership is transferred to the <code>SocketAddress</code> instance.</p>
                     <code>
                     <a name="/s:3GIO13SocketAddressC8gpointerACSgSvSg_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(gpointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13SocketAddressC8gpointerACSgSvSg_tcfc">init(gpointer:)</a>
+                    <a class="token" href="#/s:3GIO13SocketAddressC8gpointerACSgSvSg_tcfc">init(gpointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7751,7 +7773,7 @@ i.e., ownership is transferred to the <code>SocketAddress</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8653-L8656">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8668-L8671">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7761,7 +7783,7 @@ i.e., ownership is transferred to the <code>SocketAddress</code> instance.</p>
                     <code>
                     <a name="/s:3GIO13SocketAddressC13gconstpointerACSgSVSg_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(gconstpointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13SocketAddressC13gconstpointerACSgSVSg_tcfc">init(gconstpointer:)</a>
+                    <a class="token" href="#/s:3GIO13SocketAddressC13gconstpointerACSgSVSg_tcfc">init(gconstpointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7804,7 +7826,7 @@ i.e., ownership is transferred to the <code>SocketAddress</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8663-L8666">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8678-L8681">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7814,7 +7836,7 @@ i.e., ownership is transferred to the <code>SocketAddress</code> instance.</p>
                     <code>
                     <a name="/s:3GIO13SocketAddressCyACSgSPySo08_GSocketC0VGSgcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13SocketAddressCyACSgSPySo08_GSocketC0VGSgcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO13SocketAddressCyACSgSPySo08_GSocketC0VGSgcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7856,7 +7878,7 @@ i.e., ownership is transferred to the <code>SocketAddress</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8672-L8675">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8687-L8690">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7866,7 +7888,7 @@ i.e., ownership is transferred to the <code>SocketAddress</code> instance.</p>
                     <code>
                     <a name="/s:3GIO13SocketAddressCyACSgSpySo08_GSocketC0VGSgcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13SocketAddressCyACSgSpySo08_GSocketC0VGSgcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO13SocketAddressCyACSgSpySo08_GSocketC0VGSgcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7908,7 +7930,7 @@ i.e., ownership is transferred to the <code>SocketAddress</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8681-L8684">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8696-L8699">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7918,7 +7940,7 @@ i.e., ownership is transferred to the <code>SocketAddress</code> instance.</p>
                     <code>
                     <a name="/s:3GIO13SocketAddressC9retainingACSpySo08_GSocketC0VG_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retaining:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13SocketAddressC9retainingACSpySo08_GSocketC0VG_tcfc">init(retaining:)</a>
+                    <a class="token" href="#/s:3GIO13SocketAddressC9retainingACSpySo08_GSocketC0VG_tcfc">init(retaining:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7960,7 +7982,7 @@ i.e., ownership is transferred to the <code>SocketAddress</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8690-L8692">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8705-L8707">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7970,7 +7992,7 @@ i.e., ownership is transferred to the <code>SocketAddress</code> instance.</p>
                     <code>
                     <a name="/s:3GIO13SocketAddressC06socketC0ACx_tcAA0bC8ProtocolRzlufc"></a>
                     <a name="//apple_ref/swift/Method/init(socketAddress:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13SocketAddressC06socketC0ACx_tcAA0bC8ProtocolRzlufc">init(socketAddress:)</a>
+                    <a class="token" href="#/s:3GIO13SocketAddressC06socketC0ACx_tcAA0bC8ProtocolRzlufc">init(socketAddress:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8011,7 +8033,7 @@ Will retain <code>GSocketAddress</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8697-L8699">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8712-L8714">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8021,7 +8043,7 @@ Will retain <code>GSocketAddress</code>.</p>
                     <code>
                     <a name="/s:3GIO13SocketAddressC8cPointerACSpyxG_tclufc"></a>
                     <a name="//apple_ref/swift/Method/init(cPointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13SocketAddressC8cPointerACSpyxG_tclufc">init(cPointer:)</a>
+                    <a class="token" href="#/s:3GIO13SocketAddressC8cPointerACSpyxG_tclufc">init(cPointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8062,7 +8084,7 @@ Will retain <code>GSocketAddress</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8704-L8706">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8719-L8721">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8072,7 +8094,7 @@ Will retain <code>GSocketAddress</code>.</p>
                     <code>
                     <a name="/s:3GIO13SocketAddressC17retainingCPointerACSpyxG_tclufc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingCPointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13SocketAddressC17retainingCPointerACSpyxG_tclufc">init(retainingCPointer:)</a>
+                    <a class="token" href="#/s:3GIO13SocketAddressC17retainingCPointerACSpyxG_tclufc">init(retainingCPointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8113,7 +8135,7 @@ Will retain <code>GSocketAddress</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8711-L8713">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8726-L8728">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8123,7 +8145,7 @@ Will retain <code>GSocketAddress</code>.</p>
                     <code>
                     <a name="/s:3GIO13SocketAddressC3rawACSV_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13SocketAddressC3rawACSV_tcfc">init(raw:)</a>
+                    <a class="token" href="#/s:3GIO13SocketAddressC3rawACSV_tcfc">init(raw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8164,7 +8186,7 @@ Will retain <code>GSocketAddress</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8718-L8720">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8733-L8735">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8174,7 +8196,7 @@ Will retain <code>GSocketAddress</code>.</p>
                     <code>
                     <a name="/s:3GIO13SocketAddressC12retainingRawACSV_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingRaw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13SocketAddressC12retainingRawACSV_tcfc">init(retainingRaw:)</a>
+                    <a class="token" href="#/s:3GIO13SocketAddressC12retainingRawACSV_tcfc">init(retainingRaw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8196,7 +8218,7 @@ Will retain <code>GSocketAddress</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8724-L8726">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8739-L8741">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8206,7 +8228,7 @@ Will retain <code>GSocketAddress</code>.</p>
                     <code>
                     <a name="/s:3GIO13SocketAddressC3rawACSv_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13SocketAddressC3rawACSv_tcfc">init(raw:)</a>
+                    <a class="token" href="#/s:3GIO13SocketAddressC3rawACSv_tcfc">init(raw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8247,7 +8269,7 @@ Will retain <code>GSocketAddress</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8731-L8733">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8746-L8748">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8257,7 +8279,7 @@ Will retain <code>GSocketAddress</code>.</p>
                     <code>
                     <a name="/s:3GIO13SocketAddressC12retainingRawACSv_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingRaw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13SocketAddressC12retainingRawACSv_tcfc">init(retainingRaw:)</a>
+                    <a class="token" href="#/s:3GIO13SocketAddressC12retainingRawACSv_tcfc">init(retainingRaw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8298,7 +8320,7 @@ Will retain <code>GSocketAddress</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8738-L8740">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8753-L8755">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8308,7 +8330,7 @@ Will retain <code>GSocketAddress</code>.</p>
                     <code>
                     <a name="/s:3GIO13SocketAddressC13opaquePointerACs06OpaqueE0V_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(opaquePointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13SocketAddressC13opaquePointerACs06OpaqueE0V_tcfc">init(opaquePointer:)</a>
+                    <a class="token" href="#/s:3GIO13SocketAddressC13opaquePointerACs06OpaqueE0V_tcfc">init(opaquePointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8349,7 +8371,7 @@ Will retain <code>GSocketAddress</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8745-L8747">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8760-L8762">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8359,7 +8381,7 @@ Will retain <code>GSocketAddress</code>.</p>
                     <code>
                     <a name="/s:3GIO13SocketAddressC22retainingOpaquePointerACs0eF0V_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingOpaquePointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13SocketAddressC22retainingOpaquePointerACs0eF0V_tcfc">init(retainingOpaquePointer:)</a>
+                    <a class="token" href="#/s:3GIO13SocketAddressC22retainingOpaquePointerACs0eF0V_tcfc">init(retainingOpaquePointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8400,7 +8422,7 @@ Will retain <code>GSocketAddress</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8752-L8754">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8767-L8769">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8410,7 +8432,7 @@ Will retain <code>GSocketAddress</code>.</p>
                     <code>
                     <a name="/s:3GIO13SocketAddressC6native3lenACSvSg_Sitcfc"></a>
                     <a name="//apple_ref/swift/Method/init(native:len:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13SocketAddressC6native3lenACSvSg_Sitcfc">init(native:len:)</a>
+                    <a class="token" href="#/s:3GIO13SocketAddressC6native3lenACSvSg_Sitcfc">init(native:<wbr>len:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8432,7 +8454,7 @@ struct sockaddr <code>native</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8758-L8761">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8773-L8776">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8442,7 +8464,7 @@ struct sockaddr <code>native</code>.</p>
                     <code>
                     <a name="/s:3GIO13SocketAddressC7newFrom6native3lenACSgSvSg_SitFZ"></a>
                     <a name="//apple_ref/swift/Method/newFrom(native:len:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO13SocketAddressC7newFrom6native3lenACSgSvSg_SitFZ">newFrom(native:len:)</a>
+                    <a class="token" href="#/s:3GIO13SocketAddressC7newFrom6native3lenACSgSvSg_SitFZ">newFrom(native:<wbr>len:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8464,7 +8486,7 @@ struct sockaddr <code>native</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8765-L8768">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8780-L8783">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8477,8 +8499,8 @@ struct sockaddr <code>native</code>.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.ict.griffith.edu.au/~rhexel/" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2020-09-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

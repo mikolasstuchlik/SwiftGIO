@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          GIO 2.64.4 Docs
+          GIO 2.66.4 Docs
         </a>
-         (88% documented)
+         (89% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx%2Egithub%2Eio%2FSwiftGIO%2Fdocsets%2FGIO%2Exml">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx.github.io%2FSwiftGIO%2Fdocsets%2FGIO.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -2205,6 +2205,12 @@
                 <a class="nav-group-task-link" href="../Extensions/TLSCertificateRequestFlags.html">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingError.html">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingType.html">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/TLSDatabaseLookupFlags.html">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -2648,6 +2654,9 @@
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO20tlsBackendGetDefaultAA13TLSBackendRefVSgyF">tlsBackendGetDefault()</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27tlsChannelBindingErrorQuarks6UInt32VyF">tlsChannelBindingErrorQuark()</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO22tlsClientConnectionNew12baseIoStream14serverIdentityAA09TLSClientD3RefVSgx_AA017SocketConnectableL0VSgtKAA16IOStreamProtocolRzlF">tlsClientConnectionNew(baseIoStream:serverIdentity:)</a>
               </li>
               <li class="nav-group-task">
@@ -2724,6 +2733,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO25unixMountIsSystemInternal10mountEntrySbx_tAA04UnixcH8ProtocolRzlF">unixMountIsSystemInternal(mountEntry:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO16unixMountPointAt9mountPath8timeReadAA04UnixcD3RefVSgSPys4Int8VGSg_Spys6UInt64VGSgtF">unixMountPointAt(mountPath:timeRead:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27unixMountPointsChangedSince4timeSbs6UInt64V_tF">unixMountPointsChangedSince(time:)</a>
@@ -5243,6 +5255,12 @@
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO26TLSCertificateRequestFlagsa">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSChannelBindingErrora">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO21TLSChannelBindingTypea">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSDatabaseLookupFlagsa">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -7578,6 +7596,7 @@
             <h1>UnixMountPoint</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">UnixMountPoint</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/UnixMountPointProtocol.html">UnixMountPointProtocol</a></span></code></pre>
 
                 </div>
@@ -7589,6 +7608,9 @@ Use <code>UnixMountPoint</code> as a strong reference or owner of a <code>GUnixM
 <p>Defines a Unix mount point (e.g. <filename>/dev</filename>).
 This corresponds roughly to a fstab entry.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-UnixConnectionPrivate-VfsClass.swift#L3197-L3349">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -7624,7 +7646,7 @@ This corresponds roughly to a fstab entry.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-UnixConnectionPrivate-VfsClass.swift#L3190">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-UnixConnectionPrivate-VfsClass.swift#L3200">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7634,7 +7656,7 @@ This corresponds roughly to a fstab entry.</p>
                     <code>
                     <a name="/s:3GIO14UnixMountPointCyACSpySo06_GUnixcD0VGcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14UnixMountPointCyACSpySo06_GUnixcD0VGcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO14UnixMountPointCyACSpySo06_GUnixcD0VGcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7676,7 +7698,7 @@ i.e., ownership is transferred to the <code>UnixMountPoint</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-UnixConnectionPrivate-VfsClass.swift#L3196-L3198">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-UnixConnectionPrivate-VfsClass.swift#L3206-L3208">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7686,7 +7708,7 @@ i.e., ownership is transferred to the <code>UnixMountPoint</code> instance.</p>
                     <code>
                     <a name="/s:3GIO14UnixMountPointCyACSPySo06_GUnixcD0VGcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14UnixMountPointCyACSPySo06_GUnixcD0VGcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO14UnixMountPointCyACSPySo06_GUnixcD0VGcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7728,7 +7750,7 @@ i.e., ownership is transferred to the <code>UnixMountPoint</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-UnixConnectionPrivate-VfsClass.swift#L3204-L3206">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-UnixConnectionPrivate-VfsClass.swift#L3214-L3216">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7738,7 +7760,7 @@ i.e., ownership is transferred to the <code>UnixMountPoint</code> instance.</p>
                     <code>
                     <a name="/s:3GIO14UnixMountPointC8gpointerACSgSvSg_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(gpointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14UnixMountPointC8gpointerACSgSvSg_tcfc">init(gpointer:)</a>
+                    <a class="token" href="#/s:3GIO14UnixMountPointC8gpointerACSgSvSg_tcfc">init(gpointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7781,7 +7803,7 @@ i.e., ownership is transferred to the <code>UnixMountPoint</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-UnixConnectionPrivate-VfsClass.swift#L3213-L3216">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-UnixConnectionPrivate-VfsClass.swift#L3223-L3226">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7791,7 +7813,7 @@ i.e., ownership is transferred to the <code>UnixMountPoint</code> instance.</p>
                     <code>
                     <a name="/s:3GIO14UnixMountPointC13gconstpointerACSgSVSg_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(gconstpointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14UnixMountPointC13gconstpointerACSgSVSg_tcfc">init(gconstpointer:)</a>
+                    <a class="token" href="#/s:3GIO14UnixMountPointC13gconstpointerACSgSVSg_tcfc">init(gconstpointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7834,7 +7856,7 @@ i.e., ownership is transferred to the <code>UnixMountPoint</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-UnixConnectionPrivate-VfsClass.swift#L3223-L3226">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-UnixConnectionPrivate-VfsClass.swift#L3233-L3236">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7844,7 +7866,7 @@ i.e., ownership is transferred to the <code>UnixMountPoint</code> instance.</p>
                     <code>
                     <a name="/s:3GIO14UnixMountPointCyACSgSPySo06_GUnixcD0VGSgcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14UnixMountPointCyACSgSPySo06_GUnixcD0VGSgcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO14UnixMountPointCyACSgSPySo06_GUnixcD0VGSgcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7886,7 +7908,7 @@ i.e., ownership is transferred to the <code>UnixMountPoint</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-UnixConnectionPrivate-VfsClass.swift#L3232-L3235">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-UnixConnectionPrivate-VfsClass.swift#L3242-L3245">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7896,7 +7918,7 @@ i.e., ownership is transferred to the <code>UnixMountPoint</code> instance.</p>
                     <code>
                     <a name="/s:3GIO14UnixMountPointCyACSgSpySo06_GUnixcD0VGSgcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14UnixMountPointCyACSgSpySo06_GUnixcD0VGSgcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO14UnixMountPointCyACSgSpySo06_GUnixcD0VGSgcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7938,7 +7960,7 @@ i.e., ownership is transferred to the <code>UnixMountPoint</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-UnixConnectionPrivate-VfsClass.swift#L3241-L3244">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-UnixConnectionPrivate-VfsClass.swift#L3251-L3254">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7948,7 +7970,7 @@ i.e., ownership is transferred to the <code>UnixMountPoint</code> instance.</p>
                     <code>
                     <a name="/s:3GIO14UnixMountPointC9retainingACSpySo06_GUnixcD0VG_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retaining:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14UnixMountPointC9retainingACSpySo06_GUnixcD0VG_tcfc">init(retaining:)</a>
+                    <a class="token" href="#/s:3GIO14UnixMountPointC9retainingACSpySo06_GUnixcD0VG_tcfc">init(retaining:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7990,7 +8012,7 @@ i.e., ownership is transferred to the <code>UnixMountPoint</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-UnixConnectionPrivate-VfsClass.swift#L3250-L3253">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-UnixConnectionPrivate-VfsClass.swift#L3260-L3263">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8000,7 +8022,7 @@ i.e., ownership is transferred to the <code>UnixMountPoint</code> instance.</p>
                     <code>
                     <a name="/s:3GIO14UnixMountPointCyACxcAA0bcD8ProtocolRzlufc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14UnixMountPointCyACxcAA0bcD8ProtocolRzlufc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO14UnixMountPointCyACxcAA0bcD8ProtocolRzlufc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8041,7 +8063,7 @@ i.e., ownership is transferred to the <code>UnixMountPoint</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-UnixConnectionPrivate-VfsClass.swift#L3258-L3261">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-UnixConnectionPrivate-VfsClass.swift#L3268-L3271">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8051,7 +8073,7 @@ i.e., ownership is transferred to the <code>UnixMountPoint</code> instance.</p>
                     <code>
                     <a name="/s:3GIO14UnixMountPointC8cPointerACSpyxG_tclufc"></a>
                     <a name="//apple_ref/swift/Method/init(cPointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14UnixMountPointC8cPointerACSpyxG_tclufc">init(cPointer:)</a>
+                    <a class="token" href="#/s:3GIO14UnixMountPointC8cPointerACSpyxG_tclufc">init(cPointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8092,7 +8114,7 @@ i.e., ownership is transferred to the <code>UnixMountPoint</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-UnixConnectionPrivate-VfsClass.swift#L3271-L3273">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-UnixConnectionPrivate-VfsClass.swift#L3281-L3283">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8102,7 +8124,7 @@ i.e., ownership is transferred to the <code>UnixMountPoint</code> instance.</p>
                     <code>
                     <a name="/s:3GIO14UnixMountPointC17retainingCPointerACSpyxG_tclufc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingCPointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14UnixMountPointC17retainingCPointerACSpyxG_tclufc">init(retainingCPointer:)</a>
+                    <a class="token" href="#/s:3GIO14UnixMountPointC17retainingCPointerACSpyxG_tclufc">init(retainingCPointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8143,7 +8165,7 @@ i.e., ownership is transferred to the <code>UnixMountPoint</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-UnixConnectionPrivate-VfsClass.swift#L3278-L3281">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-UnixConnectionPrivate-VfsClass.swift#L3288-L3291">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8153,7 +8175,7 @@ i.e., ownership is transferred to the <code>UnixMountPoint</code> instance.</p>
                     <code>
                     <a name="/s:3GIO14UnixMountPointC3rawACSV_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14UnixMountPointC3rawACSV_tcfc">init(raw:)</a>
+                    <a class="token" href="#/s:3GIO14UnixMountPointC3rawACSV_tcfc">init(raw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8194,7 +8216,7 @@ i.e., ownership is transferred to the <code>UnixMountPoint</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-UnixConnectionPrivate-VfsClass.swift#L3286-L3288">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-UnixConnectionPrivate-VfsClass.swift#L3296-L3298">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8204,7 +8226,7 @@ i.e., ownership is transferred to the <code>UnixMountPoint</code> instance.</p>
                     <code>
                     <a name="/s:3GIO14UnixMountPointC12retainingRawACSV_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingRaw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14UnixMountPointC12retainingRawACSV_tcfc">init(retainingRaw:)</a>
+                    <a class="token" href="#/s:3GIO14UnixMountPointC12retainingRawACSV_tcfc">init(retainingRaw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8226,7 +8248,7 @@ i.e., ownership is transferred to the <code>UnixMountPoint</code> instance.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-UnixConnectionPrivate-VfsClass.swift#L3292-L3295">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-UnixConnectionPrivate-VfsClass.swift#L3302-L3305">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8236,7 +8258,7 @@ i.e., ownership is transferred to the <code>UnixMountPoint</code> instance.</p>
                     <code>
                     <a name="/s:3GIO14UnixMountPointC3rawACSv_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14UnixMountPointC3rawACSv_tcfc">init(raw:)</a>
+                    <a class="token" href="#/s:3GIO14UnixMountPointC3rawACSv_tcfc">init(raw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8277,7 +8299,7 @@ i.e., ownership is transferred to the <code>UnixMountPoint</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-UnixConnectionPrivate-VfsClass.swift#L3300-L3302">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-UnixConnectionPrivate-VfsClass.swift#L3310-L3312">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8287,7 +8309,7 @@ i.e., ownership is transferred to the <code>UnixMountPoint</code> instance.</p>
                     <code>
                     <a name="/s:3GIO14UnixMountPointC12retainingRawACSv_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingRaw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14UnixMountPointC12retainingRawACSv_tcfc">init(retainingRaw:)</a>
+                    <a class="token" href="#/s:3GIO14UnixMountPointC12retainingRawACSv_tcfc">init(retainingRaw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8328,7 +8350,7 @@ i.e., ownership is transferred to the <code>UnixMountPoint</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-UnixConnectionPrivate-VfsClass.swift#L3307-L3310">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-UnixConnectionPrivate-VfsClass.swift#L3317-L3320">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8338,7 +8360,7 @@ i.e., ownership is transferred to the <code>UnixMountPoint</code> instance.</p>
                     <code>
                     <a name="/s:3GIO14UnixMountPointC13opaquePointerACs06OpaqueF0V_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(opaquePointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14UnixMountPointC13opaquePointerACs06OpaqueF0V_tcfc">init(opaquePointer:)</a>
+                    <a class="token" href="#/s:3GIO14UnixMountPointC13opaquePointerACs06OpaqueF0V_tcfc">init(opaquePointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8379,7 +8401,7 @@ i.e., ownership is transferred to the <code>UnixMountPoint</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-UnixConnectionPrivate-VfsClass.swift#L3315-L3317">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-UnixConnectionPrivate-VfsClass.swift#L3325-L3327">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8389,7 +8411,7 @@ i.e., ownership is transferred to the <code>UnixMountPoint</code> instance.</p>
                     <code>
                     <a name="/s:3GIO14UnixMountPointC22retainingOpaquePointerACs0fG0V_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingOpaquePointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO14UnixMountPointC22retainingOpaquePointerACs0fG0V_tcfc">init(retainingOpaquePointer:)</a>
+                    <a class="token" href="#/s:3GIO14UnixMountPointC22retainingOpaquePointerACs0fG0V_tcfc">init(retainingOpaquePointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8430,7 +8452,43 @@ i.e., ownership is transferred to the <code>UnixMountPoint</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-UnixConnectionPrivate-VfsClass.swift#L3322-L3325">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-UnixConnectionPrivate-VfsClass.swift#L3332-L3335">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:3GIO14UnixMountPointC2at9mountPath8timeReadACSgSPys4Int8VGSg_Spys6UInt64VGSgtFZ"></a>
+                    <a name="//apple_ref/swift/Method/at(mountPath:timeRead:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:3GIO14UnixMountPointC2at9mountPath8timeReadACSgSPys4Int8VGSg_Spys6UInt64VGSgtFZ">at(mountPath:<wbr>timeRead:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Gets a <code>GUnixMountPoint</code> for a given mount path. If <code>time_read</code> is set, it
+will be filled with a unix timestamp for checking if the mount points have
+changed since with <code>g_unix_mount_points_changed_since()</code>.</p>
+
+<p>If more mount points have the same mount path, the last matching mount point
+is returned.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@inlinable</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">at</span><span class="p">(</span><span class="nv">mountPath</span><span class="p">:</span> <span class="kt">UnsafePointer</span><span class="o">&lt;</span><span class="kt">CChar</span><span class="o">&gt;!</span><span class="p">,</span> <span class="nv">timeRead</span><span class="p">:</span> <span class="kt">UnsafeMutablePointer</span><span class="o">&lt;</span><span class="n">guint64</span><span class="o">&gt;!</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UnixMountPoint</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-UnixConnectionPrivate-VfsClass.swift#L3344-L3347">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8443,8 +8501,8 @@ i.e., ownership is transferred to the <code>UnixMountPoint</code> instance.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.ict.griffith.edu.au/~rhexel/" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2020-09-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

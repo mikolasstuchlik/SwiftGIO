@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          GIO 2.64.4 Docs
+          GIO 2.66.4 Docs
         </a>
-         (88% documented)
+         (89% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx%2Egithub%2Eio%2FSwiftGIO%2Fdocsets%2FGIO%2Exml">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx.github.io%2FSwiftGIO%2Fdocsets%2FGIO.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -2205,6 +2205,12 @@
                 <a class="nav-group-task-link" href="../Extensions/TLSCertificateRequestFlags.html">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingError.html">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingType.html">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/TLSDatabaseLookupFlags.html">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -2648,6 +2654,9 @@
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO20tlsBackendGetDefaultAA13TLSBackendRefVSgyF">tlsBackendGetDefault()</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27tlsChannelBindingErrorQuarks6UInt32VyF">tlsChannelBindingErrorQuark()</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO22tlsClientConnectionNew12baseIoStream14serverIdentityAA09TLSClientD3RefVSgx_AA017SocketConnectableL0VSgtKAA16IOStreamProtocolRzlF">tlsClientConnectionNew(baseIoStream:serverIdentity:)</a>
               </li>
               <li class="nav-group-task">
@@ -2724,6 +2733,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO25unixMountIsSystemInternal10mountEntrySbx_tAA04UnixcH8ProtocolRzlF">unixMountIsSystemInternal(mountEntry:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO16unixMountPointAt9mountPath8timeReadAA04UnixcD3RefVSgSPys4Int8VGSg_Spys6UInt64VGSgtF">unixMountPointAt(mountPath:timeRead:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27unixMountPointsChangedSince4timeSbs6UInt64V_tF">unixMountPointsChangedSince(time:)</a>
@@ -5243,6 +5255,12 @@
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO26TLSCertificateRequestFlagsa">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSChannelBindingErrora">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO21TLSChannelBindingTypea">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSDatabaseLookupFlagsa">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -7578,6 +7596,7 @@
             <h1>SubprocessProtocol</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SubprocessProtocol</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/InitableProtocol.html">InitableProtocol</a></span><span class="p">,</span> <span class="kt">ObjectProtocol</span></code></pre>
 
                 </div>
@@ -7642,6 +7661,9 @@ change of working directory, child setup functions, etc).</p>
 checked using functions such as <code>g_subprocess_get_if_exited()</code> (which
 are similar to the familiar WIFEXITED-style POSIX macros).</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L12943-L12950">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -7674,7 +7696,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L12930">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L12945">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7712,7 +7734,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L12933">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L12948">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7735,7 +7757,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                     <code>
                     <a name="/s:3GIO18SubprocessProtocolPAAE4bind8property2to_5flags13transformFrom0H2To10GLibObject10BindingRefVSgAA0B12PropertyNameO_qd_0_qd__AJ0M5FlagsVSbAJ05ValueN0V_AStcSbAS_AStctAJ0opC0Rd__AJ0lC0Rd_0_r0_lF"></a>
                     <a name="//apple_ref/swift/Method/bind(property:to:_:flags:transformFrom:transformTo:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE4bind8property2to_5flags13transformFrom0H2To10GLibObject10BindingRefVSgAA0B12PropertyNameO_qd_0_qd__AJ0M5FlagsVSbAJ05ValueN0V_AStcSbAS_AStctAJ0opC0Rd__AJ0lC0Rd_0_r0_lF">bind(property:to:_:flags:transformFrom:transformTo:)</a>
+                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE4bind8property2to_5flags13transformFrom0H2To10GLibObject10BindingRefVSgAA0B12PropertyNameO_qd_0_qd__AJ0M5FlagsVSbAJ05ValueN0V_AStcSbAS_AStctAJ0opC0Rd__AJ0lC0Rd_0_r0_lF">bind(property:<wbr>to:<wbr>_:<wbr>flags:<wbr>transformFrom:<wbr>transformTo:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7843,7 +7865,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13320-L13344">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13335-L13359">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7853,7 +7875,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                     <code>
                     <a name="/s:3GIO18SubprocessProtocolPAAE3get8property10GLibObject5ValueCAA0B12PropertyNameO_tF"></a>
                     <a name="//apple_ref/swift/Method/get(property:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE3get8property10GLibObject5ValueCAA0B12PropertyNameO_tF">get(property:)</a>
+                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE3get8property10GLibObject5ValueCAA0B12PropertyNameO_tF">get(property:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7900,7 +7922,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13349-L13353">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13364-L13368">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7910,7 +7932,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                     <code>
                     <a name="/s:3GIO18SubprocessProtocolPAAE3set8property5valueyAA0B12PropertyNameO_10GLibObject5ValueCtF"></a>
                     <a name="//apple_ref/swift/Method/set(property:value:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE3set8property5valueyAA0B12PropertyNameO_10GLibObject5ValueCtF">set(property:value:)</a>
+                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE3set8property5valueyAA0B12PropertyNameO_10GLibObject5ValueCtF">set(property:<wbr>value:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7958,7 +7980,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13359-L13361">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13374-L13376">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7968,7 +7990,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                     <code>
                     <a name="/s:3GIO18SubprocessProtocolPAAE7connect6signal5flags2toSiAA0B10SignalNameO_10GLibObject12ConnectFlagsVyyctF"></a>
                     <a name="//apple_ref/swift/Method/connect(signal:flags:to:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE7connect6signal5flags2toSiAA0B10SignalNameO_10GLibObject12ConnectFlagsVyyctF">connect(signal:flags:to:)</a>
+                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE7connect6signal5flags2toSiAA0B10SignalNameO_10GLibObject12ConnectFlagsVyyctF">connect(signal:<wbr>flags:<wbr>to:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8040,7 +8062,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                         <p>positive handler ID, or a value less than or equal to <code>0</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13400-L13419">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13415-L13434">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8049,10 +8071,10 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Subprocess%20Class:%20SubprocessProtocol%20extension%20(methods%20and%20fields)"></a>
+                <a name="/Subprocess%20Class%3A%20SubprocessProtocol%20extension%20%28methods%20and%20fields%29"></a>
                 <a name="//apple_ref/swift/Section/Subprocess Class: SubprocessProtocol extension (methods and fields)" class="dashAnchor"></a>
                 <div class="section-name-container">
-                  <a class="section-name-link" href="#/Subprocess%20Class:%20SubprocessProtocol%20extension%20(methods%20and%20fields)"></a>
+                  <a class="section-name-link" href="#/Subprocess%20Class%3A%20SubprocessProtocol%20extension%20%28methods%20and%20fields%29"></a>
                   <h3 class="section-name"><p>Subprocess Class: SubprocessProtocol extension (methods and fields)</p>
 </h3>
                 </div>
@@ -8063,7 +8085,7 @@ are similar to the familiar WIFEXITED-style POSIX macros).</p>
                     <code>
                     <a name="/s:3GIO18SubprocessProtocolPAAE11communicate8stdinBuf11cancellable06stdoutF006stderrF0Sb4GLib8BytesRefVSg_AA011CancellableL0VSgSpySpySo7_GBytesVGSgGSgAUtKF"></a>
                     <a name="//apple_ref/swift/Method/communicate(stdinBuf:cancellable:stdoutBuf:stderrBuf:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE11communicate8stdinBuf11cancellable06stdoutF006stderrF0Sb4GLib8BytesRefVSg_AA011CancellableL0VSgSpySpySo7_GBytesVGSgGSgAUtKF">communicate(stdinBuf:cancellable:stdoutBuf:stderrBuf:)</a>
+                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE11communicate8stdinBuf11cancellable06stdoutF006stderrF0Sb4GLib8BytesRefVSg_AA011CancellableL0VSgSpySpySo7_GBytesVGSgGSgAUtKF">communicate(stdinBuf:<wbr>cancellable:<wbr>stdoutBuf:<wbr>stderrBuf:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8127,7 +8149,7 @@ attempt to interact with the pipes while the operation is in progress
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13468-L13473">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13483-L13488">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8137,7 +8159,7 @@ attempt to interact with the pipes while the operation is in progress
                     <code>
                     <a name="/s:3GIO18SubprocessProtocolPAAE11communicate8stdinBuf11cancellable06stdoutF006stderrF0Sbqd__Sg_qd_0_SgSpySpySo7_GBytesVGSgGSgAPtK4GLib05BytesC0Rd__AA011CancellableC0Rd_0_r0_lF"></a>
                     <a name="//apple_ref/swift/Method/communicate(stdinBuf:cancellable:stdoutBuf:stderrBuf:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE11communicate8stdinBuf11cancellable06stdoutF006stderrF0Sbqd__Sg_qd_0_SgSpySpySo7_GBytesVGSgGSgAPtK4GLib05BytesC0Rd__AA011CancellableC0Rd_0_r0_lF">communicate(stdinBuf:cancellable:stdoutBuf:stderrBuf:)</a>
+                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE11communicate8stdinBuf11cancellable06stdoutF006stderrF0Sbqd__Sg_qd_0_SgSpySpySo7_GBytesVGSgGSgAPtK4GLib05BytesC0Rd__AA011CancellableC0Rd_0_r0_lF">communicate(stdinBuf:<wbr>cancellable:<wbr>stdoutBuf:<wbr>stderrBuf:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8201,7 +8223,7 @@ attempt to interact with the pipes while the operation is in progress
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13515-L13520">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13530-L13535">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8211,7 +8233,7 @@ attempt to interact with the pipes while the operation is in progress
                     <code>
                     <a name="/s:3GIO18SubprocessProtocolPAAE16communicateAsync8stdinBuf11cancellable8callback8userDatay4GLib8BytesRefVSg_AA011CancellableN0VSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAXtF"></a>
                     <a name="//apple_ref/swift/Method/communicateAsync(stdinBuf:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE16communicateAsync8stdinBuf11cancellable8callback8userDatay4GLib8BytesRefVSg_AA011CancellableN0VSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAXtF">communicateAsync(stdinBuf:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE16communicateAsync8stdinBuf11cancellable8callback8userDatay4GLib8BytesRefVSg_AA011CancellableN0VSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAXtF">communicateAsync(stdinBuf:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8236,7 +8258,7 @@ invocation with <code>g_subprocess_communicate_finish()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13524-L13527">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13539-L13542">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8246,7 +8268,7 @@ invocation with <code>g_subprocess_communicate_finish()</code>.</p>
                     <code>
                     <a name="/s:3GIO18SubprocessProtocolPAAE16communicateAsync8stdinBuf11cancellable8callback8userDatayqd__Sg_qd_0_SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgASt4GLib05BytesC0Rd__AA011CancellableC0Rd_0_r0_lF"></a>
                     <a name="//apple_ref/swift/Method/communicateAsync(stdinBuf:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE16communicateAsync8stdinBuf11cancellable8callback8userDatayqd__Sg_qd_0_SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgASt4GLib05BytesC0Rd__AA011CancellableC0Rd_0_r0_lF">communicateAsync(stdinBuf:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE16communicateAsync8stdinBuf11cancellable8callback8userDatayqd__Sg_qd_0_SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgASt4GLib05BytesC0Rd__AA011CancellableC0Rd_0_r0_lF">communicateAsync(stdinBuf:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8271,7 +8293,7 @@ invocation with <code>g_subprocess_communicate_finish()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13530-L13533">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13545-L13548">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8281,7 +8303,7 @@ invocation with <code>g_subprocess_communicate_finish()</code>.</p>
                     <code>
                     <a name="/s:3GIO18SubprocessProtocolPAAE17communicateFinish6result9stdoutBuf06stderrH0Sbqd___SpySpySo7_GBytesVGSgGSgAMtKAA011AsyncResultC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/communicateFinish(result:stdoutBuf:stderrBuf:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE17communicateFinish6result9stdoutBuf06stderrH0Sbqd___SpySpySo7_GBytesVGSgGSgAMtKAA011AsyncResultC0Rd__lF">communicateFinish(result:stdoutBuf:stderrBuf:)</a>
+                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE17communicateFinish6result9stdoutBuf06stderrH0Sbqd___SpySpySo7_GBytesVGSgGSgAMtKAA011AsyncResultC0Rd__lF">communicateFinish(result:<wbr>stdoutBuf:<wbr>stderrBuf:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8305,7 +8327,7 @@ invocation with <code>g_subprocess_communicate_finish()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13536-L13541">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13551-L13556">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8315,7 +8337,7 @@ invocation with <code>g_subprocess_communicate_finish()</code>.</p>
                     <code>
                     <a name="/s:3GIO18SubprocessProtocolPAAE15communicateUTF88stdinBuf11cancellable06stdoutG006stderrG0SbSPys4Int8VGSg_AA14CancellableRefVSgSpySpyAJGSgGSgAStKF"></a>
                     <a name="//apple_ref/swift/Method/communicateUTF8(stdinBuf:cancellable:stdoutBuf:stderrBuf:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE15communicateUTF88stdinBuf11cancellable06stdoutG006stderrG0SbSPys4Int8VGSg_AA14CancellableRefVSgSpySpyAJGSgGSgAStKF">communicateUTF8(stdinBuf:cancellable:stdoutBuf:stderrBuf:)</a>
+                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE15communicateUTF88stdinBuf11cancellable06stdoutG006stderrG0SbSPys4Int8VGSg_AA14CancellableRefVSgSpySpyAJGSgGSgAStKF">communicateUTF8(stdinBuf:<wbr>cancellable:<wbr>stdoutBuf:<wbr>stderrBuf:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8343,7 +8365,7 @@ should not be used.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13548-L13553">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13563-L13568">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8353,7 +8375,7 @@ should not be used.</p>
                     <code>
                     <a name="/s:3GIO18SubprocessProtocolPAAE15communicateUTF88stdinBuf11cancellable06stdoutG006stderrG0SbSPys4Int8VGSg_qd__SgSpySpyAJGSgGSgAQtKAA011CancellableC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/communicateUTF8(stdinBuf:cancellable:stdoutBuf:stderrBuf:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE15communicateUTF88stdinBuf11cancellable06stdoutG006stderrG0SbSPys4Int8VGSg_qd__SgSpySpyAJGSgGSgAQtKAA011CancellableC0Rd__lF">communicateUTF8(stdinBuf:cancellable:stdoutBuf:stderrBuf:)</a>
+                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE15communicateUTF88stdinBuf11cancellable06stdoutG006stderrG0SbSPys4Int8VGSg_qd__SgSpySpyAJGSgGSgAQtKAA011CancellableC0Rd__lF">communicateUTF8(stdinBuf:<wbr>cancellable:<wbr>stdoutBuf:<wbr>stderrBuf:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8381,7 +8403,7 @@ should not be used.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13559-L13564">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13574-L13579">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8391,7 +8413,7 @@ should not be used.</p>
                     <code>
                     <a name="/s:3GIO18SubprocessProtocolPAAE20communicateUTF8Async8stdinBuf11cancellable8callback8userDataySPys4Int8VGSg_AA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAXtF"></a>
                     <a name="//apple_ref/swift/Method/communicateUTF8Async(stdinBuf:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE20communicateUTF8Async8stdinBuf11cancellable8callback8userDataySPys4Int8VGSg_AA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAXtF">communicateUTF8Async(stdinBuf:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE20communicateUTF8Async8stdinBuf11cancellable8callback8userDataySPys4Int8VGSg_AA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAXtF">communicateUTF8Async(stdinBuf:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8416,7 +8438,7 @@ invocation with <code>g_subprocess_communicate_utf8_finish()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13568-L13571">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13583-L13586">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8426,7 +8448,7 @@ invocation with <code>g_subprocess_communicate_utf8_finish()</code>.</p>
                     <code>
                     <a name="/s:3GIO18SubprocessProtocolPAAE20communicateUTF8Async8stdinBuf11cancellable8callback8userDataySPys4Int8VGSg_qd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAVtAA011CancellableC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/communicateUTF8Async(stdinBuf:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE20communicateUTF8Async8stdinBuf11cancellable8callback8userDataySPys4Int8VGSg_qd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAVtAA011CancellableC0Rd__lF">communicateUTF8Async(stdinBuf:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE20communicateUTF8Async8stdinBuf11cancellable8callback8userDataySPys4Int8VGSg_qd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAVtAA011CancellableC0Rd__lF">communicateUTF8Async(stdinBuf:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8451,7 +8473,7 @@ invocation with <code>g_subprocess_communicate_utf8_finish()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13574-L13577">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13589-L13592">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8461,7 +8483,7 @@ invocation with <code>g_subprocess_communicate_utf8_finish()</code>.</p>
                     <code>
                     <a name="/s:3GIO18SubprocessProtocolPAAE21communicateUTF8Finish6result9stdoutBuf06stderrI0Sbqd___SpySpys4Int8VGSgGSgAMtKAA011AsyncResultC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/communicateUTF8Finish(result:stdoutBuf:stderrBuf:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE21communicateUTF8Finish6result9stdoutBuf06stderrI0Sbqd___SpySpys4Int8VGSgGSgAMtKAA011AsyncResultC0Rd__lF">communicateUTF8Finish(result:stdoutBuf:stderrBuf:)</a>
+                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE21communicateUTF8Finish6result9stdoutBuf06stderrI0Sbqd___SpySpys4Int8VGSgGSgAMtKAA011AsyncResultC0Rd__lF">communicateUTF8Finish(result:<wbr>stdoutBuf:<wbr>stderrBuf:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8485,7 +8507,7 @@ invocation with <code>g_subprocess_communicate_utf8_finish()</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13580-L13585">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13595-L13600">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8525,7 +8547,7 @@ the process after calling this function.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13594-L13597">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13609-L13612">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8566,7 +8588,7 @@ unless <code>g_subprocess_get_if_exited()</code> returned <code>true</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13607-L13610">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13622-L13625">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8602,7 +8624,7 @@ If the subprocess has terminated, this will return <code>nil</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13615-L13618">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13630-L13633">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8642,7 +8664,7 @@ returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13627-L13630">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13642-L13645">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8681,7 +8703,7 @@ returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13638-L13641">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13653-L13656">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8725,7 +8747,7 @@ returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13654-L13657">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13669-L13672">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8763,7 +8785,7 @@ returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13664-L13667">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13679-L13682">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8801,7 +8823,7 @@ to the stdin of <code>subprocess</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13674-L13677">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13689-L13692">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8839,7 +8861,7 @@ to the stdin of <code>subprocess</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13684-L13687">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13699-L13702">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8878,7 +8900,7 @@ returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13695-L13698">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13710-L13713">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8918,7 +8940,7 @@ unless <code>g_subprocess_get_if_signaled()</code> returned <code>true</code>.</
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13707-L13710">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13722-L13725">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8928,7 +8950,7 @@ unless <code>g_subprocess_get_if_signaled()</code> returned <code>true</code>.</
                     <code>
                     <a name="/s:3GIO18SubprocessProtocolPAAE10sendSignal9signalNumySi_tF"></a>
                     <a name="//apple_ref/swift/Method/sendSignal(signalNum:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE10sendSignal9signalNumySi_tF">sendSignal(signalNum:)</a>
+                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE10sendSignal9signalNumySi_tF">sendSignal(signalNum:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8958,7 +8980,7 @@ be signalled.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13719-L13722">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13734-L13737">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8968,7 +8990,7 @@ be signalled.</p>
                     <code>
                     <a name="/s:3GIO18SubprocessProtocolPAAE4wait11cancellableSbAA14CancellableRefVSg_tKF"></a>
                     <a name="//apple_ref/swift/Method/wait(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE4wait11cancellableSbAA14CancellableRefVSg_tKF">wait(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE4wait11cancellableSbAA14CancellableRefVSg_tKF">wait(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9002,7 +9024,7 @@ abnormal termination.  See <code>g_subprocess_wait_check()</code> for that.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13735-L13740">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13750-L13755">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9012,7 +9034,7 @@ abnormal termination.  See <code>g_subprocess_wait_check()</code> for that.</p>
                     <code>
                     <a name="/s:3GIO18SubprocessProtocolPAAE4wait11cancellableSbqd__Sg_tKAA011CancellableC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/wait(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE4wait11cancellableSbqd__Sg_tKAA011CancellableC0Rd__lF">wait(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE4wait11cancellableSbqd__Sg_tKAA011CancellableC0Rd__lF">wait(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9046,7 +9068,7 @@ abnormal termination.  See <code>g_subprocess_wait_check()</code> for that.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13752-L13757">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13767-L13772">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9056,7 +9078,7 @@ abnormal termination.  See <code>g_subprocess_wait_check()</code> for that.</p>
                     <code>
                     <a name="/s:3GIO18SubprocessProtocolPAAE9waitAsync11cancellable8callback8userDatayAA14CancellableRefVSg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAStF"></a>
                     <a name="//apple_ref/swift/Method/waitAsync(cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE9waitAsync11cancellable8callback8userDatayAA14CancellableRefVSg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAStF">waitAsync(cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE9waitAsync11cancellable8callback8userDatayAA14CancellableRefVSg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAStF">waitAsync(cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9082,7 +9104,7 @@ abnormal termination.  See <code>g_subprocess_wait_check()</code> for that.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13762-L13765">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13777-L13780">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9092,7 +9114,7 @@ abnormal termination.  See <code>g_subprocess_wait_check()</code> for that.</p>
                     <code>
                     <a name="/s:3GIO18SubprocessProtocolPAAE9waitAsync11cancellable8callback8userDatayqd__Sg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAQtAA011CancellableC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/waitAsync(cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE9waitAsync11cancellable8callback8userDatayqd__Sg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAQtAA011CancellableC0Rd__lF">waitAsync(cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE9waitAsync11cancellable8callback8userDatayqd__Sg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAQtAA011CancellableC0Rd__lF">waitAsync(cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9118,7 +9140,7 @@ abnormal termination.  See <code>g_subprocess_wait_check()</code> for that.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13769-L13772">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13784-L13787">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9128,7 +9150,7 @@ abnormal termination.  See <code>g_subprocess_wait_check()</code> for that.</p>
                     <code>
                     <a name="/s:3GIO18SubprocessProtocolPAAE9waitCheck11cancellableSbAA14CancellableRefVSg_tKF"></a>
                     <a name="//apple_ref/swift/Method/waitCheck(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE9waitCheck11cancellableSbAA14CancellableRefVSg_tKF">waitCheck(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE9waitCheck11cancellableSbAA14CancellableRefVSg_tKF">waitCheck(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9152,7 +9174,7 @@ abnormal termination.  See <code>g_subprocess_wait_check()</code> for that.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13775-L13780">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13790-L13795">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9162,7 +9184,7 @@ abnormal termination.  See <code>g_subprocess_wait_check()</code> for that.</p>
                     <code>
                     <a name="/s:3GIO18SubprocessProtocolPAAE9waitCheck11cancellableSbqd__Sg_tKAA011CancellableC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/waitCheck(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE9waitCheck11cancellableSbqd__Sg_tKAA011CancellableC0Rd__lF">waitCheck(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE9waitCheck11cancellableSbqd__Sg_tKAA011CancellableC0Rd__lF">waitCheck(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9186,7 +9208,7 @@ abnormal termination.  See <code>g_subprocess_wait_check()</code> for that.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13782-L13787">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13797-L13802">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9196,7 +9218,7 @@ abnormal termination.  See <code>g_subprocess_wait_check()</code> for that.</p>
                     <code>
                     <a name="/s:3GIO18SubprocessProtocolPAAE14waitCheckAsync11cancellable8callback8userDatayAA14CancellableRefVSg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAStF"></a>
                     <a name="//apple_ref/swift/Method/waitCheckAsync(cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE14waitCheckAsync11cancellable8callback8userDatayAA14CancellableRefVSg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAStF">waitCheckAsync(cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE14waitCheckAsync11cancellable8callback8userDatayAA14CancellableRefVSg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAStF">waitCheckAsync(cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9222,7 +9244,7 @@ abnormal termination.  See <code>g_subprocess_wait_check()</code> for that.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13792-L13795">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13807-L13810">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9232,7 +9254,7 @@ abnormal termination.  See <code>g_subprocess_wait_check()</code> for that.</p>
                     <code>
                     <a name="/s:3GIO18SubprocessProtocolPAAE14waitCheckAsync11cancellable8callback8userDatayqd__Sg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAQtAA011CancellableC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/waitCheckAsync(cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE14waitCheckAsync11cancellable8callback8userDatayqd__Sg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAQtAA011CancellableC0Rd__lF">waitCheckAsync(cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE14waitCheckAsync11cancellable8callback8userDatayqd__Sg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAQtAA011CancellableC0Rd__lF">waitCheckAsync(cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9258,7 +9280,7 @@ abnormal termination.  See <code>g_subprocess_wait_check()</code> for that.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13799-L13802">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13814-L13817">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9268,7 +9290,7 @@ abnormal termination.  See <code>g_subprocess_wait_check()</code> for that.</p>
                     <code>
                     <a name="/s:3GIO18SubprocessProtocolPAAE15waitCheckFinish6resultSbqd___tKAA011AsyncResultC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/waitCheckFinish(result:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE15waitCheckFinish6resultSbqd___tKAA011AsyncResultC0Rd__lF">waitCheckFinish(result:)</a>
+                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE15waitCheckFinish6resultSbqd___tKAA011AsyncResultC0Rd__lF">waitCheckFinish(result:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9293,7 +9315,7 @@ abnormal termination.  See <code>g_subprocess_wait_check()</code> for that.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13806-L13811">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13821-L13826">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9303,7 +9325,7 @@ abnormal termination.  See <code>g_subprocess_wait_check()</code> for that.</p>
                     <code>
                     <a name="/s:3GIO18SubprocessProtocolPAAE10waitFinish6resultSbqd___tKAA011AsyncResultC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/waitFinish(result:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE10waitFinish6resultSbqd___tKAA011AsyncResultC0Rd__lF">waitFinish(result:)</a>
+                    <a class="token" href="#/s:3GIO18SubprocessProtocolPAAE10waitFinish6resultSbqd___tKAA011AsyncResultC0Rd__lF">waitFinish(result:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9328,7 +9350,7 @@ abnormal termination.  See <code>g_subprocess_wait_check()</code> for that.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13815-L13820">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13830-L13835">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9369,7 +9391,7 @@ unless <code>g_subprocess_get_if_exited()</code> returned <code>true</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13829-L13842">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13844-L13857">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9405,7 +9427,7 @@ If the subprocess has terminated, this will return <code>nil</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13847-L13855">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13862-L13870">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9445,7 +9467,7 @@ returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13864-L13876">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13879-L13891">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9484,7 +9506,7 @@ returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13884-L13895">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13899-L13910">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9528,7 +9550,7 @@ returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13908-L13924">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13923-L13939">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9566,7 +9588,7 @@ returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13931-L13941">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13946-L13956">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9604,7 +9626,7 @@ to the stdin of <code>subprocess</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13948-L13958">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13963-L13973">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9642,7 +9664,7 @@ to the stdin of <code>subprocess</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13965-L13975">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13980-L13990">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9681,7 +9703,7 @@ returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13983-L13994">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L13998-L14009">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9721,7 +9743,7 @@ unless <code>g_subprocess_get_if_signaled()</code> returned <code>true</code>.</
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L14003-L14015">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L14018-L14030">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -9734,8 +9756,8 @@ unless <code>g_subprocess_get_if_signaled()</code> returned <code>true</code>.</
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.ict.griffith.edu.au/~rhexel/" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2020-09-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

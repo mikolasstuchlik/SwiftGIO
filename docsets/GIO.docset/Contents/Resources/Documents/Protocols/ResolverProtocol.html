@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          GIO 2.64.4 Docs
+          GIO 2.66.4 Docs
         </a>
-         (88% documented)
+         (89% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx%2Egithub%2Eio%2FSwiftGIO%2Fdocsets%2FGIO%2Exml">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx.github.io%2FSwiftGIO%2Fdocsets%2FGIO.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -2205,6 +2205,12 @@
                 <a class="nav-group-task-link" href="../Extensions/TLSCertificateRequestFlags.html">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingError.html">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingType.html">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/TLSDatabaseLookupFlags.html">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -2648,6 +2654,9 @@
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO20tlsBackendGetDefaultAA13TLSBackendRefVSgyF">tlsBackendGetDefault()</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27tlsChannelBindingErrorQuarks6UInt32VyF">tlsChannelBindingErrorQuark()</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO22tlsClientConnectionNew12baseIoStream14serverIdentityAA09TLSClientD3RefVSgx_AA017SocketConnectableL0VSgtKAA16IOStreamProtocolRzlF">tlsClientConnectionNew(baseIoStream:serverIdentity:)</a>
               </li>
               <li class="nav-group-task">
@@ -2724,6 +2733,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO25unixMountIsSystemInternal10mountEntrySbx_tAA04UnixcH8ProtocolRzlF">unixMountIsSystemInternal(mountEntry:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO16unixMountPointAt9mountPath8timeReadAA04UnixcD3RefVSgSPys4Int8VGSg_Spys6UInt64VGSgtF">unixMountPointAt(mountPath:timeRead:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27unixMountPointsChangedSince4timeSbs6UInt64V_tF">unixMountPointsChangedSince(time:)</a>
@@ -5243,6 +5255,12 @@
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO26TLSCertificateRequestFlagsa">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSChannelBindingErrora">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO21TLSChannelBindingTypea">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSDatabaseLookupFlagsa">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -7578,6 +7596,7 @@
             <h1>ResolverProtocol</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ResolverProtocol</span> <span class="p">:</span> <span class="kt">ObjectProtocol</span></code></pre>
 
                 </div>
@@ -7596,6 +7615,9 @@ resolution, for hostnames (<code>g_resolver_lookup_by_address()</code>,
 <code>GResolver</code> functionality that also implement <code>GSocketConnectable</code>,
 making it easy to connect to a remote host/service.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-PropertyAction-Resolver.swift#L1540-L1547">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -7689,7 +7711,7 @@ making it easy to connect to a remote host/service.</p>
                     <code>
                     <a name="/s:3GIO16ResolverProtocolPAAE7connect6signal5flags2toSiAA0B10SignalNameO_10GLibObject12ConnectFlagsVyyctF"></a>
                     <a name="//apple_ref/swift/Method/connect(signal:flags:to:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE7connect6signal5flags2toSiAA0B10SignalNameO_10GLibObject12ConnectFlagsVyyctF">connect(signal:flags:to:)</a>
+                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE7connect6signal5flags2toSiAA0B10SignalNameO_10GLibObject12ConnectFlagsVyyctF">connect(signal:<wbr>flags:<wbr>to:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7770,10 +7792,10 @@ making it easy to connect to a remote host/service.</p>
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Resolver%20Class:%20ResolverProtocol%20extension%20(methods%20and%20fields)"></a>
+                <a name="/Resolver%20Class%3A%20ResolverProtocol%20extension%20%28methods%20and%20fields%29"></a>
                 <a name="//apple_ref/swift/Section/Resolver Class: ResolverProtocol extension (methods and fields)" class="dashAnchor"></a>
                 <div class="section-name-container">
-                  <a class="section-name-link" href="#/Resolver%20Class:%20ResolverProtocol%20extension%20(methods%20and%20fields)"></a>
+                  <a class="section-name-link" href="#/Resolver%20Class%3A%20ResolverProtocol%20extension%20%28methods%20and%20fields%29"></a>
                   <h3 class="section-name"><p>Resolver Class: ResolverProtocol extension (methods and fields)</p>
 </h3>
                 </div>
@@ -7784,7 +7806,7 @@ making it easy to connect to a remote host/service.</p>
                     <code>
                     <a name="/s:3GIO16ResolverProtocolPAAE8lookupBy7address11cancellableSSSgqd___AA14CancellableRefVSgtKAA011InetAddressC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/lookupBy(address:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE8lookupBy7address11cancellableSSSgqd___AA14CancellableRefVSgtKAA011InetAddressC0Rd__lF">lookupBy(address:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE8lookupBy7address11cancellableSSSgqd___AA14CancellableRefVSgtKAA011InetAddressC0Rd__lF">lookupBy(address:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7826,7 +7848,7 @@ operation, in which case <code>error</code> (if non-<code>nil</code>) will be se
                     <code>
                     <a name="/s:3GIO16ResolverProtocolPAAE8lookupBy7address11cancellableSSSgqd_0__qd__SgtKAA011CancellableC0Rd__AA011InetAddressC0Rd_0_r0_lF"></a>
                     <a name="//apple_ref/swift/Method/lookupBy(address:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE8lookupBy7address11cancellableSSSgqd_0__qd__SgtKAA011CancellableC0Rd__AA011InetAddressC0Rd_0_r0_lF">lookupBy(address:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE8lookupBy7address11cancellableSSSgqd_0__qd__SgtKAA011CancellableC0Rd__AA011InetAddressC0Rd_0_r0_lF">lookupBy(address:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7868,7 +7890,7 @@ operation, in which case <code>error</code> (if non-<code>nil</code>) will be se
                     <code>
                     <a name="/s:3GIO16ResolverProtocolPAAE20lookupByAddressAsync7address11cancellable8callback8userDatayqd___AA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgATtAA04InetfC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/lookupByAddressAsync(address:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE20lookupByAddressAsync7address11cancellable8callback8userDatayqd___AA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgATtAA04InetfC0Rd__lF">lookupByAddressAsync(address:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE20lookupByAddressAsync7address11cancellable8callback8userDatayqd___AA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgATtAA04InetfC0Rd__lF">lookupByAddressAsync(address:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7904,7 +7926,7 @@ call <code>g_resolver_lookup_by_address_finish()</code> to get the final result.
                     <code>
                     <a name="/s:3GIO16ResolverProtocolPAAE20lookupByAddressAsync7address11cancellable8callback8userDatayqd_0__qd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgARtAA011CancellableC0Rd__AA04InetfC0Rd_0_r0_lF"></a>
                     <a name="//apple_ref/swift/Method/lookupByAddressAsync(address:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE20lookupByAddressAsync7address11cancellable8callback8userDatayqd_0__qd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgARtAA011CancellableC0Rd__AA04InetfC0Rd_0_r0_lF">lookupByAddressAsync(address:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE20lookupByAddressAsync7address11cancellable8callback8userDatayqd_0__qd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgARtAA011CancellableC0Rd__AA04InetfC0Rd_0_r0_lF">lookupByAddressAsync(address:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7940,7 +7962,7 @@ call <code>g_resolver_lookup_by_address_finish()</code> to get the final result.
                     <code>
                     <a name="/s:3GIO16ResolverProtocolPAAE21lookupByAddressFinish6resultSSSgqd___tKAA011AsyncResultC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/lookupByAddressFinish(result:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE21lookupByAddressFinish6resultSSSgqd___tKAA011AsyncResultC0Rd__lF">lookupByAddressFinish(result:)</a>
+                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE21lookupByAddressFinish6resultSSSgqd___tKAA011AsyncResultC0Rd__lF">lookupByAddressFinish(result:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7979,7 +8001,7 @@ a value from <code>GResolverError</code>. If the operation was cancelled,
                     <code>
                     <a name="/s:3GIO16ResolverProtocolPAAE12lookupByName8hostname11cancellable4GLib7ListRefVSgSPys4Int8VGSg_AA011CancellableK0VSgtKF"></a>
                     <a name="//apple_ref/swift/Method/lookupByName(hostname:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE12lookupByName8hostname11cancellable4GLib7ListRefVSgSPys4Int8VGSg_AA011CancellableK0VSgtKF">lookupByName(hostname:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE12lookupByName8hostname11cancellable4GLib7ListRefVSgSPys4Int8VGSg_AA011CancellableK0VSgtKF">lookupByName(hostname:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8035,7 +8057,7 @@ address, it may be easier to create a <code>GNetworkAddress</code> and use its
                     <code>
                     <a name="/s:3GIO16ResolverProtocolPAAE12lookupByName8hostname11cancellable4GLib7ListRefVSgSPys4Int8VGSg_qd__SgtKAA011CancellableC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/lookupByName(hostname:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE12lookupByName8hostname11cancellable4GLib7ListRefVSgSPys4Int8VGSg_qd__SgtKAA011CancellableC0Rd__lF">lookupByName(hostname:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE12lookupByName8hostname11cancellable4GLib7ListRefVSgSPys4Int8VGSg_qd__SgtKAA011CancellableC0Rd__lF">lookupByName(hostname:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8091,7 +8113,7 @@ address, it may be easier to create a <code>GNetworkAddress</code> and use its
                     <code>
                     <a name="/s:3GIO16ResolverProtocolPAAE17lookupByNameAsync8hostname11cancellable8callback8userDataySPys4Int8VGSg_AA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAXtF"></a>
                     <a name="//apple_ref/swift/Method/lookupByNameAsync(hostname:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE17lookupByNameAsync8hostname11cancellable8callback8userDataySPys4Int8VGSg_AA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAXtF">lookupByNameAsync(hostname:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE17lookupByNameAsync8hostname11cancellable8callback8userDataySPys4Int8VGSg_AA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAXtF">lookupByNameAsync(hostname:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8128,7 +8150,7 @@ See <code>g_resolver_lookup_by_name()</code> for more details.</p>
                     <code>
                     <a name="/s:3GIO16ResolverProtocolPAAE17lookupByNameAsync8hostname11cancellable8callback8userDataySPys4Int8VGSg_qd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAVtAA011CancellableC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/lookupByNameAsync(hostname:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE17lookupByNameAsync8hostname11cancellable8callback8userDataySPys4Int8VGSg_qd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAVtAA011CancellableC0Rd__lF">lookupByNameAsync(hostname:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE17lookupByNameAsync8hostname11cancellable8callback8userDataySPys4Int8VGSg_qd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAVtAA011CancellableC0Rd__lF">lookupByNameAsync(hostname:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8165,7 +8187,7 @@ See <code>g_resolver_lookup_by_name()</code> for more details.</p>
                     <code>
                     <a name="/s:3GIO16ResolverProtocolPAAE18lookupByNameFinish6result4GLib7ListRefVSgqd___tKAA011AsyncResultC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/lookupByNameFinish(result:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE18lookupByNameFinish6result4GLib7ListRefVSgqd___tKAA011AsyncResultC0Rd__lF">lookupByNameFinish(result:)</a>
+                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE18lookupByNameFinish6result4GLib7ListRefVSgqd___tKAA011AsyncResultC0Rd__lF">lookupByNameFinish(result:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8204,7 +8226,7 @@ a value from <code>GResolverError</code>. If the operation was cancelled,
                     <code>
                     <a name="/s:3GIO16ResolverProtocolPAAE21lookupByNameWithFlags8hostname5flags11cancellable4GLib7ListRefVSgSPys4Int8VGSg_AA0bf6LookupH0VAA011CancellableN0VSgtKF"></a>
                     <a name="//apple_ref/swift/Method/lookupByNameWithFlags(hostname:flags:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE21lookupByNameWithFlags8hostname5flags11cancellable4GLib7ListRefVSgSPys4Int8VGSg_AA0bf6LookupH0VAA011CancellableN0VSgtKF">lookupByNameWithFlags(hostname:flags:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE21lookupByNameWithFlags8hostname5flags11cancellable4GLib7ListRefVSgSPys4Int8VGSg_AA0bf6LookupH0VAA011CancellableN0VSgtKF">lookupByNameWithFlags(hostname:<wbr>flags:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8240,7 +8262,7 @@ results with <code>G_RESOLVER_NAME_LOOKUP_FLAGS_IPV4_ONLY</code>.</p>
                     <code>
                     <a name="/s:3GIO16ResolverProtocolPAAE21lookupByNameWithFlags8hostname5flags11cancellable4GLib7ListRefVSgSPys4Int8VGSg_AA0bf6LookupH0Vqd__SgtKAA011CancellableC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/lookupByNameWithFlags(hostname:flags:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE21lookupByNameWithFlags8hostname5flags11cancellable4GLib7ListRefVSgSPys4Int8VGSg_AA0bf6LookupH0Vqd__SgtKAA011CancellableC0Rd__lF">lookupByNameWithFlags(hostname:flags:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE21lookupByNameWithFlags8hostname5flags11cancellable4GLib7ListRefVSgSPys4Int8VGSg_AA0bf6LookupH0Vqd__SgtKAA011CancellableC0Rd__lF">lookupByNameWithFlags(hostname:<wbr>flags:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8276,7 +8298,7 @@ results with <code>G_RESOLVER_NAME_LOOKUP_FLAGS_IPV4_ONLY</code>.</p>
                     <code>
                     <a name="/s:3GIO16ResolverProtocolPAAE26lookupByNameWithFlagsAsync8hostname5flags11cancellable8callback8userDataySPys4Int8VGSg_AA0bf6LookupH0VAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgA_tF"></a>
                     <a name="//apple_ref/swift/Method/lookupByNameWithFlagsAsync(hostname:flags:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE26lookupByNameWithFlagsAsync8hostname5flags11cancellable8callback8userDataySPys4Int8VGSg_AA0bf6LookupH0VAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgA_tF">lookupByNameWithFlagsAsync(hostname:flags:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE26lookupByNameWithFlagsAsync8hostname5flags11cancellable8callback8userDataySPys4Int8VGSg_AA0bf6LookupH0VAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgA_tF">lookupByNameWithFlagsAsync(hostname:<wbr>flags:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8313,7 +8335,7 @@ See <code>g_resolver_lookup_by_name()</code> for more details.</p>
                     <code>
                     <a name="/s:3GIO16ResolverProtocolPAAE26lookupByNameWithFlagsAsync8hostname5flags11cancellable8callback8userDataySPys4Int8VGSg_AA0bf6LookupH0Vqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAYtAA011CancellableC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/lookupByNameWithFlagsAsync(hostname:flags:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE26lookupByNameWithFlagsAsync8hostname5flags11cancellable8callback8userDataySPys4Int8VGSg_AA0bf6LookupH0Vqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAYtAA011CancellableC0Rd__lF">lookupByNameWithFlagsAsync(hostname:flags:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE26lookupByNameWithFlagsAsync8hostname5flags11cancellable8callback8userDataySPys4Int8VGSg_AA0bf6LookupH0Vqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAYtAA011CancellableC0Rd__lF">lookupByNameWithFlagsAsync(hostname:<wbr>flags:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8350,7 +8372,7 @@ See <code>g_resolver_lookup_by_name()</code> for more details.</p>
                     <code>
                     <a name="/s:3GIO16ResolverProtocolPAAE27lookupByNameWithFlagsFinish6result4GLib7ListRefVSgqd___tKAA011AsyncResultC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/lookupByNameWithFlagsFinish(result:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE27lookupByNameWithFlagsFinish6result4GLib7ListRefVSgqd___tKAA011AsyncResultC0Rd__lF">lookupByNameWithFlagsFinish(result:)</a>
+                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE27lookupByNameWithFlagsFinish6result4GLib7ListRefVSgqd___tKAA011AsyncResultC0Rd__lF">lookupByNameWithFlagsFinish(result:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8389,7 +8411,7 @@ a value from <code>GResolverError</code>. If the operation was cancelled,
                     <code>
                     <a name="/s:3GIO16ResolverProtocolPAAE13lookupRecords6rrname10recordType11cancellable4GLib7ListRefVSgSPys4Int8VGSg_So015GResolverRecordH0aAA011CancellableL0VSgtKF"></a>
                     <a name="//apple_ref/swift/Method/lookupRecords(rrname:recordType:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE13lookupRecords6rrname10recordType11cancellable4GLib7ListRefVSgSPys4Int8VGSg_So015GResolverRecordH0aAA011CancellableL0VSgtKF">lookupRecords(rrname:recordType:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE13lookupRecords6rrname10recordType11cancellable4GLib7ListRefVSgSPys4Int8VGSg_So015GResolverRecordH0aAA011CancellableL0VSgtKF">lookupRecords(rrname:<wbr>recordType:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8432,7 +8454,7 @@ operation, in which case <code>error</code> (if non-<code>nil</code>) will be se
                     <code>
                     <a name="/s:3GIO16ResolverProtocolPAAE13lookupRecords6rrname10recordType11cancellable4GLib7ListRefVSgSPys4Int8VGSg_So015GResolverRecordH0aqd__SgtKAA011CancellableC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/lookupRecords(rrname:recordType:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE13lookupRecords6rrname10recordType11cancellable4GLib7ListRefVSgSPys4Int8VGSg_So015GResolverRecordH0aqd__SgtKAA011CancellableC0Rd__lF">lookupRecords(rrname:recordType:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE13lookupRecords6rrname10recordType11cancellable4GLib7ListRefVSgSPys4Int8VGSg_So015GResolverRecordH0aqd__SgtKAA011CancellableC0Rd__lF">lookupRecords(rrname:<wbr>recordType:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8475,7 +8497,7 @@ operation, in which case <code>error</code> (if non-<code>nil</code>) will be se
                     <code>
                     <a name="/s:3GIO16ResolverProtocolPAAE18lookupRecordsAsync6rrname10recordType11cancellable8callback8userDataySPys4Int8VGSg_So015GResolverRecordI0aAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgA_tF"></a>
                     <a name="//apple_ref/swift/Method/lookupRecordsAsync(rrname:recordType:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE18lookupRecordsAsync6rrname10recordType11cancellable8callback8userDataySPys4Int8VGSg_So015GResolverRecordI0aAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgA_tF">lookupRecordsAsync(rrname:recordType:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE18lookupRecordsAsync6rrname10recordType11cancellable8callback8userDataySPys4Int8VGSg_So015GResolverRecordI0aAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgA_tF">lookupRecordsAsync(rrname:<wbr>recordType:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8512,7 +8534,7 @@ operation, in which case <code>error</code> (if non-<code>nil</code>) will be se
                     <code>
                     <a name="/s:3GIO16ResolverProtocolPAAE18lookupRecordsAsync6rrname10recordType11cancellable8callback8userDataySPys4Int8VGSg_So015GResolverRecordI0aqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAYtAA011CancellableC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/lookupRecordsAsync(rrname:recordType:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE18lookupRecordsAsync6rrname10recordType11cancellable8callback8userDataySPys4Int8VGSg_So015GResolverRecordI0aqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAYtAA011CancellableC0Rd__lF">lookupRecordsAsync(rrname:recordType:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE18lookupRecordsAsync6rrname10recordType11cancellable8callback8userDataySPys4Int8VGSg_So015GResolverRecordI0aqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAYtAA011CancellableC0Rd__lF">lookupRecordsAsync(rrname:<wbr>recordType:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8549,7 +8571,7 @@ operation, in which case <code>error</code> (if non-<code>nil</code>) will be se
                     <code>
                     <a name="/s:3GIO16ResolverProtocolPAAE19lookupRecordsFinish6result4GLib7ListRefVSgqd___tKAA011AsyncResultC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/lookupRecordsFinish(result:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE19lookupRecordsFinish6result4GLib7ListRefVSgqd___tKAA011AsyncResultC0Rd__lF">lookupRecordsFinish(result:)</a>
+                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE19lookupRecordsFinish6result4GLib7ListRefVSgqd___tKAA011AsyncResultC0Rd__lF">lookupRecordsFinish(result:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8590,7 +8612,7 @@ a value from <code>GResolverError</code>. If the operation was cancelled,
                     <code>
                     <a name="/s:3GIO16ResolverProtocolPAAE6lookup7service8protocol6domain11cancellable4GLib7ListRefVSgSPys4Int8VGSg_A2pA011CancellableK0VSgtKF"></a>
                     <a name="//apple_ref/swift/Method/lookup(service:protocol:domain:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE6lookup7service8protocol6domain11cancellable4GLib7ListRefVSgSPys4Int8VGSg_A2pA011CancellableK0VSgtKF">lookup(service:protocol:domain:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE6lookup7service8protocol6domain11cancellable4GLib7ListRefVSgSPys4Int8VGSg_A2pA011CancellableK0VSgtKF">lookup(service:<wbr>protocol:<wbr>domain:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8644,7 +8666,7 @@ interface.</p>
                     <code>
                     <a name="/s:3GIO16ResolverProtocolPAAE6lookup7service8protocol6domain11cancellable4GLib7ListRefVSgSPys4Int8VGSg_A2Pqd__SgtKAA011CancellableC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/lookup(service:protocol:domain:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE6lookup7service8protocol6domain11cancellable4GLib7ListRefVSgSPys4Int8VGSg_A2Pqd__SgtKAA011CancellableC0Rd__lF">lookup(service:protocol:domain:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE6lookup7service8protocol6domain11cancellable4GLib7ListRefVSgSPys4Int8VGSg_A2Pqd__SgtKAA011CancellableC0Rd__lF">lookup(service:<wbr>protocol:<wbr>domain:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8698,7 +8720,7 @@ interface.</p>
                     <code>
                     <a name="/s:3GIO16ResolverProtocolPAAE18lookupServiceAsync7service8protocol6domain11cancellable8callback8userDataySPys4Int8VGSg_A2nA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAZtF"></a>
                     <a name="//apple_ref/swift/Method/lookupServiceAsync(service:protocol:domain:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE18lookupServiceAsync7service8protocol6domain11cancellable8callback8userDataySPys4Int8VGSg_A2nA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAZtF">lookupServiceAsync(service:protocol:domain:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE18lookupServiceAsync7service8protocol6domain11cancellable8callback8userDataySPys4Int8VGSg_A2nA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAZtF">lookupServiceAsync(service:<wbr>protocol:<wbr>domain:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8736,7 +8758,7 @@ details.</p>
                     <code>
                     <a name="/s:3GIO16ResolverProtocolPAAE18lookupServiceAsync7service8protocol6domain11cancellable8callback8userDataySPys4Int8VGSg_A2Nqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAXtAA011CancellableC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/lookupServiceAsync(service:protocol:domain:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE18lookupServiceAsync7service8protocol6domain11cancellable8callback8userDataySPys4Int8VGSg_A2Nqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAXtAA011CancellableC0Rd__lF">lookupServiceAsync(service:protocol:domain:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE18lookupServiceAsync7service8protocol6domain11cancellable8callback8userDataySPys4Int8VGSg_A2Nqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAXtAA011CancellableC0Rd__lF">lookupServiceAsync(service:<wbr>protocol:<wbr>domain:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8774,7 +8796,7 @@ details.</p>
                     <code>
                     <a name="/s:3GIO16ResolverProtocolPAAE19lookupServiceFinish6result4GLib7ListRefVSgqd___tKAA011AsyncResultC0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/lookupServiceFinish(result:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE19lookupServiceFinish6result4GLib7ListRefVSgqd___tKAA011AsyncResultC0Rd__lF">lookupServiceFinish(result:)</a>
+                    <a class="token" href="#/s:3GIO16ResolverProtocolPAAE19lookupServiceFinish6result4GLib7ListRefVSgqd___tKAA011AsyncResultC0Rd__lF">lookupServiceFinish(result:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8926,8 +8948,8 @@ itself as the default resolver for all later code to use.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.ict.griffith.edu.au/~rhexel/" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2020-09-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

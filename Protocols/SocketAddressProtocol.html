@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          GIO 2.64.4 Docs
+          GIO 2.66.4 Docs
         </a>
-         (88% documented)
+         (89% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx%2Egithub%2Eio%2FSwiftGIO%2Fdocsets%2FGIO%2Exml">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx.github.io%2FSwiftGIO%2Fdocsets%2FGIO.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -2205,6 +2205,12 @@
                 <a class="nav-group-task-link" href="../Extensions/TLSCertificateRequestFlags.html">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingError.html">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingType.html">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/TLSDatabaseLookupFlags.html">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -2648,6 +2654,9 @@
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO20tlsBackendGetDefaultAA13TLSBackendRefVSgyF">tlsBackendGetDefault()</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27tlsChannelBindingErrorQuarks6UInt32VyF">tlsChannelBindingErrorQuark()</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO22tlsClientConnectionNew12baseIoStream14serverIdentityAA09TLSClientD3RefVSgx_AA017SocketConnectableL0VSgtKAA16IOStreamProtocolRzlF">tlsClientConnectionNew(baseIoStream:serverIdentity:)</a>
               </li>
               <li class="nav-group-task">
@@ -2724,6 +2733,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO25unixMountIsSystemInternal10mountEntrySbx_tAA04UnixcH8ProtocolRzlF">unixMountIsSystemInternal(mountEntry:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO16unixMountPointAt9mountPath8timeReadAA04UnixcD3RefVSgSPys4Int8VGSg_Spys6UInt64VGSgtF">unixMountPointAt(mountPath:timeRead:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27unixMountPointsChangedSince4timeSbs6UInt64V_tF">unixMountPointsChangedSince(time:)</a>
@@ -5243,6 +5255,12 @@
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO26TLSCertificateRequestFlagsa">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSChannelBindingErrora">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO21TLSChannelBindingTypea">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSDatabaseLookupFlagsa">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -7578,6 +7596,7 @@
             <h1>SocketAddressProtocol</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SocketAddressProtocol</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/SocketConnectableProtocol.html">SocketConnectableProtocol</a></span><span class="p">,</span> <span class="kt">ObjectProtocol</span></code></pre>
 
                 </div>
@@ -7591,6 +7610,9 @@ Alternatively, use <code><a href="../Structs/SocketAddressRef.html">SocketAddres
 sockets API. This is an abstract class; use <code>GInetSocketAddress</code>
 for internet sockets, or <code>GUnixSocketAddress</code> for UNIX domain sockets.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8533-L8540">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -7623,7 +7645,7 @@ for internet sockets, or <code>GUnixSocketAddress</code> for UNIX domain sockets
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8520">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8535">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7661,7 +7683,7 @@ for internet sockets, or <code>GUnixSocketAddress</code> for UNIX domain sockets
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8523">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8538">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7684,7 +7706,7 @@ for internet sockets, or <code>GUnixSocketAddress</code> for UNIX domain sockets
                     <code>
                     <a name="/s:3GIO21SocketAddressProtocolPAAE4bind8property2to_5flags13transformFrom0I2To10GLibObject10BindingRefVSgAA0bC12PropertyNameO_qd_0_qd__AJ0N5FlagsVSbAJ05ValueO0V_AStcSbAS_AStctAJ0pqD0Rd__AJ0mD0Rd_0_r0_lF"></a>
                     <a name="//apple_ref/swift/Method/bind(property:to:_:flags:transformFrom:transformTo:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO21SocketAddressProtocolPAAE4bind8property2to_5flags13transformFrom0I2To10GLibObject10BindingRefVSgAA0bC12PropertyNameO_qd_0_qd__AJ0N5FlagsVSbAJ05ValueO0V_AStcSbAS_AStctAJ0pqD0Rd__AJ0mD0Rd_0_r0_lF">bind(property:to:_:flags:transformFrom:transformTo:)</a>
+                    <a class="token" href="#/s:3GIO21SocketAddressProtocolPAAE4bind8property2to_5flags13transformFrom0I2To10GLibObject10BindingRefVSgAA0bC12PropertyNameO_qd_0_qd__AJ0N5FlagsVSbAJ05ValueO0V_AStcSbAS_AStctAJ0pqD0Rd__AJ0mD0Rd_0_r0_lF">bind(property:<wbr>to:<wbr>_:<wbr>flags:<wbr>transformFrom:<wbr>transformTo:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7792,7 +7814,7 @@ for internet sockets, or <code>GUnixSocketAddress</code> for UNIX domain sockets
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8785-L8809">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8800-L8824">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7802,7 +7824,7 @@ for internet sockets, or <code>GUnixSocketAddress</code> for UNIX domain sockets
                     <code>
                     <a name="/s:3GIO21SocketAddressProtocolPAAE3get8property10GLibObject5ValueCAA0bC12PropertyNameO_tF"></a>
                     <a name="//apple_ref/swift/Method/get(property:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO21SocketAddressProtocolPAAE3get8property10GLibObject5ValueCAA0bC12PropertyNameO_tF">get(property:)</a>
+                    <a class="token" href="#/s:3GIO21SocketAddressProtocolPAAE3get8property10GLibObject5ValueCAA0bC12PropertyNameO_tF">get(property:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7849,7 +7871,7 @@ for internet sockets, or <code>GUnixSocketAddress</code> for UNIX domain sockets
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8814-L8818">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8829-L8833">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7859,7 +7881,7 @@ for internet sockets, or <code>GUnixSocketAddress</code> for UNIX domain sockets
                     <code>
                     <a name="/s:3GIO21SocketAddressProtocolPAAE3set8property5valueyAA0bC12PropertyNameO_10GLibObject5ValueCtF"></a>
                     <a name="//apple_ref/swift/Method/set(property:value:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO21SocketAddressProtocolPAAE3set8property5valueyAA0bC12PropertyNameO_10GLibObject5ValueCtF">set(property:value:)</a>
+                    <a class="token" href="#/s:3GIO21SocketAddressProtocolPAAE3set8property5valueyAA0bC12PropertyNameO_10GLibObject5ValueCtF">set(property:<wbr>value:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7907,7 +7929,7 @@ for internet sockets, or <code>GUnixSocketAddress</code> for UNIX domain sockets
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8824-L8826">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8839-L8841">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7917,7 +7939,7 @@ for internet sockets, or <code>GUnixSocketAddress</code> for UNIX domain sockets
                     <code>
                     <a name="/s:3GIO21SocketAddressProtocolPAAE7connect6signal5flags2toSiAA0bC10SignalNameO_10GLibObject12ConnectFlagsVyyctF"></a>
                     <a name="//apple_ref/swift/Method/connect(signal:flags:to:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO21SocketAddressProtocolPAAE7connect6signal5flags2toSiAA0bC10SignalNameO_10GLibObject12ConnectFlagsVyyctF">connect(signal:flags:to:)</a>
+                    <a class="token" href="#/s:3GIO21SocketAddressProtocolPAAE7connect6signal5flags2toSiAA0bC10SignalNameO_10GLibObject12ConnectFlagsVyyctF">connect(signal:<wbr>flags:<wbr>to:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7989,7 +8011,7 @@ for internet sockets, or <code>GUnixSocketAddress</code> for UNIX domain sockets
                         <p>positive handler ID, or a value less than or equal to <code>0</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8864-L8883">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8879-L8898">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7998,10 +8020,10 @@ for internet sockets, or <code>GUnixSocketAddress</code> for UNIX domain sockets
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/SocketAddress%20Class:%20SocketAddressProtocol%20extension%20(methods%20and%20fields)"></a>
+                <a name="/SocketAddress%20Class%3A%20SocketAddressProtocol%20extension%20%28methods%20and%20fields%29"></a>
                 <a name="//apple_ref/swift/Section/SocketAddress Class: SocketAddressProtocol extension (methods and fields)" class="dashAnchor"></a>
                 <div class="section-name-container">
-                  <a class="section-name-link" href="#/SocketAddress%20Class:%20SocketAddressProtocol%20extension%20(methods%20and%20fields)"></a>
+                  <a class="section-name-link" href="#/SocketAddress%20Class%3A%20SocketAddressProtocol%20extension%20%28methods%20and%20fields%29"></a>
                   <h3 class="section-name"><p>SocketAddress Class: SocketAddressProtocol extension (methods and fields)</p>
 </h3>
                 </div>
@@ -8036,7 +8058,7 @@ for internet sockets, or <code>GUnixSocketAddress</code> for UNIX domain sockets
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8892-L8895">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8907-L8910">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8072,7 +8094,7 @@ You can use this to allocate memory to pass to
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8900-L8903">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8915-L8918">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8082,7 +8104,7 @@ You can use this to allocate memory to pass to
                     <code>
                     <a name="/s:3GIO21SocketAddressProtocolPAAE8toNative4dest7destlenSbSvSg_SitKF"></a>
                     <a name="//apple_ref/swift/Method/toNative(dest:destlen:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO21SocketAddressProtocolPAAE8toNative4dest7destlenSbSvSg_SitKF">toNative(dest:destlen:)</a>
+                    <a class="token" href="#/s:3GIO21SocketAddressProtocolPAAE8toNative4dest7destlenSbSvSg_SitKF">toNative(dest:<wbr>destlen:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8111,7 +8133,7 @@ then a <code>G_IO_ERROR_NOT_SUPPORTED</code> error is returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8911-L8916">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8926-L8931">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8145,7 +8167,7 @@ then a <code>G_IO_ERROR_NOT_SUPPORTED</code> error is returned.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8917-L8923">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8932-L8938">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8181,7 +8203,7 @@ You can use this to allocate memory to pass to
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8928-L8936">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8943-L8951">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8215,7 +8237,7 @@ You can use this to allocate memory to pass to
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8938-L8943">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L8953-L8958">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8228,8 +8250,8 @@ You can use this to allocate memory to pass to
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.ict.griffith.edu.au/~rhexel/" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2020-09-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

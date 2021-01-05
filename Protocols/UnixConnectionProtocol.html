@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          GIO 2.64.4 Docs
+          GIO 2.66.4 Docs
         </a>
-         (88% documented)
+         (89% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx%2Egithub%2Eio%2FSwiftGIO%2Fdocsets%2FGIO%2Exml">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx.github.io%2FSwiftGIO%2Fdocsets%2FGIO.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -2205,6 +2205,12 @@
                 <a class="nav-group-task-link" href="../Extensions/TLSCertificateRequestFlags.html">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingError.html">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingType.html">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/TLSDatabaseLookupFlags.html">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -2648,6 +2654,9 @@
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO20tlsBackendGetDefaultAA13TLSBackendRefVSgyF">tlsBackendGetDefault()</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27tlsChannelBindingErrorQuarks6UInt32VyF">tlsChannelBindingErrorQuark()</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO22tlsClientConnectionNew12baseIoStream14serverIdentityAA09TLSClientD3RefVSgx_AA017SocketConnectableL0VSgtKAA16IOStreamProtocolRzlF">tlsClientConnectionNew(baseIoStream:serverIdentity:)</a>
               </li>
               <li class="nav-group-task">
@@ -2724,6 +2733,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO25unixMountIsSystemInternal10mountEntrySbx_tAA04UnixcH8ProtocolRzlF">unixMountIsSystemInternal(mountEntry:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO16unixMountPointAt9mountPath8timeReadAA04UnixcD3RefVSgSPys4Int8VGSg_Spys6UInt64VGSgtF">unixMountPointAt(mountPath:timeRead:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27unixMountPointsChangedSince4timeSbs6UInt64V_tF">unixMountPointsChangedSince(time:)</a>
@@ -5243,6 +5255,12 @@
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO26TLSCertificateRequestFlagsa">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSChannelBindingErrora">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO21TLSChannelBindingTypea">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSDatabaseLookupFlagsa">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -7578,6 +7596,7 @@
             <h1>UnixConnectionProtocol</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">UnixConnectionProtocol</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/SocketConnectionProtocol.html">SocketConnectionProtocol</a></span></code></pre>
 
                 </div>
@@ -7597,6 +7616,9 @@ functionality like passing file descriptors.</p>
 GIO interfaces, thus you have to use the <code>gio-unix-2.0.pc</code>
 pkg-config file when using it.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6133-L6140">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -7629,7 +7651,7 @@ pkg-config file when using it.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6078">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6135">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7667,7 +7689,7 @@ pkg-config file when using it.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6081">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6138">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7690,7 +7712,7 @@ pkg-config file when using it.</p>
                     <code>
                     <a name="/s:3GIO22UnixConnectionProtocolPAAE4bind8property2to_5flags13transformFrom0I2To10GLibObject10BindingRefVSgAA0bC12PropertyNameO_qd_0_qd__AJ0N5FlagsVSbAJ05ValueO0V_AStcSbAS_AStctAJ0pqD0Rd__AJ0mD0Rd_0_r0_lF"></a>
                     <a name="//apple_ref/swift/Method/bind(property:to:_:flags:transformFrom:transformTo:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22UnixConnectionProtocolPAAE4bind8property2to_5flags13transformFrom0I2To10GLibObject10BindingRefVSgAA0bC12PropertyNameO_qd_0_qd__AJ0N5FlagsVSbAJ05ValueO0V_AStcSbAS_AStctAJ0pqD0Rd__AJ0mD0Rd_0_r0_lF">bind(property:to:_:flags:transformFrom:transformTo:)</a>
+                    <a class="token" href="#/s:3GIO22UnixConnectionProtocolPAAE4bind8property2to_5flags13transformFrom0I2To10GLibObject10BindingRefVSgAA0bC12PropertyNameO_qd_0_qd__AJ0N5FlagsVSbAJ05ValueO0V_AStcSbAS_AStctAJ0pqD0Rd__AJ0mD0Rd_0_r0_lF">bind(property:<wbr>to:<wbr>_:<wbr>flags:<wbr>transformFrom:<wbr>transformTo:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7798,7 +7820,7 @@ pkg-config file when using it.</p>
                         <p>binding reference or <code>nil</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6334-L6358">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6391-L6415">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7808,7 +7830,7 @@ pkg-config file when using it.</p>
                     <code>
                     <a name="/s:3GIO22UnixConnectionProtocolPAAE3get8property10GLibObject5ValueCAA0bC12PropertyNameO_tF"></a>
                     <a name="//apple_ref/swift/Method/get(property:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22UnixConnectionProtocolPAAE3get8property10GLibObject5ValueCAA0bC12PropertyNameO_tF">get(property:)</a>
+                    <a class="token" href="#/s:3GIO22UnixConnectionProtocolPAAE3get8property10GLibObject5ValueCAA0bC12PropertyNameO_tF">get(property:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7855,7 +7877,7 @@ pkg-config file when using it.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6363-L6367">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6420-L6424">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7865,7 +7887,7 @@ pkg-config file when using it.</p>
                     <code>
                     <a name="/s:3GIO22UnixConnectionProtocolPAAE3set8property5valueyAA0bC12PropertyNameO_10GLibObject5ValueCtF"></a>
                     <a name="//apple_ref/swift/Method/set(property:value:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22UnixConnectionProtocolPAAE3set8property5valueyAA0bC12PropertyNameO_10GLibObject5ValueCtF">set(property:value:)</a>
+                    <a class="token" href="#/s:3GIO22UnixConnectionProtocolPAAE3set8property5valueyAA0bC12PropertyNameO_10GLibObject5ValueCtF">set(property:<wbr>value:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7913,7 +7935,7 @@ pkg-config file when using it.</p>
                         <p>the value of the named property</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6373-L6375">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6430-L6432">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7923,7 +7945,7 @@ pkg-config file when using it.</p>
                     <code>
                     <a name="/s:3GIO22UnixConnectionProtocolPAAE7connect6signal5flags2toSiAA0bC10SignalNameO_10GLibObject12ConnectFlagsVyyctF"></a>
                     <a name="//apple_ref/swift/Method/connect(signal:flags:to:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22UnixConnectionProtocolPAAE7connect6signal5flags2toSiAA0bC10SignalNameO_10GLibObject12ConnectFlagsVyyctF">connect(signal:flags:to:)</a>
+                    <a class="token" href="#/s:3GIO22UnixConnectionProtocolPAAE7connect6signal5flags2toSiAA0bC10SignalNameO_10GLibObject12ConnectFlagsVyyctF">connect(signal:<wbr>flags:<wbr>to:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7995,7 +8017,7 @@ pkg-config file when using it.</p>
                         <p>positive handler ID, or a value less than or equal to <code>0</code> in case of an error</p>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6416-L6435">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6473-L6492">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8004,10 +8026,10 @@ pkg-config file when using it.</p>
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/UnixConnection%20Class:%20UnixConnectionProtocol%20extension%20(methods%20and%20fields)"></a>
+                <a name="/UnixConnection%20Class%3A%20UnixConnectionProtocol%20extension%20%28methods%20and%20fields%29"></a>
                 <a name="//apple_ref/swift/Section/UnixConnection Class: UnixConnectionProtocol extension (methods and fields)" class="dashAnchor"></a>
                 <div class="section-name-container">
-                  <a class="section-name-link" href="#/UnixConnection%20Class:%20UnixConnectionProtocol%20extension%20(methods%20and%20fields)"></a>
+                  <a class="section-name-link" href="#/UnixConnection%20Class%3A%20UnixConnectionProtocol%20extension%20%28methods%20and%20fields%29"></a>
                   <h3 class="section-name"><p>UnixConnection Class: UnixConnectionProtocol extension (methods and fields)</p>
 </h3>
                 </div>
@@ -8018,7 +8040,7 @@ pkg-config file when using it.</p>
                     <code>
                     <a name="/s:3GIO22UnixConnectionProtocolPAAE18receiveCredentials11cancellableAA0F3RefVSgAA011CancellableH0VSg_tKF"></a>
                     <a name="//apple_ref/swift/Method/receiveCredentials(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22UnixConnectionProtocolPAAE18receiveCredentials11cancellableAA0F3RefVSgAA011CancellableH0VSg_tKF">receiveCredentials(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO22UnixConnectionProtocolPAAE18receiveCredentials11cancellableAA0F3RefVSgAA011CancellableH0VSg_tKF">receiveCredentials(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8061,7 +8083,7 @@ passing to work on some implementations.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6461-L6466">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6518-L6523">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8071,7 +8093,7 @@ passing to work on some implementations.</p>
                     <code>
                     <a name="/s:3GIO22UnixConnectionProtocolPAAE18receiveCredentials11cancellableAA0F3RefVSgqd__Sg_tKAA011CancellableD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/receiveCredentials(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22UnixConnectionProtocolPAAE18receiveCredentials11cancellableAA0F3RefVSgqd__Sg_tKAA011CancellableD0Rd__lF">receiveCredentials(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO22UnixConnectionProtocolPAAE18receiveCredentials11cancellableAA0F3RefVSgqd__Sg_tKAA011CancellableD0Rd__lF">receiveCredentials(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8114,7 +8136,7 @@ passing to work on some implementations.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6485-L6490">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6542-L6547">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8124,7 +8146,7 @@ passing to work on some implementations.</p>
                     <code>
                     <a name="/s:3GIO22UnixConnectionProtocolPAAE23receiveCredentialsAsync11cancellable8callback8userDatayAA14CancellableRefVSg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAStF"></a>
                     <a name="//apple_ref/swift/Method/receiveCredentialsAsync(cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22UnixConnectionProtocolPAAE23receiveCredentialsAsync11cancellable8callback8userDatayAA14CancellableRefVSg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAStF">receiveCredentialsAsync(cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO22UnixConnectionProtocolPAAE23receiveCredentialsAsync11cancellable8callback8userDatayAA14CancellableRefVSg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAStF">receiveCredentialsAsync(cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8154,7 +8176,7 @@ the synchronous version of this call.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6499-L6502">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6556-L6559">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8164,7 +8186,7 @@ the synchronous version of this call.</p>
                     <code>
                     <a name="/s:3GIO22UnixConnectionProtocolPAAE23receiveCredentialsAsync11cancellable8callback8userDatayqd__Sg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAQtAA011CancellableD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/receiveCredentialsAsync(cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22UnixConnectionProtocolPAAE23receiveCredentialsAsync11cancellable8callback8userDatayqd__Sg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAQtAA011CancellableD0Rd__lF">receiveCredentialsAsync(cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO22UnixConnectionProtocolPAAE23receiveCredentialsAsync11cancellable8callback8userDatayqd__Sg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAQtAA011CancellableD0Rd__lF">receiveCredentialsAsync(cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8194,7 +8216,7 @@ the synchronous version of this call.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6510-L6513">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6567-L6570">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8204,7 +8226,7 @@ the synchronous version of this call.</p>
                     <code>
                     <a name="/s:3GIO22UnixConnectionProtocolPAAE24receiveCredentialsFinish6resultAA0F3RefVSgqd___tKAA011AsyncResultD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/receiveCredentialsFinish(result:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22UnixConnectionProtocolPAAE24receiveCredentialsFinish6resultAA0F3RefVSgqd___tKAA011AsyncResultD0Rd__lF">receiveCredentialsFinish(result:)</a>
+                    <a class="token" href="#/s:3GIO22UnixConnectionProtocolPAAE24receiveCredentialsFinish6resultAA0F3RefVSgqd___tKAA011AsyncResultD0Rd__lF">receiveCredentialsFinish(result:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8229,7 +8251,7 @@ the synchronous version of this call.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6517-L6522">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6574-L6579">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8239,7 +8261,7 @@ the synchronous version of this call.</p>
                     <code>
                     <a name="/s:3GIO22UnixConnectionProtocolPAAE9receiveFd11cancellableSiAA14CancellableRefVSg_tKF"></a>
                     <a name="//apple_ref/swift/Method/receiveFd(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22UnixConnectionProtocolPAAE9receiveFd11cancellableSiAA14CancellableRefVSg_tKF">receiveFd(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO22UnixConnectionProtocolPAAE9receiveFd11cancellableSiAA14CancellableRefVSg_tKF">receiveFd(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8269,7 +8291,7 @@ implementations.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6531-L6536">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6588-L6593">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8279,7 +8301,7 @@ implementations.</p>
                     <code>
                     <a name="/s:3GIO22UnixConnectionProtocolPAAE9receiveFd11cancellableSiqd__Sg_tKAA011CancellableD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/receiveFd(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22UnixConnectionProtocolPAAE9receiveFd11cancellableSiqd__Sg_tKAA011CancellableD0Rd__lF">receiveFd(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO22UnixConnectionProtocolPAAE9receiveFd11cancellableSiqd__Sg_tKAA011CancellableD0Rd__lF">receiveFd(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8309,7 +8331,7 @@ implementations.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6544-L6549">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6601-L6606">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8319,7 +8341,7 @@ implementations.</p>
                     <code>
                     <a name="/s:3GIO22UnixConnectionProtocolPAAE15sendCredentials11cancellableSbAA14CancellableRefVSg_tKF"></a>
                     <a name="//apple_ref/swift/Method/sendCredentials(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22UnixConnectionProtocolPAAE15sendCredentials11cancellableSbAA14CancellableRefVSg_tKF">sendCredentials(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO22UnixConnectionProtocolPAAE15sendCredentials11cancellableSbAA14CancellableRefVSg_tKF">sendCredentials(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8363,7 +8385,7 @@ work on some implementations.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6570-L6575">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6627-L6632">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8373,7 +8395,7 @@ work on some implementations.</p>
                     <code>
                     <a name="/s:3GIO22UnixConnectionProtocolPAAE15sendCredentials11cancellableSbqd__Sg_tKAA011CancellableD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/sendCredentials(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22UnixConnectionProtocolPAAE15sendCredentials11cancellableSbqd__Sg_tKAA011CancellableD0Rd__lF">sendCredentials(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO22UnixConnectionProtocolPAAE15sendCredentials11cancellableSbqd__Sg_tKAA011CancellableD0Rd__lF">sendCredentials(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8417,7 +8439,7 @@ work on some implementations.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6595-L6600">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6652-L6657">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8427,7 +8449,7 @@ work on some implementations.</p>
                     <code>
                     <a name="/s:3GIO22UnixConnectionProtocolPAAE20sendCredentialsAsync11cancellable8callback8userDatayAA14CancellableRefVSg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAStF"></a>
                     <a name="//apple_ref/swift/Method/sendCredentialsAsync(cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22UnixConnectionProtocolPAAE20sendCredentialsAsync11cancellable8callback8userDatayAA14CancellableRefVSg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAStF">sendCredentialsAsync(cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO22UnixConnectionProtocolPAAE20sendCredentialsAsync11cancellable8callback8userDatayAA14CancellableRefVSg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAStF">sendCredentialsAsync(cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8457,7 +8479,7 @@ the synchronous version of this call.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6609-L6612">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6666-L6669">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8467,7 +8489,7 @@ the synchronous version of this call.</p>
                     <code>
                     <a name="/s:3GIO22UnixConnectionProtocolPAAE20sendCredentialsAsync11cancellable8callback8userDatayqd__Sg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAQtAA011CancellableD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/sendCredentialsAsync(cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22UnixConnectionProtocolPAAE20sendCredentialsAsync11cancellable8callback8userDatayqd__Sg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAQtAA011CancellableD0Rd__lF">sendCredentialsAsync(cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO22UnixConnectionProtocolPAAE20sendCredentialsAsync11cancellable8callback8userDatayqd__Sg_ySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAQtAA011CancellableD0Rd__lF">sendCredentialsAsync(cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8497,7 +8519,7 @@ the synchronous version of this call.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6620-L6623">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6677-L6680">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8507,7 +8529,7 @@ the synchronous version of this call.</p>
                     <code>
                     <a name="/s:3GIO22UnixConnectionProtocolPAAE21sendCredentialsFinish6resultSbqd___tKAA011AsyncResultD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/sendCredentialsFinish(result:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22UnixConnectionProtocolPAAE21sendCredentialsFinish6resultSbqd___tKAA011AsyncResultD0Rd__lF">sendCredentialsFinish(result:)</a>
+                    <a class="token" href="#/s:3GIO22UnixConnectionProtocolPAAE21sendCredentialsFinish6resultSbqd___tKAA011AsyncResultD0Rd__lF">sendCredentialsFinish(result:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8532,7 +8554,7 @@ the synchronous version of this call.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6627-L6632">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6684-L6689">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8542,7 +8564,7 @@ the synchronous version of this call.</p>
                     <code>
                     <a name="/s:3GIO22UnixConnectionProtocolPAAE4send2fd11cancellableSbSi_AA14CancellableRefVSgtKF"></a>
                     <a name="//apple_ref/swift/Method/send(fd:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22UnixConnectionProtocolPAAE4send2fd11cancellableSbSi_AA14CancellableRefVSgtKF">send(fd:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO22UnixConnectionProtocolPAAE4send2fd11cancellableSbSi_AA14CancellableRefVSgtKF">send(fd:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8572,7 +8594,7 @@ implementations.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6641-L6646">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6698-L6703">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8582,7 +8604,7 @@ implementations.</p>
                     <code>
                     <a name="/s:3GIO22UnixConnectionProtocolPAAE4send2fd11cancellableSbSi_qd__SgtKAA011CancellableD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/send(fd:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO22UnixConnectionProtocolPAAE4send2fd11cancellableSbSi_qd__SgtKAA011CancellableD0Rd__lF">send(fd:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO22UnixConnectionProtocolPAAE4send2fd11cancellableSbSi_qd__SgtKAA011CancellableD0Rd__lF">send(fd:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8612,7 +8634,7 @@ implementations.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6654-L6659">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6711-L6716">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8646,7 +8668,7 @@ implementations.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6661-L6666">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6718-L6723">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8680,7 +8702,7 @@ implementations.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6668-L6673">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-TcpConnection-UnixConnection.swift#L6725-L6730">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8693,8 +8715,8 @@ implementations.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.ict.griffith.edu.au/~rhexel/" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2020-09-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

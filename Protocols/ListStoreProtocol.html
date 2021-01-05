@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          GIO 2.64.4 Docs
+          GIO 2.66.4 Docs
         </a>
-         (88% documented)
+         (89% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx%2Egithub%2Eio%2FSwiftGIO%2Fdocsets%2FGIO%2Exml">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx.github.io%2FSwiftGIO%2Fdocsets%2FGIO.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -2205,6 +2205,12 @@
                 <a class="nav-group-task-link" href="../Extensions/TLSCertificateRequestFlags.html">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingError.html">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingType.html">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/TLSDatabaseLookupFlags.html">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -2648,6 +2654,9 @@
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO20tlsBackendGetDefaultAA13TLSBackendRefVSgyF">tlsBackendGetDefault()</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27tlsChannelBindingErrorQuarks6UInt32VyF">tlsChannelBindingErrorQuark()</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO22tlsClientConnectionNew12baseIoStream14serverIdentityAA09TLSClientD3RefVSgx_AA017SocketConnectableL0VSgtKAA16IOStreamProtocolRzlF">tlsClientConnectionNew(baseIoStream:serverIdentity:)</a>
               </li>
               <li class="nav-group-task">
@@ -2724,6 +2733,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO25unixMountIsSystemInternal10mountEntrySbx_tAA04UnixcH8ProtocolRzlF">unixMountIsSystemInternal(mountEntry:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO16unixMountPointAt9mountPath8timeReadAA04UnixcD3RefVSgSPys4Int8VGSg_Spys6UInt64VGSgtF">unixMountPointAt(mountPath:timeRead:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27unixMountPointsChangedSince4timeSbs6UInt64V_tF">unixMountPointsChangedSince(time:)</a>
@@ -5243,6 +5255,12 @@
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO26TLSCertificateRequestFlagsa">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSChannelBindingErrora">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO21TLSChannelBindingTypea">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSDatabaseLookupFlagsa">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -7578,6 +7596,7 @@
             <h1>ListStoreProtocol</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ListStoreProtocol</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ListModelProtocol.html">ListModelProtocol</a></span><span class="p">,</span> <span class="kt">ObjectProtocol</span></code></pre>
 
                 </div>
@@ -7593,6 +7612,9 @@ items in memory.</p>
 <p>It provides insertions, deletions, and lookups in logarithmic time
 with a fast path for the common case of iterating the list linearly.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-IOStream-ListStore.swift#L3467-L3474">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -7686,7 +7708,7 @@ with a fast path for the common case of iterating the list linearly.</p>
                     <code>
                     <a name="/s:3GIO17ListStoreProtocolPAAE4bind8property2to_5flags13transformFrom0I2To10GLibObject10BindingRefVSgAA0bC12PropertyNameO_qd_0_qd__AJ0N5FlagsVSbAJ05ValueO0V_AStcSbAS_AStctAJ0pqD0Rd__AJ0mD0Rd_0_r0_lF"></a>
                     <a name="//apple_ref/swift/Method/bind(property:to:_:flags:transformFrom:transformTo:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO17ListStoreProtocolPAAE4bind8property2to_5flags13transformFrom0I2To10GLibObject10BindingRefVSgAA0bC12PropertyNameO_qd_0_qd__AJ0N5FlagsVSbAJ05ValueO0V_AStcSbAS_AStctAJ0pqD0Rd__AJ0mD0Rd_0_r0_lF">bind(property:to:_:flags:transformFrom:transformTo:)</a>
+                    <a class="token" href="#/s:3GIO17ListStoreProtocolPAAE4bind8property2to_5flags13transformFrom0I2To10GLibObject10BindingRefVSgAA0bC12PropertyNameO_qd_0_qd__AJ0N5FlagsVSbAJ05ValueO0V_AStcSbAS_AStctAJ0pqD0Rd__AJ0mD0Rd_0_r0_lF">bind(property:<wbr>to:<wbr>_:<wbr>flags:<wbr>transformFrom:<wbr>transformTo:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7804,7 +7826,7 @@ with a fast path for the common case of iterating the list linearly.</p>
                     <code>
                     <a name="/s:3GIO17ListStoreProtocolPAAE3get8property10GLibObject5ValueCAA0bC12PropertyNameO_tF"></a>
                     <a name="//apple_ref/swift/Method/get(property:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO17ListStoreProtocolPAAE3get8property10GLibObject5ValueCAA0bC12PropertyNameO_tF">get(property:)</a>
+                    <a class="token" href="#/s:3GIO17ListStoreProtocolPAAE3get8property10GLibObject5ValueCAA0bC12PropertyNameO_tF">get(property:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7861,7 +7883,7 @@ with a fast path for the common case of iterating the list linearly.</p>
                     <code>
                     <a name="/s:3GIO17ListStoreProtocolPAAE3set8property5valueyAA0bC12PropertyNameO_10GLibObject5ValueCtF"></a>
                     <a name="//apple_ref/swift/Method/set(property:value:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO17ListStoreProtocolPAAE3set8property5valueyAA0bC12PropertyNameO_10GLibObject5ValueCtF">set(property:value:)</a>
+                    <a class="token" href="#/s:3GIO17ListStoreProtocolPAAE3set8property5valueyAA0bC12PropertyNameO_10GLibObject5ValueCtF">set(property:<wbr>value:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7919,7 +7941,7 @@ with a fast path for the common case of iterating the list linearly.</p>
                     <code>
                     <a name="/s:3GIO17ListStoreProtocolPAAE7connect6signal5flags2toSiAA0bC10SignalNameO_10GLibObject12ConnectFlagsVyyctF"></a>
                     <a name="//apple_ref/swift/Method/connect(signal:flags:to:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO17ListStoreProtocolPAAE7connect6signal5flags2toSiAA0bC10SignalNameO_10GLibObject12ConnectFlagsVyyctF">connect(signal:flags:to:)</a>
+                    <a class="token" href="#/s:3GIO17ListStoreProtocolPAAE7connect6signal5flags2toSiAA0bC10SignalNameO_10GLibObject12ConnectFlagsVyyctF">connect(signal:<wbr>flags:<wbr>to:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8000,10 +8022,10 @@ with a fast path for the common case of iterating the list linearly.</p>
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/ListStore%20Class:%20ListStoreProtocol%20extension%20(methods%20and%20fields)"></a>
+                <a name="/ListStore%20Class%3A%20ListStoreProtocol%20extension%20%28methods%20and%20fields%29"></a>
                 <a name="//apple_ref/swift/Section/ListStore Class: ListStoreProtocol extension (methods and fields)" class="dashAnchor"></a>
                 <div class="section-name-container">
-                  <a class="section-name-link" href="#/ListStore%20Class:%20ListStoreProtocol%20extension%20(methods%20and%20fields)"></a>
+                  <a class="section-name-link" href="#/ListStore%20Class%3A%20ListStoreProtocol%20extension%20%28methods%20and%20fields%29"></a>
                   <h3 class="section-name"><p>ListStore Class: ListStoreProtocol extension (methods and fields)</p>
 </h3>
                 </div>
@@ -8014,7 +8036,7 @@ with a fast path for the common case of iterating the list linearly.</p>
                     <code>
                     <a name="/s:3GIO17ListStoreProtocolPAAE6append4itemyqd___t10GLibObject0hD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/append(item:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO17ListStoreProtocolPAAE6append4itemyqd___t10GLibObject0hD0Rd__lF">append(item:)</a>
+                    <a class="token" href="#/s:3GIO17ListStoreProtocolPAAE6append4itemyqd___t10GLibObject0hD0Rd__lF">append(item:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8053,7 +8075,7 @@ efficiently.</p>
                     <code>
                     <a name="/s:3GIO17ListStoreProtocolPAAE4find4item8positionSbqd___Spys6UInt32VGSgt10GLibObject0jD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/find(item:position:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO17ListStoreProtocolPAAE4find4item8positionSbqd___Spys6UInt32VGSgt10GLibObject0jD0Rd__lF">find(item:position:)</a>
+                    <a class="token" href="#/s:3GIO17ListStoreProtocolPAAE4find4item8positionSbqd___Spys6UInt32VGSgt10GLibObject0jD0Rd__lF">find(item:<wbr>position:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8092,7 +8114,7 @@ not be set, and this method will return <code>false</code>.</p>
                     <code>
                     <a name="/s:3GIO17ListStoreProtocolPAAE17findWithEqualFunc4item05equalH08positionSbqd___s5Int32VSVSg_AJtXCSgSpys6UInt32VGSgt10GLibObject0oD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/findWithEqualFunc(item:equalFunc:position:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO17ListStoreProtocolPAAE17findWithEqualFunc4item05equalH08positionSbqd___s5Int32VSVSg_AJtXCSgSpys6UInt32VGSgt10GLibObject0oD0Rd__lF">findWithEqualFunc(item:equalFunc:position:)</a>
+                    <a class="token" href="#/s:3GIO17ListStoreProtocolPAAE17findWithEqualFunc4item05equalH08positionSbqd___s5Int32VSVSg_AJtXCSgSpys6UInt32VGSgt10GLibObject0oD0Rd__lF">findWithEqualFunc(item:<wbr>equalFunc:<wbr>position:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8129,7 +8151,7 @@ method will return <code>false</code>.</p>
                     <code>
                     <a name="/s:3GIO17ListStoreProtocolPAAE6insert8position4itemySi_qd__t10GLibObject0iD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/insert(position:item:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO17ListStoreProtocolPAAE6insert8position4itemySi_qd__t10GLibObject0iD0Rd__lF">insert(position:item:)</a>
+                    <a class="token" href="#/s:3GIO17ListStoreProtocolPAAE6insert8position4itemySi_qd__t10GLibObject0iD0Rd__lF">insert(position:<wbr>item:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8170,7 +8192,7 @@ efficiently.</p>
                     <code>
                     <a name="/s:3GIO17ListStoreProtocolPAAE12insertSorted4item11compareFunc8userDataSiqd___s5Int32VSVSg_AJSvSgtXCSgAKt10GLibObject0nD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/insertSorted(item:compareFunc:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO17ListStoreProtocolPAAE12insertSorted4item11compareFunc8userDataSiqd___s5Int32VSVSg_AJSvSgtXCSgAKt10GLibObject0nD0Rd__lF">insertSorted(item:compareFunc:userData:)</a>
+                    <a class="token" href="#/s:3GIO17ListStoreProtocolPAAE12insertSorted4item11compareFunc8userDataSiqd___s5Int32VSVSg_AJSvSgtXCSgAKt10GLibObject0nD0Rd__lF">insertSorted(item:<wbr>compareFunc:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8211,7 +8233,7 @@ inserting items by way of this function.</p>
                     <code>
                     <a name="/s:3GIO17ListStoreProtocolPAAE6remove8positionySi_tF"></a>
                     <a name="//apple_ref/swift/Method/remove(position:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO17ListStoreProtocolPAAE6remove8positionySi_tF">remove(position:)</a>
+                    <a class="token" href="#/s:3GIO17ListStoreProtocolPAAE6remove8positionySi_tF">remove(position:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8283,7 +8305,7 @@ efficiently.</p>
                     <code>
                     <a name="/s:3GIO17ListStoreProtocolPAAE4sort11compareFunc8userDatays5Int32VSVSg_AISvSgtXCSg_AJtF"></a>
                     <a name="//apple_ref/swift/Method/sort(compareFunc:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO17ListStoreProtocolPAAE4sort11compareFunc8userDatays5Int32VSVSg_AISvSgtXCSg_AJtF">sort(compareFunc:userData:)</a>
+                    <a class="token" href="#/s:3GIO17ListStoreProtocolPAAE4sort11compareFunc8userDatays5Int32VSVSg_AISvSgtXCSg_AJtF">sort(compareFunc:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8317,7 +8339,7 @@ efficiently.</p>
                     <code>
                     <a name="/s:3GIO17ListStoreProtocolPAAE6splice8position9nRemovals9additions10nAdditionsySi_SiSpySvSgGSgSitF"></a>
                     <a name="//apple_ref/swift/Method/splice(position:nRemovals:additions:nAdditions:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO17ListStoreProtocolPAAE6splice8position9nRemovals9additions10nAdditionsySi_SiSpySvSgGSgSitF">splice(position:nRemovals:additions:nAdditions:)</a>
+                    <a class="token" href="#/s:3GIO17ListStoreProtocolPAAE6splice8position9nRemovals9additions10nAdditionsySi_SiSpySvSgGSgSitF">splice(position:<wbr>nRemovals:<wbr>additions:<wbr>nAdditions:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8366,8 +8388,8 @@ the list at the time this function is called).</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.ict.griffith.edu.au/~rhexel/" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2020-09-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

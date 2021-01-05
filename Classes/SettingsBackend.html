@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          GIO 2.64.4 Docs
+          GIO 2.66.4 Docs
         </a>
-         (88% documented)
+         (89% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx%2Egithub%2Eio%2FSwiftGIO%2Fdocsets%2FGIO%2Exml">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx.github.io%2FSwiftGIO%2Fdocsets%2FGIO.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -2205,6 +2205,12 @@
                 <a class="nav-group-task-link" href="../Extensions/TLSCertificateRequestFlags.html">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingError.html">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingType.html">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/TLSDatabaseLookupFlags.html">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -2648,6 +2654,9 @@
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO20tlsBackendGetDefaultAA13TLSBackendRefVSgyF">tlsBackendGetDefault()</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27tlsChannelBindingErrorQuarks6UInt32VyF">tlsChannelBindingErrorQuark()</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO22tlsClientConnectionNew12baseIoStream14serverIdentityAA09TLSClientD3RefVSgx_AA017SocketConnectableL0VSgtKAA16IOStreamProtocolRzlF">tlsClientConnectionNew(baseIoStream:serverIdentity:)</a>
               </li>
               <li class="nav-group-task">
@@ -2724,6 +2733,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO25unixMountIsSystemInternal10mountEntrySbx_tAA04UnixcH8ProtocolRzlF">unixMountIsSystemInternal(mountEntry:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO16unixMountPointAt9mountPath8timeReadAA04UnixcD3RefVSgSPys4Int8VGSg_Spys6UInt64VGSgtF">unixMountPointAt(mountPath:timeRead:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27unixMountPointsChangedSince4timeSbs6UInt64V_tF">unixMountPointsChangedSince(time:)</a>
@@ -5243,6 +5255,12 @@
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO26TLSCertificateRequestFlagsa">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSChannelBindingErrora">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO21TLSChannelBindingTypea">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSDatabaseLookupFlagsa">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -7578,6 +7596,7 @@
             <h1>SettingsBackend</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">SettingsBackend</span> <span class="p">:</span> <span class="kt">GLibObject</span><span class="o">.</span><span class="kt">Object</span><span class="p">,</span> <span class="kt"><a href="../Protocols/SettingsBackendProtocol.html">SettingsBackendProtocol</a></span></code></pre>
 
                 </div>
@@ -7611,6 +7630,9 @@ as the public GIO API. For this reason, you have to define the
 C preprocessor symbol <code>G_SETTINGS_ENABLE_BACKEND</code> before including
 <code>gio/gsettingsbackend.h</code>.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L2396-L2532">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -7623,7 +7645,7 @@ C preprocessor symbol <code>G_SETTINGS_ENABLE_BACKEND</code> before including
                     <code>
                     <a name="/s:3GIO15SettingsBackendCyACSpySo010_GSettingsC0VGcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO15SettingsBackendCyACSpySo010_GSettingsC0VGcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO15SettingsBackendCyACSpySo010_GSettingsC0VGcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7667,7 +7689,7 @@ i.e., ownership is transferred to the <code>SettingsBackend</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L2389-L2391">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L2401-L2403">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7677,7 +7699,7 @@ i.e., ownership is transferred to the <code>SettingsBackend</code> instance.</p>
                     <code>
                     <a name="/s:3GIO15SettingsBackendCyACSPySo010_GSettingsC0VGcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO15SettingsBackendCyACSPySo010_GSettingsC0VGcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO15SettingsBackendCyACSPySo010_GSettingsC0VGcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7719,7 +7741,7 @@ i.e., ownership is transferred to the <code>SettingsBackend</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L2397-L2399">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L2409-L2411">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7729,7 +7751,7 @@ i.e., ownership is transferred to the <code>SettingsBackend</code> instance.</p>
                     <code>
                     <a name="/s:3GIO15SettingsBackendC8gpointerACSgSvSg_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(gpointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO15SettingsBackendC8gpointerACSgSvSg_tcfc">init(gpointer:)</a>
+                    <a class="token" href="#/s:3GIO15SettingsBackendC8gpointerACSgSvSg_tcfc">init(gpointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7772,7 +7794,7 @@ i.e., ownership is transferred to the <code>SettingsBackend</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L2406-L2409">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L2418-L2421">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7782,7 +7804,7 @@ i.e., ownership is transferred to the <code>SettingsBackend</code> instance.</p>
                     <code>
                     <a name="/s:3GIO15SettingsBackendC13gconstpointerACSgSVSg_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(gconstpointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO15SettingsBackendC13gconstpointerACSgSVSg_tcfc">init(gconstpointer:)</a>
+                    <a class="token" href="#/s:3GIO15SettingsBackendC13gconstpointerACSgSVSg_tcfc">init(gconstpointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7825,7 +7847,7 @@ i.e., ownership is transferred to the <code>SettingsBackend</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L2416-L2419">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L2428-L2431">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7835,7 +7857,7 @@ i.e., ownership is transferred to the <code>SettingsBackend</code> instance.</p>
                     <code>
                     <a name="/s:3GIO15SettingsBackendCyACSgSPySo010_GSettingsC0VGSgcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO15SettingsBackendCyACSgSPySo010_GSettingsC0VGSgcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO15SettingsBackendCyACSgSPySo010_GSettingsC0VGSgcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7877,7 +7899,7 @@ i.e., ownership is transferred to the <code>SettingsBackend</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L2425-L2428">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L2437-L2440">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7887,7 +7909,7 @@ i.e., ownership is transferred to the <code>SettingsBackend</code> instance.</p>
                     <code>
                     <a name="/s:3GIO15SettingsBackendCyACSgSpySo010_GSettingsC0VGSgcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO15SettingsBackendCyACSgSpySo010_GSettingsC0VGSgcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO15SettingsBackendCyACSgSpySo010_GSettingsC0VGSgcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7929,7 +7951,7 @@ i.e., ownership is transferred to the <code>SettingsBackend</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L2434-L2437">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L2446-L2449">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7939,7 +7961,7 @@ i.e., ownership is transferred to the <code>SettingsBackend</code> instance.</p>
                     <code>
                     <a name="/s:3GIO15SettingsBackendC9retainingACSpySo010_GSettingsC0VG_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retaining:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO15SettingsBackendC9retainingACSpySo010_GSettingsC0VG_tcfc">init(retaining:)</a>
+                    <a class="token" href="#/s:3GIO15SettingsBackendC9retainingACSpySo010_GSettingsC0VG_tcfc">init(retaining:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7981,7 +8003,7 @@ i.e., ownership is transferred to the <code>SettingsBackend</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L2443-L2445">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L2455-L2457">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7991,7 +8013,7 @@ i.e., ownership is transferred to the <code>SettingsBackend</code> instance.</p>
                     <code>
                     <a name="/s:3GIO15SettingsBackendC08settingsC0ACx_tcAA0bC8ProtocolRzlufc"></a>
                     <a name="//apple_ref/swift/Method/init(settingsBackend:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO15SettingsBackendC08settingsC0ACx_tcAA0bC8ProtocolRzlufc">init(settingsBackend:)</a>
+                    <a class="token" href="#/s:3GIO15SettingsBackendC08settingsC0ACx_tcAA0bC8ProtocolRzlufc">init(settingsBackend:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8032,7 +8054,7 @@ Will retain <code>GSettingsBackend</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L2450-L2452">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L2462-L2464">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8042,7 +8064,7 @@ Will retain <code>GSettingsBackend</code>.</p>
                     <code>
                     <a name="/s:3GIO15SettingsBackendC8cPointerACSpyxG_tclufc"></a>
                     <a name="//apple_ref/swift/Method/init(cPointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO15SettingsBackendC8cPointerACSpyxG_tclufc">init(cPointer:)</a>
+                    <a class="token" href="#/s:3GIO15SettingsBackendC8cPointerACSpyxG_tclufc">init(cPointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8083,7 +8105,7 @@ Will retain <code>GSettingsBackend</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L2457-L2459">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L2469-L2471">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8093,7 +8115,7 @@ Will retain <code>GSettingsBackend</code>.</p>
                     <code>
                     <a name="/s:3GIO15SettingsBackendC17retainingCPointerACSpyxG_tclufc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingCPointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO15SettingsBackendC17retainingCPointerACSpyxG_tclufc">init(retainingCPointer:)</a>
+                    <a class="token" href="#/s:3GIO15SettingsBackendC17retainingCPointerACSpyxG_tclufc">init(retainingCPointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8134,7 +8156,7 @@ Will retain <code>GSettingsBackend</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L2464-L2466">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L2476-L2478">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8144,7 +8166,7 @@ Will retain <code>GSettingsBackend</code>.</p>
                     <code>
                     <a name="/s:3GIO15SettingsBackendC3rawACSV_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO15SettingsBackendC3rawACSV_tcfc">init(raw:)</a>
+                    <a class="token" href="#/s:3GIO15SettingsBackendC3rawACSV_tcfc">init(raw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8185,7 +8207,7 @@ Will retain <code>GSettingsBackend</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L2471-L2473">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L2483-L2485">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8195,7 +8217,7 @@ Will retain <code>GSettingsBackend</code>.</p>
                     <code>
                     <a name="/s:3GIO15SettingsBackendC12retainingRawACSV_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingRaw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO15SettingsBackendC12retainingRawACSV_tcfc">init(retainingRaw:)</a>
+                    <a class="token" href="#/s:3GIO15SettingsBackendC12retainingRawACSV_tcfc">init(retainingRaw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8217,7 +8239,7 @@ Will retain <code>GSettingsBackend</code>.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L2477-L2479">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L2489-L2491">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8227,7 +8249,7 @@ Will retain <code>GSettingsBackend</code>.</p>
                     <code>
                     <a name="/s:3GIO15SettingsBackendC3rawACSv_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO15SettingsBackendC3rawACSv_tcfc">init(raw:)</a>
+                    <a class="token" href="#/s:3GIO15SettingsBackendC3rawACSv_tcfc">init(raw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8268,7 +8290,7 @@ Will retain <code>GSettingsBackend</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L2484-L2486">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L2496-L2498">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8278,7 +8300,7 @@ Will retain <code>GSettingsBackend</code>.</p>
                     <code>
                     <a name="/s:3GIO15SettingsBackendC12retainingRawACSv_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingRaw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO15SettingsBackendC12retainingRawACSv_tcfc">init(retainingRaw:)</a>
+                    <a class="token" href="#/s:3GIO15SettingsBackendC12retainingRawACSv_tcfc">init(retainingRaw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8319,7 +8341,7 @@ Will retain <code>GSettingsBackend</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L2491-L2493">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L2503-L2505">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8329,7 +8351,7 @@ Will retain <code>GSettingsBackend</code>.</p>
                     <code>
                     <a name="/s:3GIO15SettingsBackendC13opaquePointerACs06OpaqueE0V_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(opaquePointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO15SettingsBackendC13opaquePointerACs06OpaqueE0V_tcfc">init(opaquePointer:)</a>
+                    <a class="token" href="#/s:3GIO15SettingsBackendC13opaquePointerACs06OpaqueE0V_tcfc">init(opaquePointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8370,7 +8392,7 @@ Will retain <code>GSettingsBackend</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L2498-L2500">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L2510-L2512">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8380,7 +8402,7 @@ Will retain <code>GSettingsBackend</code>.</p>
                     <code>
                     <a name="/s:3GIO15SettingsBackendC22retainingOpaquePointerACs0eF0V_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingOpaquePointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO15SettingsBackendC22retainingOpaquePointerACs0eF0V_tcfc">init(retainingOpaquePointer:)</a>
+                    <a class="token" href="#/s:3GIO15SettingsBackendC22retainingOpaquePointerACs0eF0V_tcfc">init(retainingOpaquePointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8421,7 +8443,7 @@ Will retain <code>GSettingsBackend</code>.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L2505-L2507">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L2517-L2519">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8456,7 +8478,7 @@ to the name of a settings backend.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L2515-L2518">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L2527-L2530">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8469,8 +8491,8 @@ to the name of a settings backend.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.ict.griffith.edu.au/~rhexel/" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2020-09-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

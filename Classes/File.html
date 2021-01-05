@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          GIO 2.64.4 Docs
+          GIO 2.66.4 Docs
         </a>
-         (88% documented)
+         (89% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx%2Egithub%2Eio%2FSwiftGIO%2Fdocsets%2FGIO%2Exml">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx.github.io%2FSwiftGIO%2Fdocsets%2FGIO.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -2205,6 +2205,12 @@
                 <a class="nav-group-task-link" href="../Extensions/TLSCertificateRequestFlags.html">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingError.html">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingType.html">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/TLSDatabaseLookupFlags.html">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -2648,6 +2654,9 @@
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO20tlsBackendGetDefaultAA13TLSBackendRefVSgyF">tlsBackendGetDefault()</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27tlsChannelBindingErrorQuarks6UInt32VyF">tlsChannelBindingErrorQuark()</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO22tlsClientConnectionNew12baseIoStream14serverIdentityAA09TLSClientD3RefVSgx_AA017SocketConnectableL0VSgtKAA16IOStreamProtocolRzlF">tlsClientConnectionNew(baseIoStream:serverIdentity:)</a>
               </li>
               <li class="nav-group-task">
@@ -2724,6 +2733,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO25unixMountIsSystemInternal10mountEntrySbx_tAA04UnixcH8ProtocolRzlF">unixMountIsSystemInternal(mountEntry:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO16unixMountPointAt9mountPath8timeReadAA04UnixcD3RefVSgSPys4Int8VGSg_Spys6UInt64VGSgtF">unixMountPointAt(mountPath:timeRead:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27unixMountPointsChangedSince4timeSbs6UInt64V_tF">unixMountPointsChangedSince(time:)</a>
@@ -5243,6 +5255,12 @@
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO26TLSCertificateRequestFlagsa">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSChannelBindingErrora">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO21TLSChannelBindingTypea">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSDatabaseLookupFlagsa">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -7578,6 +7596,7 @@
             <h1>File</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">File</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/FileProtocol.html">FileProtocol</a></span></code></pre>
 
                 </div>
@@ -7673,6 +7692,9 @@ HTTP 1.1
 <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html">specification</a>
 for HTTP Etag headers, which are a very similar concept.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4938-L5162">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -7708,7 +7730,7 @@ for HTTP Etag headers, which are a very similar concept.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4892">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4941">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7718,7 +7740,7 @@ for HTTP Etag headers, which are a very similar concept.</p>
                     <code>
                     <a name="/s:3GIO4FileCyACSpySo6_GFileVGcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4FileCyACSpySo6_GFileVGcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO4FileCyACSpySo6_GFileVGcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7760,7 +7782,7 @@ i.e., ownership is transferred to the <code>File</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4898-L4900">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4947-L4949">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7770,7 +7792,7 @@ i.e., ownership is transferred to the <code>File</code> instance.</p>
                     <code>
                     <a name="/s:3GIO4FileCyACSPySo6_GFileVGcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4FileCyACSPySo6_GFileVGcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO4FileCyACSPySo6_GFileVGcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7812,7 +7834,7 @@ i.e., ownership is transferred to the <code>File</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4906-L4908">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4955-L4957">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7822,7 +7844,7 @@ i.e., ownership is transferred to the <code>File</code> instance.</p>
                     <code>
                     <a name="/s:3GIO4FileC8gpointerACSgSvSg_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(gpointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4FileC8gpointerACSgSvSg_tcfc">init(gpointer:)</a>
+                    <a class="token" href="#/s:3GIO4FileC8gpointerACSgSvSg_tcfc">init(gpointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7865,7 +7887,7 @@ i.e., ownership is transferred to the <code>File</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4915-L4918">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4964-L4967">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7875,7 +7897,7 @@ i.e., ownership is transferred to the <code>File</code> instance.</p>
                     <code>
                     <a name="/s:3GIO4FileC13gconstpointerACSgSVSg_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(gconstpointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4FileC13gconstpointerACSgSVSg_tcfc">init(gconstpointer:)</a>
+                    <a class="token" href="#/s:3GIO4FileC13gconstpointerACSgSVSg_tcfc">init(gconstpointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7918,7 +7940,7 @@ i.e., ownership is transferred to the <code>File</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4925-L4928">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4974-L4977">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7928,7 +7950,7 @@ i.e., ownership is transferred to the <code>File</code> instance.</p>
                     <code>
                     <a name="/s:3GIO4FileCyACSgSPySo6_GFileVGSgcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4FileCyACSgSPySo6_GFileVGSgcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO4FileCyACSgSPySo6_GFileVGSgcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7970,7 +7992,7 @@ i.e., ownership is transferred to the <code>File</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4934-L4937">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4983-L4986">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7980,7 +8002,7 @@ i.e., ownership is transferred to the <code>File</code> instance.</p>
                     <code>
                     <a name="/s:3GIO4FileCyACSgSpySo6_GFileVGSgcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4FileCyACSgSpySo6_GFileVGSgcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO4FileCyACSgSpySo6_GFileVGSgcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8022,7 +8044,7 @@ i.e., ownership is transferred to the <code>File</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4943-L4946">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4992-L4995">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8032,7 +8054,7 @@ i.e., ownership is transferred to the <code>File</code> instance.</p>
                     <code>
                     <a name="/s:3GIO4FileC9retainingACSpySo6_GFileVG_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retaining:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4FileC9retainingACSpySo6_GFileVG_tcfc">init(retaining:)</a>
+                    <a class="token" href="#/s:3GIO4FileC9retainingACSpySo6_GFileVG_tcfc">init(retaining:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8074,7 +8096,7 @@ i.e., ownership is transferred to the <code>File</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4952-L4955">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L5001-L5004">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8084,7 +8106,7 @@ i.e., ownership is transferred to the <code>File</code> instance.</p>
                     <code>
                     <a name="/s:3GIO4FileCyACxcAA0B8ProtocolRzlufc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4FileCyACxcAA0B8ProtocolRzlufc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO4FileCyACxcAA0B8ProtocolRzlufc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8125,7 +8147,7 @@ i.e., ownership is transferred to the <code>File</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4960-L4963">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L5009-L5012">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8135,7 +8157,7 @@ i.e., ownership is transferred to the <code>File</code> instance.</p>
                     <code>
                     <a name="/s:3GIO4FileC8cPointerACSpyxG_tclufc"></a>
                     <a name="//apple_ref/swift/Method/init(cPointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4FileC8cPointerACSpyxG_tclufc">init(cPointer:)</a>
+                    <a class="token" href="#/s:3GIO4FileC8cPointerACSpyxG_tclufc">init(cPointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8176,7 +8198,7 @@ i.e., ownership is transferred to the <code>File</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4973-L4975">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L5022-L5024">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8186,7 +8208,7 @@ i.e., ownership is transferred to the <code>File</code> instance.</p>
                     <code>
                     <a name="/s:3GIO4FileC17retainingCPointerACSpyxG_tclufc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingCPointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4FileC17retainingCPointerACSpyxG_tclufc">init(retainingCPointer:)</a>
+                    <a class="token" href="#/s:3GIO4FileC17retainingCPointerACSpyxG_tclufc">init(retainingCPointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8227,7 +8249,7 @@ i.e., ownership is transferred to the <code>File</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4980-L4983">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L5029-L5032">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8237,7 +8259,7 @@ i.e., ownership is transferred to the <code>File</code> instance.</p>
                     <code>
                     <a name="/s:3GIO4FileC3rawACSV_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4FileC3rawACSV_tcfc">init(raw:)</a>
+                    <a class="token" href="#/s:3GIO4FileC3rawACSV_tcfc">init(raw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8278,7 +8300,7 @@ i.e., ownership is transferred to the <code>File</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4988-L4990">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L5037-L5039">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8288,7 +8310,7 @@ i.e., ownership is transferred to the <code>File</code> instance.</p>
                     <code>
                     <a name="/s:3GIO4FileC12retainingRawACSV_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingRaw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4FileC12retainingRawACSV_tcfc">init(retainingRaw:)</a>
+                    <a class="token" href="#/s:3GIO4FileC12retainingRawACSV_tcfc">init(retainingRaw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8310,7 +8332,7 @@ i.e., ownership is transferred to the <code>File</code> instance.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4994-L4997">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L5043-L5046">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8320,7 +8342,7 @@ i.e., ownership is transferred to the <code>File</code> instance.</p>
                     <code>
                     <a name="/s:3GIO4FileC3rawACSv_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4FileC3rawACSv_tcfc">init(raw:)</a>
+                    <a class="token" href="#/s:3GIO4FileC3rawACSv_tcfc">init(raw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8361,7 +8383,7 @@ i.e., ownership is transferred to the <code>File</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L5002-L5004">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L5051-L5053">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8371,7 +8393,7 @@ i.e., ownership is transferred to the <code>File</code> instance.</p>
                     <code>
                     <a name="/s:3GIO4FileC12retainingRawACSv_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingRaw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4FileC12retainingRawACSv_tcfc">init(retainingRaw:)</a>
+                    <a class="token" href="#/s:3GIO4FileC12retainingRawACSv_tcfc">init(retainingRaw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8412,7 +8434,7 @@ i.e., ownership is transferred to the <code>File</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L5009-L5012">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L5058-L5061">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8422,7 +8444,7 @@ i.e., ownership is transferred to the <code>File</code> instance.</p>
                     <code>
                     <a name="/s:3GIO4FileC13opaquePointerACs06OpaqueD0V_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(opaquePointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4FileC13opaquePointerACs06OpaqueD0V_tcfc">init(opaquePointer:)</a>
+                    <a class="token" href="#/s:3GIO4FileC13opaquePointerACs06OpaqueD0V_tcfc">init(opaquePointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8463,7 +8485,7 @@ i.e., ownership is transferred to the <code>File</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L5017-L5019">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L5066-L5068">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8473,7 +8495,7 @@ i.e., ownership is transferred to the <code>File</code> instance.</p>
                     <code>
                     <a name="/s:3GIO4FileC22retainingOpaquePointerACs0dE0V_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(retainingOpaquePointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4FileC22retainingOpaquePointerACs0dE0V_tcfc">init(retainingOpaquePointer:)</a>
+                    <a class="token" href="#/s:3GIO4FileC22retainingOpaquePointerACs0dE0V_tcfc">init(retainingOpaquePointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8514,7 +8536,7 @@ i.e., ownership is transferred to the <code>File</code> instance.</p>
                         </table>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L5024-L5027">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L5073-L5076">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8524,7 +8546,7 @@ i.e., ownership is transferred to the <code>File</code> instance.</p>
                     <code>
                     <a name="/s:3GIO4FileC17newForCommandline14commandlineArgACSgSPys4Int8VGSg_tFZ"></a>
                     <a name="//apple_ref/swift/Method/newForCommandline(commandlineArg:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4FileC17newForCommandline14commandlineArgACSgSPys4Int8VGSg_tFZ">newForCommandline(commandlineArg:)</a>
+                    <a class="token" href="#/s:3GIO4FileC17newForCommandline14commandlineArgACSgSPys4Int8VGSg_tFZ">newForCommandline(commandlineArg:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8558,7 +8580,7 @@ for you there.  It is also always possible to use this function with
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L5048-L5051">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L5097-L5100">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8568,7 +8590,7 @@ for you there.  It is also always possible to use this function with
                     <code>
                     <a name="/s:3GIO4FileC6newFor20commandlineArgAndCwd3cwdACSgSPys4Int8VGSg_AKtFZ"></a>
                     <a name="//apple_ref/swift/Method/newFor(commandlineArgAndCwd:cwd:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4FileC6newFor20commandlineArgAndCwd3cwdACSgSPys4Int8VGSg_AKtFZ">newFor(commandlineArgAndCwd:cwd:)</a>
+                    <a class="token" href="#/s:3GIO4FileC6newFor20commandlineArgAndCwd3cwdACSgSPys4Int8VGSg_AKtFZ">newFor(commandlineArgAndCwd:<wbr>cwd:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8599,7 +8621,7 @@ other than the invocation of the current process.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L5064-L5067">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L5113-L5116">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8609,7 +8631,7 @@ other than the invocation of the current process.</p>
                     <code>
                     <a name="/s:3GIO4FileC6newFor4pathACSgSPys4Int8VGSg_tFZ"></a>
                     <a name="//apple_ref/swift/Method/newFor(path:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4FileC6newFor4pathACSgSPys4Int8VGSg_tFZ">newFor(path:)</a>
+                    <a class="token" href="#/s:3GIO4FileC6newFor4pathACSgSPys4Int8VGSg_tFZ">newFor(path:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8632,7 +8654,7 @@ operation if <code>path</code> is malformed.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L5072-L5075">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L5121-L5124">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8642,7 +8664,7 @@ operation if <code>path</code> is malformed.</p>
                     <code>
                     <a name="/s:3GIO4FileC6newFor3uriACSgSPys4Int8VGSg_tFZ"></a>
                     <a name="//apple_ref/swift/Method/newFor(uri:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4FileC6newFor3uriACSgSPys4Int8VGSg_tFZ">newFor(uri:)</a>
+                    <a class="token" href="#/s:3GIO4FileC6newFor3uriACSgSPys4Int8VGSg_tFZ">newFor(uri:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8666,7 +8688,7 @@ not supported.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L5081-L5084">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L5130-L5133">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8676,7 +8698,7 @@ not supported.</p>
                     <code>
                     <a name="/s:3GIO4FileC3new3tmp8iostreamACSgSPys4Int8VGSg_SpySpySo14_GFileIOStreamVGSgGSgtKFZ"></a>
                     <a name="//apple_ref/swift/Method/new(tmp:iostream:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4FileC3new3tmp8iostreamACSgSPys4Int8VGSg_SpySpySo14_GFileIOStreamVGSgGSgtKFZ">new(tmp:iostream:)</a>
+                    <a class="token" href="#/s:3GIO4FileC3new3tmp8iostreamACSgSPys4Int8VGSg_SpySpySo14_GFileIOStreamVGSgGSgtKFZ">new(tmp:<wbr>iostream:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8706,7 +8728,7 @@ a temporary file could not be created.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L5096-L5102">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L5145-L5151">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8716,7 +8738,7 @@ a temporary file could not be created.</p>
                     <code>
                     <a name="/s:3GIO4FileC9parseNameAdCSgSPys4Int8VGSg_tFZ"></a>
                     <a name="//apple_ref/swift/Method/parseName(parseName:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO4FileC9parseNameAdCSgSPys4Int8VGSg_tFZ">parseName(parseName:)</a>
+                    <a class="token" href="#/s:3GIO4FileC9parseNameAdCSgSPys4Int8VGSg_tFZ">parseName(parseName:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8740,7 +8762,7 @@ the <code>parse_name</code> cannot be parsed.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L5108-L5111">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L5157-L5160">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8753,8 +8775,8 @@ the <code>parse_name</code> cannot be parsed.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.ict.griffith.edu.au/~rhexel/" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2020-09-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

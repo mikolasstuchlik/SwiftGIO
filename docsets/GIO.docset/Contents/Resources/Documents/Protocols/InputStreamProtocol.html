@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          GIO 2.64.4 Docs
+          GIO 2.66.4 Docs
         </a>
-         (88% documented)
+         (89% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx%2Egithub%2Eio%2FSwiftGIO%2Fdocsets%2FGIO%2Exml">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx.github.io%2FSwiftGIO%2Fdocsets%2FGIO.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -2205,6 +2205,12 @@
                 <a class="nav-group-task-link" href="../Extensions/TLSCertificateRequestFlags.html">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingError.html">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingType.html">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/TLSDatabaseLookupFlags.html">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -2648,6 +2654,9 @@
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO20tlsBackendGetDefaultAA13TLSBackendRefVSgyF">tlsBackendGetDefault()</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27tlsChannelBindingErrorQuarks6UInt32VyF">tlsChannelBindingErrorQuark()</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO22tlsClientConnectionNew12baseIoStream14serverIdentityAA09TLSClientD3RefVSgx_AA017SocketConnectableL0VSgtKAA16IOStreamProtocolRzlF">tlsClientConnectionNew(baseIoStream:serverIdentity:)</a>
               </li>
               <li class="nav-group-task">
@@ -2724,6 +2733,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO25unixMountIsSystemInternal10mountEntrySbx_tAA04UnixcH8ProtocolRzlF">unixMountIsSystemInternal(mountEntry:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO16unixMountPointAt9mountPath8timeReadAA04UnixcD3RefVSgSPys4Int8VGSg_Spys6UInt64VGSgtF">unixMountPointAt(mountPath:timeRead:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27unixMountPointsChangedSince4timeSbs6UInt64V_tF">unixMountPointsChangedSince(time:)</a>
@@ -5243,6 +5255,12 @@
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO26TLSCertificateRequestFlagsa">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSChannelBindingErrora">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO21TLSChannelBindingTypea">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSDatabaseLookupFlagsa">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -7578,6 +7596,7 @@
             <h1>InputStreamProtocol</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">InputStreamProtocol</span> <span class="p">:</span> <span class="kt">ObjectProtocol</span></code></pre>
 
                 </div>
@@ -7599,6 +7618,9 @@ streaming APIs.</p>
 
 <p>All of these functions have async variants too.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-IOStream-ListStore.swift#L2541-L2548">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -7692,7 +7714,7 @@ streaming APIs.</p>
                     <code>
                     <a name="/s:3GIO19InputStreamProtocolPAAE7connect6signal5flags2toSiAA0bC10SignalNameO_10GLibObject12ConnectFlagsVyyctF"></a>
                     <a name="//apple_ref/swift/Method/connect(signal:flags:to:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE7connect6signal5flags2toSiAA0bC10SignalNameO_10GLibObject12ConnectFlagsVyyctF">connect(signal:flags:to:)</a>
+                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE7connect6signal5flags2toSiAA0bC10SignalNameO_10GLibObject12ConnectFlagsVyyctF">connect(signal:<wbr>flags:<wbr>to:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7773,10 +7795,10 @@ streaming APIs.</p>
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/InputStream%20Class:%20InputStreamProtocol%20extension%20(methods%20and%20fields)"></a>
+                <a name="/InputStream%20Class%3A%20InputStreamProtocol%20extension%20%28methods%20and%20fields%29"></a>
                 <a name="//apple_ref/swift/Section/InputStream Class: InputStreamProtocol extension (methods and fields)" class="dashAnchor"></a>
                 <div class="section-name-container">
-                  <a class="section-name-link" href="#/InputStream%20Class:%20InputStreamProtocol%20extension%20(methods%20and%20fields)"></a>
+                  <a class="section-name-link" href="#/InputStream%20Class%3A%20InputStreamProtocol%20extension%20%28methods%20and%20fields%29"></a>
                   <h3 class="section-name"><p>InputStream Class: InputStreamProtocol extension (methods and fields)</p>
 </h3>
                 </div>
@@ -7821,7 +7843,7 @@ streaming APIs.</p>
                     <code>
                     <a name="/s:3GIO19InputStreamProtocolPAAE5close11cancellableSbAA14CancellableRefVSg_tKF"></a>
                     <a name="//apple_ref/swift/Method/close(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE5close11cancellableSbAA14CancellableRefVSg_tKF">close(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE5close11cancellableSbAA14CancellableRefVSg_tKF">close(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7877,7 +7899,7 @@ can use a faster close that doesn&rsquo;t block to e.g. check errors.</p>
                     <code>
                     <a name="/s:3GIO19InputStreamProtocolPAAE5close11cancellableSbqd__Sg_tKAA011CancellableD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/close(cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE5close11cancellableSbqd__Sg_tKAA011CancellableD0Rd__lF">close(cancellable:)</a>
+                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE5close11cancellableSbqd__Sg_tKAA011CancellableD0Rd__lF">close(cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7933,7 +7955,7 @@ can use a faster close that doesn&rsquo;t block to e.g. check errors.</p>
                     <code>
                     <a name="/s:3GIO19InputStreamProtocolPAAE10closeAsync10ioPriority11cancellable8callback8userDataySi_AA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgATtF"></a>
                     <a name="//apple_ref/swift/Method/closeAsync(ioPriority:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE10closeAsync10ioPriority11cancellable8callback8userDataySi_AA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgATtF">closeAsync(ioPriority:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE10closeAsync10ioPriority11cancellable8callback8userDataySi_AA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgATtF">closeAsync(ioPriority:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -7976,7 +7998,7 @@ override one you must override all.</p>
                     <code>
                     <a name="/s:3GIO19InputStreamProtocolPAAE10closeAsync10ioPriority11cancellable8callback8userDataySi_qd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgARtAA011CancellableD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/closeAsync(ioPriority:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE10closeAsync10ioPriority11cancellable8callback8userDataySi_qd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgARtAA011CancellableD0Rd__lF">closeAsync(ioPriority:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE10closeAsync10ioPriority11cancellable8callback8userDataySi_qd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgARtAA011CancellableD0Rd__lF">closeAsync(ioPriority:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8019,7 +8041,7 @@ override one you must override all.</p>
                     <code>
                     <a name="/s:3GIO19InputStreamProtocolPAAE11closeFinish6resultSbqd___tKAA011AsyncResultD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/closeFinish(result:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE11closeFinish6resultSbqd___tKAA011AsyncResultD0Rd__lF">closeFinish(result:)</a>
+                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE11closeFinish6resultSbqd___tKAA011AsyncResultD0Rd__lF">closeFinish(result:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8087,7 +8109,7 @@ override one you must override all.</p>
                     <code>
                     <a name="/s:3GIO19InputStreamProtocolPAAE4read6buffer5count11cancellableSiSvSg_SiAA14CancellableRefVSgtKF"></a>
                     <a name="//apple_ref/swift/Method/read(buffer:count:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE4read6buffer5count11cancellableSiSvSg_SiAA14CancellableRefVSgtKF">read(buffer:count:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE4read6buffer5count11cancellableSiSvSg_SiAA14CancellableRefVSgtKF">read(buffer:<wbr>count:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8141,7 +8163,7 @@ partial result will be returned, without an error.</p>
                     <code>
                     <a name="/s:3GIO19InputStreamProtocolPAAE4read6buffer5count11cancellableSiSvSg_Siqd__SgtKAA011CancellableD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/read(buffer:count:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE4read6buffer5count11cancellableSiSvSg_Siqd__SgtKAA011CancellableD0Rd__lF">read(buffer:count:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE4read6buffer5count11cancellableSiSvSg_Siqd__SgtKAA011CancellableD0Rd__lF">read(buffer:<wbr>count:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8195,7 +8217,7 @@ partial result will be returned, without an error.</p>
                     <code>
                     <a name="/s:3GIO19InputStreamProtocolPAAE7readAll6buffer5count9bytesRead11cancellableSbSvSg_SiSpySuGSgAA14CancellableRefVSgtKF"></a>
                     <a name="//apple_ref/swift/Method/readAll(buffer:count:bytesRead:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE7readAll6buffer5count9bytesRead11cancellableSbSvSg_SiSpySuGSgAA14CancellableRefVSgtKF">readAll(buffer:count:bytesRead:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE7readAll6buffer5count9bytesRead11cancellableSbSvSg_SiSpySuGSgAA14CancellableRefVSgtKF">readAll(buffer:<wbr>count:<wbr>bytesRead:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8247,7 +8269,7 @@ write your own loop around <code>g_input_stream_read()</code>.</p>
                     <code>
                     <a name="/s:3GIO19InputStreamProtocolPAAE7readAll6buffer5count9bytesRead11cancellableSbSvSg_SiSpySuGSgqd__SgtKAA011CancellableD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/readAll(buffer:count:bytesRead:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE7readAll6buffer5count9bytesRead11cancellableSbSvSg_SiSpySuGSgqd__SgtKAA011CancellableD0Rd__lF">readAll(buffer:count:bytesRead:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE7readAll6buffer5count9bytesRead11cancellableSbSvSg_SiSpySuGSgqd__SgtKAA011CancellableD0Rd__lF">readAll(buffer:<wbr>count:<wbr>bytesRead:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8299,7 +8321,7 @@ write your own loop around <code>g_input_stream_read()</code>.</p>
                     <code>
                     <a name="/s:3GIO19InputStreamProtocolPAAE12readAllAsync6buffer5count10ioPriority11cancellable8callback8userDataySvSg_S2iAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgAKtXCSgAKtF"></a>
                     <a name="//apple_ref/swift/Method/readAllAsync(buffer:count:ioPriority:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE12readAllAsync6buffer5count10ioPriority11cancellable8callback8userDataySvSg_S2iAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgAKtXCSgAKtF">readAllAsync(buffer:count:ioPriority:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE12readAllAsync6buffer5count10ioPriority11cancellable8callback8userDataySvSg_S2iAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgAKtXCSgAKtF">readAllAsync(buffer:<wbr>count:<wbr>ioPriority:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8342,7 +8364,7 @@ priority. Default priority is <code>G_PRIORITY_DEFAULT</code>.</p>
                     <code>
                     <a name="/s:3GIO19InputStreamProtocolPAAE12readAllAsync6buffer5count10ioPriority11cancellable8callback8userDataySvSg_S2iqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgAKtXCSgAKtAA011CancellableD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/readAllAsync(buffer:count:ioPriority:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE12readAllAsync6buffer5count10ioPriority11cancellable8callback8userDataySvSg_S2iqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgAKtXCSgAKtAA011CancellableD0Rd__lF">readAllAsync(buffer:count:ioPriority:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE12readAllAsync6buffer5count10ioPriority11cancellable8callback8userDataySvSg_S2iqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgAKtXCSgAKtAA011CancellableD0Rd__lF">readAllAsync(buffer:<wbr>count:<wbr>ioPriority:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8385,7 +8407,7 @@ priority. Default priority is <code>G_PRIORITY_DEFAULT</code>.</p>
                     <code>
                     <a name="/s:3GIO19InputStreamProtocolPAAE13readAllFinish6result9bytesReadSbqd___SpySuGSgtKAA011AsyncResultD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/readAllFinish(result:bytesRead:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE13readAllFinish6result9bytesReadSbqd___SpySuGSgtKAA011AsyncResultD0Rd__lF">readAllFinish(result:bytesRead:)</a>
+                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE13readAllFinish6result9bytesReadSbqd___SpySuGSgtKAA011AsyncResultD0Rd__lF">readAllFinish(result:<wbr>bytesRead:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8427,7 +8449,7 @@ write your own loop around <code>g_input_stream_read_async()</code>.</p>
                     <code>
                     <a name="/s:3GIO19InputStreamProtocolPAAE9readAsync6buffer5count10ioPriority11cancellable8callback8userDataySvSg_S2iAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgAKtXCSgAKtF"></a>
                     <a name="//apple_ref/swift/Method/readAsync(buffer:count:ioPriority:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE9readAsync6buffer5count10ioPriority11cancellable8callback8userDataySvSg_S2iAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgAKtXCSgAKtF">readAsync(buffer:count:ioPriority:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE9readAsync6buffer5count10ioPriority11cancellable8callback8userDataySvSg_S2iAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgAKtXCSgAKtF">readAsync(buffer:<wbr>count:<wbr>ioPriority:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8483,7 +8505,7 @@ override one you must override all.</p>
                     <code>
                     <a name="/s:3GIO19InputStreamProtocolPAAE9readAsync6buffer5count10ioPriority11cancellable8callback8userDataySvSg_S2iqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgAKtXCSgAKtAA011CancellableD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/readAsync(buffer:count:ioPriority:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE9readAsync6buffer5count10ioPriority11cancellable8callback8userDataySvSg_S2iqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgAKtXCSgAKtAA011CancellableD0Rd__lF">readAsync(buffer:count:ioPriority:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE9readAsync6buffer5count10ioPriority11cancellable8callback8userDataySvSg_S2iqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgAKtXCSgAKtAA011CancellableD0Rd__lF">readAsync(buffer:<wbr>count:<wbr>ioPriority:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8539,7 +8561,7 @@ override one you must override all.</p>
                     <code>
                     <a name="/s:3GIO19InputStreamProtocolPAAE9readBytes5count11cancellable4GLib0F3RefVSgSi_AA011CancellableJ0VSgtKF"></a>
                     <a name="//apple_ref/swift/Method/readBytes(count:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE9readBytes5count11cancellable4GLib0F3RefVSgSi_AA011CancellableJ0VSgtKF">readBytes(count:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE9readBytes5count11cancellable4GLib0F3RefVSgSi_AA011CancellableJ0VSgtKF">readBytes(count:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8595,7 +8617,7 @@ partial result will be returned, without an error.</p>
                     <code>
                     <a name="/s:3GIO19InputStreamProtocolPAAE9readBytes5count11cancellable4GLib0F3RefVSgSi_qd__SgtKAA011CancellableD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/readBytes(count:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE9readBytes5count11cancellable4GLib0F3RefVSgSi_qd__SgtKAA011CancellableD0Rd__lF">readBytes(count:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE9readBytes5count11cancellable4GLib0F3RefVSgSi_qd__SgtKAA011CancellableD0Rd__lF">readBytes(count:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8651,7 +8673,7 @@ partial result will be returned, without an error.</p>
                     <code>
                     <a name="/s:3GIO19InputStreamProtocolPAAE14readBytesAsync5count10ioPriority11cancellable8callback8userDataySi_SiAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAUtF"></a>
                     <a name="//apple_ref/swift/Method/readBytesAsync(count:ioPriority:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE14readBytesAsync5count10ioPriority11cancellable8callback8userDataySi_SiAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAUtF">readBytesAsync(count:ioPriority:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE14readBytesAsync5count10ioPriority11cancellable8callback8userDataySi_SiAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAUtF">readBytesAsync(count:<wbr>ioPriority:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8704,7 +8726,7 @@ priority. Default priority is <code>G_PRIORITY_DEFAULT</code>.</p>
                     <code>
                     <a name="/s:3GIO19InputStreamProtocolPAAE14readBytesAsync5count10ioPriority11cancellable8callback8userDataySi_Siqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAStAA011CancellableD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/readBytesAsync(count:ioPriority:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE14readBytesAsync5count10ioPriority11cancellable8callback8userDataySi_Siqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAStAA011CancellableD0Rd__lF">readBytesAsync(count:ioPriority:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE14readBytesAsync5count10ioPriority11cancellable8callback8userDataySi_Siqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAStAA011CancellableD0Rd__lF">readBytesAsync(count:<wbr>ioPriority:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8757,7 +8779,7 @@ priority. Default priority is <code>G_PRIORITY_DEFAULT</code>.</p>
                     <code>
                     <a name="/s:3GIO19InputStreamProtocolPAAE15readBytesFinish6result4GLib0F3RefVSgqd___tKAA011AsyncResultD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/readBytesFinish(result:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE15readBytesFinish6result4GLib0F3RefVSgqd___tKAA011AsyncResultD0Rd__lF">readBytesFinish(result:)</a>
+                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE15readBytesFinish6result4GLib0F3RefVSgqd___tKAA011AsyncResultD0Rd__lF">readBytesFinish(result:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8791,7 +8813,7 @@ priority. Default priority is <code>G_PRIORITY_DEFAULT</code>.</p>
                     <code>
                     <a name="/s:3GIO19InputStreamProtocolPAAE10readFinish6resultSiqd___tKAA011AsyncResultD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/readFinish(result:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE10readFinish6resultSiqd___tKAA011AsyncResultD0Rd__lF">readFinish(result:)</a>
+                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE10readFinish6resultSiqd___tKAA011AsyncResultD0Rd__lF">readFinish(result:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8861,7 +8883,7 @@ already set or <code>stream</code> is closed, it will return <code>false</code> 
                     <code>
                     <a name="/s:3GIO19InputStreamProtocolPAAE4skip5count11cancellableS2i_AA14CancellableRefVSgtKF"></a>
                     <a name="//apple_ref/swift/Method/skip(count:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE4skip5count11cancellableS2i_AA14CancellableRefVSgtKF">skip(count:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE4skip5count11cancellableS2i_AA14CancellableRefVSgtKF">skip(count:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8908,7 +8930,7 @@ partial result will be returned, without an error.</p>
                     <code>
                     <a name="/s:3GIO19InputStreamProtocolPAAE4skip5count11cancellableS2i_qd__SgtKAA011CancellableD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/skip(count:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE4skip5count11cancellableS2i_qd__SgtKAA011CancellableD0Rd__lF">skip(count:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE4skip5count11cancellableS2i_qd__SgtKAA011CancellableD0Rd__lF">skip(count:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -8955,7 +8977,7 @@ partial result will be returned, without an error.</p>
                     <code>
                     <a name="/s:3GIO19InputStreamProtocolPAAE9skipAsync5count10ioPriority11cancellable8callback8userDataySi_SiAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAUtF"></a>
                     <a name="//apple_ref/swift/Method/skipAsync(count:ioPriority:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE9skipAsync5count10ioPriority11cancellable8callback8userDataySi_SiAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAUtF">skipAsync(count:ioPriority:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE9skipAsync5count10ioPriority11cancellable8callback8userDataySi_SiAA14CancellableRefVSgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAUtF">skipAsync(count:<wbr>ioPriority:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9011,7 +9033,7 @@ However, if you override one, you must override all.</p>
                     <code>
                     <a name="/s:3GIO19InputStreamProtocolPAAE9skipAsync5count10ioPriority11cancellable8callback8userDataySi_Siqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAStAA011CancellableD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/skipAsync(count:ioPriority:cancellable:callback:userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE9skipAsync5count10ioPriority11cancellable8callback8userDataySi_Siqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAStAA011CancellableD0Rd__lF">skipAsync(count:ioPriority:cancellable:callback:userData:)</a>
+                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE9skipAsync5count10ioPriority11cancellable8callback8userDataySi_Siqd__SgySpySo8_GObjectVGSg_SpySo13_GAsyncResultVGSgSvSgtXCSgAStAA011CancellableD0Rd__lF">skipAsync(count:<wbr>ioPriority:<wbr>cancellable:<wbr>callback:<wbr>userData:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9067,7 +9089,7 @@ However, if you override one, you must override all.</p>
                     <code>
                     <a name="/s:3GIO19InputStreamProtocolPAAE10skipFinish6resultSiqd___tKAA011AsyncResultD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/skipFinish(result:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE10skipFinish6resultSiqd___tKAA011AsyncResultD0Rd__lF">skipFinish(result:)</a>
+                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE10skipFinish6resultSiqd___tKAA011AsyncResultD0Rd__lF">skipFinish(result:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9101,7 +9123,7 @@ However, if you override one, you must override all.</p>
                     <code>
                     <a name="/s:3GIO19InputStreamProtocolPAAE08pollableC4Read6buffer5count8blocking11cancellableSiSvSg_SiSbAA14CancellableRefVSgtKF"></a>
                     <a name="//apple_ref/swift/Method/pollableStreamRead(buffer:count:blocking:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE08pollableC4Read6buffer5count8blocking11cancellableSiSvSg_SiSbAA14CancellableRefVSgtKF">pollableStreamRead(buffer:count:blocking:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE08pollableC4Read6buffer5count8blocking11cancellableSiSvSg_SiSbAA14CancellableRefVSgtKF">pollableStreamRead(buffer:<wbr>count:<wbr>blocking:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9143,7 +9165,7 @@ returns <code>true</code>, or else the behavior is undefined. If <code>blocking<
                     <code>
                     <a name="/s:3GIO19InputStreamProtocolPAAE08pollableC4Read6buffer5count8blocking11cancellableSiSvSg_SiSbqd__SgtKAA011CancellableD0Rd__lF"></a>
                     <a name="//apple_ref/swift/Method/pollableStreamRead(buffer:count:blocking:cancellable:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE08pollableC4Read6buffer5count8blocking11cancellableSiSvSg_SiSbqd__SgtKAA011CancellableD0Rd__lF">pollableStreamRead(buffer:count:blocking:cancellable:)</a>
+                    <a class="token" href="#/s:3GIO19InputStreamProtocolPAAE08pollableC4Read6buffer5count8blocking11cancellableSiSvSg_SiSbqd__SgtKAA011CancellableD0Rd__lF">pollableStreamRead(buffer:<wbr>count:<wbr>blocking:<wbr>cancellable:<wbr>)</a>
                     </code>
                       <span class="declaration-note">
                         Extension method
@@ -9256,8 +9278,8 @@ returns <code>true</code>, or else the behavior is undefined. If <code>blocking<
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.ict.griffith.edu.au/~rhexel/" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2020-09-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

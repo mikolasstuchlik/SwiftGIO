@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          GIO 2.64.4 Docs
+          GIO 2.66.4 Docs
         </a>
-         (88% documented)
+         (89% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx%2Egithub%2Eio%2FSwiftGIO%2Fdocsets%2FGIO%2Exml">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx.github.io%2FSwiftGIO%2Fdocsets%2FGIO.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -2205,6 +2205,12 @@
                 <a class="nav-group-task-link" href="../Extensions/TLSCertificateRequestFlags.html">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingError.html">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingType.html">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/TLSDatabaseLookupFlags.html">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -2648,6 +2654,9 @@
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO20tlsBackendGetDefaultAA13TLSBackendRefVSgyF">tlsBackendGetDefault()</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27tlsChannelBindingErrorQuarks6UInt32VyF">tlsChannelBindingErrorQuark()</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO22tlsClientConnectionNew12baseIoStream14serverIdentityAA09TLSClientD3RefVSgx_AA017SocketConnectableL0VSgtKAA16IOStreamProtocolRzlF">tlsClientConnectionNew(baseIoStream:serverIdentity:)</a>
               </li>
               <li class="nav-group-task">
@@ -2724,6 +2733,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO25unixMountIsSystemInternal10mountEntrySbx_tAA04UnixcH8ProtocolRzlF">unixMountIsSystemInternal(mountEntry:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO16unixMountPointAt9mountPath8timeReadAA04UnixcD3RefVSgSPys4Int8VGSg_Spys6UInt64VGSgtF">unixMountPointAt(mountPath:timeRead:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27unixMountPointsChangedSince4timeSbs6UInt64V_tF">unixMountPointsChangedSince(time:)</a>
@@ -5243,6 +5255,12 @@
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO26TLSCertificateRequestFlagsa">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSChannelBindingErrora">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO21TLSChannelBindingTypea">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSDatabaseLookupFlagsa">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -7578,6 +7596,7 @@
             <h1>FileRef</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">FileRef</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/FileProtocol.html">FileProtocol</a></span></code></pre>
 
                 </div>
@@ -7673,6 +7692,9 @@ HTTP 1.1
 <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html">specification</a>
 for HTTP Etag headers, which are a very similar concept.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4693-L4697">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -7708,7 +7730,7 @@ for HTTP Etag headers, which are a very similar concept.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4647">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4696">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7731,7 +7753,7 @@ for HTTP Etag headers, which are a very similar concept.</p>
                     <code>
                     <a name="/s:3GIO7FileRefVyACSpySo6_GFileVGcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO7FileRefVyACSpySo6_GFileVGcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO7FileRefVyACSpySo6_GFileVGcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7752,7 +7774,7 @@ for HTTP Etag headers, which are a very similar concept.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4652-L4654">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4701-L4703">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7762,7 +7784,7 @@ for HTTP Etag headers, which are a very similar concept.</p>
                     <code>
                     <a name="/s:3GIO7FileRefVyACSPySo6_GFileVGcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO7FileRefVyACSPySo6_GFileVGcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO7FileRefVyACSPySo6_GFileVGcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7783,7 +7805,7 @@ for HTTP Etag headers, which are a very similar concept.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4657-L4659">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4706-L4708">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7793,7 +7815,7 @@ for HTTP Etag headers, which are a very similar concept.</p>
                     <code>
                     <a name="/s:3GIO7FileRefVyACSgSpySo6_GFileVGSgcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO7FileRefVyACSgSpySo6_GFileVGSgcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO7FileRefVyACSgSpySo6_GFileVGSgcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7814,7 +7836,7 @@ for HTTP Etag headers, which are a very similar concept.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4662-L4665">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4711-L4714">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7824,7 +7846,7 @@ for HTTP Etag headers, which are a very similar concept.</p>
                     <code>
                     <a name="/s:3GIO7FileRefVyACSgSPySo6_GFileVGSgcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO7FileRefVyACSgSPySo6_GFileVGSgcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO7FileRefVyACSgSPySo6_GFileVGSgcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7845,7 +7867,7 @@ for HTTP Etag headers, which are a very similar concept.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4668-L4671">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4717-L4720">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7855,7 +7877,7 @@ for HTTP Etag headers, which are a very similar concept.</p>
                     <code>
                     <a name="/s:3GIO7FileRefV8gpointerACSgSvSg_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(gpointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO7FileRefV8gpointerACSgSvSg_tcfc">init(gpointer:)</a>
+                    <a class="token" href="#/s:3GIO7FileRefV8gpointerACSgSvSg_tcfc">init(gpointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7876,7 +7898,7 @@ for HTTP Etag headers, which are a very similar concept.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4674-L4677">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4723-L4726">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7886,7 +7908,7 @@ for HTTP Etag headers, which are a very similar concept.</p>
                     <code>
                     <a name="/s:3GIO7FileRefV13gconstpointerACSgSVSg_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(gconstpointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO7FileRefV13gconstpointerACSgSVSg_tcfc">init(gconstpointer:)</a>
+                    <a class="token" href="#/s:3GIO7FileRefV13gconstpointerACSgSVSg_tcfc">init(gconstpointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7907,7 +7929,7 @@ for HTTP Etag headers, which are a very similar concept.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4680-L4683">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4729-L4732">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7917,7 +7939,7 @@ for HTTP Etag headers, which are a very similar concept.</p>
                     <code>
                     <a name="/s:3GIO7FileRefVyACxcAA0B8ProtocolRzlufc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO7FileRefVyACxcAA0B8ProtocolRzlufc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO7FileRefVyACxcAA0B8ProtocolRzlufc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7938,7 +7960,7 @@ for HTTP Etag headers, which are a very similar concept.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4686-L4688">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4735-L4737">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7948,7 +7970,7 @@ for HTTP Etag headers, which are a very similar concept.</p>
                     <code>
                     <a name="/s:3GIO7FileRefV8cPointerACSpyxG_tclufc"></a>
                     <a name="//apple_ref/swift/Method/init(cPointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO7FileRefV8cPointerACSpyxG_tclufc">init(cPointer:)</a>
+                    <a class="token" href="#/s:3GIO7FileRefV8cPointerACSpyxG_tclufc">init(cPointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7970,7 +7992,7 @@ for HTTP Etag headers, which are a very similar concept.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4692-L4694">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4741-L4743">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7980,7 +8002,7 @@ for HTTP Etag headers, which are a very similar concept.</p>
                     <code>
                     <a name="/s:3GIO7FileRefV12constPointerACSPyxG_tclufc"></a>
                     <a name="//apple_ref/swift/Method/init(constPointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO7FileRefV12constPointerACSPyxG_tclufc">init(constPointer:)</a>
+                    <a class="token" href="#/s:3GIO7FileRefV12constPointerACSPyxG_tclufc">init(constPointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8002,7 +8024,7 @@ for HTTP Etag headers, which are a very similar concept.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4698-L4700">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4747-L4749">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8012,7 +8034,7 @@ for HTTP Etag headers, which are a very similar concept.</p>
                     <code>
                     <a name="/s:3GIO7FileRefV8mutatingACSV_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(mutating:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO7FileRefV8mutatingACSV_tcfc">init(mutating:)</a>
+                    <a class="token" href="#/s:3GIO7FileRefV8mutatingACSV_tcfc">init(mutating:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8034,7 +8056,7 @@ for HTTP Etag headers, which are a very similar concept.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4704-L4706">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4753-L4755">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8044,7 +8066,7 @@ for HTTP Etag headers, which are a very similar concept.</p>
                     <code>
                     <a name="/s:3GIO7FileRefV3rawACSv_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO7FileRefV3rawACSv_tcfc">init(raw:)</a>
+                    <a class="token" href="#/s:3GIO7FileRefV3rawACSv_tcfc">init(raw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8066,7 +8088,7 @@ for HTTP Etag headers, which are a very similar concept.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4710-L4712">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4759-L4761">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8076,7 +8098,7 @@ for HTTP Etag headers, which are a very similar concept.</p>
                     <code>
                     <a name="/s:3GIO7FileRefV13opaquePointerACs06OpaqueE0V_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(opaquePointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO7FileRefV13opaquePointerACs06OpaqueE0V_tcfc">init(opaquePointer:)</a>
+                    <a class="token" href="#/s:3GIO7FileRefV13opaquePointerACs06OpaqueE0V_tcfc">init(opaquePointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8098,7 +8120,7 @@ for HTTP Etag headers, which are a very similar concept.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4716-L4718">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4765-L4767">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8108,7 +8130,7 @@ for HTTP Etag headers, which are a very similar concept.</p>
                     <code>
                     <a name="/s:3GIO7FileRefV17newForCommandline14commandlineArgACSgSPys4Int8VGSg_tFZ"></a>
                     <a name="//apple_ref/swift/Method/newForCommandline(commandlineArg:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO7FileRefV17newForCommandline14commandlineArgACSgSPys4Int8VGSg_tFZ">newForCommandline(commandlineArg:)</a>
+                    <a class="token" href="#/s:3GIO7FileRefV17newForCommandline14commandlineArgACSgSPys4Int8VGSg_tFZ">newForCommandline(commandlineArg:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8142,7 +8164,7 @@ for you there.  It is also always possible to use this function with
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4738-L4741">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4787-L4790">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8152,7 +8174,7 @@ for you there.  It is also always possible to use this function with
                     <code>
                     <a name="/s:3GIO7FileRefV6newFor20commandlineArgAndCwd3cwdACSgSPys4Int8VGSg_AKtFZ"></a>
                     <a name="//apple_ref/swift/Method/newFor(commandlineArgAndCwd:cwd:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO7FileRefV6newFor20commandlineArgAndCwd3cwdACSgSPys4Int8VGSg_AKtFZ">newFor(commandlineArgAndCwd:cwd:)</a>
+                    <a class="token" href="#/s:3GIO7FileRefV6newFor20commandlineArgAndCwd3cwdACSgSPys4Int8VGSg_AKtFZ">newFor(commandlineArgAndCwd:<wbr>cwd:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8183,7 +8205,7 @@ other than the invocation of the current process.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4754-L4757">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4803-L4806">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8193,7 +8215,7 @@ other than the invocation of the current process.</p>
                     <code>
                     <a name="/s:3GIO7FileRefV6newFor4pathACSgSPys4Int8VGSg_tFZ"></a>
                     <a name="//apple_ref/swift/Method/newFor(path:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO7FileRefV6newFor4pathACSgSPys4Int8VGSg_tFZ">newFor(path:)</a>
+                    <a class="token" href="#/s:3GIO7FileRefV6newFor4pathACSgSPys4Int8VGSg_tFZ">newFor(path:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8216,7 +8238,7 @@ operation if <code>path</code> is malformed.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4762-L4765">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4811-L4814">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8226,7 +8248,7 @@ operation if <code>path</code> is malformed.</p>
                     <code>
                     <a name="/s:3GIO7FileRefV6newFor3uriACSgSPys4Int8VGSg_tFZ"></a>
                     <a name="//apple_ref/swift/Method/newFor(uri:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO7FileRefV6newFor3uriACSgSPys4Int8VGSg_tFZ">newFor(uri:)</a>
+                    <a class="token" href="#/s:3GIO7FileRefV6newFor3uriACSgSPys4Int8VGSg_tFZ">newFor(uri:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8250,7 +8272,7 @@ not supported.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4771-L4774">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4820-L4823">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8260,7 +8282,7 @@ not supported.</p>
                     <code>
                     <a name="/s:3GIO7FileRefV3new3tmp8iostreamACSgSPys4Int8VGSg_SpySpySo14_GFileIOStreamVGSgGSgtKFZ"></a>
                     <a name="//apple_ref/swift/Method/new(tmp:iostream:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO7FileRefV3new3tmp8iostreamACSgSPys4Int8VGSg_SpySpySo14_GFileIOStreamVGSgGSgtKFZ">new(tmp:iostream:)</a>
+                    <a class="token" href="#/s:3GIO7FileRefV3new3tmp8iostreamACSgSPys4Int8VGSg_SpySpySo14_GFileIOStreamVGSgGSgtKFZ">new(tmp:<wbr>iostream:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8290,7 +8312,7 @@ a temporary file could not be created.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4786-L4792">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4835-L4841">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8300,7 +8322,7 @@ a temporary file could not be created.</p>
                     <code>
                     <a name="/s:3GIO7FileRefV9parseNameAdCSgSPys4Int8VGSg_tFZ"></a>
                     <a name="//apple_ref/swift/Method/parseName(parseName:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO7FileRefV9parseNameAdCSgSPys4Int8VGSg_tFZ">parseName(parseName:)</a>
+                    <a class="token" href="#/s:3GIO7FileRefV9parseNameAdCSgSPys4Int8VGSg_tFZ">parseName(parseName:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8324,7 +8346,7 @@ the <code>parse_name</code> cannot be parsed.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4798-L4801">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-DBusInterface-File.swift#L4847-L4850">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8337,8 +8359,8 @@ the <code>parse_name</code> cannot be parsed.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.ict.griffith.edu.au/~rhexel/" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2020-09-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

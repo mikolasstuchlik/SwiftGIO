@@ -21,9 +21,9 @@
     <header class="header">
       <p class="header-col header-col--primary">
         <a class="header-link" href="../index.html">
-          GIO 2.64.4 Docs
+          GIO 2.66.4 Docs
         </a>
-         (88% documented)
+         (89% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -40,7 +40,7 @@
         </p>
     
         <p class="header-col header-col--secondary">
-          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx%2Egithub%2Eio%2FSwiftGIO%2Fdocsets%2FGIO%2Exml">
+          <a class="header-link" href="dash-feed://http%3A%2F%2Frhx.github.io%2FSwiftGIO%2Fdocsets%2FGIO.xml">
             <img class="header-icon" src="../img/dash.png"/>
             Install in Dash
           </a>
@@ -2205,6 +2205,12 @@
                 <a class="nav-group-task-link" href="../Extensions/TLSCertificateRequestFlags.html">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingError.html">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/TLSChannelBindingType.html">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/TLSDatabaseLookupFlags.html">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -2648,6 +2654,9 @@
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO20tlsBackendGetDefaultAA13TLSBackendRefVSgyF">tlsBackendGetDefault()</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27tlsChannelBindingErrorQuarks6UInt32VyF">tlsChannelBindingErrorQuark()</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO22tlsClientConnectionNew12baseIoStream14serverIdentityAA09TLSClientD3RefVSgx_AA017SocketConnectableL0VSgtKAA16IOStreamProtocolRzlF">tlsClientConnectionNew(baseIoStream:serverIdentity:)</a>
               </li>
               <li class="nav-group-task">
@@ -2724,6 +2733,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO25unixMountIsSystemInternal10mountEntrySbx_tAA04UnixcH8ProtocolRzlF">unixMountIsSystemInternal(mountEntry:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Functions.html#/s:3GIO16unixMountPointAt9mountPath8timeReadAA04UnixcD3RefVSgSPys4Int8VGSg_Spys6UInt64VGSgtF">unixMountPointAt(mountPath:timeRead:)</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Functions.html#/s:3GIO27unixMountPointsChangedSince4timeSbs6UInt64V_tF">unixMountPointsChangedSince(time:)</a>
@@ -5243,6 +5255,12 @@
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO26TLSCertificateRequestFlagsa">TLSCertificateRequestFlags</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSChannelBindingErrora">TLSChannelBindingError</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO21TLSChannelBindingTypea">TLSChannelBindingType</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:3GIO22TLSDatabaseLookupFlagsa">TLSDatabaseLookupFlags</a>
               </li>
               <li class="nav-group-task">
@@ -7578,6 +7596,7 @@
             <h1>SocketAddressEnumeratorRef</h1>
               <div class="declaration">
                 <div class="language">
+                  
                   <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">SocketAddressEnumeratorRef</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/SocketAddressEnumeratorProtocol.html">SocketAddressEnumeratorProtocol</a></span></code></pre>
 
                 </div>
@@ -7597,10 +7616,13 @@ to list each <code>GSocketAddress</code> which could be used to connect to that
 <code>g_socket_address_enumerator_next_finish()</code> should be used where possible.</p>
 
 <p>Each <code>GSocketAddressEnumerator</code> can only be enumerated once. Once
-<code>g_socket_address_enumerator_next()</code> has returned <code>nil</code> (and no error), further
+<code>g_socket_address_enumerator_next()</code> has returned <code>nil</code>, further
 enumeration with that <code>GSocketAddressEnumerator</code> is not possible, and it can
 be unreffed.</p>
 
+              <div class="slightly-smaller">
+                <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L9012-L9016">Show on GitHub</a>
+              </div>
           </div>
         </section>
 
@@ -7636,7 +7658,7 @@ be unreffed.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L9000">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L9015">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7659,7 +7681,7 @@ be unreffed.</p>
                     <code>
                     <a name="/s:3GIO26SocketAddressEnumeratorRefVyACSpySo08_GSocketcD0VGcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO26SocketAddressEnumeratorRefVyACSpySo08_GSocketcD0VGcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO26SocketAddressEnumeratorRefVyACSpySo08_GSocketcD0VGcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7680,7 +7702,7 @@ be unreffed.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L9005-L9007">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L9020-L9022">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7690,7 +7712,7 @@ be unreffed.</p>
                     <code>
                     <a name="/s:3GIO26SocketAddressEnumeratorRefVyACSPySo08_GSocketcD0VGcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO26SocketAddressEnumeratorRefVyACSPySo08_GSocketcD0VGcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO26SocketAddressEnumeratorRefVyACSPySo08_GSocketcD0VGcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7711,7 +7733,7 @@ be unreffed.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L9010-L9012">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L9025-L9027">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7721,7 +7743,7 @@ be unreffed.</p>
                     <code>
                     <a name="/s:3GIO26SocketAddressEnumeratorRefVyACSgSpySo08_GSocketcD0VGSgcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO26SocketAddressEnumeratorRefVyACSgSpySo08_GSocketcD0VGSgcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO26SocketAddressEnumeratorRefVyACSgSpySo08_GSocketcD0VGSgcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7742,7 +7764,7 @@ be unreffed.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L9015-L9018">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L9030-L9033">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7752,7 +7774,7 @@ be unreffed.</p>
                     <code>
                     <a name="/s:3GIO26SocketAddressEnumeratorRefVyACSgSPySo08_GSocketcD0VGSgcfc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO26SocketAddressEnumeratorRefVyACSgSPySo08_GSocketcD0VGSgcfc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO26SocketAddressEnumeratorRefVyACSgSPySo08_GSocketcD0VGSgcfc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7773,7 +7795,7 @@ be unreffed.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L9021-L9024">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L9036-L9039">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7783,7 +7805,7 @@ be unreffed.</p>
                     <code>
                     <a name="/s:3GIO26SocketAddressEnumeratorRefV8gpointerACSgSvSg_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(gpointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO26SocketAddressEnumeratorRefV8gpointerACSgSvSg_tcfc">init(gpointer:)</a>
+                    <a class="token" href="#/s:3GIO26SocketAddressEnumeratorRefV8gpointerACSgSvSg_tcfc">init(gpointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7804,7 +7826,7 @@ be unreffed.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L9027-L9030">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L9042-L9045">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7814,7 +7836,7 @@ be unreffed.</p>
                     <code>
                     <a name="/s:3GIO26SocketAddressEnumeratorRefV13gconstpointerACSgSVSg_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(gconstpointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO26SocketAddressEnumeratorRefV13gconstpointerACSgSVSg_tcfc">init(gconstpointer:)</a>
+                    <a class="token" href="#/s:3GIO26SocketAddressEnumeratorRefV13gconstpointerACSgSVSg_tcfc">init(gconstpointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7835,7 +7857,7 @@ be unreffed.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L9033-L9036">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L9048-L9051">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7845,7 +7867,7 @@ be unreffed.</p>
                     <code>
                     <a name="/s:3GIO26SocketAddressEnumeratorRefVyACxcAA0bcD8ProtocolRzlufc"></a>
                     <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO26SocketAddressEnumeratorRefVyACxcAA0bcD8ProtocolRzlufc">init(_:)</a>
+                    <a class="token" href="#/s:3GIO26SocketAddressEnumeratorRefVyACxcAA0bcD8ProtocolRzlufc">init(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7866,7 +7888,7 @@ be unreffed.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L9039-L9041">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L9054-L9056">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7876,7 +7898,7 @@ be unreffed.</p>
                     <code>
                     <a name="/s:3GIO26SocketAddressEnumeratorRefV8cPointerACSpyxG_tclufc"></a>
                     <a name="//apple_ref/swift/Method/init(cPointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO26SocketAddressEnumeratorRefV8cPointerACSpyxG_tclufc">init(cPointer:)</a>
+                    <a class="token" href="#/s:3GIO26SocketAddressEnumeratorRefV8cPointerACSpyxG_tclufc">init(cPointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7898,7 +7920,7 @@ be unreffed.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L9045-L9047">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L9060-L9062">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7908,7 +7930,7 @@ be unreffed.</p>
                     <code>
                     <a name="/s:3GIO26SocketAddressEnumeratorRefV12constPointerACSPyxG_tclufc"></a>
                     <a name="//apple_ref/swift/Method/init(constPointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO26SocketAddressEnumeratorRefV12constPointerACSPyxG_tclufc">init(constPointer:)</a>
+                    <a class="token" href="#/s:3GIO26SocketAddressEnumeratorRefV12constPointerACSPyxG_tclufc">init(constPointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7930,7 +7952,7 @@ be unreffed.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L9051-L9053">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L9066-L9068">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7940,7 +7962,7 @@ be unreffed.</p>
                     <code>
                     <a name="/s:3GIO26SocketAddressEnumeratorRefV8mutatingACSV_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(mutating:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO26SocketAddressEnumeratorRefV8mutatingACSV_tcfc">init(mutating:)</a>
+                    <a class="token" href="#/s:3GIO26SocketAddressEnumeratorRefV8mutatingACSV_tcfc">init(mutating:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7962,7 +7984,7 @@ be unreffed.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L9057-L9059">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L9072-L9074">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -7972,7 +7994,7 @@ be unreffed.</p>
                     <code>
                     <a name="/s:3GIO26SocketAddressEnumeratorRefV3rawACSv_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(raw:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO26SocketAddressEnumeratorRefV3rawACSv_tcfc">init(raw:)</a>
+                    <a class="token" href="#/s:3GIO26SocketAddressEnumeratorRefV3rawACSv_tcfc">init(raw:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -7994,7 +8016,7 @@ be unreffed.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L9063-L9065">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L9078-L9080">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8004,7 +8026,7 @@ be unreffed.</p>
                     <code>
                     <a name="/s:3GIO26SocketAddressEnumeratorRefV13opaquePointerACs06OpaqueG0V_tcfc"></a>
                     <a name="//apple_ref/swift/Method/init(opaquePointer:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:3GIO26SocketAddressEnumeratorRefV13opaquePointerACs06OpaqueG0V_tcfc">init(opaquePointer:)</a>
+                    <a class="token" href="#/s:3GIO26SocketAddressEnumeratorRefV13opaquePointerACs06OpaqueG0V_tcfc">init(opaquePointer:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -8026,7 +8048,7 @@ be unreffed.</p>
                         </div>
                       </div>
                       <div class="slightly-smaller">
-                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L9069-L9071">Show on GitHub</a>
+                        <a href="https://github.com/rhx/SwiftGIO/tree/generated/Sources/GIO/Gio-2.0-Settings-Task.swift#L9084-L9086">Show on GitHub</a>
                       </div>
                     </section>
                   </div>
@@ -8039,8 +8061,8 @@ be unreffed.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2020 <a class="link" href="https://www.ict.griffith.edu.au/~rhexel/" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2020-09-13)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.1</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2021 <a class="link" href="https://experts.griffith.edu.au/9237-rene-hexel" target="_blank" rel="external">Ren&eacute;&nbsp;Hexel</a>. All rights reserved. (Last updated: 2021-01-05)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>
